@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>教师输入区 · 优化预览</title>
+<link rel="stylesheet" href="../css/tokens.css?v=ac543b6824"><link rel="stylesheet" href="../css/components.css?v=525fce0621">
+<style>
+.preview-page{max-width:1120px;margin:auto;padding:28px 32px 56px}.preview-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:34px}.preview-header a{font-size:13px;text-decoration:none}.preview-title{font:600 28px/36px var(--v-font-serif);margin:0 0 10px}.preview-lead{font-size:14px;line-height:22px;color:var(--v-secondary);margin-bottom:24px}.preview-surface{padding:28px;border:1px solid var(--v-border);border-radius:var(--v-radius-card);background:var(--v-card);box-shadow:var(--v-shadow-sm)}.preview-notes{display:flex;flex-wrap:wrap;gap:8px 22px;margin:18px 0 0;font-size:12px;line-height:20px;color:var(--v-muted-foreground)}.preview-workflow{margin-top:36px}.preview-workflow h2{font-size:17px;line-height:24px;margin-bottom:8px}.preview-workflow>p{font-size:13px;color:var(--v-secondary);line-height:20px;margin-bottom:16px}.preview-event{margin:20px 0 0;border:1px solid var(--v-border);border-radius:var(--v-radius-card);padding:12px 16px;background:var(--v-card)}.preview-event summary{cursor:pointer;font-size:13px;color:var(--v-secondary)}.preview-event pre{font-size:12px;line-height:18px;white-space:pre-wrap;overflow-wrap:anywhere;margin:12px 0 0}.preview-footer{font-size:12px;color:var(--v-muted-foreground);line-height:20px;margin-top:28px}@media(max-width:700px){.preview-page{padding:20px 16px 32px}.preview-surface{padding:18px 14px}.preview-header{margin-bottom:24px}.preview-notes{display:grid;gap:4px}}
+</style>
+</head>
+<body><main class="preview-page">
+<header class="preview-header"><a href="../index.html#/component/composer">← 返回 AI 输入组件</a><span class="v-caption">教师端 · 交互预览 · 虚构数据</span></header>
+<h1 class="preview-title">让教学任务的选择更清晰</h1>
+<p class="preview-lead">资源放进正文，技能决定任务方式，教学关联补充不同方向的专业资料。</p>
+<section class="preview-surface" aria-label="教师输入区优化预览"><div id="composer-preview"></div><div class="preview-notes"><span>资源：输入 /，先选类型再选对象</span><span>技能：正文前显示标签，可 × 取消</span><span>教学关联：多选，发送时参与本轮任务</span></div></section>
+<details class="preview-event"><summary>查看输入区最近一次发送数据</summary><pre id="composer-payload">尚未发送；切换关联项只修改当前任务。</pre></details>
+<section class="preview-workflow" aria-label="Agent 本地模拟流程"><h2>发送后的执行过程</h2><p>选择关联方向并发送，可查看对应 Agent 的本地模拟步骤。支持停止、失败重试和会话切换；未连接真实服务。</p><div id="chat-preview"></div></section>
+<details class="preview-event"><summary>查看会话最近一次发送数据</summary><pre id="chat-payload">尚未发送</pre></details>
+<footer class="preview-footer">本页复用当前组件库，不连接模型或外部 Agent。正式业务接收发送事件中的 agents 后，由服务端校验权限并调度；生成内容区继续只提供空插槽。</footer>
+</main>
+<script src="../js/icons.js?v=7487bc6b96"></script><script src="../js/resource-composer.js?v=bb10eef3e3"></script><script src="../js/skill-picker.js?v=59deef1a53"></script><script src="../js/content-workspace.js?v=3be51c4c5a"></script><script src="../js/voc-ui.js?v=da1e6395aa"></script>
+<script>
+const composerHost=document.querySelector('#composer-preview'),chatHost=document.querySelector('#chat-preview');
+VocUI.mount(composerHost,'composer',{agentOptions:VocUI.sampleTeachingAgents,selectedSkill:'builtin-prepare',segments:[{type:'text',text:'请为 '},{type:'resource',id:'course-ai'},{type:'text',text:' 设计一次课堂活动，结合所选方向补充案例和参考资料。'}]});
+VocUI.mount(chatHost,'chat',{agentOptions:VocUI.sampleTeachingAgents});
+composerHost.addEventListener('voc:submit',e=>{if(e.detail.action==='ai-send')document.querySelector('#composer-payload').textContent=JSON.stringify(e.detail,null,2)});
+chatHost.addEventListener('voc:submit',e=>{if(e.detail.action==='ai-send')document.querySelector('#chat-payload').textContent=JSON.stringify(e.detail,null,2)});
+VocUI.hydrate(document);
+</script></body></html>

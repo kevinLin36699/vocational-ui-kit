@@ -1,0 +1,41 @@
+{
+  "name": "vocational-ui",
+  "version": "2.0.0",
+  "maturity": "interactive-html-prototype",
+  "theme": "blue-white-light",
+  "components": 60,
+  "pagePatterns": 14,
+  "tokens": 122,
+  "entry": "index.html",
+  "styles": [
+    "css/tokens.css",
+    "css/components.css"
+  ],
+  "runtime": [
+    "js/icons.js",
+    "js/resource-composer.js",
+    "js/skill-picker.js",
+    "js/content-workspace.js",
+    "js/voc-ui.js"
+  ],
+  "patternsRuntime": "js/patterns.js",
+  "componentIndex": "data/components.json",
+  "tokenIndex": "data/tokens.json",
+  "pagePatternIndex": "data/page-patterns.json",
+  "generationStandard": "design/GENERATION.md",
+  "validation": "data/validation.json",
+  "productionServices": false,
+  "runtimeDependencies": [],
+  "resourceComposerStandard": "design/INLINE_RESOURCES.md",
+  "resourceComposerContract": "data/composer-resources.json",
+  "aiAccent": "blue-violet",
+  "skillSelectionStandard": "design/SKILLS.md",
+  "skillSelectionContract": "data/skill-selection.json",
+  "messageFeedbackContract": "data/message-feedback.json",
+  "generatedContentStandard": "design/GENERATED_CONTENT.md",
+  "workspaceContract": "data/workspace-contract.json",
+  "referenceAlignment": "data/reference-alignment.json",
+  "referenceComponentIndex": "data/component-alignment.json",
+  "teachingAgentStandard": "design/TEACHING_AGENTS.md",
+  "teachingAgentContract": "data/teaching-agents.json"
+}

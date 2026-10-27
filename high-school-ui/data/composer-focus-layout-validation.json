@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "date": "2026-10-27",
+  "checks": [
+    {
+      "name": "输入区仅保留外层圆角焦点",
+      "status": "passed",
+      "evidence": "{\"composerBorder\":\"rgb(23, 105, 209)\",\"composerShadow\":\"rgba(105, 84, 184, 0.12) 0px 0px 0px 3px\",\"outline\":\"none\"}"
+    },
+    {
+      "name": "资源类型图标名称同一行",
+      "status": "passed",
+      "evidence": "[{\"centerDifference\":0.0037841796875,\"display\":\"flex\",\"name\":\"课程\"},{\"centerDifference\":0.0037841796875,\"display\":\"flex\",\"name\":\"专业\"},{\"centerDifference\":0.00379180908203125,\"display\":\"flex\",\"name\":\"课时\"},{\"centerDifference\":0.0037841796875,\"display\":\"flex\",\"name\":\"模板\"},{\"centerDifference\":0.0037841796875,\"display\":\"flex\",\"name\":\"教学资料\"},{\"centerDifference\":0.0037841796875,\"display\":\"flex\",\"name\":\"单元\"}]"
+    },
+    {
+      "name": "对象列表与键盘选择不受影响",
+      "status": "passed",
+      "evidence": "课程5个对象，说明仍两行；Enter插入course-ai，未自动发送。"
+    },
+    {
+      "name": "工具栏与资源标签键盘焦点保留",
+      "status": "passed",
+      "evidence": "{\"toolbarFocus\":{\"name\":\"添加内容\",\"outline\":\"solid\",\"width\":\"2px\"},\"tokenFocusAfter\":{\"focus\":\"v-resource-token\",\"outline\":\"solid\",\"width\":\"2px\"}}"
+    }
+  ]
+}

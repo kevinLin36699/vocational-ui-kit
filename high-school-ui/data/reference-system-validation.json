@@ -1,0 +1,702 @@
+{
+  "version": "2.0.0",
+  "date": "2026-10-27",
+  "checks": [
+    {
+      "name": "管理页筛选、翻页、选择、校验和保存",
+      "status": "passed",
+      "evidence": "必修筛选17→11，翻至2页，全选5项，空表单3处首错聚焦；填入名称/32学时/日期后保存。Dialog560px/20px/标题19px；Select32px选项/14px圆角/288px上限。"
+    },
+    {
+      "name": "斜杠资源与技能前置标签",
+      "status": "passed",
+      "evidence": "实际/→课程→人工智能导论；零自动消息；resource-id=course-ai。我的技能→课堂活动设计，标签首于正文、28px胶囊，可移除再选智能备课。"
+    },
+    {
+      "name": "AI发送、停止与原轮重试",
+      "status": "passed",
+      "evidence": "发送后生成中状态和18px过程圈，停止后保留提问并显示重试；重试进入生成中。"
+    },
+    {
+      "name": "回答点赞、点踩原因及撤销",
+      "status": "passed",
+      "evidence": "先赞后踩弹层选择内容不准确并填写说明确认，up=false/down=true；再次点踩撤销。"
+    },
+    {
+      "name": "生成区空插槽与1280/1024断点",
+      "status": "passed",
+      "evidence": "1280宽度为360px内嵌，插槽为空；1024切为原生模态Sheet，首焦点收起；Esc关闭恢复查看入口、原节点inert，页面无横向溢出。"
+    },
+    {
+      "name": "AI失败与重试恢复完成",
+      "status": "passed",
+      "evidence": "演示控制选择下一轮失败→显示未完成、保留问题和公开阶段→重试本轮后完成；用户提问2条、回答2条，无重复插入。"
+    },
+    {
+      "name": "参考公共尺寸、Tabs、折叠、Tooltip与Shell",
+      "status": "passed",
+      "evidence": "按钮36/30/44、10px圆角、危险按钮红底白字；卡片16px内边距/14px圆角/12px间距。Tabs方向键切学习记录并移动滑块；折叠关闭后body仍挂载且inert。Tooltip可聚焦出现、10px圆角；Shell折叠64px与56px头部。"
+    },
+    {
+      "name": "全库删除语义色与确认",
+      "status": "passed",
+      "evidence": "再次遍历60项，在13个已渲染危险按钮上读取实际样式：行内图标/文字均#b52e3b；destructive红底白字。实际打开课程删除AlertDialog，默认焦点取消，取消后回到原删除入口。"
+    },
+    {
+      "name": "文件引用与编辑恢复",
+      "status": "passed",
+      "evidence": "＋键盘打开→我的文件筛选/选中教学参考资料.pdf v1.0→确认仅加入草稿，未生成消息；发送后编辑回草稿恢复原file-reference与版本。"
+    },
+    {
+      "name": "历史回答重新生成归属",
+      "status": "passed",
+      "evidence": "两轮提问后，重试第一轮回答再停止，第一轮正确进入已停止，第二轮已停止保持；两条用户消息无重复。"
+    },
+    {
+      "name": "60项组件展示巡检",
+      "status": "passed",
+      "evidence": "实际逐项进入60个组件路由，渲染标识全部对应，页面和画布均无横向溢出；不是60项各状态逐像素线上复刻。"
+    },
+    {
+      "name": "14种页面组合巡检",
+      "status": "passed",
+      "evidence": "实际进入14种pattern路由，模式标识对应，页面/预览容器未横向溢出；管理与AI关键交互另列。"
+    },
+    {
+      "name": "Skill新主版本绑定与资产校验",
+      "status": "passed",
+      "evidence": "skill-creator quick_validate通过；同一新版本生成独立管理/AI种子，各8份源资产，check_page核对资源、语法与来源哈希。示例不等同业务页面已实现。"
+    },
+    {
+      "name": "隔离Skill示例文件模式浏览器验证",
+      "status": "not-run",
+      "evidence": "浏览器工具拒绝file协议，未绕过；已完成独立文件静态与来源哈希检查。组件库原始HTTP示例的交互验证另列。"
+    },
+    {
+      "name": "参考线上完整生成流程",
+      "status": "blocked",
+      "evidence": "指定参考页无可用智能体；只读确认侧栏272、头部56、标题28px衬线、正文15px及文本区56px。＋菜单与发送禁用，不声称在线核验。"
+    }
+  ],
+  "routes": [
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "button",
+      "route": "#/component/button"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "icon",
+      "route": "#/component/icon"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "link",
+      "route": "#/component/link"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "tag",
+      "route": "#/component/tag"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "badge",
+      "route": "#/component/badge"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "avatar",
+      "route": "#/component/avatar"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "separator",
+      "route": "#/component/separator"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "input",
+      "route": "#/component/input"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "textarea",
+      "route": "#/component/textarea"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "number",
+      "route": "#/component/number"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "select",
+      "route": "#/component/select"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "checkbox",
+      "route": "#/component/checkbox"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "radio",
+      "route": "#/component/radio"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "switch",
+      "route": "#/component/switch"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "date",
+      "route": "#/component/date"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "multiselect",
+      "route": "#/component/multiselect"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "cascade",
+      "route": "#/component/cascade"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "upload",
+      "route": "#/component/upload"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "form",
+      "route": "#/component/form"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "search",
+      "route": "#/component/search"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "table",
+      "route": "#/component/table"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "pagination",
+      "route": "#/component/pagination"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "card",
+      "route": "#/component/card"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "description",
+      "route": "#/component/description"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "tree",
+      "route": "#/component/tree"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "steps",
+      "route": "#/component/steps"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "progress",
+      "route": "#/component/progress"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "timeline",
+      "route": "#/component/timeline"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "stat",
+      "route": "#/component/stat"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "chart",
+      "route": "#/component/chart"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "empty",
+      "route": "#/component/empty"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "skeleton",
+      "route": "#/component/skeleton"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "shell",
+      "route": "#/component/shell"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "breadcrumb",
+      "route": "#/component/breadcrumb"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "tabs",
+      "route": "#/component/tabs"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "segmented",
+      "route": "#/component/segmented"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "toolbar",
+      "route": "#/component/toolbar"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "menu",
+      "route": "#/component/menu"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "popover",
+      "route": "#/component/popover"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "tooltip",
+      "route": "#/component/tooltip"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "dialog",
+      "route": "#/component/dialog"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "confirm",
+      "route": "#/component/confirm"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "drawer",
+      "route": "#/component/drawer"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "alert",
+      "route": "#/component/alert"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "toast",
+      "route": "#/component/toast"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "course-card",
+      "route": "#/component/course-card"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "person-picker",
+      "route": "#/component/person-picker"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "approval",
+      "route": "#/component/approval"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "resource",
+      "route": "#/component/resource"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "task-guide",
+      "route": "#/component/task-guide"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "agent",
+      "route": "#/component/agent"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "conversation",
+      "route": "#/component/conversation"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "composer",
+      "route": "#/component/composer"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "message",
+      "route": "#/component/message"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "prose",
+      "route": "#/component/prose"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "process",
+      "route": "#/component/process"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "citation",
+      "route": "#/component/citation"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "result",
+      "route": "#/component/result"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "workspace",
+      "route": "#/component/workspace"
+    },
+    {
+      "canvasWidth": 929.203125,
+      "contentOverflow": false,
+      "pageOverflow": false,
+      "rendered": "chat",
+      "route": "#/component/chat"
+    }
+  ],
+  "patterns": [
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "home",
+      "route": "#/pattern/home"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "list",
+      "route": "#/pattern/list"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "detail",
+      "route": "#/pattern/detail"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "edit",
+      "route": "#/pattern/edit"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "selection",
+      "route": "#/pattern/selection"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "analytics",
+      "route": "#/pattern/analytics"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "history",
+      "route": "#/pattern/history"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "chat",
+      "route": "#/pattern/chat"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "assistant",
+      "route": "#/pattern/assistant"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "workspace",
+      "route": "#/pattern/workspace"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "learning",
+      "route": "#/pattern/learning"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "approval",
+      "route": "#/pattern/approval"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "files",
+      "route": "#/pattern/files"
+    },
+    {
+      "canvasOverflow": false,
+      "pageOverflow": false,
+      "pattern": "settings",
+      "route": "#/pattern/settings"
+    }
+  ],
+  "dangerButtons": [
+    {
+      "bg": "rgb(181, 46, 59)",
+      "color": "rgb(255, 255, 255)",
+      "component": "button",
+      "label": "删除对象",
+      "variant": "destructive"
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(181, 46, 59)",
+      "component": "icon",
+      "label": "trash",
+      "variant": "ghost"
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(181, 46, 59)",
+      "component": "table",
+      "label": "删除 人工智能基础",
+      "variant": "ghost"
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(181, 46, 59)",
+      "component": "table",
+      "label": "删除 工业机器人技术",
+      "variant": "ghost"
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(181, 46, 59)",
+      "component": "table",
+      "label": "删除 智能制造导论",
+      "variant": "ghost"
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(181, 46, 59)",
+      "component": "table",
+      "label": "删除 数字媒体设计",
+      "variant": "ghost"
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(181, 46, 59)",
+      "component": "table",
+      "label": "删除 电子商务实务",
+      "variant": "ghost"
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(181, 46, 59)",
+      "component": "toolbar",
+      "label": "删除 人工智能基础",
+      "variant": "ghost"
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(181, 46, 59)",
+      "component": "toolbar",
+      "label": "删除 工业机器人技术",
+      "variant": "ghost"
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(181, 46, 59)",
+      "component": "toolbar",
+      "label": "删除 智能制造导论",
+      "variant": "ghost"
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(181, 46, 59)",
+      "component": "toolbar",
+      "label": "删除 数字媒体设计",
+      "variant": "ghost"
+    },
+    {
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(181, 46, 59)",
+      "component": "toolbar",
+      "label": "删除 电子商务实务",
+      "variant": "ghost"
+    },
+    {
+      "bg": "rgb(181, 46, 59)",
+      "color": "rgb(255, 255, 255)",
+      "component": "confirm",
+      "label": "删除课程示例",
+      "variant": "destructive"
+    }
+  ],
+  "viewportChecks": [
+    {
+      "width": 1280,
+      "height": 720,
+      "workspace": "360px embedded"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "workspace": "native modal Sheet, Esc and return focus checked"
+    }
+  ],
+  "screenshots": [
+    "reference-system-management.png",
+    "reference-system-ai.png"
+  ],
+  "limitations": [
+    "原平台历史扫描快照差异单独登记；未更新或覆盖原平台。",
+    "未做全量状态逐像素线上比较、完整移动端/跨浏览器/WCAG认证。"
+  ]
+}

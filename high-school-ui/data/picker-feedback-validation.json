@@ -1,0 +1,57 @@
+{
+  "version": "1.3.0",
+  "date": "2026-10-27",
+  "environment": "ChatGPT in-app browser; local HTTP; 1280×720,1024×768",
+  "checks": [
+    {
+      "name": "资源先类型再对象、键盘与取消",
+      "status": "passed",
+      "evidence": "引用按钮首先显示六类类型，取消保持正文；/课程选择course-ai，再/课时选择其lesson-ai-intro，Enter未误发送。"
+    },
+    {
+      "name": "技能搜索、来源、标签与提交",
+      "status": "passed",
+      "evidence": "内置3/我的1可切换，搜索无结果可恢复；标签在正文上方，X移除不改正文；提交同时含course-ai、lesson-ai-intro和builtin-prepare技能ID。"
+    },
+    {
+      "name": "不同端参数配置",
+      "status": "passed",
+      "evidence": "学生示例仅课程/课时/资料及1个内置技能，管理示例仅专业/课程/模板；切换重建输入并清除上个示例草稿。"
+    },
+    {
+      "name": "技能原轮重试与新草稿隔离",
+      "status": "passed",
+      "evidence": "停止后切换当前草稿技能为我的技能，原轮重试仍使用原技能智能备课；新草稿文字和课堂活动设计标签保留。"
+    },
+    {
+      "name": "消息反馈互斥、取消与重新生成",
+      "status": "passed",
+      "evidence": "点赞事件含稳定 messageId；点踩替换点赞，再点一次取消；重新生成清除原答案反馈。"
+    },
+    {
+      "name": "多条回答及会话切换",
+      "status": "passed",
+      "evidence": "第一条点赞、第二条点踩分别保存；新建会话不继承技能；切回原会话恢复原技能和两条独立反馈。"
+    },
+    {
+      "name": "桌面弹层布局",
+      "status": "passed",
+      "evidence": "1280×720 与 1024×768 检查资源、技能弹层；均位于视口内，页面无横向溢出。非移动端验收。"
+    },
+    {
+      "name": "页面生成技能消费新版资产",
+      "status": "passed",
+      "evidence": "已安装的 vocational-page-builder 解析 v1.3.0，chat 脚手架复制并引用全部7项运行资产，包含 skill-picker.js；静态来源与语法检查通过，未将该脚手架列为业务或浏览器验收。"
+    }
+  ],
+  "notChecked": [
+    "真实后端资源权限、技能执行和消息反馈接口",
+    "移动端、跨浏览器、输入法人工候选与完整无障碍认证",
+    "全部旧页面回归"
+  ],
+  "screenshots": [
+    "data/resource-types-preview.png",
+    "data/skill-picker-preview.png",
+    "data/message-feedback-preview.png"
+  ]
+}

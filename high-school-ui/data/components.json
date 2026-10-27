@@ -1,0 +1,5214 @@
+[
+  {
+    "id": "voc-button",
+    "key": "button",
+    "name": "按钮",
+    "category": "基础",
+    "description": "默认36px、紧凑30px、10px圆角；主操作蓝色，删除危险红色并确认。",
+    "version": "2.0.0",
+    "rule": "CMP01/02/06",
+    "evidence": [
+      {
+        "file": "css/account.css",
+        "line": 3,
+        "excerpt": "gin-top:15px}.account-form-footer .mg-btn{font-size:13px;padding:11px 19px;border-radius:11px}.account-demo-note{font-siz"
+      },
+      {
+        "file": "css/account.css",
+        "line": 4,
+        "excerpt": "ex-wrap:wrap}.account-form-footer .mg-btn{margin-left:auto}}"
+      },
+      {
+        "file": "css/account.css",
+        "line": 5,
+        "excerpt": "t-size:22px}.account-page-heading .mg-btn{font-size:11px}.account-settings-main{gap:15px}.account-card{padding:20px 16px;"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 539,
+        "excerpt": "uationView,.am-evaluation-dialog) .mg-btn{box-sizing:border-box;min-height:36px;padding:7px 14px;border:1px solid transpa"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 29,
+        "excerpt": "pe-agent-workspace .ape-side-head .mg-btn{flex:none}"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 9,
+        "excerpt": ".ap-mode-tabs .mg-btn{display:flex;gap:8px;align-items:center;border:0;border-bottom:2px solid transp"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 1,
+        "excerpt": "6889e;margin-top:5px}.aq-material>.mg-btn{margin:10px 0 0 25px}.aq-material details,.aq-import{font-size:12px;line-height"
+      },
+      {
+        "file": "css/course-analytics.css",
+        "line": 4,
+        "excerpt": ".ca-view-tabs .mg-btn{border:0;background:transparent;box-shadow:none;color:#7486a0;padding:8px 20px;"
+      }
+    ],
+    "evidenceMatches": 648,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "hover",
+      "active",
+      "focus",
+      "disabled",
+      "loading"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"button\", props)",
+      "mount": "VocUI.mount(element, \"button\", props)",
+      "parameters": {
+        "label": "统一覆盖示例按钮文字",
+        "disabled": "布尔",
+        "state": "disabled"
+      },
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "默认36px、紧凑30px、10px圆角；主操作蓝色，删除危险红色并确认。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "mg-btn|prep-button|upload-button",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.1",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-icon",
+    "key": "icon",
+    "name": "图标与图标按钮",
+    "category": "基础",
+    "description": "复用现有 24×24 描边图标，操作名称与图形语义一致。",
+    "version": "2.0.0",
+    "rule": "CMP08～13",
+    "evidence": [
+      {
+        "file": "css/ui-tokens.css",
+        "line": 9,
+        "excerpt": ".ui-icon{display:inline-block;flex:none;vertical-align:-.125em;overflow:visible}"
+      },
+      {
+        "file": "index.html",
+        "line": 328,
+        "excerpt": "  <script src=\"js/ui-icons.js?v=20261023-icons-14\"></script>"
+      },
+      {
+        "file": "index.html",
+        "line": 339,
+        "excerpt": "l-buttons\" data-center-scripts=\"js/ui-icons.js?v=20261023-icons-14 js/centers/transport.js js/centers/session.js js/ai-pro"
+      },
+      {
+        "file": "js/ai-composer-ui.js",
+        "line": 9,
+        "excerpt": "  const spark=()=>window.UIIcons?.render('spark',16)||'<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor"
+      },
+      {
+        "file": "js/centers/administration/data.js",
+        "line": 52,
+        "excerpt": "icon(n, s){ s=s||18; return window.UIIcons?.render(n,s)||'<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strok"
+      },
+      {
+        "file": "js/centers/employment/data.js",
+        "line": 48,
+        "excerpt": "icon(n, s){ s=s||18; return window.UIIcons?.render(n,s)||'<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strok"
+      },
+      {
+        "file": "js/evaluation-center.js",
+        "line": 7,
+        "excerpt": "const evIcon=name=>window.UIIcons?.render(name)||`<svg aria-hidden=\"true\"><use href=\"#i-${name}\"/></svg>`;"
+      },
+      {
+        "file": "js/management.js",
+        "line": 3,
+        "excerpt": "const mgIcon = name => window.UIIcons?.render(name) || `<svg aria-hidden=\"true\"><use href=\"#i-${name}\"/></svg>`;"
+      }
+    ],
+    "evidenceMatches": 11,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"icon\", props)",
+      "mount": "VocUI.mount(element, \"icon\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "复用现有 24×24 描边图标，操作名称与图形语义一致。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "ui-icon|UIIcons",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §8.1",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-link",
+    "key": "link",
+    "name": "链接",
+    "category": "基础",
+    "description": "导航使用链接，页面行为使用按钮；外部去向明确。",
+    "version": "2.0.0",
+    "rule": "NAV10/TXT06",
+    "evidence": [
+      {
+        "file": "css/student-training-dashboard.css",
+        "line": 165,
+        "excerpt": ".bc-link{display:inline-flex;align-items:center;padding:0;border:0;border-radius:3px;bac"
+      },
+      {
+        "file": "index.html",
+        "line": 21,
+        "excerpt": "  <link rel=\"stylesheet\" href=\"css/styles.css?v=20261018-outline-flow-11\">"
+      },
+      {
+        "file": "index.html",
+        "line": 22,
+        "excerpt": "  <link rel=\"stylesheet\" href=\"css/products.css?v=20261018-course-tabs-3\">"
+      },
+      {
+        "file": "js/ai-practice-editor.js",
+        "line": 813,
+        "excerpt": "k=document.createElement('a');link.href=url;link.download=payload.name.replace(/[<>:\"/\\\\|?*\\u0000-\\u001F]/g,'_');documen"
+      },
+      {
+        "file": "js/app.js",
+        "line": 49,
+        "excerpt": "den'}><svg aria-hidden=\"true\"><use href=\"#i-panel-right\"/></svg></button>`;"
+      },
+      {
+        "file": "js/assessment-authoring.js",
+        "line": 210,
+        "excerpt": "  link.href=url;link.download=id==='demo-paper'?'ai-review-paper.json':'ai-courseware.json';"
+      },
+      {
+        "file": "js/assessment-paper-flow.js",
+        "line": 194,
+        "excerpt": "  link.href=url;link.download=`${lqPaper(q).title.replace(/[<>:\"/\\\\|?*\\x00-\\x1f]/g,'_').slic"
+      },
+      {
+        "file": "js/career-mvp.js",
+        "line": 57,
+        "excerpt": "：</strong>${mgEsc(role.gap)}</p><a href=\"${role.url}\" target=\"_blank\" rel=\"noopener noreferrer\">岗位职责参考：O*NET · ${role.so"
+      }
+    ],
+    "evidenceMatches": 238,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "hover",
+      "focus"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"link\", props)",
+      "mount": "VocUI.mount(element, \"link\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "导航使用链接，页面行为使用按钮；外部去向明确。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "bc-link|href=",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.1",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-tag",
+    "key": "tag",
+    "name": "标签与可移除项",
+    "category": "基础",
+    "description": "分类只读，移除只影响当前选择，不删除源对象。",
+    "version": "2.0.0",
+    "rule": "TXT04/WID07",
+    "evidence": [
+      {
+        "file": "css/ai-composer.css",
+        "line": 45,
+        "excerpt": ".ai-selected-skill{display:inline-flex;align-self:flex-start;max-width:100%;box-sizing:border-box;"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 1933,
+        "excerpt": ".gs-type-tag{display:inline-flex;align-items:center;padding:1px 7px;border-radius:5px;font-s"
+      },
+      {
+        "file": "css/student-home.css",
+        "line": 197,
+        "excerpt": ".hs-dashboard .hs-type-tag,.hs-dialog .hs-type-tag{display:inline-flex;align-items:center;flex:none;paddin"
+      },
+      {
+        "file": "css/student-job-dashboard.css",
+        "line": 107,
+        "excerpt": "-resources:empty{display:none}.sjd-resource-chip{display:inline-flex;align-items:center;gap:8px;padding:5px 9px;border:1px solid"
+      },
+      {
+        "file": "css/styles.css",
+        "line": 3,
+        "excerpt": "-title svg{width:14px;height:14px}.resource-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.resource-chip{display:inl"
+      },
+      {
+        "file": "index.html",
+        "line": 193,
+        "excerpt": "\"/></svg>已添加的参考素材</div><div class=\"resource-chips\" id=\"resourceChips\"></div></div>"
+      },
+      {
+        "file": "js/ai-composer-ui.js",
+        "line": 109,
+        "excerpt": "    let chip=panel.querySelector('.ai-selected-skill');"
+      },
+      {
+        "file": "js/app.js",
+        "line": 425,
+        "excerpt": "eElement('div'); chip.className = 'resource-chip'; chip.title = item.name;"
+      }
+    ],
+    "evidenceMatches": 16,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"tag\", props)",
+      "mount": "VocUI.mount(element, \"tag\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "分类只读，移除只影响当前选择，不删除源对象。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "resource-chip|ai-selected-skill|type-tag",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.18",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-badge",
+    "key": "badge",
+    "name": "状态徽标",
+    "category": "基础",
+    "description": "状态文字与语义色同时表达，未知值不伪装成功。",
+    "version": "2.0.0",
+    "rule": "CMP07/TXT04",
+    "evidence": [
+      {
+        "file": "css/account.css",
+        "line": 2,
+        "excerpt": "ad;margin:7px 0 13px}.account-role-badge{font-size:11px;color:var(--brand-700);background:var(--brand-100);padding:5px 9"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 40,
+        "excerpt": ".ap-mode-badge{display:inline-flex;align-items:center;max-width:100%;padding:5px 9px;border:1p"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 41,
+        "excerpt": ".ap-mode-badge.is-agent{background:var(--ui-surface);border-color:var(--ui-primary);color:var("
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 156,
+        "excerpt": ".ap-task-heading>.ap-mode-badge{flex:none;margin-left:auto;padding:4px 6px;background:var(--ui-primary-soft);bo"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 1,
+        "excerpt": "anywhere}.aq-material-exercise>.mg-badge{display:inline-block;margin-left:8px}.aq-warning{padding:12px 14px;border-radiu"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 59,
+        "excerpt": ".ni .badge{margin-left:auto;min-width:18px;height:18px;padding:0 5px;border-radius:9px;bac"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 60,
+        "excerpt": ".ni .badge{display:none}"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 278,
+        "excerpt": "ode .collaboration-navigation .nav-badge{display:none}"
+      }
+    ],
+    "evidenceMatches": 230,
+    "evidenceType": "local-code",
+    "states": [
+      "neutral",
+      "info",
+      "success",
+      "warning",
+      "danger"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"badge\", props)",
+      "mount": "VocUI.mount(element, \"badge\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "状态文字与语义色同时表达，未知值不伪装成功。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "mg-status|badge|status-tag",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.2",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-avatar",
+    "key": "avatar",
+    "name": "头像",
+    "category": "基础",
+    "description": "个人和账号使用中性头像；AI 回答使用28px方圆印章、名称与可选时间元信息。",
+    "version": "2.0.0",
+    "rule": "TXT05",
+    "evidence": [
+      {
+        "file": "css/account.css",
+        "line": 1,
+        "excerpt": "r(--brand-500);outline-offset:3px}.avatar img,.account-large-avatar img{width:100%;height:100%;object-fit:cover;border-ra"
+      },
+      {
+        "file": "css/account.css",
+        "line": 2,
+        "excerpt": "splay:none!important}.account-menu-profile{padding:3px 8px 15px}.account-menu-profile>strong{font-size:16px}.account-menu-"
+      },
+      {
+        "file": "css/account.css",
+        "line": 3,
+        "excerpt": "dow:0 10px 32px #20395704}.account-avatar-card{display:flex;align-items:center;gap:16px;padding:18px 25px}.account-avatar"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 103,
+        "excerpt": "ration\"] .am-collaboration .msg .m-avatar{width:28px;height:28px;border-radius:var(--ui-radius-control);background:var(--"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 108,
+        "excerpt": ".avatar{width:34px;height:34px;border-radius:50%;background:var(--grad-warm);display:gr"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 109,
+        "excerpt": ".avatar{width:34px;height:34px;border-radius:50%;background:var(--grad-warm);display:gr"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 103,
+        "excerpt": "ebar .sidebar-note small,.sidebar .profile span{color:var(--ui-secondary);font-size:12px;line-height:1.6}"
+      },
+      {
+        "file": "css/evaluation-center.css",
+        "line": 122,
+        "excerpt": ".ev-avatar{width:33px;height:33px;display:grid;place-items:center;background:#eaf2ff;color"
+      }
+    ],
+    "evidenceMatches": 729,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "fallback"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"avatar\", props)",
+      "mount": "VocUI.mount(element, \"avatar\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "个人和账号使用中性头像；AI 回答使用28px方圆印章、名称与可选时间元信息。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "avatar|profile",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §6 / 8",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-separator",
+    "key": "separator",
+    "name": "分割线",
+    "category": "基础",
+    "description": "用留白和细线组织内容，避免层层卡片。",
+    "version": "2.0.0",
+    "rule": "TXT06",
+    "evidence": [
+      {
+        "file": "css/account.css",
+        "line": 2,
+        "excerpt": "right;font-size:10px}.account-menu-divider{height:1px;background:#edf2f9;margin:7px 8px}.account-menu-item.account-logout{"
+      },
+      {
+        "file": "css/student-home.css",
+        "line": 486,
+        "excerpt": "ties, then AI standing; two shared dividers. */"
+      },
+      {
+        "file": "css/student-home.css",
+        "line": 635,
+        "excerpt": "-size:12px;color:#7b8798}.shg-meta-separator{color:#b8c0cb}.shg-object-footer{display:flex;align-items:center;justify-conten"
+      },
+      {
+        "file": "css/styles.css",
+        "line": 2,
+        "excerpt": "dius:50%;display:inline-block}.top-divider{height:23px;width:1px;background:#e3e9f1;margin:0 5px}.avatar.small{width:32px;"
+      },
+      {
+        "file": "js/account.js",
+        "line": 94,
+        "excerpt": "    <div class=\"account-menu-divider\"></div><button type=\"button\" role=\"menuitem\" class=\"account-menu-item account-l"
+      },
+      {
+        "file": "js/student-home.js",
+        "line": 520,
+        "excerpt": "atus)}</span><span class=\"shg-meta-separator\">·</span><span>${mgEsc(a.job.co)} · ${mgEsc(a.job.city||'地点待确认')}</span></div><"
+      },
+      {
+        "file": "js/student-interaction-standard.js",
+        "line": 653,
+        "excerpt": "esize';handle.setAttribute('role','separator');handle.setAttribute('aria-label','调整AI助手宽度');handle.setAttribute('aria-orient"
+      },
+      {
+        "file": "js/teacher-course-assistant.js",
+        "line": 46,
+        "excerpt": "ndex=0;resize.setAttribute('role','separator');resize.setAttribute('aria-label','调整 AI 助手宽度');resize.setAttribute('aria-orie"
+      }
+    ],
+    "evidenceMatches": 10,
+    "evidenceType": "local-code",
+    "states": [
+      "horizontal",
+      "vertical"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"separator\", props)",
+      "mount": "VocUI.mount(element, \"separator\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "用留白和细线组织内容，避免层层卡片。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "separator|divider",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.15",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-input",
+    "key": "input",
+    "name": "文本输入",
+    "category": "录入",
+    "description": "36px控件、10px圆角、14/20px文字；标签13/18px，焦点光晕，错误与说明关联。",
+    "version": "2.0.0",
+    "rule": "WID01/FORM",
+    "evidence": [
+      {
+        "file": "css/account.css",
+        "line": 3,
+        "excerpt": "92;line-height:1.6}.account-fields input{display:block;width:100%;padding:13px 15px;margin-top:6px;border:1px solid #e1e"
+      },
+      {
+        "file": "css/account.css",
+        "line": 5,
+        "excerpt": "{padding:13px 10px}.account-fields input{font-size:13px;padding:12px}.account-form-footer{gap:10px}.account-form-footer "
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 135,
+        "excerpt": "tion\"] .am-history .history-search input{box-sizing:border-box;min-width:0;width:100%;padding:0;border:0;outline:none;ba"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 12,
+        "excerpt": "tant;overflow:visible;container:ai-input / inline-size;"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 26,
+        "excerpt": "gent-choices,.ape-agent-documents) input[type=checkbox]{display:block;box-sizing:border-box;width:16px;height:16px;min-w"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 6,
+        "excerpt": "s-visible,.ap-workspace :is(button,input,textarea,select):focus-visible{outline:2px solid var(--ui-focus);outline-offset"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 1,
+        "excerpt": "x(0,1fr));gap:10px}.aq-type-counts input{width:100%;box-sizing:border-box}.aq-type-counts .mg-field{font-size:12px}.aq-s"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 192,
+        "excerpt": ".input,.textarea{width:100%;padding:10px 13px;border-radius:var(--r-sm);border:1px sol"
+      }
+    ],
+    "evidenceMatches": 2427,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "readonly",
+      "invalid"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"input\", props)",
+      "mount": "VocUI.mount(element, \"input\", props)",
+      "parameters": {
+        "label": "文本标签",
+        "value": "初始值",
+        "state": "disabled/readonly/invalid",
+        "disabled": "布尔",
+        "readonly": "布尔",
+        "type": "HTML input类型",
+        "name": "字段名",
+        "required": "布尔",
+        "placeholder": "占位",
+        "min": "数值下限",
+        "max": "数值上限",
+        "help": "说明文字"
+      },
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "36px控件、10px圆角、14/20px文字；标签13/18px，焦点光晕，错误与说明关联。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "mg-field|login-field|input",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.4",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-textarea",
+    "key": "textarea",
+    "name": "多行输入",
+    "category": "录入",
+    "description": "正文自然换行，长内容滚动，不静默截断。",
+    "version": "2.0.0",
+    "rule": "WID02",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 348,
+        "excerpt": "administration\"] .am-oa :is(select,textarea,button):focus-visible{outline:2px solid var(--ui-primary);outline-offset:2px}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 352,
+        "excerpt": "ation\"] .am-ops-dialog :is(.input,.textarea){box-sizing:border-box;width:100%;min-height:36px;padding:8px 12px;border:1px s"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 353,
+        "excerpt": "=\"administration\"] .am-ops-dialog .textarea{min-height:96px;resize:vertical}"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 49,
+        "excerpt": "ace :is(input:not([type=checkbox]),textarea,select){width:100%;min-width:0;border:1px solid var(--ui-border);border-radius:"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 6,
+        "excerpt": "ble,.ap-workspace :is(button,input,textarea,select):focus-visible{outline:2px solid var(--ui-focus);outline-offset:3px}"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 1,
+        "excerpt": "sizing:border-box}.aq-type-counts .mg-field{font-size:12px}.aq-section-heading{display:flex;align-items:center;gap:10px;mar"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 192,
+        "excerpt": ".input,.textarea{width:100%;padding:10px 13px;border-radius:var(--r-sm);border:1px solid #d9d9d9"
+      },
+      {
+        "file": "css/centers/course-evaluation.css",
+        "line": 10,
+        "excerpt": ".cg-intake select,.cg-intake textarea,.cg-work input:not([type=checkbox]),.cg-work select,.cg-work textarea{border:1p"
+      }
+    ],
+    "evidenceMatches": 583,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "focus",
+      "disabled",
+      "readonly",
+      "invalid"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"textarea\", props)",
+      "mount": "VocUI.mount(element, \"textarea\", props)",
+      "parameters": {
+        "label": "文本标签",
+        "value": "初始正文",
+        "disabled": "布尔",
+        "state": "disabled"
+      },
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "正文自然换行，长内容滚动，不静默截断。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "textarea|mg-field",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.4",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-number",
+    "key": "number",
+    "name": "数字与单位",
+    "category": "录入",
+    "description": "空值与 0 分离，保留业务范围与精度，不擅自取整。",
+    "version": "2.0.0",
+    "rule": "WID03",
+    "evidence": [
+      {
+        "file": "js/ai-practice-components.js",
+        "line": 63,
+        "excerpt": "='topK'?'召回条数':'最低匹配分（0—1）'}<input type=\"number\" data-ac-agent-knowledge=\"${key}\" value=\"${p.agentKnowledge.settings[key]??(key="
+      },
+      {
+        "file": "js/ai-practice-components.js",
+        "line": 70,
+        "excerpt": "SizeMB:'单文件大小上限（MB）'})[key]}<input type=\"number\" name=\"${key}\" value=\"${mgEsc(draft[key]??'')}\"></label>`).join('')}<label>枚举选项（"
+      },
+      {
+        "file": "js/ai-practice-editor.js",
+        "line": 428,
+        "excerpt": "sc(value??'')}\" ${kind==='number'?'type=\"number\"':'maxlength=\"120\"'} ${key==='temperature'?'min=\"0\" max=\"2\" step=\"0.1\"':key==='m"
+      },
+      {
+        "file": "js/ai-practice-files.js",
+        "line": 15,
+        "excerpt": "abel class=\"ape-field\">最多文件数<input type=\"number\" name=\"maxFiles\" min=\"1\" max=\"20\" required value=\"${mgEsc(s.maxFiles)}\"></label>"
+      },
+      {
+        "file": "js/app.js",
+        "line": 787,
+        "excerpt": "    ? '例如：准备一节“图搜索与 A* 算法”课，2 学时，面向大一学生，突出算法推演与练习…'"
+      },
+      {
+        "file": "js/assessment-authoring-data.js",
+        "line": 211,
+        "excerpt": " budget<number)return `${label}的题数或分值分配无效。`;"
+      },
+      {
+        "file": "js/assessment-authoring.js",
+        "line": 51,
+        "excerpt": "request:mode==='check'?'检查题目完整性、答案、分值、知识点和材料来源。':'依据当前考核范围内的教学材料提供候选题。',"
+      },
+      {
+        "file": "js/assessment-paper-flow.js",
+        "line": 9,
+        "excerpt": "[['manual','✎','手动出卷','手动添加题目、设置答案与分值，也可使用 AI 辅助出题。'],['paper','✦','AI 组卷','填写要求，结合已关联的教学资源和参考材料生成试卷，在预览中编辑或对话调整。']]."
+      }
+    ],
+    "evidenceMatches": 237,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "focus",
+      "invalid",
+      "disabled"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"number\", props)",
+      "mount": "VocUI.mount(element, \"number\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "空值与 0 分离，保留业务范围与精度，不擅自取整。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "type=\"number\"|学时|分值",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.4",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-select",
+    "key": "select",
+    "name": "下拉选择",
+    "category": "录入",
+    "description": "可搜索的自定义选择器，支持方向键、Enter、Escape；全部只用于筛选。",
+    "version": "2.0.0",
+    "rule": "WID06",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 137,
+        "excerpt": "dule=\"administration\"] .am-history select{box-sizing:border-box;min-height:40px;padding:10px;border:1px solid var(--ui-bo"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 165,
+        "excerpt": "istration\"] .am-history :is(button,select):focus-visible{outline:2px solid var(--ui-primary);outline-offset:2px}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 183,
+        "excerpt": "\"administration\"] .am-guide-fields select{box-sizing:border-box;width:100%;min-width:0;height:40px;padding:8px 12px;borde"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 38,
+        "excerpt": "ll\"]:hover:not(:disabled):not(:has(select:disabled)){background:#eae2fa!important;border-color:#cbb9eb!important;color:#6"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 14,
+        "excerpt": ".ape-test-set-picker select{width:100%;min-height:38px;border:1px solid var(--ui-border);border-radius:8px;"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 6,
+        "excerpt": "orkspace :is(button,input,textarea,select):focus-visible{outline:2px solid var(--ui-focus);outline-offset:3px}"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 1,
+        "excerpt": "ng:15px;margin:12px 0}.aq-material-select{display:flex;align-items:flex-start;gap:10px;font-size:13px}.aq-material-select"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 18,
+        "excerpt": "::selection{background:rgba(22,119,255,.18)}"
+      }
+    ],
+    "evidenceMatches": 3750,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "open",
+      "selected",
+      "disabled",
+      "empty"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"select\", props)",
+      "mount": "VocUI.mount(element, \"select\", props)",
+      "parameters": {
+        "label": "字段标签",
+        "disabled": "布尔",
+        "state": "disabled"
+      },
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "可搜索的自定义选择器，支持方向键、Enter、Escape；全部只用于筛选。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "select|mg-filters",
+    "extensions": [
+      "select 为兼容无依赖项目提供原生 JS 搜索选择；日期使用浏览器原生控件。"
+    ],
+    "alignment": {
+      "reference": "DESIGN.md §10.5",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-checkbox",
+    "key": "checkbox",
+    "name": "复选框",
+    "category": "录入",
+    "description": "多选不改变正式数据；全选区分部分与全部。",
+    "version": "2.0.0",
+    "rule": "WID05",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 441,
+        "excerpt": "roll-chunk,.am-enroll-check) input[type=\"checkbox\"]{width:16px;min-height:16px;accent-color:var(--ui-primary)}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 538,
+        "excerpt": "de #schoolEvaluationView input:is([type=\"checkbox\"],[type=\"radio\"]){width:16px;min-height:16px;padding:0;accent-color:var(--ui-pri"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 26,
+        "excerpt": "s,.ape-agent-documents) input[type=checkbox]{display:block;box-sizing:border-box;width:16px;height:16px;min-width:16px;min-"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 84,
+        "excerpt": "tDialog .ap-task-binding input:is([type=\"checkbox\"],[type=\"radio\"]),.ap-task-binding input:is([type=\"checkbox\"],[type=\"radio\"]){wi"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 1,
+        "excerpt": ">input:not([type=radio]):not([type=checkbox]){flex:1}.aq-review-approval{display:flex;align-items:flex-start;gap:9px;font-s"
+      },
+      {
+        "file": "css/centers/course-evaluation.css",
+        "line": 10,
+        "excerpt": " textarea,.cg-work input:not([type=checkbox]),.cg-work select,.cg-work textarea{border:1px solid var(--ui-border);backgroun"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 1839,
+        "excerpt": ".job-ivw-rev-ft input[type=checkbox]{accent-color:var(--brand);width:14px;height:14px;cursor:pointer}"
+      },
+      {
+        "file": "css/centers/theme.css",
+        "line": 41,
+        "excerpt": "input:not([type=checkbox],[type=radio],[type=range],[type=color],[type=file]),select{min-height:var(--ui"
+      }
+    ],
+    "evidenceMatches": 152,
+    "evidenceType": "local-code",
+    "states": [
+      "unchecked",
+      "checked",
+      "mixed",
+      "disabled"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"checkbox\", props)",
+      "mount": "VocUI.mount(element, \"checkbox\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "多选不改变正式数据；全选区分部分与全部。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "type=\"checkbox\"|checkbox",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.7",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-radio",
+    "key": "radio",
+    "name": "单选组",
+    "category": "录入",
+    "description": "互斥选择，不擅自预选评分与业务对象。",
+    "version": "2.0.0",
+    "rule": "WID05",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 538,
+        "excerpt": "onView input:is([type=\"checkbox\"],[type=\"radio\"]){width:16px;min-height:16px;padding:0;accent-color:var(--ui-primary)}"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 84,
+        "excerpt": "inding input:is([type=\"checkbox\"],[type=\"radio\"]),.ap-task-binding input:is([type=\"checkbox\"],[type=\"radio\"]){width:16px;height"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 87,
+        "excerpt": "sk-binding .ap-binding-modes input[type=\"radio\"],.ap-task-binding .ap-binding-modes input[type=\"radio\"]{outline:none;box-shadow"
+      },
+      {
+        "file": "css/login.css",
+        "line": 23,
+        "excerpt": ".login-roles{padding:0;margin:0 0 24px;border:0;min-width:0}"
+      },
+      {
+        "file": "css/research-center.css",
+        "line": 1625,
+        "excerpt": ".rc-field input:not([type=\"radio\"]):not([type=\"checkbox\"]),.rc-field textarea,.rc-field select{width:100%;border:"
+      },
+      {
+        "file": "css/teacher-training.css",
+        "line": 40,
+        "excerpt": "-column:1/-1}.tt-bind-radios input[type=\"radio\"]{appearance:auto;width:15px;min-width:15px;height:15px;margin:0;padding:0;accen"
+      },
+      {
+        "file": "index.html",
+        "line": 103,
+        "excerpt": "          <fieldset class=\"login-roles\"><legend>登录身份</legend><div class=\"login-role-options\"><label><input type=\"radio"
+      },
+      {
+        "file": "js/ai-practice-course.js",
+        "line": 480,
+        "excerpt": "mode,description])=>`<label><input type=\"radio\" name=\"buildMode\" value=\"${mode}\" ${mode==='workflow'?'checked':''} required><sp"
+      }
+    ],
+    "evidenceMatches": 32,
+    "evidenceType": "local-code",
+    "states": [
+      "unchecked",
+      "checked",
+      "focus",
+      "disabled"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"radio\", props)",
+      "mount": "VocUI.mount(element, \"radio\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "互斥选择，不擅自预选评分与业务对象。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "type=\"radio\"|login-roles",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §5 / 6 / 10.4",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-switch",
+    "key": "switch",
+    "name": "开关",
+    "category": "录入",
+    "description": "表单内开关只改草稿，正式生效由保存动作决定。",
+    "version": "2.0.0",
+    "rule": "WID08",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 222,
+        "excerpt": "ule=\"administration\"] :is(.am-tree-toggle,.am-tree-more){display:grid;place-items:center;flex:none;width:24px;height:32px"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 336,
+        "excerpt": ".ape-guide-toolbar>.ape-guide-toggle{display:inline-flex;align-items:center;gap:4px;min-height:32px;padding:4px 8px;"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 337,
+        "excerpt": ".ape-guide-toggle>svg{width:14px;height:14px;transform:rotate(-90deg)}"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 341,
+        "excerpt": "ode #dtAI,body.ai-practice-mode #dtToggle{display:none!important}"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 70,
+        "excerpt": ".rail-toggle{margin-top:6px;width:100%;display:flex;align-items:center;justify-content:cente"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 71,
+        "excerpt": ".rail-toggle{margin-top:6px;width:100%;display:flex;align-items:center;justify-content:cente"
+      },
+      {
+        "file": "css/centers/theme.css",
+        "line": 89,
+        "excerpt": "t:1.8}.gc-next b{color:#83a6dd}.gc-switch{display:grid;grid-template-columns:280px 1fr;gap:28px;min-height:330px}.gc-swit"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 409,
+        "excerpt": "gView) .course-composer .twh-agent-toggle{min-height:32px;padding:6px 8px;font-size:12px}"
+      }
+    ],
+    "evidenceMatches": 606,
+    "evidenceType": "local-code",
+    "states": [
+      "off",
+      "on",
+      "focus",
+      "disabled"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"switch\", props)",
+      "mount": "VocUI.mount(element, \"switch\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "表单内开关只改草稿，正式生效由保存动作决定。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "switch|toggle",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §5 / 6 / 10.4",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-date",
+    "key": "date",
+    "name": "日期与范围",
+    "category": "录入",
+    "description": "用原生日期控件保证可用性，范围跨字段校验；时区 Asia/Shanghai。",
+    "version": "2.0.0",
+    "rule": "WID04",
+    "evidence": [
+      {
+        "file": "js/ai-practice-course.js",
+        "line": 532,
+        "excerpt": "'提交')+' V'+entry.version}</p><time datetime=\"${mgEsc(entry.submittedAt)}\">${mgEsc(entry.submittedAt.replace('T',' ').slice("
+      },
+      {
+        "file": "js/assessment-authoring.js",
+        "line": 8,
+        "excerpt": "重点考查对所学知识的理解与应用。请认真阅读题目要求，独立完成作答，并在截止时间前检查并提交，每人仅可提交一次。`;"
+      },
+      {
+        "file": "js/assessment-authoring.js",
+        "line": 362,
+        "excerpt": "答案解析`,'当前解析为空。','补充正确答案依据和常见错误原因，便于截止后的学生复习。',item.id);"
+      },
+      {
+        "file": "js/assessment-paper-flow.js",
+        "line": 13,
+        "excerpt": "itle}》：总分 ${lqMoney(quiz.total)} 分，截止 ${lqDateLabel(quiz.deadline)}，${lqScope(quiz)}${quiz.examOptions?`，${quiz.examO"
+      },
+      {
+        "file": "js/centers/administration/interaction-standard.js",
+        "line": 172,
+        "excerpt": ").join('')+'<p>保留开放意见及“不适用”选项；参与名单和截止时间在发布前核对。</p></section>',acts:[{t:'继续编辑与安排发布',pri:1,onclick:'AdminInteraction.co"
+      },
+      {
+        "file": "js/centers/administration/views/aibuild.js",
+        "line": 2264,
+        "excerpt": "te?'<p>指标方案已生成。点击右侧“分发”指定填报负责人、审核人与截止时间，分发后可查看进度。</p>':'<p>生成完成后展示指标方案；分发、填报与审核需另行完成。</p>'}"
+      },
+      {
+        "file": "js/centers/administration/views/course-evaluation.js",
+        "line": 298,
+        "excerpt": "-settings\"><label class=\"cg-label\">截止时间<input type=\"datetime-local\" data-cg-field=\"deadline\" value=\"${esc(d.deadline)"
+      },
+      {
+        "file": "js/centers/administration/views/enrollment.js",
+        "line": 1841,
+        "excerpt": ",true)+fRow('计划启动时间','<input type=\"datetime-local\" class=\"input\" id=\"obTime\" value=\"'+(item?.start?.includes('-')?esc(item."
+      }
+    ],
+    "evidenceMatches": 226,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "focus",
+      "invalid",
+      "disabled"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"date\", props)",
+      "mount": "VocUI.mount(element, \"date\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "用原生日期控件保证可用性，范围跨字段校验；时区 Asia/Shanghai。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "type=\"date\"|截止|datetime",
+    "extensions": [
+      "select 为兼容无依赖项目提供原生 JS 搜索选择；日期使用浏览器原生控件。"
+    ],
+    "alignment": {
+      "reference": "DESIGN.md §10.4",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-multiselect",
+    "key": "multiselect",
+    "name": "多选标签",
+    "category": "录入",
+    "description": "显示完整选择，可移除；变更只影响本次草稿。",
+    "version": "2.0.0",
+    "rule": "WID07",
+    "evidence": [
+      {
+        "file": "css/ai-composer.css",
+        "line": 45,
+        "excerpt": ".ai-selected-skill{display:inline-flex;align-self:flex-start;max-width:100%;box-sizing:border-box;"
+      },
+      {
+        "file": "css/programs.css",
+        "line": 5,
+        "excerpt": "lid #edf2f9}.program-chat-context .selected-skill{display:inline-flex;gap:5px;align-items:center}.program-chat-context svg{width:"
+      },
+      {
+        "file": "css/student-home.css",
+        "line": 28,
+        "excerpt": "#eff4fc;color:#a4b9d7}.sh-dock .sh-selected-skill,.sh-dock .stu-file-list{display:none}.sh-dock.is-expanded{padding:14px 17px 12p"
+      },
+      {
+        "file": "css/styles.css",
+        "line": 31,
+        "excerpt": ".selected-skills[hidden],.skill-panel[hidden]{display:none!important}"
+      },
+      {
+        "file": "css/teacher-interaction-standard.css",
+        "line": 336,
+        "excerpt": "s) :is(.creation-context,.creation-selected-skills,.outline-agent-options){margin:8px 0 0;padding:0;max-width:100%;min-width:0}"
+      },
+      {
+        "file": "index.html",
+        "line": 195,
+        "excerpt": "课程，或准备一次课…\"></textarea><div class=\"selected-skills\" id=\"selectedSkills\" aria-label=\"已选择的技能\" hidden></div><div class=\"composer-bot"
+      },
+      {
+        "file": "js/ai-composer-ui.js",
+        "line": 109,
+        "excerpt": " let chip=panel.querySelector('.ai-selected-skill');"
+      },
+      {
+        "file": "js/app.js",
+        "line": 798,
+        "excerpt": "Element('span'); chip.className = 'selected-skill';"
+      }
+    ],
+    "evidenceMatches": 23,
+    "evidenceType": "local-code",
+    "states": [
+      "empty",
+      "selected",
+      "open",
+      "disabled"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"multiselect\", props)",
+      "mount": "VocUI.mount(element, \"multiselect\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "显示完整选择，可移除；变更只影响本次草稿。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "selected-skill|multi-select|selectedTags",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.5 / 10.18",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-cascade",
+    "key": "cascade",
+    "name": "院系专业级联",
+    "category": "录入",
+    "description": "保留院系专业业务，变更上级时清除失效专业。",
+    "version": "2.0.0",
+    "rule": "WID07/FORM11",
+    "evidence": [
+      {
+        "file": "js/account.js",
+        "line": 5,
+        "excerpt": " name: '教务管理员', number: 'ADM0001', department: '教务处 · 教学质量管理', phone: '15815502001', email: 'academic@example.edu.cn', emailD"
+      },
+      {
+        "file": "js/account.js",
+        "line": 6,
+        "excerpt": "{ name: '李明远', number: 'T2024001', department: '汽车工程系 · 新能源汽车教研组', phone: '15815501001', email: 'li@example.edu.cn', emailDra"
+      },
+      {
+        "file": "js/account.js",
+        "line": 7,
+        "excerpt": ", number: studentProfile().number, department: studentProfile().className || '未填写班级', phone: '13800138001', email: 'chen@exam"
+      },
+      {
+        "file": "js/ai-practice.js",
+        "line": 168,
+        "excerpt": " return student.majorName||student.major||major?.name||'未设置专业';"
+      },
+      {
+        "file": "js/centers/administration/views/aibuild.js",
+        "line": 2254,
+        "excerpt": " {type:flow.ttype,scope:flow.scope,department:flow.dept,request,sections,total:points.length,reference:points.filter(p=>p.ref"
+      },
+      {
+        "file": "js/centers/administration/views/teaching.js",
+        "line": 842,
+        "excerpt": "st text=kind==='courses'?[r.name,tpMajorName(r.mj)]:kind==='assign'?[r.course,r.teacher,r.cls,r.major]:kind==='majors'?[r.n,"
+      },
+      {
+        "file": "js/centers/administration/views/training.js",
+        "line": 55,
+        "excerpt": "function tpMajorName(id){ const m = TP_MAJORS.find(function(x){return x.id===id}); return m ? m.name"
+      },
+      {
+        "file": "js/course-hub.js",
+        "line": 26,
+        "excerpt": " title: source.title, type: source.categoryName || (source.type ? productLabel(source) : '教学资源'),"
+      }
+    ],
+    "evidenceMatches": 97,
+    "evidenceType": "local-code",
+    "states": [
+      "empty",
+      "selected",
+      "dependent",
+      "invalid"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"cascade\", props)",
+      "mount": "VocUI.mount(element, \"cascade\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "保留院系专业业务，变更上级时清除失效专业。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "majorName|categoryName|department",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.5",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-upload",
+    "key": "upload",
+    "name": "文件上传",
+    "category": "录入",
+    "description": "选择、校验、移除、失败和重选可演示；不声称已上传服务器或解析。",
+    "version": "2.0.0",
+    "rule": "FILE/WID02",
+    "evidence": [
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 41,
+        "excerpt": "lq-dialog .qb-paper-dropzone input[type=\"file\"]{min-height:52px;padding:6px;background:#fff;color:#73869e;font-size:13px;line-"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 42,
+        "excerpt": ".qb-paper-dropzone input[type=\"file\"]::file-selector-button{min-height:38px;margin-right:14px;padding:9px 18px;borde"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 43,
+        "excerpt": "lq-dialog .qb-paper-dropzone input[type=\"file\"]:hover{border-color:#a6c8f3}"
+      },
+      {
+        "file": "css/management.css",
+        "line": 3,
+        "excerpt": ".mg-field input[type=\"file\"]{padding:7px;color:#7d8da3;background:#f8fbff;cursor:pointer;transition:border-"
+      },
+      {
+        "file": "css/research-center.css",
+        "line": 1725,
+        "excerpt": ".rc-field input[type=\"file\"]{padding:8px 10px;font-size:12px;cursor:pointer}"
+      },
+      {
+        "file": "css/styles.css",
+        "line": 4,
+        "excerpt": "blur(4px)}.modal-backdrop[hidden],.pending-list[hidden],.resource-summary[hidden]{display:none!important}.modal{width:min(950px"
+      },
+      {
+        "file": "index.html",
+        "line": 294,
+        "excerpt": "0 个素材</small><input id=\"fileInput\" type=\"file\" multiple accept=\".pdf,.ppt,.pptx,.doc,.docx,.txt,.md,.jpg,.jpeg,.png,.gif,.mp4,"
+      },
+      {
+        "file": "js/account.js",
+        "line": 124,
+        "excerpt": "/div><input id=\"accountAvatarFile\" type=\"file\" accept=\"image/jpeg,image/png\" hidden></section>"
+      }
+    ],
+    "evidenceMatches": 91,
+    "evidenceType": "local-code",
+    "states": [
+      "empty",
+      "selected",
+      "invalid",
+      "removed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"upload\", props)",
+      "mount": "VocUI.mount(element, \"upload\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "选择、校验、移除、失败和重选可演示；不声称已上传服务器或解析。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "type=\"file\"|pending-list|file-input",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.18 / 我的文件线上观察",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-form",
+    "key": "form",
+    "name": "分区表单与校验",
+    "category": "录入",
+    "description": "校验失败保留输入并定位首错，提交防重；取消有未保存保护。",
+    "version": "2.0.0",
+    "rule": "FORM/CON",
+    "evidence": [
+      {
+        "file": "css/account.css",
+        "line": 1,
+        "excerpt": "hevron{width:14px;height:14px;transform:rotate(90deg);color:#96abc3;transition:transform .2s}.account-trigger[aria-expa"
+      },
+      {
+        "file": "css/account.css",
+        "line": 3,
+        "excerpt": "px;width:18px;padding:2px}.account-form-footer{display:flex;align-items:center;justify-content:space-between;gap:18px;m"
+      },
+      {
+        "file": "css/account.css",
+        "line": 4,
+        "excerpt": "account-card{padding:22px}.account-form-footer{flex-wrap:wrap}.account-form-footer .mg-btn{margin-left:auto}}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 68,
+        "excerpt": "(--ui-radius);text-align:left;transform:none;transition:border-color .16s,background-color .16s,box-shadow .16s}"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 41,
+        "excerpt": "portant;height:16px!important;transform:none!important;rotate:none!important}"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 6,
+        "excerpt": "alog:has(.ape-outcome-review-body)>form{display:flex;flex-direction:column;flex:1;min-height:0;padding:0;overflow:hidde"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 58,
+        "excerpt": "anagementDialog:has(.ap-space-use)>form{display:flex;flex-direction:column;flex:1;min-height:0;padding:0;overflow:hidde"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 1,
+        "excerpt": "sizing:border-box}.aq-type-counts .mg-field{font-size:12px}.aq-section-heading{display:flex;align-items:center;gap:10px;mar"
+      }
+    ],
+    "evidenceMatches": 1966,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "dirty",
+      "invalid",
+      "submitting",
+      "success"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"form\", props)",
+      "mount": "VocUI.mount(element, \"form\", props)",
+      "parameters": {
+        "value": "初始课程名"
+      },
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "校验失败保留输入并定位首错，提交防重；取消有未保存保护。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "mg-field|loginForm|form",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §5 / 10.4",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-search",
+    "key": "search",
+    "name": "搜索",
+    "category": "录入",
+    "description": "14px搜索输入，回车提交，无独立搜索按钮，说明范围并避免输入法误提交。",
+    "version": "2.0.0",
+    "rule": "LIST01/WID01",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 133,
+        "excerpt": "inistration\"] .am-history .history-search{box-sizing:border-box;display:flex;align-items:center;gap:9px;flex:1;min-width:"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 134,
+        "excerpt": "inistration\"] .am-history .history-search svg{width:17px;height:17px;flex:none}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 135,
+        "excerpt": "inistration\"] .am-history .history-search input{box-sizing:border-box;min-width:0;width:100%;padding:0;border:0;outline:n"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 73,
+        "excerpt": ".ap-task-binding .course-binding-search{width:100%;max-width:none;box-sizing:border-box;flex:none;border-color:var(--ui"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 303,
+        "excerpt": ".sp-search{display:flex;align-items:center;gap:7px;border:1px solid var(--border);border-r"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 296,
+        "excerpt": ".sp-search{display:flex;align-items:center;gap:7px;border:1px solid var(--border);border-r"
+      },
+      {
+        "file": "css/course-analytics.css",
+        "line": 71,
+        "excerpt": ".ca-search{display:flex;align-items:center;gap:10px;font-size:12px;color:#71839a}.ca-searc"
+      },
+      {
+        "file": "css/course-workflow.css",
+        "line": 126,
+        "excerpt": ".course-binding-search{display:flex;align-items:center;gap:9px;width:320px;flex:0 1 320px;min-width:0;"
+      }
+    ],
+    "evidenceMatches": 742,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "composing",
+      "searching",
+      "empty"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"search\", props)",
+      "mount": "VocUI.mount(element, \"search\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "14px搜索输入，回车提交，无独立搜索按钮，说明范围并避免输入法误提交。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "mg-home-search|data-tcc-search|search",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.4 / 11.11",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-table",
+    "key": "table",
+    "name": "数据表格",
+    "category": "展示",
+    "description": "筛选排序后分页，页内全选三态，操作不冒泡，导出有真实文件。",
+    "version": "2.0.0",
+    "rule": "TBL01～08",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 191,
+        "excerpt": "tudent component tokens; only wide tables scroll horizontally. */"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 224,
+        "excerpt": "odule=\"administration\"] .am-school-table{box-sizing:border-box;max-width:100%;overflow:auto;border:1px solid var(--ui-bo"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 225,
+        "excerpt": "odule=\"administration\"] .am-school-table table{width:100%;margin:0;border-collapse:collapse;font:400 13px/1.7 var(--ui-f"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 132,
+        "excerpt": ":0;padding-right:4px}.ape-variable-table{border-collapse:collapse;width:100%;font-size:12px}.ape-variable-table th,.ape-"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 282,
+        "excerpt": "ver) transparent;scrollbar-gutter:stable}"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 7,
+        "excerpt": " the conversation alongside the editable preview. */"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 272,
+        "excerpt": ".mini-table{width:100%;border-collapse:separate;border-spacing:0;font-size:12.5px;margin-to"
+      },
+      {
+        "file": "css/centers/cockpit.css",
+        "line": 87,
+        "excerpt": ".cp-table-wrap{overflow:auto}"
+      }
+    ],
+    "evidenceMatches": 631,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "loading",
+      "empty",
+      "no-match",
+      "failed",
+      "selected",
+      "sorted"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"table\", props)",
+      "mount": "VocUI.mount(element, \"table\", props)",
+      "parameters": {
+        "state": "default/empty/no-match/loading/failed；数据固定为示例集合"
+      },
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "筛选排序后分页，页内全选三态，操作不冒泡，导出有真实文件。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "mg-table|table|thead",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §4 / 5 / 10.3",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-pagination",
+    "key": "pagination",
+    "name": "分页",
+    "category": "展示",
+    "description": "总数、当前页与有效结果同步，不把页码当装饰。",
+    "version": "2.0.0",
+    "rule": "LIST/TBL",
+    "evidence": [
+      {
+        "file": "css/course-analytics.css",
+        "line": 71,
+        "excerpt": "lid #88b1ed;outline-offset:2px}.ca-pagination{display:flex;align-items:center;justify-content:space-between;margin-top:12px;f"
+      },
+      {
+        "file": "css/evaluation-school.css",
+        "line": 39,
+        "excerpt": ".es-pagination{display:flex;align-items:center;justify-content:space-between;border-top:1px so"
+      },
+      {
+        "file": "css/evaluation-school.css",
+        "line": 40,
+        "excerpt": ".es-pagination>div{display:flex;gap:8px}"
+      },
+      {
+        "file": "css/management.css",
+        "line": 2,
+        "excerpt": ";font-size:10px;margin-top:5px}.mg-pagination{display:flex;align-items:center;justify-content:center;gap:14px;margin:25px;fon"
+      },
+      {
+        "file": "js/centers/administration/interaction-standard.js",
+        "line": 26,
+        "excerpt": "pri':'')+'\" data-am-history=\"page\" data-page=\"'+(i+1)+'\"'+(H.page===i+1?' aria-current=\"page\"':'')+'>'+ (i+1)+'</button>').j"
+      },
+      {
+        "file": "js/centers/administration/views/enrollment.js",
+        "line": 1902,
+        "excerpt": "匹配结果','调整搜索或筛选条件后重试。'):'')+amEnrollPagination(kind)+'</div>');}return html;};App.views[name]=window[name];"
+      },
+      {
+        "file": "js/course-analytics.js",
+        "line": 127,
+        "excerpt": "function caStudentPagination(model,ui) {"
+      },
+      {
+        "file": "js/evaluation-quality-diagnosis.js",
+        "line": 115,
+        "excerpt": "n.issues.length?`<footer class=\"es-pagination\"><span>${selection.issues.length} 条线索 · 第 ${edUI.qualityPage} / ${pages} 页</spa"
+      }
+    ],
+    "evidenceMatches": 20,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "first",
+      "last",
+      "disabled"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"pagination\", props)",
+      "mount": "VocUI.mount(element, \"pagination\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "总数、当前页与有效结果同步，不把页码当装饰。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "pagination|data-page|mg-page",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §5 / 10.1",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-card",
+    "key": "card",
+    "name": "内容卡片",
+    "category": "展示",
+    "description": "14px圆角、16px内边距、12px间距；独立对象使用卡片，静态轻影、悬停抬升。",
+    "version": "2.0.0",
+    "rule": "CMP04/05",
+    "evidence": [
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 259,
+        "excerpt": ".ape-resource-card{min-width:0;margin:0;padding:14px;border:1px solid var(--ui-border);border-radi"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 261,
+        "excerpt": ".ape-resource-card:hover{border-color:var(--ui-primary)}.ape-resource-card:has(:checked){border-co"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 262,
+        "excerpt": ".ape-resource-card:focus-within{outline:2px solid var(--ui-focus);outline-offset:2px}"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 116,
+        "excerpt": ".mg-card{border-color:var(--ui-border);border-radius:var(--ui-radius);box-shadow:var(--u"
+      },
+      {
+        "file": "css/management.css",
+        "line": 2,
+        "excerpt": " small{margin-left:5px;opacity:.7}.mg-card{background:#fff;border:1px solid #e0e9f5;border-radius:16px;padding:22px;box-sh"
+      },
+      {
+        "file": "css/programs.css",
+        "line": 160,
+        "excerpt": ".program-course-grid .program-course-card{position:relative;display:flex;flex-direction:column;box-sizing:border-box;widt"
+      },
+      {
+        "file": "css/student-certificate.css",
+        "line": 96,
+        "excerpt": ".cert-node-detail .program-course-card { max-width:100%; }"
+      },
+      {
+        "file": "css/student-course-plaza.css",
+        "line": 2,
+        "excerpt": "80px;min-width:0}.scp-course-item .program-course-card{margin:0}.scp-nature,.scp-enrolled{position:absolute;top:12px;pointer-events:no"
+      }
+    ],
+    "evidenceMatches": 54,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"card\", props)",
+      "mount": "VocUI.mount(element, \"card\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "14px圆角、16px内边距、12px间距；独立对象使用卡片，静态轻影、悬停抬升。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "mg-card|program-course-card|resource-card",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.3",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-description",
+    "key": "description",
+    "name": "描述列表",
+    "category": "展示",
+    "description": "标签与内容成组，空值明确，长正文完整换行。",
+    "version": "2.0.0",
+    "rule": "TXT/CON02",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 143,
+        "excerpt": "inistration\"] .am-history .history-detail{font:400 10px/1.7 var(--ui-font);color:var(--ui-muted)}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 269,
+        "excerpt": "odule=\"administration\"] .am-school-details{margin:0}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 270,
+        "excerpt": "odule=\"administration\"] .am-school-details>div{display:grid;gap:8px;margin-bottom:24px}"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 95,
+        "excerpt": ".ai-more-tools>summary::-webkit-details-marker{display:none}"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 136,
+        "excerpt": ":var(--ui-secondary)}.ape-snapshot details{padding:9px 0;border-bottom:1px solid var(--ui-border)}.ape-snapshot summary{c"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 122,
+        "excerpt": "anagementDialog:has(.ap-enterprise-detail){width:min(800px,calc(100vw - 64px));max-height:calc(100vh - 48px);padding:0;ov"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 1,
+        "excerpt": "{margin:10px 0 0 25px}.aq-material details,.aq-import{font-size:12px;line-height:1.8;margin-top:12px}.aq-material summary"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 784,
+        "excerpt": ".cs-detail{display:flex;flex-direction:column;min-height:480px}"
+      }
+    ],
+    "evidenceMatches": 2408,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "empty",
+      "long"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"description\", props)",
+      "mount": "VocUI.mount(element, \"description\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "标签与内容成组，空值明确，长正文完整换行。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "detail|description|简介",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §4 / 5",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-tree",
+    "key": "tree",
+    "name": "树与目录",
+    "category": "展示",
+    "description": "箭头展开、名称选择分别表达，支持层级和键盘。",
+    "version": "2.0.0",
+    "rule": "WID11/EDU02",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 194,
+        "excerpt": "nistration\"] .am-school-layout.has-tree{grid-template-columns:minmax(180px,240px) minmax(0,1fr)}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 215,
+        "excerpt": "odule=\"administration\"] .am-school-tree{box-sizing:border-box;position:sticky;top:0;min-width:0;max-height:calc(100dvh "
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 216,
+        "excerpt": "odule=\"administration\"] .am-school-tree>h2{margin:0 8px 16px;font:600 18px/1.5 var(--ui-font)}"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 75,
+        "excerpt": ".ap-task-binding .ap-binding-tree{margin-top:10px;max-height:250px;border-color:var(--ui-border);border-radius:va"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 39,
+        "excerpt": "ap:20px;align-items:start}.qb-unit-tree{padding:12px;background:#fff;border:1px solid #e0e8f3;border-radius:16px;positi"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 147,
+        "excerpt": ".ka-tree-node{display:flex;align-items:center;gap:6px;padding:7px 10px;cursor:pointer;fo"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 621,
+        "excerpt": "  .tree-panel{width:100%;flex:none}"
+      },
+      {
+        "file": "css/course-hub.css",
+        "line": 7,
+        "excerpt": ".hub-student-tree{display:grid;gap:12px}"
+      }
+    ],
+    "evidenceMatches": 353,
+    "evidenceType": "local-code",
+    "states": [
+      "collapsed",
+      "expanded",
+      "selected"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"tree\", props)",
+      "mount": "VocUI.mount(element, \"tree\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "箭头展开、名称选择分别表达，支持层级和键盘。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "tree|course-directory|unit-list",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §5 / 10.8",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-steps",
+    "key": "steps",
+    "name": "步骤条",
+    "category": "展示",
+    "description": "步骤反映已完成的阶段，允许返回时保留输入。",
+    "version": "2.0.0",
+    "rule": "WID12/AIC14",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 106,
+        "excerpt": "\"administration\"] .am-process .gen-steps{margin:12px 0 0;padding:0;border:0;background:none;box-shadow:none}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 512,
+        "excerpt": "a-module=\"administration\"] :is(.gg-steps,.cg-tabs){display:flex;flex-wrap:nowrap;gap:24px;overflow-x:auto;padding:0 24px"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 513,
+        "excerpt": "a-module=\"administration\"] :is(.gg-steps,.cg-tabs)>button{box-sizing:border-box;flex:none;min-height:44px;padding:10px 0"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 288,
+        "excerpt": ".ape-guide-steps{display:grid;gap:9px;margin:0 0 18px}"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 96,
+        "excerpt": ".ap-create-steps{display:flex;gap:20px;list-style:none;padding:0;margin:0 0 20px;color:var(--ui-"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 1,
+        "excerpt": "re-wrap;overflow-wrap:anywhere}.aq-steps{flex-wrap:wrap;gap:10px 14px}"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 328,
+        "excerpt": ".ctx-note .cn-steps{margin-top:6px;font-size:12px;color:var(--text-dim)}"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 320,
+        "excerpt": ".ctx-note .cn-steps{margin-top:6px;font-size:12px;color:var(--text-dim)}"
+      }
+    ],
+    "evidenceMatches": 515,
+    "evidenceType": "local-code",
+    "states": [
+      "pending",
+      "active",
+      "completed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"steps\", props)",
+      "mount": "VocUI.mount(element, \"steps\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "步骤反映已完成的阶段，允许返回时保留输入。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "steps|wizard|step-bar",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §5 / 11.6",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-progress",
+    "key": "progress",
+    "name": "进度",
+    "category": "展示",
+    "description": "百分比根据分子分母计算；未知总量采用阶段状态。",
+    "version": "2.0.0",
+    "rule": "VIS04",
+    "evidence": [
+      {
+        "file": "css/ai-practice.css",
+        "line": 102,
+        "excerpt": ".ap-create-progress{display:flex;align-items:center;gap:10px;padding:18px;background:var(--ui-prima"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 103,
+        "excerpt": ".ap-create-progress svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;flex:"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 710,
+        "excerpt": "/* 生成中步骤进度 */"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 699,
+        "excerpt": "/* 生成中步骤进度 */"
+      },
+      {
+        "file": "css/centers/growth-guidance.css",
+        "line": 19,
+        "excerpt": ".gg-table progress{display:block;width:110px;height:5px;margin-top:10px;accent-color:var(--ui-prim"
+      },
+      {
+        "file": "css/centers/theme.css",
+        "line": 89,
+        "excerpt": "m strong{font-size:14px}.gc-switch-progress{margin:28px 0;color:#7b91af;font-size:12px}.gc-switch-progress b{font-size:28px"
+      },
+      {
+        "file": "css/course-workflow.css",
+        "line": 16,
+        "excerpt": ".course-generating .product-progress{width:min(350px,100%);height:7px}"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 181,
+        "excerpt": ".sh-home .sh-progress-label{font-size:12px;color:var(--ui-secondary)}"
+      }
+    ],
+    "evidenceMatches": 616,
+    "evidenceType": "local-code",
+    "states": [
+      "determinate",
+      "indeterminate",
+      "completed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"progress\", props)",
+      "mount": "VocUI.mount(element, \"progress\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "百分比根据分子分母计算；未知总量采用阶段状态。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "progress|进度",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §11.6",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-timeline",
+    "key": "timeline",
+    "name": "时间线与审批记录",
+    "category": "展示",
+    "description": "记录对象、动作和时间，不因展示演示而声称真实审批。",
+    "version": "2.0.0",
+    "rule": "DATA/OPS",
+    "evidence": [
+      {
+        "file": "css/centers/administration.css",
+        "line": 1103,
+        "excerpt": "/* 智能OA 对话内卡片（申请单 / 审批 / 我的申请） */"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 1173,
+        "excerpt": "/* 审批卡片风险标签 */"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 1232,
+        "excerpt": "/* ---- 智能 OA · 审批抽屉 ---- */"
+      },
+      {
+        "file": "css/evaluation-school.css",
+        "line": 255,
+        "excerpt": ".eq-timeline{list-style:none;margin:20px 0 0;padding:0 0 0 20px;border-left:2px solid var(--"
+      },
+      {
+        "file": "css/forum-center.css",
+        "line": 75,
+        "excerpt": ".fm-profile-timeline{list-style:none;padding:0 0 0 20px;margin:0}"
+      },
+      {
+        "file": "css/products.css",
+        "line": 69,
+        "excerpt": ".video-generation-timeline{padding:10px;border:1px solid #e2eaf6;border-radius:11px;background:#fff;min-wi"
+      },
+      {
+        "file": "css/student-certificate-workspace.css",
+        "line": 157,
+        "excerpt": ".cw-document-timeline { padding-left:13px; }"
+      },
+      {
+        "file": "css/student-competition-workspace.css",
+        "line": 7,
+        "excerpt": "rder-radius:16px 0 0 16px}.cs-plan-timeline{padding:12px 0 0 28px}.cs-phase{position:relative;border-left:1px solid #dce5f6"
+      }
+    ],
+    "evidenceMatches": 390,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "long",
+      "empty"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"timeline\", props)",
+      "mount": "VocUI.mount(element, \"timeline\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "记录对象、动作和时间，不因展示演示而声称真实审批。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "timeline|审核|审批",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §11.6",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-stat",
+    "key": "stat",
+    "name": "指标卡",
+    "category": "展示",
+    "description": "标明范围与单位，0 与未知分别显示。",
+    "version": "2.0.0",
+    "rule": "VIS01/DATA02",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 39,
+        "excerpt": "lex;flex-direction:column;position:static;inset:auto;flex:none;max-height:45%;overflow:visible;margin:0;padding:12px 24"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 88,
+        "excerpt": "ule=\"administration\"] .am-home .wc-state{margin-left:auto;padding:1px 7px;border-radius:6px;white-space:nowrap;font:400"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 116,
+        "excerpt": "dule=\"administration\"] .am-version-status{flex:none;margin:0;padding:10px 24px;border-bottom:1px solid var(--ui-border)"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 17,
+        "excerpt": "r-box;flex:none!important;position:static!important;display:block;width:100%;min-height:48px!important;max-height:144px"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 33,
+        "excerpt": ".ape-evidence-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:16"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 148,
+        "excerpt": ".ap-status{display:inline-flex;align-items:center;gap:5px;padding:4px 8px;border:1px sol"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 4,
+        "excerpt": "animation-delay:.3s}.aq-generation-status{font-size:13px;color:#617b9e;margin:10px 0 22px}.aq-generation-steps{display:"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 167,
+        "excerpt": ".kg-side-stat{border:1px solid var(--border);border-radius:10px;padding:8px 10px;text-align:c"
+      }
+    ],
+    "evidenceMatches": 6931,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "zero",
+      "missing"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"stat\", props)",
+      "mount": "VocUI.mount(element, \"stat\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "标明范围与单位，0 与未知分别显示。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "stat|metric|统计",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §4 / 10.3",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-chart",
+    "key": "chart",
+    "name": "统计图与明细",
+    "category": "展示",
+    "description": "图形和明细共享数据，带可读摘要，图例支持键盘切换。",
+    "version": "2.0.0",
+    "rule": "VIS01～06",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 184,
+        "excerpt": "[data-module=\"administration\"] .am-chart-slots{display:flex;gap:8px;flex-wrap:wrap;flex:none;max-height:180px;overflow:a"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 185,
+        "excerpt": "[data-module=\"administration\"] .am-chart-slots>p{flex-basis:100%;margin:0;font-size:13px}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 395,
+        "excerpt": "/* Enrollment keeps its business dashboards and specialist benches within the common page rhythm. */"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 732,
+        "excerpt": ".ask-chart{background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px "
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 721,
+        "excerpt": ".ask-chart{background:#fff;border:1px solid var(--border);border-radius:10px;padding:10px "
+      },
+      {
+        "file": "css/course-analytics.css",
+        "line": 12,
+        "excerpt": ".ca-dashboard{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 162,
+        "excerpt": "/* Refine the existing student dashboard without replacing its stateful forms. */"
+      },
+      {
+        "file": "css/evaluation-growth-portrait.css",
+        "line": 3,
+        "excerpt": ".gp-radar-panel,.gp-source-panel,.gp-ai-section,.gp-career-section,.gp-path-section{backg"
+      }
+    ],
+    "evidenceMatches": 494,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "filtered",
+      "empty"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"chart\", props)",
+      "mount": "VocUI.mount(element, \"chart\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "图形和明细共享数据，带可读摘要，图例支持键盘切换。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "chart|radar|dashboard",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §4 / 5 / 10.3",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-empty",
+    "key": "empty",
+    "name": "空状态",
+    "category": "展示",
+    "description": "虚线边框、34px图标块、17px衬线标题与有效下一步；无数据和无匹配分开。",
+    "version": "2.0.0",
+    "rule": "TBL07/STATE",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 53,
+        "excerpt": "on\"] .am-collaboration .comp-chips:empty{display:none}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 147,
+        "excerpt": "inistration\"] .am-history .history-empty{display:flex;align-items:center;justify-content:center;flex-direction:column;ga"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 148,
+        "excerpt": "inistration\"] .am-history .history-empty>svg{width:120px;height:80px;color:var(--ui-primary)}"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 10,
+        "excerpt": "utcome-review-body) #mgDialogError:empty{display:none}"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 46,
+        "excerpt": ".ap-space-empty{display:flex;flex-direction:column;align-items:center;text-align:center;padding"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 33,
+        "excerpt": ".assessment-error:empty{display:none}"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 47,
+        "excerpt": ".cta-resume:empty{display:none}"
+      },
+      {
+        "file": "css/centers/cockpit.css",
+        "line": 105,
+        "excerpt": ".cp-empty{padding:24px 0;color:var(--ui-muted);font-size:12px;line-height:1.8}"
+      }
+    ],
+    "evidenceMatches": 1013,
+    "evidenceType": "local-code",
+    "states": [
+      "empty",
+      "no-match"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"empty\", props)",
+      "mount": "VocUI.mount(element, \"empty\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "虚线边框、34px图标块、17px衬线标题与有效下一步；无数据和无匹配分开。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "empty|暂无|没有匹配",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.21",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-skeleton",
+    "key": "skeleton",
+    "name": "骨架与加载",
+    "category": "展示",
+    "description": "模拟真实结构，只在真实等待时使用；可结束。",
+    "version": "2.0.0",
+    "rule": "STATE",
+    "evidence": [
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 4,
+        "excerpt": "x;font-size:22px;color:#203957}.aq-loading-dots{display:inline-flex;gap:4px}.aq-loading-dots i{width:4px;height:4px;border"
+      },
+      {
+        "file": "css/growth-planning-report.css",
+        "line": 3,
+        "excerpt": ".gpr-loading{text-align:center;padding:30px 42px 36px}.gpr-loading>.gp-orbit{margin:0 auto 1"
+      },
+      {
+        "file": "css/products.css",
+        "line": 1,
+        "excerpt": ".product-loading[hidden],.product-editor[hidden]{display:none!important}"
+      },
+      {
+        "file": "css/programs.css",
+        "line": 11,
+        "excerpt": "t-size:11px;color:#8a9bb0}.program-loading-orbit{display:grid;place-items:center;width:90px;height:90px;border-radius:50%;"
+      },
+      {
+        "file": "css/student-growth-guide.css",
+        "line": 55,
+        "excerpt": ".sg-loading{padding:40px 24px 48px;text-align:center}.sg-loading-orbit{display:grid;place-i"
+      },
+      {
+        "file": "css/student-job-search.css",
+        "line": 50,
+        "excerpt": "e-wrap;overflow-wrap:anywhere}.sra-skeleton span{display:block;height:14px;border-radius:5px;background:var(--ui-primary-so"
+      },
+      {
+        "file": "css/styles.css",
+        "line": 231,
+        "excerpt": ".outline-loading[hidden],.artifact-paper[hidden],.outline-action[hidden],.resource-drawer [hidde"
+      },
+      {
+        "file": "css/teacher-training.css",
+        "line": 23,
+        "excerpt": "n:tt-spin .85s linear infinite}.tt-loading-track{height:2px;background:#e9f0fb;overflow:hidden}.tt-loading-track>span{disp"
+      }
+    ],
+    "evidenceMatches": 150,
+    "evidenceType": "local-code",
+    "states": [
+      "loading",
+      "completed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"skeleton\", props)",
+      "mount": "VocUI.mount(element, \"skeleton\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "模拟真实结构，只在真实等待时使用；可结束。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "skeleton|loading",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.15",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-shell",
+    "key": "shell",
+    "name": "应用外壳与导航",
+    "category": "导航布局",
+    "description": "272/64px侧栏、56px头部；导航收放不重置业务状态，当前项明确。",
+    "version": "2.0.0",
+    "rule": "NAV/LAY",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 13,
+        "excerpt": "y.admin-mode.imported-module-mode .topbar{flex:none}"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 174,
+        "excerpt": "body.ai-practice-mode .topbar{flex:none}"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 216,
+        "excerpt": "/* Keep workflow sidebar navigation and case actions together at desktop widths. */"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 137,
+        "excerpt": "body.admin-mode .nav-item[data-nav=\"实训中心\"]{display:none!important}"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 97,
+        "excerpt": ".topbar{height:58px;flex:0 0 58px;display:flex;align-items:center;justify-content:space"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 98,
+        "excerpt": ".topbar{height:58px;flex:0 0 58px;display:flex;align-items:center;justify-content:space"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 92,
+        "excerpt": ".sidebar{border-right-color:var(--ui-border)}"
+      },
+      {
+        "file": "css/evaluation-center.css",
+        "line": 326,
+        "excerpt": "body:not(.admin-mode) .nav-item[data-nav=\"评价中心\"]{display:none!important}"
+      }
+    ],
+    "evidenceMatches": 327,
+    "evidenceType": "local-code",
+    "states": [
+      "expanded",
+      "collapsed",
+      "active"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"shell\", props)",
+      "mount": "VocUI.mount(element, \"shell\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "272/64px侧栏、56px头部；导航收放不重置业务状态，当前项明确。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "sidebar|topbar|nav-item",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §5.4 / 11.1 / 11.3",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-breadcrumb",
+    "key": "breadcrumb",
+    "name": "面包屑",
+    "category": "导航布局",
+    "description": "父级可返回，当前项为文字，不制造空跳转。",
+    "version": "2.0.0",
+    "rule": "NAV07/WID12",
+    "evidence": [
+      {
+        "file": "css/ai-practice.css",
+        "line": 138,
+        "excerpt": ".ap-breadcrumb button{border:0;background:transparent;color:var(--ui-primary);font:inherit;pad"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 174,
+        "excerpt": ".ap-breadcrumb{display:flex;gap:9px;font-size:12px;color:var(--ui-secondary);line-height:1.5;m"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 175,
+        "excerpt": ".ap-breadcrumb span{color:var(--ui-border-hover)}"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 105,
+        "excerpt": ".breadcrumb,.top-user span{color:var(--ui-secondary)}"
+      },
+      {
+        "file": "css/evaluation-center.css",
+        "line": 110,
+        "excerpt": ".ev-breadcrumb{display:flex;align-items:center;gap:12px;font-size:12px;color:#8498b2;margin-bo"
+      },
+      {
+        "file": "css/evaluation-school.css",
+        "line": 229,
+        "excerpt": ".eq-breadcrumb{margin:0 0 20px;color:var(--ui-secondary);font-size:13px}"
+      },
+      {
+        "file": "css/integrated-centers.css",
+        "line": 9,
+        "excerpt": "der-box}body.imported-module-mode .breadcrumb{gap:9px;flex-wrap:wrap;font-size:12px}.ic-content{position:relative;width:100%;"
+      },
+      {
+        "file": "css/products.css",
+        "line": 115,
+        "excerpt": "padding:0 10px}body.creation-mode .breadcrumb{font-size:10px;gap:5px}body.creation-mode .top-right .demo-tag{display:none}bod"
+      }
+    ],
+    "evidenceMatches": 117,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "long"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"breadcrumb\", props)",
+      "mount": "VocUI.mount(element, \"breadcrumb\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "父级可返回，当前项为文字，不制造空跳转。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "bcMarkup|breadcrumb|bc-link",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §4 / 10.1",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-tabs",
+    "key": "tabs",
+    "name": "内容标签页",
+    "category": "导航布局",
+    "description": "分段底轨、30px页签与白色滑块；支持方向键，面板状态独立。",
+    "version": "2.0.0",
+    "rule": "LAY03",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 512,
+        "excerpt": "administration\"] :is(.gg-steps,.cg-tabs){display:flex;flex-wrap:nowrap;gap:24px;overflow-x:auto;padding:0 24px;border-b"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 513,
+        "excerpt": "administration\"] :is(.gg-steps,.cg-tabs)>button{box-sizing:border-box;flex:none;min-height:44px;padding:10px 0;border:0"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 514,
+        "excerpt": "administration\"] :is(.gg-steps,.cg-tabs)>button.active{border-bottom-color:var(--ui-primary);color:var(--ui-primary)}"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 74,
+        "excerpt": ".ape-mini-tabs{display:flex;align-items:center;gap:3px;min-width:0}"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 8,
+        "excerpt": ".ap-mode-tabs{display:flex;align-items:center;gap:5px;border-bottom:1px solid var(--ap-line);"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 37,
+        "excerpt": "dding:11px 20px;font-size:14px}.qb-tabs{display:flex;gap:10px;margin-bottom:16px}.qb-filters{display:flex;align-items:c"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 306,
+        "excerpt": ".sp-tabs{display:flex;gap:6px;margin:9px 0 4px}"
+      },
+      {
+        "file": "css/centers/course-evaluation.css",
+        "line": 16,
+        "excerpt": ".cg-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));padding:0 16px;borde"
+      }
+    ],
+    "evidenceMatches": 703,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "active",
+      "focus",
+      "overflow"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"tabs\", props)",
+      "mount": "VocUI.mount(element, \"tabs\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "分段底轨、30px页签与白色滑块；支持方向键，面板状态独立。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "mg-tabs|tabs|aria-selected",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.6",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-segmented",
+    "key": "segmented",
+    "name": "分段控件",
+    "category": "导航布局",
+    "description": "遵循分段底轨与滑块，用于互斥视图选择，不执行表单提交。",
+    "version": "2.0.0",
+    "rule": "DESIGN 10.6",
+    "evidence": [
+      {
+        "file": "css/login.css",
+        "line": 23,
+        "excerpt": ".login-roles{padding:0;margin:0 0 24px;border:0;min-width:0}"
+      },
+      {
+        "file": "css/login.css",
+        "line": 24,
+        "excerpt": ".login-roles legend,.login-field{font-size:14px;font-weight:600;line-height:1.5}"
+      },
+      {
+        "file": "css/login.css",
+        "line": 25,
+        "excerpt": ".login-roles legend{padding:0;margin-bottom:10px}"
+      },
+      {
+        "file": "index.html",
+        "line": 103,
+        "excerpt": "          <fieldset class=\"login-roles\"><legend>登录身份</legend><div class=\"login-role-options\"><label><input type=\"radio"
+      }
+    ],
+    "evidenceMatches": 11,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "active",
+      "focus"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"segmented\", props)",
+      "mount": "VocUI.mount(element, \"segmented\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "遵循分段底轨与滑块，用于互斥视图选择，不执行表单提交。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "login-roles|role-options",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.6",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-toolbar",
+    "key": "toolbar",
+    "name": "筛选与操作栏",
+    "category": "导航布局",
+    "description": "标题、筛选、表格同轴；关键词和字段共享有效集合。",
+    "version": "2.0.0",
+    "rule": "TPL02/LIST",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 132,
+        "excerpt": "inistration\"] .am-history .history-toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:0"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 196,
+        "excerpt": "odule=\"administration\"] .am-school-toolbar{display:flex;align-items:end;flex-wrap:wrap;gap:12px;margin:0 0 20px}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 291,
+        "excerpt": "odule=\"administration\"] .am-assign-filters{display:flex;align-items:center;flex-wrap:wrap;gap:8px}"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 22,
+        "excerpt": "ata-module=\"employment\"]) [data-ai-toolbar]{"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 256,
+        "excerpt": ".ape-library-filters{display:flex;align-items:flex-end;gap:12px;margin-bottom:18px}.ape-library-filt"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 20,
+        "excerpt": ".ap-space-filters{display:flex;gap:6px;margin:0 0 20px}.ap-space-filters .mg-btn[aria-pressed=tru"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 3,
+        "excerpt": "overflow-wrap:anywhere}.lq-compose-toolbar .mg-btn{font-size:12px;padding:8px 10px}"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 2154,
+        "excerpt": ".jef-filters{display:flex;gap:18px;margin-bottom:18px;border-bottom:1px solid var(--ui-borde"
+      }
+    ],
+    "evidenceMatches": 573,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "filtered",
+      "reset"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"toolbar\", props)",
+      "mount": "VocUI.mount(element, \"toolbar\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "标题、筛选、表格同轴；关键词和字段共享有效集合。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "mg-filters|toolbar|filters",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §11.11",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-menu",
+    "key": "menu",
+    "name": "更多菜单",
+    "category": "反馈浮层",
+    "description": "纯动作菜单与带输入的选择浮层分开，Escape 和外部点击关闭。",
+    "version": "2.0.0",
+    "rule": "OVR/WID09",
+    "evidence": [
+      {
+        "file": "css/account.css",
+        "line": 1,
+        "excerpt": "g)}.account-trigger:focus-visible,.account-menu button:focus-visible,#accountSettingsView button:focus-visible{outline:2px soli"
+      },
+      {
+        "file": "css/account.css",
+        "line": 2,
+        "excerpt": ".account-menu{position:absolute;top:calc(100% + 12px);right:0;width:250px;max-height:calc(100"
+      },
+      {
+        "file": "css/account.css",
+        "line": 5,
+        "excerpt": "nt-chevron{width:10px;height:10px}.account-menu{right:0;width:245px;max-height:calc(100dvh - 88px);top:calc(100% + 10px)}.accou"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 144,
+        "excerpt": "ule=\"administration\"] .am-history .history-actions{display:flex;align-items:center;gap:6px;flex:none;flex-wrap:wrap}"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 93,
+        "excerpt": ".ai-more-tools{position:relative;flex:none;margin:0;padding:0;border:0;background:none;color:#"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 45,
+        "excerpt": "  .account-menu-item.account-logout,"
+      },
+      {
+        "file": "css/styles.css",
+        "line": 105,
+        "excerpt": ".history-actions{display:flex;align-items:center;gap:6px;flex:none}"
+      },
+      {
+        "file": "js/account.js",
+        "line": 89,
+        "excerpt": "countMenu.innerHTML = `<div class=\"account-menu-profile\"><strong>${mgEsc(profile.name)}</strong><p>账号：${mgEsc(window.AppAuth?.c"
+      }
+    ],
+    "evidenceMatches": 39,
+    "evidenceType": "local-code",
+    "states": [
+      "closed",
+      "open",
+      "focus",
+      "disabled"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"menu\", props)",
+      "mount": "VocUI.mount(element, \"menu\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "纯动作菜单与带输入的选择浮层分开，Escape 和外部点击关闭。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "ai-more-tools|account-menu|history-actions",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.12",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-popover",
+    "key": "popover",
+    "name": "选择浮层",
+    "category": "反馈浮层",
+    "description": "带输入的小浮层靠近触发器，视口边缘避让。",
+    "version": "2.0.0",
+    "rule": "OVR/WID10",
+    "evidence": [
+      {
+        "file": "css/ai-composer.css",
+        "line": 99,
+        "excerpt": ".ai-more-tools:not([open])>.ai-more-menu{display:none!important}"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 100,
+        "excerpt": ".ai-more-menu{position:absolute;bottom:42px;left:0;z-index:90;box-sizing:border-box;width:240"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 103,
+        "excerpt": "n,body[data-module=\"employment\"]) .ai-more-menu [data-ai-tool=\"extra\"]{display:flex;justify-content:flex-start;width:100%!impor"
+      },
+      {
+        "file": "css/student-job-search.css",
+        "line": 201,
+        "excerpt": ".src-polish-popover{position:fixed;z-index:160;display:inline-flex;align-items:center;gap:6px;min-h"
+      },
+      {
+        "file": "css/styles.css",
+        "line": 32,
+        "excerpt": ".skill-popover-backdrop{padding:0;background:transparent;backdrop-filter:none;z-index:110}"
+      },
+      {
+        "file": "css/teacher-training.css",
+        "line": 26,
+        "excerpt": "e9f2;padding-left:8px}.tt-progress-popover{position:absolute;bottom:100%;left:50%;transform:translateX(-50%) translateY(3p"
+      },
+      {
+        "file": "index.html",
+        "line": 301,
+        "excerpt": "  <div class=\"modal-backdrop skill-popover-backdrop\" id=\"skillModal\" hidden>"
+      },
+      {
+        "file": "js/ai-composer-ui.js",
+        "line": 58,
+        "excerpt": "eateElement('div');menu.className='ai-more-menu';"
+      }
+    ],
+    "evidenceMatches": 19,
+    "evidenceType": "local-code",
+    "states": [
+      "closed",
+      "open",
+      "empty"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"popover\", props)",
+      "mount": "VocUI.mount(element, \"popover\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "带输入的小浮层靠近触发器，视口边缘避让。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "popover|ai-more-menu",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.11",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-tooltip",
+    "key": "tooltip",
+    "name": "悬停与焦点提示",
+    "category": "反馈浮层",
+    "description": "鼠标和键盘可读；重要错误不藏在悬停提示里。",
+    "version": "2.0.0",
+    "rule": "WID10/ACC",
+    "evidence": [
+      {
+        "file": "index.html",
+        "line": 151,
+        "excerpt": "ebarEdgeToggle\" aria-label=\"收起侧边栏\" title=\"收起侧边栏\" aria-expanded=\"true\" aria-controls=\"sidebar\"><svg aria-hidden=\"true\"><us"
+      },
+      {
+        "file": "index.html",
+        "line": 157,
+        "excerpt": "lass=\"new-session\" id=\"newSession\" title=\"教学创作空间\" aria-label=\"教学创作空间\"><svg><use href=\"#i-home\"/></svg><span>教学创作空间</span>"
+      },
+      {
+        "file": "index.html",
+        "line": 160,
+        "excerpt": "n class=\"nav-item\" data-nav=\"协作记录\" title=\"协作记录\" aria-label=\"协作记录\"><svg><use href=\"#i-chat\"/></svg><span>协作记录</span><span "
+      },
+      {
+        "file": "js/ai-composer-ui.js",
+        "line": 26,
+        "excerpt": "ad','skill'].includes(kind))button.title=label;"
+      },
+      {
+        "file": "js/ai-practice-configuration.js",
+        "line": 64,
+        "excerpt": " if(n.type==='input'){const title=root.querySelector('.ape-property-section-head>strong');if(title)title.textConte"
+      },
+      {
+        "file": "js/ai-practice-course.js",
+        "line": 313,
+        "excerpt": "ges .artifact-card-title').forEach(title=>{title.textContent=task.title;});"
+      },
+      {
+        "file": "js/ai-practice-editor.js",
+        "line": 173,
+        "excerpt": " type=\"submit\" aria-label=\"发送调试问题\" title=\"发送\" ><span aria-hidden=\"true\">${mgIcon('send')}</span></button></form><p id=\"ap"
+      },
+      {
+        "file": "js/ai-practice.js",
+        "line": 64,
+        "excerpt": "ction=\"generate\"${draft?' disabled title=\"请先确认添加或取消当前用例\"':''}>重新生成</button>`:''}</header>${!sets?'<p>尚未生成测试集。</p>':kinds."
+      }
+    ],
+    "evidenceMatches": 566,
+    "evidenceType": "local-code",
+    "states": [
+      "hover",
+      "focus",
+      "closed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"tooltip\", props)",
+      "mount": "VocUI.mount(element, \"tooltip\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "鼠标和键盘可读；重要错误不藏在悬停提示里。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "title=|tooltip",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.13",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-dialog",
+    "key": "dialog",
+    "name": "弹窗",
+    "category": "反馈浮层",
+    "description": "420/560/720px宽度、20px圆角与19px衬线标题；焦点、滚动和关闭统一。",
+    "version": "2.0.0",
+    "rule": "OVR01～10",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 120,
+        "excerpt": "/* Restore native modal centering after the legacy universal margin reset."
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 122,
+        "excerpt": "body[data-module=\"administration\"] dialog:where(.am-confirm,.am-record-dialog,.am-school-dialog){position:fixed;inset:0;m"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 123,
+        "excerpt": "der);border-radius:var(--ui-radius-dialog);color:var(--ui-ink);background:var(--ui-surface)}"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 3,
+        "excerpt": "#managementDialog:has(.ape-outcome-review-body){width:min(920px,calc(100vw - 64px));max-height:ca"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 34,
+        "excerpt": "#managementDialog .ap-personal-modes input{flex:none;width:16px;height:16px;min-height:0;margin:3"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 1,
+        "excerpt": "order-radius:12px;padding:18px}.lq-dialog .aq-side-note h3{margin-top:0}.aq-side-note p{font-size:12px;line-height:1.9;co"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 475,
+        "excerpt": ".modal-box.center{left:50%;top:50%;right:auto;bottom:auto;transform:translate(-50%,-50"
+      },
+      {
+        "file": "css/centers/cockpit.css",
+        "line": 106,
+        "excerpt": ".cp-dialog{width:min(620px,85vw);max-height:80vh;overflow:auto;border:1px solid var(--ui-b"
+      }
+    ],
+    "evidenceMatches": 2940,
+    "evidenceType": "local-code",
+    "states": [
+      "closed",
+      "open",
+      "scrolling"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"dialog\", props)",
+      "mount": "VocUI.mount(element, \"dialog\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "420/560/720px宽度、20px圆角与19px衬线标题；焦点、滚动和关闭统一。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "modal|dialog|mg-modal",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.9",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-confirm",
+    "key": "confirm",
+    "name": "危险操作确认",
+    "category": "反馈浮层",
+    "description": "危险红色确认；说明对象与后果、默认聚焦取消、遮罩不取消或提交。",
+    "version": "2.0.0",
+    "rule": "CMP06/OVR",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 122,
+        "excerpt": "\"administration\"] dialog:where(.am-confirm,.am-record-dialog,.am-school-dialog){position:fixed;inset:0;margin:auto}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 123,
+        "excerpt": "[data-module=\"administration\"] .am-confirm{width:min(440px,calc(100vw - 48px));padding:0;border:1px solid var(--ui-border)"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 124,
+        "excerpt": "[data-module=\"administration\"] .am-confirm::backdrop{background:#18325550}"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 348,
+        "excerpt": "/* Source confirmation lives in the conversation; task editing lives in the canvas. */"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 21,
+        "excerpt": ".assessment-confirmation .lq-dialog-body{padding:0;overflow:visible;max-height:none}"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 1343,
+        "excerpt": ".job-confirm{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:11px;b"
+      },
+      {
+        "file": "css/course-workflow.css",
+        "line": 156,
+        "excerpt": ".mg-dialog:has(.lesson-apply-confirm){width:560px;max-width:calc(100vw - 48px)}"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 46,
+        "excerpt": "  .delete-confirm,"
+      }
+    ],
+    "evidenceMatches": 586,
+    "evidenceType": "local-code",
+    "states": [
+      "closed",
+      "open",
+      "cancelled",
+      "confirmed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"confirm\", props)",
+      "mount": "VocUI.mount(element, \"confirm\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "危险红色确认；说明对象与后果、默认聚焦取消、遮罩不取消或提交。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "delete-confirm|confirm|data-action=\"delete\"",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.10",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-drawer",
+    "key": "drawer",
+    "name": "抽屉",
+    "category": "反馈浮层",
+    "description": "360px上下文面板；原生模态焦点管理，首个焦点为收起，关闭恢复入口。",
+    "version": "2.0.0",
+    "rule": "OVR/LAY12",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 121,
+        "excerpt": "   Drawer-specific margins below deliberately keep those panels right-aligned. */"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 267,
+        "excerpt": "odule=\"administration\"] .am-school-drawer{width:min(620px,calc(100vw - 48px));height:100dvh;max-height:100dvh;margin:0 0 "
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 268,
+        "excerpt": "odule=\"administration\"] .am-school-drawer>form{height:100%;max-height:100%}"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 541,
+        "excerpt": "ex;flex-direction:column;animation:drawer-in .28s cubic-bezier(.2,.8,.2,1)}"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 532,
+        "excerpt": "ex;flex-direction:column;animation:drawer-in .28s cubic-bezier(.2,.8,.2,1)}"
+      },
+      {
+        "file": "css/forum-center.css",
+        "line": 2,
+        "excerpt": "-btn{margin-top:8px;width:100%}.fm-side-panel{border:1px solid #e3eaf5;background:#fff;border-radius:10px;padding:16px}.fm-si"
+      },
+      {
+        "file": "css/growth-planning.css",
+        "line": 13,
+        "excerpt": ".gp-dialog.gp-direction-drawer{position:fixed;inset:0 0 0 auto;margin:0;width:580px;max-width:46vw;height:100d"
+      },
+      {
+        "file": "css/research-center.css",
+        "line": 352,
+        "excerpt": ".rc-side-panel{position:sticky;top:0;padding:18px 20px;background:var(--ui-surface);border:1px"
+      }
+    ],
+    "evidenceMatches": 568,
+    "evidenceType": "local-code",
+    "states": [
+      "closed",
+      "open",
+      "scrolling"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"drawer\", props)",
+      "mount": "VocUI.mount(element, \"drawer\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "360px上下文面板；原生模态焦点管理，首个焦点为收起，关闭恢复入口。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "drawer|side-panel",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.14 / 11.9",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-alert",
+    "key": "alert",
+    "name": "就地反馈与错误",
+    "category": "反馈浮层",
+    "description": "错误就地说明原因与恢复动作，不用 Toast 掩盖。",
+    "version": "2.0.0",
+    "rule": "SYS01/09",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 42,
+        "excerpt": "(.cg-assessment-basis,.cg-composer-notice){max-height:14dvh;overflow:auto}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 153,
+        "excerpt": "dule=\"administration\"] .am-history-notice{margin:0 0 16px;color:var(--ui-secondary);font:400 13px/1.7 var(--ui-font)}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 154,
+        "excerpt": "dule=\"administration\"] .am-archive-notice{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wra"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 9,
+        "excerpt": ".ape-outcome-review-body) #mgDialogError{flex:none;order:1;padding:8px 24px;margin:0}"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 61,
+        "excerpt": "Dialog:has(.ap-space-use) #mgDialogError{order:1;flex:none;padding:8px 22px;margin:0}#managementDialog:has(.ap-space-use"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 32,
+        "excerpt": ".assessment-error{width:100%;margin:0;line-height:1.7;overflow-wrap:anywhere}"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 800,
+        "excerpt": ".cs-alert{display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:10px;bac"
+      },
+      {
+        "file": "css/centers/course-evaluation.css",
+        "line": 48,
+        "excerpt": ".cg-footer .btn{font-size:12px}.cg-notice{background:var(--ui-primary-soft);padding:12px 14px;border-radius:8px;color:var"
+      }
+    ],
+    "evidenceMatches": 2216,
+    "evidenceType": "local-code",
+    "states": [
+      "info",
+      "success",
+      "warning",
+      "danger"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"alert\", props)",
+      "mount": "VocUI.mount(element, \"alert\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "错误就地说明原因与恢复动作，不用 Toast 掩盖。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "notice|alert|error",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.17 / 11.14",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-toast",
+    "key": "toast",
+    "name": "轻提示",
+    "category": "反馈浮层",
+    "description": "提供可选能力，正式平台普通成功优先就地更新。",
+    "version": "2.0.0",
+    "rule": "SYS01/DESIGN10.16",
+    "evidence": [
+      {
+        "file": "css/centers/administration.css",
+        "line": 329,
+        "excerpt": ".toast{position:fixed;right:22px;bottom:22px;z-index:99;background:#1f2329;border-radi"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 330,
+        "excerpt": ".toast.show{transform:none;opacity:1}"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 331,
+        "excerpt": ".toast .t-ic{width:22px;height:22px;border-radius:7px;background:var(--grad);color:#ff"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 321,
+        "excerpt": ".toast{position:fixed;right:22px;bottom:22px;z-index:99;background:#1f2329;border-radi"
+      },
+      {
+        "file": "css/centers/theme.css",
+        "line": 13,
+        "excerpt": "-card,.ph-id{border-color:#dfe8f5}.toast{display:none!important}"
+      },
+      {
+        "file": "css/research-center.css",
+        "line": 2064,
+        "excerpt": ".rc-toast{position:fixed;top:28px;left:50%;z-index:9000;max-width:min(560px,80vw);padding"
+      },
+      {
+        "file": "css/styles.css",
+        "line": 4,
+        "excerpt": "ground:#bdcff0;cursor:not-allowed}.toast{position:fixed;top:24px;left:50%;max-width:min(960px,calc(100vw - 48px));text-a"
+      },
+      {
+        "file": "index.html",
+        "line": 324,
+        "excerpt": "  <div class=\"toast\" id=\"toast\" role=\"status\" aria-live=\"polite\"></div>"
+      }
+    ],
+    "evidenceMatches": 356,
+    "evidenceType": "local-code",
+    "states": [
+      "shown",
+      "dismissed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"toast\", props)",
+      "mount": "VocUI.mount(element, \"toast\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "提供可选能力，正式平台普通成功优先就地更新。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "toast",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.16",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-course-card",
+    "key": "course-card",
+    "name": "课程卡片",
+    "category": "高职教业务",
+    "description": "16:9 封面、两行名称，必修选修属性；课程不绑定学期或混入实训。",
+    "version": "2.0.0",
+    "rule": "EDU/TXT05",
+    "evidence": [
+      {
+        "file": "css/design-system.css",
+        "line": 127,
+        "excerpt": ".program-course-grid .program-course-card{border-color:var(--ui-border);border-radius:12px;background:#fff;box-shadow:var"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 128,
+        "excerpt": ".program-course-grid .program-course-card:hover,.program-course-grid .program-course-card:focus-within{border-color:#9ebb"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 129,
+        "excerpt": ".program-course-grid .program-course-card .course-center-cover{background:linear-gradient(135deg,#123e85,#2373cb);color:#"
+      },
+      {
+        "file": "css/programs.css",
+        "line": 160,
+        "excerpt": ".program-course-grid .program-course-card{position:relative;display:flex;flex-direction:column;box-sizing:border-box;widt"
+      },
+      {
+        "file": "css/student-certificate.css",
+        "line": 96,
+        "excerpt": ".cert-node-detail .program-course-card { max-width:100%; }"
+      },
+      {
+        "file": "css/student-course-plaza.css",
+        "line": 2,
+        "excerpt": "80px;min-width:0}.scp-course-item .program-course-card{margin:0}.scp-nature,.scp-enrolled{position:absolute;top:12px;pointer-events:no"
+      },
+      {
+        "file": "css/student-interaction-standard.css",
+        "line": 14,
+        "excerpt": ".student-standard .program-course-card{height:auto;max-width:none;min-width:0;display:flex;flex-direction:column;borde"
+      },
+      {
+        "file": "css/student-page-layout.css",
+        "line": 21,
+        "excerpt": ".si-index-layout #studentView :is(.program-course-card,.scp-course-item,.ap-task-card.ap-center-card){width:100%;max-width:none;min-wi"
+      }
+    ],
+    "evidenceMatches": 149,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "hover",
+      "focus"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"course-card\", props)",
+      "mount": "VocUI.mount(element, \"course-card\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "16:9 封面、两行名称，必修选修属性；课程不绑定学期或混入实训。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "program-course-card|course-card|tcc",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.3 / 高职教业务保留",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-person-picker",
+    "key": "person-picker",
+    "name": "人员选择",
+    "category": "高职教业务",
+    "description": "通过稳定 ID 选择人员，同名不混淆；演示数据为虚构。",
+    "version": "2.0.0",
+    "rule": "FORM11/DATA",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 560,
+        "excerpt": "ital-human test rooms retain their persona. */"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 21,
+        "excerpt": ".ap-personal-cover{height:156px;margin:-16px -16px 16px;display:grid;place-items:center;ba"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 28,
+        "excerpt": ".ap-personal-modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;min"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 1307,
+        "excerpt": ".ev-target .ev-person-label{display:grid;gap:6px;margin-top:12px;font-size:12px}.ev-person-label sele"
+      },
+      {
+        "file": "css/centers/growth-guidance.css",
+        "line": 53,
+        "excerpt": "ize:11px;color:var(--ui-muted)}.gg-person{display:grid;place-items:center;width:34px;height:34px;background:var(--ui-prim"
+      },
+      {
+        "file": "css/course-analytics.css",
+        "line": 15,
+        "excerpt": "eader,.ca-student-panel>header,.ca-personal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;m"
+      },
+      {
+        "file": "css/evaluation-center.css",
+        "line": 18,
+        "excerpt": ".ev-personal-label{display:flex;align-items:center;gap:7px;border:1px solid #dce8f9;backgr"
+      },
+      {
+        "file": "css/evaluation-school.css",
+        "line": 353,
+        "excerpt": "-height:1.9;padding:0 4px 20px}.ed-person{display:flex;gap:18px;align-items:center}.ed-person h2{font-size:22px;margin:5p"
+      }
+    ],
+    "evidenceMatches": 2430,
+    "evidenceType": "local-code",
+    "states": [
+      "empty",
+      "selected",
+      "searched"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"person-picker\", props)",
+      "mount": "VocUI.mount(element, \"person-picker\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "通过稳定 ID 选择人员，同名不混淆；演示数据为虚构。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "teacherId|studentId|person|人员",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.5 / 高职教业务保留",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-approval",
+    "key": "approval",
+    "name": "审核与分发",
+    "category": "高职教业务",
+    "description": "保留审核、生成、保存和分发的语义边界，不扩大为群发或发布。",
+    "version": "2.0.0",
+    "rule": "OPS/AIC12",
+    "evidence": [
+      {
+        "file": "css/centers/administration.css",
+        "line": 1103,
+        "excerpt": "/* 智能OA 对话内卡片（申请单 / 审批 / 我的申请） */"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 1173,
+        "excerpt": "/* 审批卡片风险标签 */"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 1232,
+        "excerpt": "/* ---- 智能 OA · 审批抽屉 ---- */"
+      },
+      {
+        "file": "css/teacher-interaction-standard.css",
+        "line": 4,
+        "excerpt": " * NAV / LAY / CMP及教师专项：保留备课、审核、媒体与专用编辑器语义。"
+      },
+      {
+        "file": "index.html",
+        "line": 240,
+        "excerpt": "-footnote\">AI新范式平台 辅助生成 · 请结合真实课程情况审核与完善</div>"
+      },
+      {
+        "file": "js/ai-practice-course.js",
+        "line": 134,
+        "excerpt": "ting',detail:'汇总任务正文、评分标准和测试用例，准备教师审核。',result:'任务草稿已就绪，等待教师审核发布。'}]};"
+      },
+      {
+        "file": "js/ai-practice.js",
+        "line": 282,
+        "excerpt": "ndingDraft?'已发布 · 有待发布修改':'已发布'):'待审核';"
+      },
+      {
+        "file": "js/app.js",
+        "line": 77,
+        "excerpt": "划中':record.programCreated?'课程已创建':'审核课程'};"
+      }
+    ],
+    "evidenceMatches": 407,
+    "evidenceType": "local-code",
+    "states": [
+      "draft",
+      "reviewing",
+      "approved",
+      "distributed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"approval\", props)",
+      "mount": "VocUI.mount(element, \"approval\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "保留审核、生成、保存和分发的语义边界，不扩大为群发或发布。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "审核|分发|审批",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §11.6 / 高职教业务保留",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-resource",
+    "key": "resource",
+    "name": "资源与版本",
+    "category": "高职教业务",
+    "description": "展示文件名、格式、版本、读取边界，下载真实示例文件。",
+    "version": "2.0.0",
+    "rule": "FILE/TRN",
+    "evidence": [
+      {
+        "file": "css/management.css",
+        "line": 2,
+        "excerpt": "15px;font-size:12px;color:#7d8da3}.mg-resource-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.mg-re"
+      },
+      {
+        "file": "css/management.css",
+        "line": 9,
+        "excerpt": "id-template-columns:repeat(2,1fr)}.mg-resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mg-categories{grid-template"
+      },
+      {
+        "file": "css/management.css",
+        "line": 10,
+        "excerpt": "ng:9px 12px}.mg-card{padding:17px}.mg-resource-grid{grid-template-columns:1fr}.mg-filters,.mg-filter-more{grid-template-column"
+      },
+      {
+        "file": "css/styles.css",
+        "line": 3,
+        "excerpt": "idth:18px;height:18px;opacity:.85}.resource-summary{margin-top:18px;border:1px solid #dbeafa;border-radius:10px;background:#f9fcff;"
+      },
+      {
+        "file": "css/teacher-interaction-standard.css",
+        "line": 440,
+        "excerpt": "cher-standard #managementView :is(.mg-resource-grid,.mg-rankings,.sku-grid){gap:20px}"
+      },
+      {
+        "file": "index.html",
+        "line": 193,
+        "excerpt": "          <div class=\"resource-summary\" id=\"resourceSummary\" hidden><div class=\"summary-title\"><svg><use href=\"#i-file"
+      },
+      {
+        "file": "js/classroom-narration.js",
+        "line": 3,
+        "excerpt": "  \"fileName\": \"人工智能导论三句版简短教案.docx\","
+      },
+      {
+        "file": "js/course-hub.js",
+        "line": 27,
+        "excerpt": "nt?.demoHtmlUrl) ? 'html' : 'md'), fileName: source.fileName || source.title,"
+      }
+    ],
+    "evidenceMatches": 77,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "versioned",
+      "downloaded"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"resource\", props)",
+      "mount": "VocUI.mount(element, \"resource\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "展示文件名、格式、版本、读取边界，下载真实示例文件。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "resource-summary|mg-resource|fileName",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.3 / 我的文件线上观察",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-task-guide",
+    "key": "task-guide",
+    "name": "AI 任务引导",
+    "category": "AI交互",
+    "description": "顶部轻量说明、对象上下文和可编辑预填，明确发送后开始。",
+    "version": "2.0.0",
+    "rule": "CHAT15",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 95,
+        "excerpt": "[data-module=\"administration\"] .am-task-guide{max-width:1100px;margin:0;padding:0}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 96,
+        "excerpt": "[data-module=\"administration\"] .am-task-guide h1{margin:0;font:500 14px/1.7 var(--ui-font)}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 97,
+        "excerpt": "[data-module=\"administration\"] .am-task-guide p{margin:8px 0;font:400 13px/1.7 var(--ui-font);color:var(--ui-secondary)}"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 74,
+        "excerpt": ":is(#workbenchView:not(.teacher-task-guide) #chatForm,.am-collaboration.am-home .comp-box)[data-ai-composer]{height:auto!i"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 1287,
+        "excerpt": ".ph-task-guide{display:block;font-size:12px;color:var(--hd);line-height:1.7;margin-top:7px;pad"
+      },
+      {
+        "file": "css/student-interaction-standard.css",
+        "line": 135,
+        "excerpt": ".student-standard .sic-task-guide{padding:16px 0;max-width:1100px;margin:0 auto;color:var(--ui-secondary)}"
+      },
+      {
+        "file": "css/teacher-interaction-standard.css",
+        "line": 208,
+        "excerpt": ">#workbenchView:not([hidden]):not(.teacher-task-guide)){display:flex;flex-direction:column;padding:clamp(24px,4dvh,48px) var(--ui-pag"
+      },
+      {
+        "file": "js/centers/administration/interaction-standard.js",
+        "line": 121,
+        "excerpt": "    return '<section class=\"am-task-guide\" aria-label=\"任务引导\"><h2>'+icon('sparkles',15)+esc(info[0])+'</h2><p>'+esc(info[1"
+      }
+    ],
+    "evidenceMatches": 36,
+    "evidenceType": "local-code",
+    "states": [
+      "prepared",
+      "edited",
+      "submitted"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"task-guide\", props)",
+      "mount": "VocUI.mount(element, \"task-guide\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "顶部轻量说明、对象上下文和可编辑预填，明确发送后开始。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "teacher-task-guide|task-guide|CHAT15",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §11.10 / 11.12",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-agent",
+    "key": "agent",
+    "name": "智能体入口",
+    "category": "AI交互",
+    "description": "名称、用途和可用状态清晰；选择只准备任务，不自动发送。",
+    "version": "2.0.0",
+    "rule": "DESIGN11.11",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 5,
+        "excerpt": " * 执行流程与角色文档索引：AGENTS.md → “前端页面修改前必读”。规则以规范正文为准。"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 70,
+        "excerpt": "home .scen-card:is([data-scenario=\"agent\"],[data-scenario=\"brand\"]){--scenario-ink:#2563b5;--scenario-soft:#eaf2ff}"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 5,
+        "excerpt": " * 执行流程与角色文档索引：AGENTS.md → “前端页面修改前必读”。规则以规范正文为准。"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 17,
+        "excerpt": ".ape-agent-workspace .ape-agent-choices{gap:10px;grid-auto-rows:1fr}"
+      },
+      {
+        "file": "css/course-workflow.css",
+        "line": 87,
+        "excerpt": ".production-agent-trace{margin:12px 0;padding:10px;gap:7px;text-align:left;white-space:normal}"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 5,
+        "excerpt": " * 执行流程与角色文档索引：AGENTS.md → “前端页面修改前必读”。规则以规范正文为准。"
+      },
+      {
+        "file": "css/products.css",
+        "line": 39,
+        "excerpt": ".product-agent-trace{display:grid;gap:7px;margin-top:12px;padding:13px;border:1px solid #d7e7f"
+      },
+      {
+        "file": "css/programs.css",
+        "line": 18,
+        "excerpt": "ext-decoration:none}.program-chat .agent-detail{max-height:260px}.program-chat .agent-detail .program-news-source{paddin"
+      }
+    ],
+    "evidenceMatches": 1545,
+    "evidenceType": "local-code",
+    "states": [
+      "available",
+      "unavailable",
+      "selected"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"agent\", props)",
+      "mount": "VocUI.mount(element, \"agent\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "名称、用途和可用状态清晰；选择只准备任务，不自动发送。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "agent|智能体|skills",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §11.11 / 11.12",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-conversation",
+    "key": "conversation",
+    "name": "会话列表",
+    "category": "AI交互",
+    "description": "新建、搜索、重命名、置顶与删除确认；草稿、技能及关联Agent按会话隔离。",
+    "version": "2.0.0",
+    "rule": "HIST01～10",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 144,
+        "excerpt": "ule=\"administration\"] .am-history .history-actions{display:flex;align-items:center;gap:6px;flex:none;flex-wrap:wrap}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 145,
+        "excerpt": "ule=\"administration\"] .am-history .history-actions button{display:inline-flex;align-items:center;justify-content:center;gap:6px;wh"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 146,
+        "excerpt": "ule=\"administration\"] .am-history .history-actions svg,body[data-module=\"administration\"] .am-record-dialog svg{width:14px;height:"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 525,
+        "excerpt": "/* ============ 协作记录页分组标签（对话页历史面板已移除） ============ */"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 516,
+        "excerpt": "/* ============ 协作记录页分组标签（对话页历史面板已移除） ============ */"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 47,
+        "excerpt": "  .history-actions [data-action=\"delete\"],"
+      },
+      {
+        "file": "css/styles.css",
+        "line": 79,
+        "excerpt": "/* 协作记录：与备课工作台共用蓝色系。 */"
+      },
+      {
+        "file": "css/teacher-interaction-standard.css",
+        "line": 24,
+        "excerpt": "tandard :is(.mg-head,.sku-heading,.history-heading,.ev-page-heading,.account-page-heading,.teacher-home-heading){"
+      }
+    ],
+    "evidenceMatches": 81,
+    "evidenceType": "local-code",
+    "states": [
+      "empty",
+      "selected",
+      "renamed",
+      "pinned"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"conversation\", props)",
+      "mount": "VocUI.mount(element, \"conversation\", props)",
+      "parameters": {
+        "agentOptions": "当前业务可用关联Agent目录，[]隐藏整组；见TEACHING_AGENTS.md",
+        "selectedAgents": "初始选中的关联id数组，默认空"
+      },
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "新建、搜索、重命名、置顶与删除确认；草稿、技能及关联Agent按会话隔离。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "history-actions|history-heading|协作记录",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §11.1 / 11.2",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-composer",
+    "key": "composer",
+    "name": "AI 输入区",
+    "category": "AI交互",
+    "description": "统一图标+短文字入口；资源、技能与可配置的教学关联Agent分别选择，主动发送时携带快照。",
+    "version": "2.0.0",
+    "rule": "AIC05/16",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 39,
+        "excerpt": "dministration\"] .am-collaboration .composer{box-sizing:border-box;display:flex;flex-direction:column;position:static;inset:"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 42,
+        "excerpt": "ation :is(.cg-assessment-basis,.cg-composer-notice){max-height:14dvh;overflow:auto}"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 65,
+        "excerpt": "module=\"administration\"] .am-home .composer[data-ai-home-composer]{width:100%;max-width:1200px;margin:24px auto auto;paddin"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 7,
+        "excerpt": "/* Shared AI composer: white writing surface with restrained blue-violet AI accents. */"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 54,
+        "excerpt": ".ape-agent-workspace .ape-agent-composer{position:relative;margin:0;border:1px solid var(--ui-border);border-radius:14px"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 251,
+        "excerpt": ".ap-build-composer{padding:0 14px 12px}"
+      },
+      {
+        "file": "css/centers/administration.css",
+        "line": 280,
+        "excerpt": ".composer{position:absolute;left:0;right:0;bottom:0;padding:5px 26px 8px;background:linea"
+      },
+      {
+        "file": "css/centers/course-evaluation.css",
+        "line": 11,
+        "excerpt": "-inner{padding:22px 20px}.cg-chat .composer{padding-left:16px;padding-right:16px}.cg-chat .comp-bar{flex-wrap:wrap;gap:6px}"
+      },
+      {
+        "file": "js/programs.js",
+        "line": 487,
+        "excerpt": "课程与单元 preparation-choice 槽位；通用 slash 由用户本次要求新增"
+      }
+    ],
+    "evidenceMatches": 620,
+    "evidenceType": "local-code",
+    "states": [
+      "empty",
+      "draft",
+      "attached",
+      "running",
+      "disabled",
+      "resource-open",
+      "resource-no-match",
+      "resource-selected",
+      "resource-unavailable",
+      "agents-selected",
+      "agents-locked"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"composer\", props)",
+      "mount": "VocUI.mount(element, \"composer\", props)",
+      "parameters": {
+        "value": "初始草稿",
+        "placeholder": "占位文字",
+        "disabled": "布尔",
+        "id": "可选唯一ID",
+        "resources": "当前业务可见资源目录，见INLINE_RESOURCES.md",
+        "segments": "正文与资源ID片段，优先于value",
+        "resourceTypes": "当前端允许的资源类型描述",
+        "skills": "内置与我的技能目录",
+        "selectedSkill": "初始技能ID或记录",
+        "files": "当前可见我的文件目录；未传为虚构示例，[]为空",
+        "agentOptions": "当前业务可用关联Agent目录，[]隐藏整组；见TEACHING_AGENTS.md",
+        "selectedAgents": "初始选中的关联id数组，默认空"
+      },
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action",
+        "voc:resource-change",
+        "voc:skill-change"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "统一图标+短文字入口；资源、技能与可配置的教学关联Agent分别选择，主动发送时携带快照。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "data-ai-composer|AIComposer|composer",
+    "extensions": [
+      {
+        "source": "用户2026-10-26截图与明确要求",
+        "scope": "通用 / 资源唤起、稳定ID序列化、内联片段与课程单元联动",
+        "standard": "design/INLINE_RESOURCES.md"
+      }
+    ],
+    "alignment": {
+      "reference": "DESIGN.md §11.4 / 用户资源及技能扩展",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-message",
+    "key": "message",
+    "name": "用户与 AI 消息",
+    "category": "AI交互",
+    "description": "15px开放正文与头像元信息；完成回答支持复制、重试、互斥反馈及点踩原因。",
+    "version": "2.0.0",
+    "rule": "AIC02/03",
+    "evidence": [
+      {
+        "file": "css/course-workflow.css",
+        "line": 103,
+        "excerpt": ".message:has(.production-summary) .message-bubble{flex:1;max-width:calc(100% - 40px);min-width:0}"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 329,
+        "excerpt": "#creationView) .creation-messages .message-bubble{font-size:14px;line-height:1.8;border-radius:12px;color:var(--ui-ink);box-shado"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 330,
+        "excerpt": " .creation-messages .message.user .message-bubble{background:var(--ui-primary-soft);color:var(--ui-ink);border:1px solid var(--ui"
+      },
+      {
+        "file": "css/products.css",
+        "line": 23,
+        "excerpt": "ge[data-message-kind^=\"product-\"] .message-bubble{width:calc(100% - 38px);max-width:calc(100% - 38px)}"
+      },
+      {
+        "file": "css/programs.css",
+        "line": 6,
+        "excerpt": "rflow-wrap:anywhere}.program-chat .message-avatar{font-size:11px;display:grid;place-items:center}.program-chat .artifact-card .mg"
+      },
+      {
+        "file": "css/student-detail-tabs.css",
+        "line": 37,
+        "excerpt": "round:#edf4ff;margin-left:22px}.dt-message.assistant{margin-right:8px}"
+      },
+      {
+        "file": "css/student-growth-guide.css",
+        "line": 53,
+        "excerpt": "lor:#36485f}.sg-home .sg-dock .stu-message.assistant{background:transparent;border:0;padding:8px 2px 12px}.sg-home .sg-dock .stu-mes"
+      },
+      {
+        "file": "css/student-interaction-standard.css",
+        "line": 164,
+        "excerpt": "j-conversation,#dtAIMessages) .stu-message.assistant{align-self:stretch;max-width:none;padding:0;background:transparent;border-radiu"
+      }
+    ],
+    "evidenceMatches": 32,
+    "evidenceType": "local-code",
+    "states": [
+      "user",
+      "assistant",
+      "completed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"message\", props)",
+      "mount": "VocUI.mount(element, \"message\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action",
+        "voc:feedback"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "15px开放正文与头像元信息；完成回答支持复制、重试、互斥反馈及点踩原因。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "message-bubble|message.assistant|message-avatar",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §11.5 / 11.8",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-prose",
+    "key": "prose",
+    "name": "Markdown 与代码",
+    "category": "AI交互",
+    "description": "15px/1.75正文、20/17/15/14层级标题，转义Markdown子集，代码和表格内部滚动。",
+    "version": "2.0.0",
+    "rule": "DESIGN 附录C/AIC02",
+    "evidence": [
+      {
+        "file": "js/ai-practice-editor.js",
+        "line": 805,
+        "excerpt": "le||a.task.title)+'.md',type:'text/markdown;charset=utf-8',body:'# '+(a.person.report.title||a.task.title)+'\\n\\n'+a.person."
+      },
+      {
+        "file": "js/app.js",
+        "line": 10,
+        "excerpt": "dotx,.wps,.wpt,.rtf,.odt,.txt,.md,.markdown,.ppt,.pptx,.pptm,.pps,.ppsx,.odp,.dps,.xls,.xlsx,.xlsm,.csv,.tsv,.ods,.et,.html"
+      },
+      {
+        "file": "js/app.js",
+        "line": 259,
+        "excerpt": " / Excel / WPS / ODF / RTF / TXT / Markdown / CSV / HTML / EPUB / LaTeX · 图片与扫描件' : '文档 PPT / Word / PDF / TXT / MD · 图片 JP"
+      },
+      {
+        "file": "js/assessment-authoring.js",
+        "line": 156,
+        "excerpt": "x\"></label><p class=\"lq-muted\">TXT、Markdown、JSON 可直接读取，每份最多 5 MB / 100000 字。其他格式需补充可读文本。最多上传 5 份。</p><label class=\"mg-field"
+      },
+      {
+        "file": "js/assessment-paper-flow.js",
+        "line": 82,
+        "excerpt": "件</summary><p class=\"lq-muted\">TXT、Markdown、JSON 可读取正文；PDF、Word、PPT 需补充可读文本后参与出题。</p>${sources.filter(m=>m.uploaded).map(m="
+      },
+      {
+        "file": "js/centers/administration/views/enrollment.js",
+        "line": 1803,
+        "excerpt": "le\">选择'+(image?'图片（需核对后录入正文）':'TXT／Markdown文件，最大5 MB')+'<input type=\"file\" id=\"enKbFile\" accept=\"'+(image?'image/*':'.txt,."
+      },
+      {
+        "file": "js/centers/administration/views/training.js",
+        "line": 2213,
+        "excerpt": "<p class=\"am-ops-sub\">'+(plan?'TXT／Markdown可读取正文；Word／PDF保留附件，请核对并录入正文。':'JSON按层级结构读取；Excel／CSV／Word保留附件，尚未解析层级。')+'</p><di"
+      },
+      {
+        "file": "js/centers/administration/views/workspace.js",
+        "line": 996,
+        "excerpt": "-bar\">AI 已按你的描述优化为规范技能定义（与「技能管理」同为 Markdown 格式），可直接修改；确认后点底部「保存到我的技能」</div>'+"
+      }
+    ],
+    "evidenceMatches": 52,
+    "evidenceType": "local-code",
+    "states": [
+      "paragraph",
+      "list",
+      "code",
+      "table"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"prose\", props)",
+      "mount": "VocUI.mount(element, \"prose\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "15px/1.75正文、20/17/15/14层级标题，转义Markdown子集，代码和表格内部滚动。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "mgMarkdown|markdown|chat-prose",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §4.5",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-process",
+    "key": "process",
+    "name": "处理过程",
+    "category": "AI交互",
+    "description": "细线过程组与30px折叠行；运行锁定展开，内容始终挂载，呈现公开阶段和工具结果。",
+    "version": "2.0.0",
+    "rule": "AIC06/15",
+    "evidence": [
+      {
+        "file": "css/student-job-search.css",
+        "line": 189,
+        "excerpt": ":root body .ai-process-steps>li.current.sra-awaiting>span:first-child{color:var(--ui-primary)}"
+      },
+      {
+        "file": "css/student-job-search.css",
+        "line": 190,
+        "excerpt": ":root body .ai-process-steps>li.current.sra-awaiting>span:first-child::after{display:none}"
+      },
+      {
+        "file": "css/ui-tokens.css",
+        "line": 66,
+        "excerpt": ":root body .ai-process-card{box-sizing:border-box;min-width:0;margin:12px 0;padding:16px;border:1px solid v"
+      },
+      {
+        "file": "js/ai-process-ui.js",
+        "line": 7,
+        "excerpt": "  window.AIProcessUI=Object.freeze({"
+      },
+      {
+        "file": "js/app.js",
+        "line": 606,
+        "excerpt": "  window.AIProcessUI?.keepOpen(row,record.agentResearch.some(step=>step.status==='searching')&&item."
+      },
+      {
+        "file": "js/centers/administration/interaction-standard.js",
+        "line": 237,
+        "excerpt": "etails');box.className='am-process ai-process-card';box.append(document.createElement('summary'));progress.before(box);box.append("
+      },
+      {
+        "file": "js/centers/administration/views/workspace.js",
+        "line": 276,
+        "excerpt": "  return window.AIProcessUI.steps(S.genSteps,S.genStep);"
+      },
+      {
+        "file": "js/program-conversation.js",
+        "line": 45,
+        "excerpt": "-agent-group authoring-agent-trace ai-process-card\" aria-label=\"${mgEsc(options.title || '课程需求分析步骤')}\">${options.title?`<header cl"
+      }
+    ],
+    "evidenceMatches": 50,
+    "evidenceType": "local-code",
+    "states": [
+      "waiting",
+      "running",
+      "completed",
+      "stopped",
+      "failed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"process\", props)",
+      "mount": "VocUI.mount(element, \"process\", props)",
+      "parameters": {
+        "state": "waiting/running/completed/failed/stopped"
+      },
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "细线过程组与30px折叠行；运行锁定展开，内容始终挂载，呈现公开阶段和工具结果。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "AIProcessUI|ai-process-card|ai-process-steps",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.8 / 11.6",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-citation",
+    "key": "citation",
+    "name": "引用与来源",
+    "category": "AI交互",
+    "description": "引用可通过点击和键盘打开，演示来源注明性质，不伪造已核验。",
+    "version": "2.0.0",
+    "rule": "DESIGN11.7/DATA01",
+    "evidence": [
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 32,
+        "excerpt": ".ape-task-evidence{border:1px solid var(--ui-border);border-radius:12px;padding:18px;margin:8px 0 "
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 33,
+        "excerpt": ".ape-evidence-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;pad"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 34,
+        "excerpt": ".ape-task-evidence>.ape-muted{font-size:12px;line-height:1.8}.ape-evidence-case{border-top:1px sol"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 1,
+        "excerpt": "ry,.aq-review-question summary,.aq-evidence summary{cursor:pointer;color:#225fae}.aq-material-text{white-space:pre-wrap;bac"
+      },
+      {
+        "file": "css/centers/course-evaluation.css",
+        "line": 3,
+        "excerpt": ".cg-evidence{white-space:normal;min-width:0;overflow-wrap:anywhere}"
+      },
+      {
+        "file": "css/centers/employment.css",
+        "line": 2158,
+        "excerpt": "/* 岗位推荐：平台来源、岗位列表与完整 JD。限定当前视图。 */"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 184,
+        "excerpt": "sh-home .sh-task-meta,.sh-home .sh-evidence-label{font-size:12px;color:var(--ui-secondary)}"
+      },
+      {
+        "file": "css/evaluation-center.css",
+        "line": 169,
+        "excerpt": ".ev-evidence{font-size:11px;color:#8b9eb9;line-height:1.9;border-top:1px solid #edf2fa;paddi"
+      }
+    ],
+    "evidenceMatches": 859,
+    "evidenceType": "local-code",
+    "states": [
+      "default",
+      "preview",
+      "open"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"citation\", props)",
+      "mount": "VocUI.mount(element, \"citation\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "引用可通过点击和键盘打开，演示来源注明性质，不伪造已核验。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "evidence|citation|来源",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §11.7",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-result",
+    "key": "result",
+    "name": "生成内容摘要",
+    "category": "AI交互",
+    "description": "轻摘要与工作区入口，具体成果及业务状态由页面提供。",
+    "version": "2.0.0",
+    "rule": "AIC07",
+    "evidence": [
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 564,
+        "excerpt": "receipt follows the student growth artifact card. */"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 153,
+        "excerpt": ".ape-test-output,.ape-artifact-summary{margin:14px 0;padding:12px;border:1px solid var(--ui-border);border-rad"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 154,
+        "excerpt": ".ape-test-output p,.ape-artifact-summary p{line-height:1.8;color:var(--ui-secondary);overflow-wrap:anywhere;whit"
+      },
+      {
+        "file": "css/centers/course-evaluation.css",
+        "line": 1,
+        "excerpt": "uses the existing conversation and artifact layout. */"
+      },
+      {
+        "file": "css/course-workflow.css",
+        "line": 78,
+        "excerpt": ".production-conversation>.artifact-card{margin:0 0 14px}"
+      },
+      {
+        "file": "css/design-system.css",
+        "line": 311,
+        "excerpt": "w,#creationView)>.creation-layout>.artifact-panel{opacity:1;transform:translateX(0);visibility:visible;transition:opacity ."
+      },
+      {
+        "file": "css/products.css",
+        "line": 48,
+        "excerpt": ".product-result-card{display:flex;align-items:center;gap:9px;margin-top:12px;padding:10px;border:1px"
+      },
+      {
+        "file": "css/programs.css",
+        "line": 6,
+        "excerpt": ";place-items:center}.program-chat .artifact-card .mg-btn{padding:6px 10px;font-size:11px}"
+      }
+    ],
+    "evidenceMatches": 577,
+    "evidenceType": "local-code",
+    "states": [
+      "generated",
+      "viewed",
+      "saved"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"result\", props)",
+      "mount": "VocUI.mount(element, \"result\", props)",
+      "parameters": {},
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "轻摘要与工作区入口，具体成果及业务状态由页面提供。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "生成内容|artifact|result-card",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §10.3 / 用户空插槽要求",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-workspace",
+    "key": "workspace",
+    "name": "生成内容工作区",
+    "category": "AI交互",
+    "description": "仅提供标题、收放、滚动、状态与可选操作栏，内容通过业务插槽接入。",
+    "version": "2.0.0",
+    "rule": "AIC08/12",
+    "evidence": [
+      {
+        "file": "css/account.css",
+        "line": 1,
+        "excerpt": "tSettingsView button:focus-visible{outline:2px solid var(--brand-500);outline-offset:3px}.avatar img,.account-large-avatar"
+      },
+      {
+        "file": "css/account.css",
+        "line": 3,
+        "excerpt": "rgin:0;flex:1;min-width:0}.account-outline-btn{border:1px solid #bac8d9;background:#fff;color:#40546e;padding:10px 17px;bo"
+      },
+      {
+        "file": "css/account.css",
+        "line": 5,
+        "excerpt": "account-phone-row{gap:8px}.account-outline-btn{font-size:11px;padding:9px 11px}.account-phone-row .account-outline-btn{pad"
+      },
+      {
+        "file": "css/admin-interaction-standard.css",
+        "line": 30,
+        "excerpt": "tration\"] .am-collaboration.am-has-workspace{grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr)}"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 18,
+        "excerpt": "gin:0!important;border:0!important;outline:0!important;background:transparent!important;box-shadow:none!important;"
+      },
+      {
+        "file": "css/ai-practice-editor.css",
+        "line": 16,
+        "excerpt": "st-set-picker select:focus-visible{outline:2px solid var(--ui-focus);outline-offset:2px}"
+      },
+      {
+        "file": "css/ai-practice.css",
+        "line": 2,
+        "excerpt": ".ap-training,.ap-workspace{--ap-soft:var(--ui-primary-soft);--ap-line:var(--ui-border);color:var(--ui-ink)"
+      },
+      {
+        "file": "css/assessment-authoring.css",
+        "line": 34,
+        "excerpt": "75cc3}.aq-choice-chip:focus-within{outline:2px solid #9ec2f5;outline-offset:2px}.aq-coverage-policy{margin-top:-6px}.aq-co"
+      }
+    ],
+    "evidenceMatches": 3840,
+    "evidenceType": "local-code",
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "error",
+      "collapsed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"workspace\", props)",
+      "mount": "VocUI.mount(element, \"workspace\", props)",
+      "parameters": {
+        "title": "容器标题",
+        "subtitle": "可选副标题",
+        "state": "empty/loading/ready/error",
+        "statusText": "可选状态文案",
+        "actions": "可选操作元数据，默认无业务操作"
+      },
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action",
+        "voc:workspace-action"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "仅提供标题、收放、滚动、状态与可选操作栏，内容通过业务插槽接入。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "workspace|outline|draft",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §11.9 / 用户空插槽要求",
+      "kind": "common-primitives-composition",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  },
+  {
+    "id": "voc-chat",
+    "key": "chat",
+    "name": "AI 协作组合",
+    "category": "AI交互",
+    "description": "本地会话与流式模拟，关联Agent按本轮快照展示步骤；支持停止、原轮重试和空工作区。",
+    "version": "2.0.0",
+    "rule": "AI/CHAT/AIC",
+    "evidence": [
+      {
+        "file": "css/ai-composer.css",
+        "line": 65,
+        "excerpt": "tion) [data-ai-home-composer] :is(#chatForm,#studentChatForm,.stu-composer-box){height:auto!important;min-height:0!importan"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 74,
+        "excerpt": "enchView:not(.teacher-task-guide) #chatForm,.am-collaboration.am-home .comp-box)[data-ai-composer]{height:auto!important;mi"
+      },
+      {
+        "file": "css/ai-composer.css",
+        "line": 75,
+        "excerpt": "enchView:not(.teacher-task-guide) #chatForm,.am-collaboration.am-home .comp-box)[data-ai-composer] [data-ai-input]{min-heig"
+      },
+      {
+        "file": "css/student-interaction-standard.css",
+        "line": 128,
+        "excerpt": "nt-standard.sic-chat-mode #shDock>#studentChatForm{flex:none;width:calc(100% - 48px);max-width:1100px;margin:0 auto 24px!important"
+      },
+      {
+        "file": "css/student-page-layout.css",
+        "line": 215,
+        "excerpt": "andard.sic-chat-mode #studentView #studentChatForm.sic-composer{"
+      },
+      {
+        "file": "css/teacher-interaction-standard.css",
+        "line": 172,
+        "excerpt": "-course-tab #creationView #creationChatForm{"
+      },
+      {
+        "file": "index.html",
+        "line": 195,
+        "excerpt": "        <form class=\"composer\" id=\"chatForm\"><label for=\"chatInput\" class=\"sr-only\">输入备课问题</label><textarea id=\"chatInput\" "
+      },
+      {
+        "file": "js/ai-composer-ui.js",
+        "line": 80,
+        "excerpt": "nel of document.querySelectorAll('#chatForm,#creationChatForm,#programChatForm,#ttChatForm,.stu-composer-box,#dtAIForm,.am-"
+      }
+    ],
+    "evidenceMatches": 69,
+    "evidenceType": "local-code",
+    "states": [
+      "idle",
+      "running",
+      "stopped",
+      "failed",
+      "completed"
+    ],
+    "statePolicy": "仅列适用状态；组合组件通过实际交互触发，非全部状态均有独立切换。",
+    "implementation": "implemented",
+    "maturity": "HTML 原型组件，非生产框架包",
+    "api": {
+      "render": "VocUI.render(\"chat\", props)",
+      "mount": "VocUI.mount(element, \"chat\", props)",
+      "parameters": {
+        "history": "false隐藏会话栏",
+        "mode": "success/failure本地模拟",
+        "resources": "当前业务可见资源目录",
+        "resourceTypes": "当前端允许的资源类型描述",
+        "skills": "内置与我的技能目录",
+        "selectedSkill": "初始技能ID或记录",
+        "files": "当前可见我的文件目录；未传为虚构示例，[]为空",
+        "agentOptions": "当前业务可用关联Agent目录，[]隐藏整组；见TEACHING_AGENTS.md",
+        "selectedAgents": "初始选中的关联id数组，默认空"
+      },
+      "parameterPolicy": "本表以外是固定示例配方，不假定具有完整业务配置API。",
+      "events": [
+        "voc:change",
+        "voc:submit",
+        "voc:action",
+        "voc:skill-change",
+        "voc:feedback",
+        "voc:workspace-open"
+      ],
+      "eventContract": "仅已实现的相关操作产生冒泡 CustomEvent；静态组件不自动产生所有事件，详见 design/API.md"
+    },
+    "usage": {
+      "recommended": "本地会话与流式模拟，关联Agent按本轮快照展示步骤；支持停止、原轮重试和空工作区。",
+      "avoid": "不要复制另一套样式或绕过当前业务的权限、草稿与状态控制。"
+    },
+    "sourcePattern": "teacher-main-conversation|studentChatForm|chatForm",
+    "extensions": [],
+    "alignment": {
+      "reference": "DESIGN.md §11.4—11.9",
+      "kind": "document-rule",
+      "implementation": "HTML/CSS/JS adapter; not the reference React/Radix package",
+      "standardVersion": "2.0.0"
+    }
+  }
+]

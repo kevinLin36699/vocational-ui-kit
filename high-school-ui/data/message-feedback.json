@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "components": [
+    "message",
+    "chat"
+  ],
+  "event": "voc:feedback",
+  "values": [
+    "up",
+    "down",
+    null
+  ],
+  "toggle": "mutually exclusive, repeat cancels",
+  "retention": "per answer in current page/thread",
+  "notAvailableFor": [
+    "running",
+    "stopped",
+    "failed"
+  ],
+  "server": false,
+  "downvote": {
+    "interaction": "popover; optional single reason; comment <=500 chars; confirm commits local state",
+    "cancel": "does not change feedback"
+  },
+  "eventFields": [
+    "messageId",
+    "value",
+    "reason",
+    "comment",
+    "simulated"
+  ]
+}

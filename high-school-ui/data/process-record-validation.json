@@ -1,0 +1,11 @@
+{
+  "example": "examples/process-record.html",
+  "scope": "单项独立示例，未修改公共处理过程",
+  "checks": {
+    "fold_expand": "passed: browser",
+    "source_dialog": "passed: browser",
+    "failed_retry": "passed: browser",
+    "running_stop": "passed: browser"
+  },
+  "data": "local simulation only"
+}

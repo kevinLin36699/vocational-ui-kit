@@ -1,0 +1,28 @@
+{
+  "version": "1.5.0",
+  "date": "2026-10-27",
+  "checks": [
+    {
+      "name": "默认空位与业务边界",
+      "status": "passed",
+      "evidence": "默认没有内容类型目录、编辑器或业务操作；仅展示预留内容区。"
+    },
+    {
+      "name": "DOM接入、收放与状态",
+      "status": "passed",
+      "evidence": "挂载中性DOM示例后，收起再展开保留输入；可选操作触发业务示例反馈；加载、错误及重试后原输入仍保留。"
+    },
+    {
+      "name": "AI会话空工作区",
+      "status": "passed",
+      "evidence": "完成本地会话后只打开空容器，无业务目录、编辑器或默认操作；收起重开可用，未发现运行错误。"
+    },
+    {
+      "name": "页面生成规则与资产",
+      "status": "passed",
+      "evidence": "vocational-page-builder按1.5.0生成独立workspace脚手架，8项运行资产复制与静态来源校验通过，不再包含业务内容目录。"
+    }
+  ],
+  "screenshot": "data/workspace-slot-preview.png",
+  "limitations": "容器验证不代替业务编辑器、真实生成接口或原平台全量验收。历史业务示例已归档；原平台初始扫描差异继续保留。"
+}

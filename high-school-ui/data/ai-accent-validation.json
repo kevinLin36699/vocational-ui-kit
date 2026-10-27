@@ -1,0 +1,48 @@
+{
+  "version": "1.2.0",
+  "date": "2026-10-26",
+  "scope": "AI蓝紫视觉强调与相关状态回归，未改原平台",
+  "checks": [
+    {
+      "name": "AI输入白底渐变描边与聚焦",
+      "status": "passed",
+      "evidence": "默认白底加浅蓝紫边，聚焦描边切为品牌蓝至紫色；页面截图保持蓝白主体。"
+    },
+    {
+      "name": "AI发送渐变与白色前景",
+      "status": "passed",
+      "evidence": "实际background为135deg蓝紫渐变，前景为rgb(255,255,255)。"
+    },
+    {
+      "name": "禁用AI输入和发送回到中性色",
+      "status": "passed",
+      "evidence": "禁用发送backgroundImage=none、背景rgb(238,242,247)、shadow=none；输入框也无渐变与光晕。"
+    },
+    {
+      "name": "资源选择与生成停止",
+      "status": "passed",
+      "evidence": "在会话中用/校园选资料，发送后按钮切停止且保持AI渐变，停止后显示已停止。"
+    },
+    {
+      "name": "智能体图标与入口局部强调",
+      "status": "passed",
+      "evidence": "可用助手图标为蓝紫渐变白色图形，卡片白底；未接入图标为中性色且无渐变。"
+    },
+    {
+      "name": "普通主操作与危险操作颜色",
+      "status": "passed",
+      "evidence": "创建课程为rgb(21,92,195)且无渐变；删除图标及确认按钮为rgb(181,46,59)。"
+    },
+    {
+      "name": "1024桌面视口渲染",
+      "status": "passed",
+      "evidence": "输入区、资源片段、工具与发送按钮保持布局，页面scrollWidth=1024，无整页横向溢出。"
+    }
+  ],
+  "notChecked": [
+    "全量页面与全部组件状态",
+    "真实后台和模型",
+    "完整无障碍认证",
+    "移动端"
+  ]
+}

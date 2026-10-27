@@ -1,0 +1,68 @@
+{
+  "version": "2.0.0",
+  "component": "voc-composer",
+  "implementation": "js/resource-composer.js",
+  "standard": "design/INLINE_RESOURCES.md",
+  "trigger": "/",
+  "types": [
+    "course",
+    "major",
+    "lesson",
+    "template",
+    "resource",
+    "unit"
+  ],
+  "resourceFields": [
+    "id",
+    "type",
+    "label",
+    "parentId",
+    "available",
+    "reason"
+  ],
+  "valueShape": {
+    "value": "string",
+    "segments": "Array<{type:text,text:string}|{type:resource,id:string}>",
+    "resources": "unique referenced resource records"
+  },
+  "events": [
+    "voc:resource-change",
+    "voc:submit"
+  ],
+  "contextSlots": {
+    "course": 1,
+    "major": 1,
+    "lesson": 1,
+    "unit": 1,
+    "template": 1,
+    "resource": "multiple"
+  },
+  "courseChange": "remove mismatching unit and request re-selection",
+  "permissionBoundary": "caller supplies visible catalog; server validates permissions and binding",
+  "states": [
+    "closed",
+    "type-selection",
+    "object-selection",
+    "no-match",
+    "empty",
+    "unavailable",
+    "disabled",
+    "invalid-reference"
+  ],
+  "flow": [
+    "select-type",
+    "select-object",
+    "insert-inline-reference"
+  ],
+  "customTypes": true,
+  "typeFields": [
+    "id",
+    "label",
+    "icon",
+    "parentType",
+    "multiple"
+  ],
+  "perRole": "Host supplies resourceTypes and visible resources; no hardcoded permission mapping",
+  "alternateTrigger": "＋添加内容 → 引用资源",
+  "referenceClassification": "vocational-user-extension"
+}

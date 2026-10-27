@@ -1,0 +1,414 @@
+{
+  "version": "1.4.0",
+  "sourceRoot": "../../../3-原型设计/high-school-new",
+  "scope": "本次实际检查到的代表性成果类型，不宣称穷尽全部业务分支。",
+  "contents": [
+    {
+      "id": "outline",
+      "name": "人工智能基础 · 教学大纲",
+      "renderer": "document",
+      "group": "教学创作",
+      "evidence": [
+        {
+          "file": "js/products.js",
+          "line": 1,
+          "excerpt": "// 静态演示：按保存的大纲生成可编辑的资源草稿，不调用真实 Agent 或导出文件。"
+        },
+        {
+          "file": "js/course-packages.js",
+          "line": 5,
+          "excerpt": "function cpOwner(){return JSON.stringify([window.AppAuth?.currentAccount?.()?.username,accountProfile('teacher').number]);}"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "package"
+    },
+    {
+      "id": "slides",
+      "name": "人工智能基础 · PPT 课件",
+      "renderer": "slides",
+      "group": "教学创作",
+      "evidence": [
+        {
+          "file": "js/products.js",
+          "line": 2,
+          "excerpt": "const productKinds = {"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "package"
+    },
+    {
+      "id": "interactive",
+      "name": "校园推荐 · 互动 HTML",
+      "renderer": "interactive",
+      "group": "教学创作",
+      "evidence": [
+        {
+          "file": "js/products.js",
+          "line": 4,
+          "excerpt": "  '互动课堂': { key: 'interactive', label: '互动 HTML', noun: '互动课堂', icon: 'grid' },"
+        },
+        {
+          "file": "js/production.js",
+          "line": 1,
+          "excerpt": "// Teachers edit drafts, then apply them as a bound lesson or resource-only finished output."
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "package"
+    },
+    {
+      "id": "video",
+      "name": "人工智能基础 · 视频分镜",
+      "renderer": "video",
+      "group": "教学创作",
+      "evidence": [
+        {
+          "file": "js/products.js",
+          "line": 5,
+          "excerpt": "  '视频金课': { key: 'video', label: '视频课', noun: '视频分镜', icon: 'film' }"
+        },
+        {
+          "file": "js/production.js",
+          "line": 1,
+          "excerpt": "// Teachers edit drafts, then apply them as a bound lesson or resource-only finished output."
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "package"
+    },
+    {
+      "id": "knowledge",
+      "name": "课程知识图谱",
+      "renderer": "graph",
+      "group": "教学创作",
+      "evidence": [
+        {
+          "file": "js/lesson-workspace.js",
+          "line": 3,
+          "excerpt": "const pwLessonTabs = [['outline','教学大纲'],['graph','知识图谱'],['resources','教学资源'],['quizzes','作业'],['training','实训']];"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "package"
+    },
+    {
+      "id": "ability",
+      "name": "智能制造 · 能力图谱",
+      "renderer": "graph",
+      "group": "教学创作",
+      "evidence": [
+        {
+          "file": "js/centers/administration/views/workspace.js",
+          "line": 221,
+          "excerpt": "    const kind=h.snapshot?.adminTask?.title||({goal:'人培方案',mat:'宣传创作',agraph:'能力图谱'})[h.seed?.gen]||'管理协作';"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "archive"
+    },
+    {
+      "id": "homework",
+      "name": "人工智能基础 · 作业草稿",
+      "renderer": "questions",
+      "group": "教学评价",
+      "evidence": [
+        {
+          "file": "js/course-quizzes.js",
+          "line": 15,
+          "excerpt": "  if(!p || p.status!=='confirmed' || q.lessonId)return '考试须独立归属有效课程。';"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "review"
+    },
+    {
+      "id": "exam",
+      "name": "人工智能基础 · 考试草稿",
+      "renderer": "questions",
+      "group": "教学评价",
+      "evidence": [
+        {
+          "file": "js/assessment-paper-flow.js",
+          "line": 76,
+          "excerpt": "      <fieldset class=\"aq-generation-question\"><legend>整体难度如何？</legend>${aqPaperChoices('aqDifficulty',[['简单','基础巩固'],['中等','标准考试'],['困难','较高难度']],s.config.difficulty)}</fieldset>"
+        },
+        {
+          "file": "js/assessment-authoring.js",
+          "line": 389,
+          "excerpt": "  return `<form id=\"aqAuthoringForm\"><p class=\"lq-context\">${s.quiz.courseId?'考试':'作业'} · 当前编辑草稿 ${s.quiz.questions.length} 题</p><label class=\"mg-field\">${s.mode==='ideas'?'希望从哪些角度出题':'重点检查要求'}<textarea name=\"aqRequest\" rows=\"2\" maxlength=\""
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "review"
+    },
+    {
+      "id": "course",
+      "name": "人工智能基础 · 课程方案",
+      "renderer": "course",
+      "group": "教学创作",
+      "evidence": [
+        {
+          "file": "js/course-workflow.js",
+          "line": 110,
+          "excerpt": "      ? `《${job.title}》课程包 V${cpVersion(mgResource(record.coursePackageSaved.id),record.coursePackageSaved.versionId).number} 已保存到资源广场。包含教学大纲、知识图谱、教学课件${job.generateHomework===false?'':'与作业'}；可分发到课程或创建新版本继续修改。`"
+        },
+        {
+          "file": "js/teacher-course-intake.js",
+          "line": 9,
+          "excerpt": " else if(!result.title){const name=s.match(/(?:生成|创建|设计|规划|制定)(?:一门|一个|一套)?\\s*([^，。；\\n]{1,60}?课程)(?=[，。；\\n\\s]|$)/);if(name)result.title=name[1].trim();}"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "course"
+    },
+    {
+      "id": "practice",
+      "name": "智能客服 · 独立实训任务",
+      "renderer": "practice",
+      "group": "实训应用",
+      "evidence": [
+        {
+          "file": "js/ai-practice.js",
+          "line": 290,
+          "excerpt": " return `<article class=\"ap-task-card${center?' ap-center-card':''}\"${click}>${center?`<div class=\"ap-center-cover\">${programCourseCoverImage(c)}</div><h2>${mgEsc(c.title)}</h2>`:''}<header><span class=\"ap-task-number\">${String(index+1).pad"
+        },
+        {
+          "file": "js/ai-practice-editor.js",
+          "line": 109,
+          "excerpt": "  {id:'knowledge',title:'关联资料，设置检索与引用',body:`${c.agent?'在 Agent 搭建的知识库区':'选中知识检索节点后'}点击“选择知识库”，${c.personal?'可选择“我的知识库”，也可新建自己的库。':'可选老师随当前任务提供的库，或“我的知识库”；也可新建自己的库。'}\\n${c.personal?'':`本任务提供 ${(c.task.materials||[]).length} 份资料；`}当前资料区有 ${p"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "review"
+    },
+    {
+      "id": "package",
+      "name": "人工智能基础 · 课程包",
+      "renderer": "package",
+      "group": "教学创作",
+      "evidence": [
+        {
+          "file": "js/course-packages.js",
+          "line": 5,
+          "excerpt": "function cpOwner(){return JSON.stringify([window.AppAuth?.currentAccount?.()?.username,accountProfile('teacher').number]);}"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "package"
+    },
+    {
+      "id": "quality",
+      "name": "班级学情 · 分析报告",
+      "renderer": "report",
+      "group": "分析报告",
+      "evidence": [
+        {
+          "file": "js/course-analytics.js",
+          "line": 134,
+          "excerpt": "  return rows.map(({student,expected,submitted,pending,rate})=>`<tr><td><strong>${lqEsc(student.name)}</strong><small>${lqEsc(student.number)}</small></td><td>${lqEsc(student.className || '—')}</td><td>${submitted} / ${expected}</td><td>${l"
+        },
+        {
+          "file": "js/evaluation-school-workspace.js",
+          "line": 129,
+          "excerpt": "  return `${ecSceneNavMarkup('es',context)}<section class=\"ev-section\"><div class=\"ev-section-heading\"><div><h2>${evContexts[context].name}分析</h2><p>${model.count} 份有效评价${context==='employment'?'':` · ${model.reports} 份学生分项报告`}</p></div><di"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "archive"
+    },
+    {
+      "id": "career",
+      "name": "机器人运维 · 成长规划",
+      "renderer": "plan",
+      "group": "学生成长",
+      "evidence": [
+        {
+          "file": "js/growth-planning-report.js",
+          "line": 18,
+          "excerpt": " const record={id,title:`AI 成长方向分析报告 · ${formatRecordDate(createdAt)}`,courseId:null,courseTitle:'成长规划 · 方向分析',messages:[{role:'user',content:'请结合我的学习背景和以下回答，分析适合探索的发展方向。\\n\\n'+responses.map(r=>r.label+'：'+r.answer).join('\\n')},{role:'assist"
+        },
+        {
+          "file": "js/centers/employment/views/workspace.js",
+          "line": 112,
+          "excerpt": "  const map = {'简历':'docx','报告':'docx','诊断':'docx','清单':'xlsx','画像':'png','攻略':'md','方案':'docx','规划':'docx','应用':'html','知识库':'docx','资源':'docx','文案':'md'};"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "plan"
+    },
+    {
+      "id": "education",
+      "name": "升学准备 · 材料清单",
+      "renderer": "checklist",
+      "group": "学生成长",
+      "evidence": [
+        {
+          "file": "js/student-education-workspace.js",
+          "line": 6,
+          "excerpt": "  practice: { title:'AI 备考', short:'AI 备考', icon:'spark', note:'围绕目标考试准备笔试与面试', steps:['读取院校专业与考试类型','梳理考试范围及个人学习基础','细化知识重点与准备事项','整理考试准备清单'] },"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "plan"
+    },
+    {
+      "id": "certificate",
+      "name": "证书备考 · 学习安排",
+      "renderer": "plan",
+      "group": "学生成长",
+      "evidence": [
+        {
+          "file": "js/student-certificate-workspace.js",
+          "line": 2,
+          "excerpt": "const certificateWorkspaceTabs=[['plan','备考计划'],['courses','课程学习'],['exam','模拟考试'],['records','备考记录']];"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "plan"
+    },
+    {
+      "id": "competition",
+      "name": "竞赛项目 · 项目报告",
+      "renderer": "document",
+      "group": "学生成长",
+      "evidence": [
+        {
+          "file": "js/student-competition-workspace.js",
+          "line": 4,
+          "excerpt": "function csButton(action,label,id='',classes=''){return `<button type=\"button\" class=\"mg-btn ${classes}\" data-cs=\"${action}\" data-id=\"${mgEsc(id)}\">${label}</button>`;}"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "archive"
+    },
+    {
+      "id": "resume",
+      "name": "求职简历 · 个人草稿",
+      "renderer": "resume",
+      "group": "就业服务",
+      "evidence": [
+        {
+          "file": "js/student-job-workspace.js",
+          "line": 5,
+          "excerpt": " if(a?.resumeTaskReady)return false;"
+        },
+        {
+          "file": "js/student-job-delivery.js",
+          "line": 4,
+          "excerpt": "function sjlResumes(){return sjPerson().resumes.filter(r=>r.owner===sjPerson().owner).slice().reverse();}"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "archive"
+    },
+    {
+      "id": "interview",
+      "name": "模拟笔试 · 练习报告",
+      "renderer": "report",
+      "group": "就业服务",
+      "evidence": [
+        {
+          "file": "js/centers/employment/views/workspace.js",
+          "line": 112,
+          "excerpt": "  const map = {'简历':'docx','报告':'docx','诊断':'docx','清单':'xlsx','画像':'png','攻略':'md','方案':'docx','规划':'docx','应用':'html','知识库':'docx','资源':'docx','文案':'md'};"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "archive"
+    },
+    {
+      "id": "training-program",
+      "name": "机电专业 · 人才培养方案",
+      "renderer": "document",
+      "group": "教务管理",
+      "evidence": [
+        {
+          "file": "js/centers/administration/views/workspace.js",
+          "line": 7,
+          "excerpt": "function recentCollaborations(){return HISTORY.filter(h=>!h.archived).sort((a,b)=>(b.updatedAt||'').localeCompare(a.updatedAt||'')||HISTORY.indexOf(a)-HISTORY.indexOf(b));}"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "review"
+    },
+    {
+      "id": "recognition",
+      "name": "学分认定 · 核对清单",
+      "renderer": "checklist",
+      "group": "教务管理",
+      "evidence": [
+        {
+          "file": "js/centers/administration/views/workspace.js",
+          "line": 688,
+          "excerpt": "  /* 新增技能：模板提示词或自由描述（\"创建一个技能\"等非连续写法也覆盖），须在「资源」「材料」等泛匹配之前接管 */"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "review"
+    },
+    {
+      "id": "admissions",
+      "name": "智能制造专业 · 招生文案",
+      "renderer": "document",
+      "group": "教务管理",
+      "evidence": [
+        {
+          "file": "js/centers/administration/views/workspace.js",
+          "line": 7,
+          "excerpt": "function recentCollaborations(){return HISTORY.filter(h=>!h.archived).sort((a,b)=>(b.updatedAt||'').localeCompare(a.updatedAt||'')||HISTORY.indexOf(a)-HISTORY.indexOf(b));}"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "archive"
+    },
+    {
+      "id": "agent",
+      "name": "校园咨询 · 智能体配置",
+      "renderer": "workflow",
+      "group": "实训应用",
+      "evidence": [
+        {
+          "file": "js/ai-practice-editor.js",
+          "line": 3,
+          "excerpt": "const apeTypes=[['input','输入','file'],['parser','文档解析','file'],['model','大模型','spark'],['knowledge','知识检索','book'],['condition','条件判断','layers'],['tool','工具调用','layers'],['transform','数据处理','layers'],['output','输出','check']];"
+        },
+        {
+          "file": "js/centers/administration/views/workspace.js",
+          "line": 91,
+          "excerpt": "/* 助理人设类产物的「接入通道」卡片条：与招生助理工作室右侧接入通道同款（图标 / 今日数据 / 开关 / 集成配置），开关状态即分发勾选，一键分发以 chanSel 为准 */"
+        }
+      ],
+      "decision": "组件库提供结构及交互示例；专业编辑器与真实业务控制器继续复用原项目。",
+      "status": "implemented-prototype",
+      "businessAction": "review"
+    }
+  ],
+  "gaps": [
+    "PPT真实文件导出与画布编辑、视频渲染与专业剪辑、任意HTML沙箱执行沿用原项目专用实现；当前示例只提供内容结构。",
+    "考试发布及作答限制、课程包资源广场保存与版本绑定、真实报名投递认定均由业务接入；组件不自动执行。",
+    "报告、招生信息、匹配分数均为虚构数据，未读取真实业务服务。"
+  ]
+}

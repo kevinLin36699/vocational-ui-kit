@@ -1,0 +1,54 @@
+{
+  "version": "2.0.0",
+  "component": "voc-workspace",
+  "scope": "generic-shell-and-content-slot",
+  "default": "empty-slot",
+  "states": [
+    "empty",
+    "loading",
+    "ready",
+    "error"
+  ],
+  "props": {
+    "title": "string",
+    "subtitle": "optional string",
+    "state": "empty/loading/ready/error",
+    "statusText": "optional string",
+    "actions": "optional Array<{id,label,variant?,disabled?}>"
+  },
+  "slots": [
+    "content",
+    "toolbar",
+    "actions"
+  ],
+  "runtime": "js/content-workspace.js",
+  "api": [
+    "getSlot",
+    "setContent",
+    "setState",
+    "setToolbar",
+    "setActions",
+    "activate",
+    "getState",
+    "destroy"
+  ],
+  "events": {
+    "voc:workspace-action": [
+      "actionId",
+      "contentId"
+    ],
+    "voc:workspace-open": [
+      "messageId"
+    ]
+  },
+  "businessResponsibilities": [
+    "preview/editor implementation",
+    "business data and validation",
+    "permissions",
+    "versions and persistence",
+    "review, publication and resource association"
+  ],
+  "noDefaultBusinessActions": true,
+  "archive": "assets/archive/generated-content-1.4.0",
+  "standard": "design/GENERATED_CONTENT.md"
+}

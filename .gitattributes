@@ -1,0 +1,2 @@
+# Preserve the exported CSV source snapshot byte-for-byte.
+high-school-ui/data/migration-map.csv -text whitespace=cr-at-eol

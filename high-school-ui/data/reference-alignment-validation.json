@@ -1,0 +1,51 @@
+{
+  "version": "1.6.0",
+  "date": "2026-10-27",
+  "checks": [
+    {
+      "name": "本地添加入口和键盘",
+      "status": "passed",
+      "evidence": "底栏＋打开动作菜单，ArrowDown进入首项，Escape关闭并恢复＋焦点；原输入区不再并排上传/资源/更多。"
+    },
+    {
+      "name": "本地我的文件选择",
+      "status": "passed",
+      "evidence": "搜索无匹配、跨筛选保留选择、确认添加2个虚构文件引用；不改正文、不自动发送。"
+    },
+    {
+      "name": "高职教扩展未丢失",
+      "status": "passed",
+      "evidence": "＋引用资源仍先类型后对象；技能标签在正文前；实际提交携带文件ID/版本、资源片段和技能ID。"
+    },
+    {
+      "name": "目录边界与附件去重移除",
+      "status": "passed",
+      "evidence": "不可引用文件禁用并显示原因；重复添加相同ID只保留一个；可X移除。"
+    },
+    {
+      "name": "会话附件和演示控制",
+      "status": "passed",
+      "evidence": "演示失败控制移到会话标题栏；会话发送及原轮重试均携带文件稳定ID和版本，失败重试入口可用。"
+    },
+    {
+      "name": "页面生成资产兼容",
+      "status": "passed",
+      "evidence": "已安装vocational-page-builder读取1.6.0，复制8项运行资产，静态及来源哈希检查通过。"
+    }
+  ],
+  "online": "实际登录指定参考页并观察输入区与我的文件；未执行发送、上传、下载或修改业务。",
+  "onlineNotVerified": [
+    "当前无可用智能体，＋禁用；不能展开核验完整菜单",
+    "真实文件添加、上传、解析及模型执行",
+    "整库各组件外观、状态和交互完全一致"
+  ],
+  "localNotVerified": [
+    "真实后端权限和文件服务",
+    "本轮未重新执行本地文件上传选择及大文件边界",
+    "跨浏览器、移动端及完整无障碍认证"
+  ],
+  "screenshots": [
+    "data/reference-composer-observed.png",
+    "data/aligned-composer-preview.png"
+  ]
+}

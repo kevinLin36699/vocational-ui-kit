@@ -1,0 +1,558 @@
+{
+  "date": "2026-10-26",
+  "timezone": "Asia/Shanghai",
+  "checks": [
+    {
+      "name": "管理列表搜索/组合筛选/重置/全量排序/页内三态选择",
+      "status": "passed",
+      "evidence": "人工智能筛选3项，叠加必修课无匹配；重置17项；排序页为32/32/32/32/32；全选5项后取消一项呈indeterminate。"
+    },
+    {
+      "name": "管理页新增/字段校验/编辑回填/未保存保护/删除取消与确认",
+      "status": "passed",
+      "evidence": "新增课程后能筛选到；空保存定位3项错误；编辑保留学时、日期、性质；关闭出现继续编辑确认；删除默认聚焦取消，确认后17项变16项。"
+    },
+    {
+      "name": "管理页真实CSV下载",
+      "status": "passed",
+      "evidence": "浏览器收到课程示例-当前筛选.csv下载，反馈16项，与当前集合一致。"
+    },
+    {
+      "name": "AI发送/停止/重试/流式完成/下一条草稿/工作区编辑收放",
+      "status": "passed",
+      "evidence": "停止留在原消息；重试完成且下一条未发草稿保留；编辑工作区收起再展开内容不丢失；保存标当前示例。"
+    },
+    {
+      "name": "AI失败重试、示例分发与会话草稿隔离",
+      "status": "passed",
+      "evidence": "失败后在原轮重试完成；分发要求课程和单元；新会话空输入，来回切换分别恢复会话一与会话二草稿。"
+    },
+    {
+      "name": "会话重命名/置顶/搜索",
+      "status": "passed",
+      "evidence": "会话更名为课堂活动讨论；置顶标记及排序生效；关键词搜索保留对应会话。"
+    },
+    {
+      "name": "选择器搜索与键盘、代码页和来源页",
+      "status": "passed",
+      "evidence": "搜索智能、方向键与Enter选择智能制造学院；代码显示统一mount入口；来源显示实际文件和行号。"
+    },
+    {
+      "name": "多轮生成内容和独立草稿恢复",
+      "status": "passed",
+      "evidence": "第二轮完成后点击第一轮结果恢复已编辑的独立草稿；点击第二轮恢复新大纲，未覆盖第一轮。"
+    },
+    {
+      "name": "60类组件浏览器初始渲染",
+      "status": "passed",
+      "evidence": "1440px桌面视口逐一进入60个组件路由，均有组件根节点，无页面横向溢出；不代表所有状态均已交互验收。"
+    },
+    {
+      "name": "14类组合模板浏览器渲染",
+      "status": "passed",
+      "evidence": "1440px下逐一进入14个页面模式，挂载成功且无页面横向溢出；正式考试/后台权限不在模板实现范围。"
+    },
+    {
+      "name": "本地文件选择/类型校验/移除",
+      "status": "passed",
+      "evidence": "TXT显示已选择且未解析，EXE被拒绝并说明原因；可移除已选文件。未测试真实上传或Office解析。"
+    },
+    {
+      "name": "院系专业级联与日期范围",
+      "status": "passed",
+      "evidence": "选中专业后更换院系，专业清空并更新候选；结束日期早于开始时就地报错。"
+    },
+    {
+      "name": "作业组合中的当前助手限制与恢复",
+      "status": "passed",
+      "evidence": "确认作业后消息输入禁用，提交本地单题计算100分并恢复输入；不等同正式考试或跨页防绕过。"
+    },
+    {
+      "name": "完整整改索引检索",
+      "status": "passed",
+      "evidence": "搜索mg-btn返回来源文件/行号、候选组件和未实施标记，CSV/JSON完整记录可访问。"
+    },
+    {
+      "name": "1440/1024/768px页面布局及卸载回调",
+      "status": "passed",
+      "evidence": "概览、表格、AI对话、内嵌助手共12个视口/路由组合无整页横向溢出；生成中离开页面后未产生新脚本错误。"
+    },
+    {
+      "name": "file://直接打开的浏览器核验",
+      "status": "not-verified",
+      "evidence": "浏览器工具安全策略只允许HTTP/HTTPS，file协议请求被阻止；未绕过。已通过本地HTTP验证，相邻静态脚本无运行时fetch。"
+    }
+  ],
+  "componentRenders": [
+    {
+      "component": "button",
+      "nonempty": true,
+      "overflow": false,
+      "title": "按钮button"
+    },
+    {
+      "component": "icon",
+      "nonempty": false,
+      "overflow": false,
+      "title": "图标与图标按钮icon"
+    },
+    {
+      "component": "link",
+      "nonempty": true,
+      "overflow": false,
+      "title": "链接link"
+    },
+    {
+      "component": "tag",
+      "nonempty": true,
+      "overflow": false,
+      "title": "标签与可移除项tag"
+    },
+    {
+      "component": "badge",
+      "nonempty": true,
+      "overflow": false,
+      "title": "状态徽标badge"
+    },
+    {
+      "component": "avatar",
+      "nonempty": true,
+      "overflow": false,
+      "title": "头像avatar"
+    },
+    {
+      "component": "separator",
+      "nonempty": true,
+      "overflow": false,
+      "title": "分割线separator"
+    },
+    {
+      "component": "input",
+      "nonempty": true,
+      "overflow": false,
+      "title": "文本输入input"
+    },
+    {
+      "component": "textarea",
+      "nonempty": true,
+      "overflow": false,
+      "title": "多行输入textarea"
+    },
+    {
+      "component": "number",
+      "nonempty": true,
+      "overflow": false,
+      "title": "数字与单位number"
+    },
+    {
+      "component": "select",
+      "nonempty": true,
+      "overflow": false,
+      "title": "下拉选择select"
+    },
+    {
+      "component": "checkbox",
+      "nonempty": true,
+      "overflow": false,
+      "title": "复选框checkbox"
+    },
+    {
+      "component": "radio",
+      "overflow": false,
+      "title": "单选组radio"
+    },
+    {
+      "component": "switch",
+      "overflow": false,
+      "title": "开关switch"
+    },
+    {
+      "component": "date",
+      "overflow": false,
+      "title": "日期与范围date"
+    },
+    {
+      "component": "multiselect",
+      "overflow": false,
+      "title": "多选标签multiselect"
+    },
+    {
+      "component": "cascade",
+      "overflow": false,
+      "title": "院系专业级联cascade"
+    },
+    {
+      "component": "upload",
+      "overflow": false,
+      "title": "文件上传upload"
+    },
+    {
+      "component": "form",
+      "overflow": false,
+      "title": "分区表单与校验form"
+    },
+    {
+      "component": "search",
+      "overflow": false,
+      "title": "搜索search"
+    },
+    {
+      "component": "table",
+      "overflow": false,
+      "title": "数据表格table"
+    },
+    {
+      "component": "pagination",
+      "overflow": false,
+      "title": "分页pagination"
+    },
+    {
+      "component": "card",
+      "overflow": false,
+      "title": "内容卡片card"
+    },
+    {
+      "component": "description",
+      "overflow": false,
+      "title": "描述列表description"
+    },
+    {
+      "component": "tree",
+      "overflow": false,
+      "title": "树与目录tree"
+    },
+    {
+      "component": "steps",
+      "overflow": false,
+      "title": "步骤条steps"
+    },
+    {
+      "component": "progress",
+      "overflow": false,
+      "title": "进度progress"
+    },
+    {
+      "component": "timeline",
+      "overflow": false,
+      "title": "时间线与审批记录timeline"
+    },
+    {
+      "component": "stat",
+      "overflow": false,
+      "title": "指标卡stat"
+    },
+    {
+      "component": "chart",
+      "overflow": false,
+      "title": "统计图与明细chart"
+    },
+    {
+      "component": "empty",
+      "overflow": false,
+      "title": "空状态empty"
+    },
+    {
+      "component": "skeleton",
+      "overflow": false,
+      "title": "骨架与加载skeleton"
+    },
+    {
+      "component": "shell",
+      "overflow": false,
+      "title": "应用外壳与导航shell"
+    },
+    {
+      "component": "breadcrumb",
+      "overflow": false,
+      "title": "面包屑breadcrumb"
+    },
+    {
+      "component": "tabs",
+      "overflow": false,
+      "title": "内容标签页tabs"
+    },
+    {
+      "component": "segmented",
+      "overflow": false,
+      "title": "分段控件segmented"
+    },
+    {
+      "component": "toolbar",
+      "overflow": false,
+      "title": "筛选与操作栏toolbar"
+    },
+    {
+      "component": "menu",
+      "overflow": false,
+      "title": "更多菜单menu"
+    },
+    {
+      "component": "popover",
+      "overflow": false,
+      "title": "选择浮层popover"
+    },
+    {
+      "component": "tooltip",
+      "overflow": false,
+      "title": "悬停与焦点提示tooltip"
+    },
+    {
+      "component": "dialog",
+      "overflow": false,
+      "title": "弹窗dialog"
+    },
+    {
+      "component": "confirm",
+      "overflow": false,
+      "title": "危险操作确认confirm"
+    },
+    {
+      "component": "drawer",
+      "overflow": false,
+      "title": "抽屉drawer"
+    },
+    {
+      "component": "alert",
+      "overflow": false,
+      "title": "就地反馈与错误alert"
+    },
+    {
+      "component": "toast",
+      "overflow": false,
+      "title": "轻提示toast"
+    },
+    {
+      "component": "course-card",
+      "overflow": false,
+      "title": "课程卡片course-card"
+    },
+    {
+      "component": "person-picker",
+      "overflow": false,
+      "title": "人员选择person-picker"
+    },
+    {
+      "component": "approval",
+      "overflow": false,
+      "title": "审核与分发approval"
+    },
+    {
+      "component": "resource",
+      "overflow": false,
+      "title": "资源与版本resource"
+    },
+    {
+      "component": "task-guide",
+      "overflow": false,
+      "title": "AI 任务引导task-guide"
+    },
+    {
+      "component": "agent",
+      "overflow": false,
+      "title": "智能体入口agent"
+    },
+    {
+      "component": "conversation",
+      "overflow": false,
+      "title": "会话列表conversation"
+    },
+    {
+      "component": "composer",
+      "overflow": false,
+      "title": "AI 输入区composer"
+    },
+    {
+      "component": "message",
+      "overflow": false,
+      "title": "用户与 AI 消息message"
+    },
+    {
+      "component": "prose",
+      "overflow": false,
+      "title": "Markdown 与代码prose"
+    },
+    {
+      "component": "process",
+      "overflow": false,
+      "title": "处理过程process"
+    },
+    {
+      "component": "citation",
+      "overflow": false,
+      "title": "引用与来源citation"
+    },
+    {
+      "component": "result",
+      "overflow": false,
+      "title": "生成内容摘要result"
+    },
+    {
+      "component": "workspace",
+      "overflow": false,
+      "title": "生成内容工作区workspace"
+    },
+    {
+      "component": "chat",
+      "overflow": false,
+      "title": "AI 协作组合chat"
+    }
+  ],
+  "patternRenders": [
+    {
+      "overflow": false,
+      "pattern": "home",
+      "title": "平台首页"
+    },
+    {
+      "overflow": false,
+      "pattern": "list",
+      "title": "管理列表页"
+    },
+    {
+      "overflow": false,
+      "pattern": "detail",
+      "title": "普通详情页"
+    },
+    {
+      "overflow": false,
+      "pattern": "edit",
+      "title": "新建与编辑页"
+    },
+    {
+      "overflow": false,
+      "pattern": "selection",
+      "title": "选择与关联页"
+    },
+    {
+      "overflow": false,
+      "pattern": "analytics",
+      "title": "分析与仪表盘"
+    },
+    {
+      "overflow": false,
+      "pattern": "history",
+      "title": "协作记录"
+    },
+    {
+      "overflow": false,
+      "pattern": "chat",
+      "title": "主平台 AI 协作"
+    },
+    {
+      "overflow": false,
+      "pattern": "assistant",
+      "title": "业务内嵌 AI 助手"
+    },
+    {
+      "overflow": false,
+      "pattern": "workspace",
+      "title": "创作与长文工作区"
+    },
+    {
+      "overflow": false,
+      "pattern": "learning",
+      "title": "学习与作答"
+    },
+    {
+      "overflow": false,
+      "pattern": "approval",
+      "title": "审核与分发"
+    },
+    {
+      "overflow": false,
+      "pattern": "files",
+      "title": "资源与文件"
+    },
+    {
+      "overflow": false,
+      "pattern": "settings",
+      "title": "个人设置与配置"
+    }
+  ],
+  "viewportChecks": [
+    {
+      "width": 1440,
+      "route": "#/overview",
+      "overflow": false,
+      "pageWidth": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1440,
+      "route": "#/component/table",
+      "overflow": false,
+      "pageWidth": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1440,
+      "route": "#/component/chat",
+      "overflow": false,
+      "pageWidth": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1440,
+      "route": "#/pattern/assistant",
+      "overflow": false,
+      "pageWidth": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "width": 1024,
+      "route": "#/overview",
+      "overflow": false,
+      "pageWidth": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1024,
+      "route": "#/component/table",
+      "overflow": false,
+      "pageWidth": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1024,
+      "route": "#/component/chat",
+      "overflow": false,
+      "pageWidth": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "width": 1024,
+      "route": "#/pattern/assistant",
+      "overflow": false,
+      "pageWidth": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "width": 768,
+      "route": "#/overview",
+      "overflow": false,
+      "pageWidth": 768,
+      "scrollWidth": 768
+    },
+    {
+      "width": 768,
+      "route": "#/component/table",
+      "overflow": false,
+      "pageWidth": 768,
+      "scrollWidth": 768
+    },
+    {
+      "width": 768,
+      "route": "#/component/chat",
+      "overflow": false,
+      "pageWidth": 768,
+      "scrollWidth": 768
+    },
+    {
+      "width": 768,
+      "route": "#/pattern/assistant",
+      "overflow": false,
+      "pageWidth": 768,
+      "scrollWidth": 768
+    }
+  ]
+}

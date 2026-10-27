@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "components": [
+    "composer",
+    "chat",
+    "conversation"
+  ],
+  "standard": "design/TEACHING_AGENTS.md",
+  "preview": "examples/teacher-input.html",
+  "fields": {
+    "agentOptions": "Array<{id,label,agentId,available?,reason?}>",
+    "selectedAgents": "string[]"
+  },
+  "selection": "multiple; toggles modify draft only; [] hides entire group",
+  "changeEvent": {
+    "name": "voc:change",
+    "action": "teaching-agents",
+    "fields": [
+      "agents"
+    ]
+  },
+  "sendEvent": {
+    "name": "voc:submit",
+    "action": "ai-send",
+    "fields": [
+      "agents",
+      "skill",
+      "resources",
+      "segments",
+      "attachments"
+    ]
+  },
+  "retention": "per conversation and immutable per sent turn; retry uses original turn",
+  "running": "selection disabled; unlocked after stop/failure/completion",
+  "implementation": "local simulation; no real Agent service",
+  "serverBoundary": "caller supplies visible options; server validates identity/agentIds/context before dispatch"
+}

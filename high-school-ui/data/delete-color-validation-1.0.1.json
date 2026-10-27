@@ -1,0 +1,30 @@
+{
+  "version": "1.0.1",
+  "date": "2026-10-26",
+  "scope": "删除颜色回归；列表图标、确认按钮、菜单项",
+  "checks": [
+    {
+      "name": "列表删除图标使用危险红色",
+      "status": "passed",
+      "evidence": {
+        "color": "rgb(181, 46, 59)",
+        "token": "#b52e3b"
+      }
+    },
+    {
+      "name": "确认删除为红色且默认取消",
+      "status": "passed",
+      "evidence": {
+        "color": "rgb(181, 46, 59)",
+        "focused": "取消"
+      }
+    },
+    {
+      "name": "菜单删除操作统一危险红色",
+      "status": "passed",
+      "evidence": {
+        "color": "rgb(181, 46, 59)"
+      }
+    }
+  ]
+}

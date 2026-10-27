@@ -1,0 +1,9 @@
+/* Standalone composition layout, not a second component theme. */
+.vpb-banner { display:flex; align-items:center; justify-content:space-between; gap:var(--v-space-4); padding:var(--v-space-4) var(--v-space-6); border-bottom:1px solid var(--v-border); background:var(--v-card); font-size:var(--v-font-caption); color:var(--v-muted-foreground); }
+.vpb-page { width:100%; max-width:var(--v-page-max); margin:0 auto; padding:var(--v-space-8) clamp(24px,2vw,40px) var(--v-space-10); }
+.pattern-page-head { display:flex; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; gap:var(--v-space-5); margin-bottom:var(--v-space-6); }
+.pattern-page-head h1 { margin:0; font-size:var(--v-font-page); }
+.pattern-page-head p { margin:var(--v-space-2) 0 0; font-size:var(--v-font-small); color:var(--v-secondary); }
+.pattern-split { display:grid; grid-template-columns:minmax(0,1fr) var(--v-panel-width); gap:var(--v-space-6); }
+.pattern-split>aside { padding:var(--v-space-5); border:1px solid var(--v-border); border-radius:var(--v-radius-card); background:var(--v-background); min-width:0; }
+@media(max-width:1100px) { .pattern-split { grid-template-columns:minmax(0,1fr); } }

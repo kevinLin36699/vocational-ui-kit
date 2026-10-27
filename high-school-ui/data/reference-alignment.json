@@ -1,0 +1,86 @@
+{
+  "version": "2.0.0",
+  "date": "2026-10-27",
+  "referenceUrl": "https://ai-platform-pre.hwzxs.com/ai-base-v2/agents/agent-07af977b-a812-4646-86c4-ba1fad85a03c",
+  "referenceDocument": "../../../1-参考资料/DESIGN.md",
+  "claim": "按DESIGN.md统一全部60项组件的公共视觉和适用交互；独立HTML适配实现，不是参考React/Radix源码包。",
+  "onlineScope": "2026-10-27：再次只读检查指定URL，侧栏272px、头部56px、标题衬线28px、消息框正文15px/56px；沿用前次我的文件只读观察，无业务写入。",
+  "onlineBlocker": "两个租户均无可用智能体，＋和发送禁用；菜单内容、正常生成和真实资源添加不能标为已核验。",
+  "checks": [
+    {
+      "id": "provenance",
+      "part": "组件来源",
+      "status": "separate-implementation",
+      "reference": "DESIGN.md §2：React/Tailwind/Radix/lucide",
+      "current": "独立HTML/CSS/JS，无引用参考站组件包",
+      "evidence": "data/library.json runtime；js/voc-ui.js",
+      "decision": "只能称参考对齐的HTML实现，不能称同一套源码组件。"
+    },
+    {
+      "id": "resource-reference",
+      "part": "教学资源选择",
+      "status": "user-extension",
+      "reference": "未核验线上相同能力",
+      "current": "/ 或＋菜单引用资源，先类型再对象",
+      "evidence": "本会话用户明确要求；design/INLINE_RESOURCES.md"
+    },
+    {
+      "id": "skill-tag",
+      "part": "技能",
+      "status": "user-extension",
+      "reference": "未核验线上同类面板",
+      "current": "内置／我的；所选标签在正文前；X移除",
+      "evidence": "本会话用户截图与要求；design/SKILLS.md"
+    },
+    {
+      "id": "colors",
+      "part": "蓝白及AI蓝紫",
+      "status": "user-override",
+      "reference": "暖纸、赭石",
+      "current": "蓝白主体，发送与技能等AI局部蓝紫",
+      "evidence": "用户明确主题要求",
+      "decision": "允许主题替换，不等于允许任意改结构。"
+    },
+    {
+      "id": "workspace",
+      "part": "内容生成区",
+      "status": "user-extension",
+      "reference": "参考提供来源／文件面板；具体生成内容未核验",
+      "current": "按用户最新要求，仅空容器和业务插槽",
+      "evidence": "design/GENERATED_CONTENT.md"
+    },
+    {
+      "id": "model",
+      "part": "模型选择、真实生成",
+      "status": "online-blocked",
+      "reference": "当前指定智能体不可用，输入发送禁用",
+      "current": "不编造模型选择和实际执行能力",
+      "evidence": "本次两个可登录租户均未取得可用智能体"
+    },
+    {
+      "id": "full-library",
+      "part": "整库公共标准",
+      "status": "implemented-document",
+      "reference": "DESIGN.md §4—12",
+      "current": "122 tokens、60组件与14组合统一公共几何、排版、状态；逐组件见component-alignment.json",
+      "evidence": "css/components.css；js/voc-ui.js；data/component-alignment.json"
+    },
+    {
+      "id": "online-geometry",
+      "part": "可见线上几何",
+      "status": "observed",
+      "reference": "指定URL只读DOM",
+      "current": "侧栏272、头部56、衬线标题28、输入正文15/高度56",
+      "evidence": "2026-10-27当前会话只读检查"
+    },
+    {
+      "id": "technical-adapters",
+      "part": "实现差异",
+      "status": "documented-adapter",
+      "reference": "React/Tailwind/Radix/lucide",
+      "current": "HTML/CSS/JS与原生dialog、系统日期控件，本地图标路径统一1.75描边；公共视觉和交互遵循参考",
+      "decision": "不安装新框架，不把HTML实现说成同一组件包。日期等文档未定义专用控件的业务能力保留可运行浏览器适配。"
+    }
+  ],
+  "documentation": "# 参考一致性审计 v2.0.0 · 2026-10-27\n\n本次范围由单个输入入口修正扩展为整库统一。60项组件、14种组合与122个变量按 DESIGN.md 的公共规则实施，覆盖排版、密度、尺寸、形状、层级、焦点、状态、浮层和AI交互。逐项依据见COMPONENT_ALIGNMENT.md和data/component-alignment.json；验证见data/reference-system-validation.json。\n\n## 线上实际可见范围\n指定链接再次显示“还没有可用智能体”。只读DOM核验：272px侧栏、56px头部、28px衬线标题、15px正文和56px消息输入。前次只读观察了我的文件弹窗的名称筛选、版本、更新时间、选择和添加到提问结构。未发送、上传、下载、删除或发布业务数据，不保存凭据、真实会话或文件列表。\n\n＋菜单、可用智能体、真实生成和模型能力仍不能在线核验。其余统一依据是DESIGN.md，不标成线上全部状态逐像素复刻。\n\n## 本次全库统一\n- 控件36/30/44、10px圆角、14px UI；卡片14px圆角/16px内边距；徽标22/Chip28；头像方圆印章；全部共享Tokens。\n- 分段Tabs与滑块、输入焦点光晕、下拉32px选项和尺寸避让、300ms Tooltip、Dialog20px圆角及参考边距、360px Sheet、危险操作默认取消。\n- 272/64px外壳、56px头部；15px开放AI正文、头像元信息、用户动作、细线过程与保持挂载折叠；反馈原因Popover、互斥撤销。\n- 生成内容默认空插槽；1280px起内嵌，窄视口模态Sheet及焦点恢复。业务内容和编辑器不进入公共库。\n\n## 保留的用户覆盖\n蓝白为主体、少量蓝紫AI强调；资源/先类型再对象且各端目录可配置；内置/我的技能、搜索和正文前可X标签；危险删除红色；空生成插槽。它们不冒称参考线上原有全部能力。\n\n## 适配边界\n本库仍为独立HTML/CSS/JS原型，参考源技术为React/Tailwind/Radix/lucide。使用原生dialog的模态机制及本地图标路径统一描边，专用日期控件使用系统适配。文档未定义的高职教业务控件按公共控件组合并保留真实业务语义；不发明参考站API。不引入框架、不改原平台、不连接真实模型或后台。\n\n验证分开记录：文档规则落实、浏览器实测、线上可见观察、环境受阻。420次渲染只证明结构能生成；代表性交互与计算样式另有实际浏览器证据，不用数量代替相似度判断。\n\n## 维护\n规范源以DESIGN.md和用户覆盖为准，data/component-alignment.json保留逐组件索引；修订同时更新实现、Tokens、索引、规范和验证。版本2.0.0标识视觉标准统一，并不意味着已迁移旧业务页面。\n\n我的文件files参数：[{id,name,version?,updatedAt?,available?,reason?}]；空数组为空，未传才使用虚构目录，最多100项。确认只添加附件引用、ID去重、不自动发送，不等于解析文件。正式接入仍由服务端核验权限和版本。"
+}

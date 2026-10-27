@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "library_root": "../../high-school-ui",
+  "source_project_root": null,
+  "manifest": "data/library.json",
+  "baseline_version": "2.0.0",
+  "version_policy": "compatible-major",
+  "documents": {
+    "standard": "design/STANDARD.md",
+    "api": "design/API.md",
+    "ai": "design/AI.md",
+    "patterns": "design/PATTERNS.md",
+    "limitations": "design/LIMITATIONS.md",
+    "integration": "design/START.md",
+    "migration": "design/MIGRATION.md",
+    "decisions": "design/DECISIONS.md",
+    "reference_alignment": "design/REFERENCE_ALIGNMENT.md",
+    "component_alignment": "design/COMPONENT_ALIGNMENT.md"
+  },
+  "baseline_hashes": {
+    "data/library.json": "d0b836908876dbda354a5e31e974c2bc6289d6ef116d29c8fd9f51f5f54c069b",
+    "data/components.json": "f65687e1e89f50a77d9eb905a172e62072899b52dcfa97cbc584c7056252e79c",
+    "data/tokens.json": "836c98bfd5fa1ddce9aca480833ff37b426f34c2dcccb408d8334cf1f8a1f731",
+    "data/page-patterns.json": "c36b0fc3a089bdba7990cc94cde516a1604f42dc056e82dc4726f01cd05eeb00",
+    "design/GENERATION.md": "25eb6ed036f6a8529d00b896015be0042beb883edfd9e5c14c2d0f749cab5f13",
+    "css/tokens.css": "ac543b6824b4e7850caf93093de88a10c5598c7ad7a3113a3f8280d95ca0c5c1",
+    "css/components.css": "525fce0621dbc1a362c1a1262be91aadecd6af2619743cd5824a0e9582ec103d",
+    "js/icons.js": "7487bc6b9641d68f27cff5e35ac7db0adcb5949eb533705052e027018279fdd7",
+    "js/resource-composer.js": "bb10eef3e3ff7688df91a2b14515f940b3155617cd68211e8d1c0b216df7a4a7",
+    "js/skill-picker.js": "59deef1a535a2ffae11db0795646ad990873b0475ef1fff3ef91b65a2b87774c",
+    "js/content-workspace.js": "3be51c4c5ae993a98350837d89589614a133e8940bf501dc662adb4268f523da",
+    "js/voc-ui.js": "da1e6395aa7c52e0715f2148a60d77bd8094700f2d6d70b49afcb1e6b13c0dc2",
+    "js/patterns.js": "35fed3bd2d459b7163ff15ffb1a21facae0b88fe9fa05bb6156a161daadfe936",
+    "design/STANDARD.md": "bd20b5e289f505ebb4d782bb5e9dc5edb8c967e7727d1267d569b77e005bb408",
+    "design/API.md": "e4036f27d9b0b5f73bed4f2ef4d6856aa8ef7a25e22f563793c9f9db767f9e0a",
+    "design/AI.md": "a2a5a9cd65f0e1dfd104d7509705fcc11a8302c0c90c9aea22dafc8a3069948b",
+    "design/PATTERNS.md": "2ea68e878ef36322eaceddcb8e1f2846f78aa42ab26bad2308d15d3b52c3bcc1",
+    "design/LIMITATIONS.md": "6866705ddeb94c0cf6db69a933cc1cd0c207ef09563b725c6a83bfdec74a81e7",
+    "design/START.md": "e7fedf87945896bf27e45d9d07193a4198c5d3646f61c3086f9ea9c7dfabc422",
+    "design/MIGRATION.md": "2a311ec3020ec74bb5cc92bd5e38910bab252f75ddcf5de46ad8bc20bc2e6126",
+    "design/DECISIONS.md": "086a022053b7892ea64e1d1a9099fa7fb59b83882d23cc2d45d26b9a7614ab4c",
+    "design/REFERENCE_ALIGNMENT.md": "606e4a921104db3d763eca4098dd74f5b876c8248d7146fccdc7a5813c9e2b73",
+    "design/COMPONENT_ALIGNMENT.md": "46da2b802bfd8093b52b96aba200e9da00729d1774728f5b71f985b29cd3ae6c",
+    "design/INLINE_RESOURCES.md": "f7f44d1e0ad86cf9d8000ab7a7119f314cb1818d2a2842db90d9dd51c1249432",
+    "design/SKILLS.md": "3117b646cf045f085629bcca79c8ea0fad7db7dab2393f82e31f66f7d8ecf749",
+    "design/TEACHING_AGENTS.md": "9f2c5bc1bb7aac22485a5ca10970591a15006dce8b0d46062a4c04e861318144",
+    "design/GENERATED_CONTENT.md": "fdad93a1c91cbd96feb14f6ee71a0159bc8c78c4f6439daa1a748347fb393210",
+    "data/composer-resources.json": "654a129a3eefd573c6f57be46efe0a3e013ad3883b7a006ba3742d520a9f9039",
+    "data/skill-selection.json": "f5014422f39c33725c920dc1a34d71ee81c57e8d7770b1f617db5eb71a9ab33a",
+    "data/teaching-agents.json": "f9fde965256e04916db7f2d7e4bcc014cbcf8bb50f7f7453685e76e3d5374f25",
+    "data/workspace-contract.json": "a42a74c618d10454963fff1dc842f1b33e1ff91a3f2326cf0dfa6282b9098151",
+    "data/message-feedback.json": "3b6288c9f02282a92b5796d783adc5df1d1afad0d810e2698b4f90d89125a3e3",
+    "examples/teacher-input.html": "67670479edb3ff5bb1f2aeba90b404e2dd8168d4fdb68a87805b7c1aad18ce01",
+    "examples/process-record.html": "e75e304d929bf5e0997fdca75320c44d545a01a9050944100ac65cbf8e26ddc2"
+  },
+  "examples": {
+    "teacher_input": "examples/teacher-input.html",
+    "detailed_process_preview": "examples/process-record.html"
+  },
+  "preview_only_examples": [
+    "detailed_process_preview"
+  ]
+}

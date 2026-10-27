@@ -1,0 +1,242 @@
+[
+  {
+    "id": "home",
+    "name": "平台首页",
+    "context": "教师示例",
+    "components": [
+      "agent",
+      "composer",
+      "card"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "list",
+    "name": "管理列表",
+    "context": "管理示例",
+    "components": [
+      "toolbar",
+      "table",
+      "form"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "detail",
+    "name": "普通详情",
+    "context": "当前课程",
+    "components": [
+      "breadcrumb",
+      "tabs",
+      "description",
+      "chat"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "edit",
+    "name": "编辑表单",
+    "context": "教师课程草稿",
+    "components": [
+      "form"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "selection",
+    "name": "选择关联",
+    "context": "当前草稿",
+    "components": [
+      "cascade",
+      "multiselect",
+      "person-picker"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "analytics",
+    "name": "统计分析",
+    "context": "17门示例课程",
+    "components": [
+      "stat",
+      "chart"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "history",
+    "name": "协作记录",
+    "context": "当前页面会话",
+    "components": [
+      "conversation"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "chat",
+    "name": "AI主协作",
+    "context": "虚构教师任务",
+    "components": [
+      "chat"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "assistant",
+    "name": "内嵌助手",
+    "context": "当前课程",
+    "components": [
+      "description",
+      "chat"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "workspace",
+    "name": "长文工作区",
+    "context": "教学大纲草稿",
+    "components": [
+      "workspace"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "learning",
+    "name": "学习作答",
+    "context": "虚构学生作业",
+    "components": [
+      "radio",
+      "alert",
+      "composer"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "approval",
+    "name": "审核分发",
+    "context": "本地演示对象",
+    "components": [
+      "approval"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "files",
+    "name": "资源文件",
+    "context": "本次文件选择",
+    "components": [
+      "upload",
+      "resource"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "settings",
+    "name": "个人配置",
+    "context": "虚构教师",
+    "components": [
+      "input",
+      "switch",
+      "avatar"
+    ],
+    "version": "2.0.0",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  }
+]

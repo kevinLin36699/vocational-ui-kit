@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "implementation": "js/skill-picker.js",
+  "standard": "design/SKILLS.md",
+  "sources": [
+    "builtin",
+    "my"
+  ],
+  "fields": [
+    "id",
+    "source",
+    "name",
+    "description",
+    "available",
+    "reason"
+  ],
+  "selection": "single, per conversation until explicitly removed",
+  "placement": "inside composer, before all prompt text",
+  "events": [
+    "voc:skill-change",
+    "voc:submit"
+  ],
+  "execution": "selection and snapshot only; business services not included"
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "高职教平台页面生成与整改"
+  short_description: "遵循高职教组件库生成、整改和局部修改页面，保持视觉与交互一致"
+  default_prompt: "使用 $vocational-page-builder，按当前绑定组件库生成或整改高职教页面；生成区复用空容器，具体内容按我的业务需求实现。"
+policy:
+  allow_implicit_invocation: true

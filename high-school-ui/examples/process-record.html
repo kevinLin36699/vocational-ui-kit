@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>详细处理记录 · 单项示例</title>
+<link rel="stylesheet" href="../css/tokens.css?v=ac543b6824"><link rel="stylesheet" href="../css/components.css?v=525fce0621">
+<style>
+.record-page{max-width:920px;margin:auto;padding:32px 24px 64px}.record-back{font-size:13px}.record-page h1{font-size:24px;margin:32px 0 10px}.record-lead{color:var(--v-secondary);font-size:14px;line-height:24px;margin-bottom:24px}.record-stage{padding:24px;background:var(--v-card);border:1px solid var(--v-border);border-radius:var(--v-radius-card)}.record-stage-label{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--v-secondary);margin-bottom:14px}.record-card{border:1px solid var(--v-brand);border-radius:var(--v-radius-control);overflow:hidden;background:var(--v-card)}.record-card>summary{display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none;padding:10px 12px;min-height:40px}.record-card>summary::-webkit-details-marker{display:none}.record-title{font-size:14px;font-weight:600;flex:1}.record-state{font-size:12px;color:var(--v-secondary);white-space:nowrap}.record-symbol{display:inline-flex;align-items:center;justify-content:center;flex:none;width:20px;height:20px;border-radius:var(--v-radius-sm);color:var(--v-brand);background:var(--v-brand-soft)}.record-symbol svg{width:13px;height:13px}.record-chevron{width:14px;transition:transform var(--v-duration-fast)}.record-card[open] .record-chevron{transform:rotate(180deg)}.record-body{padding:12px 16px 16px;border-top:1px solid var(--v-border);font-size:13px;line-height:23px;color:var(--v-secondary);overflow-wrap:anywhere}.record-body p{margin:0 0 10px}.record-eyebrow{color:var(--v-muted-foreground);font-size:12px;margin:12px 0 4px}.record-body ul{padding-left:18px;margin:0}.record-body li+li{margin-top:8px}.record-source{padding:0;border:0;background:none;color:var(--v-brand);text-decoration:underline;text-underline-offset:3px;text-align:left;font:inherit;cursor:pointer}.record-boundary{margin-top:12px!important;margin-bottom:0!important;padding:8px 10px;background:var(--v-muted);border-radius:var(--v-radius-sm);font-size:12px}.record-controls{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:18px}.record-demo-note{font-size:12px;color:var(--v-muted-foreground);line-height:22px;margin-top:14px}.record-notice{margin-bottom:10px}.record-card[data-state=failed]{border-color:var(--v-danger)}.record-card[data-state=failed] .record-symbol{color:var(--v-danger);background:var(--v-danger-soft)}.record-card[data-state=stopped] .record-symbol{color:var(--v-warning);background:var(--v-warning-soft)}.record-status-live{font-size:12px;color:var(--v-secondary);margin-top:10px;min-height:20px}.record-dialog-copy{font-size:14px;line-height:25px;color:var(--v-secondary)}@media(max-width:600px){.record-page{padding:20px 16px 40px}.record-stage{padding:16px 12px}.record-page h1{font-size:21px}.record-title{font-size:13px}.record-body{padding:12px}.record-state{font-size:12px}}
+</style>
+</head>
+<body><main class="record-page">
+<a class="record-back" href="teacher-input.html">← 返回教师输入区</a>
+<h1>详细处理记录</h1>
+<p class="record-lead">每个 Agent 用一张可展开的记录卡，查看任务范围、资料摘要与来源。这里只演示一个产业方向。</p>
+<section class="record-stage" aria-label="产业 Agent 详细记录示例">
+<div class="record-stage-label"><span class="v-badge" data-tone="info">单项示例</span><span>产业 Agent · 本地模拟</span></div>
+<details class="record-card" id="record" data-state="completed" open>
+<summary><span class="record-symbol" aria-hidden="true" id="record-icon"></span><span class="record-title">行业产业前沿资讯</span><span class="record-state" id="record-state">已完成</span><svg class="record-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+<div class="record-body">
+<p><strong>查询主题：</strong>请为《人工智能导论》的「人工智能基础」准备一堂课，时长 45 分钟，面向计算机专业学生，补充产业趋势、技术应用与岗位场景。</p>
+<div class="record-notice" id="record-notice"></div>
+<div id="record-result">
+<p>参考资料与教学要点已整理，请核对来源及适用范围。</p>
+<div class="record-eyebrow">参考资料与教学要点 · 2 条演示资料</div>
+<ul><li><button type="button" class="record-source" data-source="industry">制造业中的人工智能应用场景（模拟资料）</button>：以设备巡检与质量检测为例，说明「数据—模型—业务场景」的关系，适合作为课堂导入。</li>
+<li><button type="button" class="record-source" data-source="jobs">智能制造岗位任务与能力要求（模拟资料）</button>：围绕数据标注、结果复核与异常处置设计讨论，帮助学生理解岗位中的人机协作。</li></ul>
+<p class="record-boundary"><strong>适用说明：</strong>内容仅演示记录结构，不代表真实检索或已核验事实；正式使用需接入真实来源，并由教师确认课程适配性。</p>
+</div>
+</div></details>
+<div class="record-controls" aria-label="本地状态演示"><button class="v-btn" data-variant="outline" id="run" type="button">演示处理过程</button><button class="v-btn" data-variant="outline" id="fail" type="button">演示失败</button><button class="v-btn" data-variant="outline" id="retry" type="button" hidden>重试</button><button class="v-btn" data-variant="outline" id="stop" type="button" hidden>停止</button></div>
+<p class="record-status-live" role="status" id="record-live">点击标题可收起或展开；点击资料名称可查看模拟来源详情。</p>
+</section><p class="record-demo-note">本例复用组件库 v2.0.0 的变量、按钮、图标及弹窗样式。新增样式仅限本示例，未替换公共处理过程组件，也未连接真实 Agent。</p>
+</main>
+<dialog class="v-dialog" aria-labelledby="source-title" id="source-dialog"><div class="v-dialog-head"><h2 id="source-title">模拟来源详情</h2></div><div class="v-dialog-body record-dialog-copy" id="source-body"></div><div class="v-dialog-foot"><button type="button" class="v-btn" data-variant="primary" id="source-close">关闭</button></div></dialog>
+<script src="../js/icons.js?v=7487bc6b96"></script>
+<script>
+const $=id=>document.getElementById(id),record=$('record'),notice=$('record-notice');let timer,phase;
+const svg=name=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+VocIconPaths[name]+'</svg>';
+function setState(state){clearTimeout(timer);clearInterval(phase);record.dataset.state=state;$('record-state').textContent={completed:'已完成',running:'处理中',failed:'未完成',stopped:'已停止'}[state];$('record-icon').innerHTML=state==='running'?'<span class="v-spinner" aria-hidden="true"></span>':svg(state==='completed'?'check':state==='failed'?'alert':'close');$('record-result').hidden=state!=='completed';notice.textContent={completed:'',running:'正在整理产业方向的示例资料…',failed:'模拟资料读取失败，尚未形成可用结果。查询主题已保留，可重试。',stopped:'本轮处理已停止，未形成可用结果。可以重试。'}[state];$('run').disabled=state==='running';$('fail').disabled=state==='running';$('retry').hidden=!['failed','stopped'].includes(state);$('stop').hidden=state!=='running';$('record-live').textContent=state==='completed'?'处理完成：2 条模拟资料可查看。':notice.textContent;if(state!=='completed')record.open=true;}
+function start(){setState('running');const steps=['正在整理产业方向的示例资料…','正在匹配课堂主题与教学要点…','正在整理来源与适用说明…'];let i=0;phase=setInterval(()=>{i++;notice.textContent=steps[Math.min(i,2)];$('record-live').textContent=notice.textContent},1500);timer=setTimeout(()=>setState('completed'),4500)}
+$('run').onclick=start;$('retry').onclick=start;$('fail').onclick=()=>setState('failed');$('stop').onclick=()=>setState('stopped');
+const sources={industry:['制造业中的人工智能应用场景','以质检图像识别为虚构案例，展示数据采集、模型识别与人工复核的配合。'],jobs:['智能制造岗位任务与能力要求','以数据标注、识别结果复核和异常处置为虚构岗位任务，展示技术能力与协作要求。']};
+document.querySelectorAll('[data-source]').forEach(b=>b.onclick=()=>{const [name,description]=sources[b.dataset.source];$('source-title').textContent=name+'（模拟资料）';$('source-body').textContent='来源：本地演示数据，无外部发布机构、网址或真实发布日期。'+description+'正式业务应提供实际来源链接、发布者和时间，无法核验时明确提示。';$('source-dialog').showModal()});$('source-close').onclick=()=>$('source-dialog').close();setState('completed');
+</script></body></html>

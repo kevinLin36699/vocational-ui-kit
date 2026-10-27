@@ -1,0 +1,42 @@
+{
+  "version": "1.4.0",
+  "component": "voc-workspace",
+  "dataSource": "data/generated-content-examples.json",
+  "index": "data/generated-content-index.json",
+  "standard": "design/GENERATED_CONTENT.md",
+  "props": {
+    "contents": "Array<{id,kind,title,group?,summary?,action?,status?,items:[]}>; [] is empty",
+    "activeId": "Initial content ID",
+    "readonly": "boolean; prototype presentation constraint, not service authorization"
+  },
+  "statuses": [
+    "ready",
+    "waiting",
+    "generating",
+    "failed"
+  ],
+  "actions": [
+    "archive",
+    "package",
+    "review",
+    "plan",
+    "course"
+  ],
+  "event": "voc:content",
+  "eventActions": [
+    "change",
+    "select",
+    "save",
+    "request",
+    "retry",
+    "export"
+  ],
+  "retention": "current-page memory; no backend writes",
+  "versionPolicy": "1.0 then 1.1,1.2; saved immutable; package members copied into snapshot",
+  "unsupported": "render text and permit JSON export, do not execute arbitrary content",
+  "export": "document/resume/practice -> Markdown; other types -> JSON, never fake PPTX/MP4",
+  "knownLimits": [
+    "Professional PPT/video/HTML/workflow editors require integration",
+    "Actual permission, validation, review and publication belong to business controllers"
+  ]
+}

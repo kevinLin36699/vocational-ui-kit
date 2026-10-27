@@ -1,0 +1,2291 @@
+[
+  {
+    "path": "AGENTS.md",
+    "lines": 211,
+    "bytes": 49681,
+    "sha256": "01cccd514c2f3fe80cdaf1edd32b86b3a4573aaa453c213500af7559361de4cb",
+    "scope": "design"
+  },
+  {
+    "path": "assets/brand/credits.json",
+    "lines": 53,
+    "bytes": 3707,
+    "sha256": "2124a18eed92ebcd442a7380c1f2f65e3e2392f41fdc2c4e34c9e41c7038c6d1",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/certificate-exam/credits.json",
+    "lines": 1,
+    "bytes": 177,
+    "sha256": "2ed7242a0351e92dcbd5d9ea4e7562f8fdfa9f2497e15cc1bbb6bd40b955056c",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/competition-works/activity-helper.html",
+    "lines": 7,
+    "bytes": 4926,
+    "sha256": "e746948ffa4ec1a0878ea27cc2a7e2295b82ba03c1409bc62fe33a590e020710",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/competition-works/campus-guide.html",
+    "lines": 7,
+    "bytes": 4941,
+    "sha256": "0b32928bd110c23e8beac3303f3fbbd6b554d7c5369370ebb210338ddf0fbe94",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/course-covers/agent-training.js",
+    "lines": 2,
+    "bytes": 50412,
+    "sha256": "a10fcb72253326c752cbe48f49f0290bb0bc653fda008fde7c118f8a58dc22af",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/course-covers/community-social-practice.js",
+    "lines": 2,
+    "bytes": 371553,
+    "sha256": "74c3402e64a94acc383d63e924506d88d2368fc33db42dee1f829c5f29b82c15",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/course-covers/credits.json",
+    "lines": 209,
+    "bytes": 11089,
+    "sha256": "9aca69c10ec25e8c098a43095bd0d77cf359a8e74b82c59814015d62cb35630c",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/plaza-image-credits.json",
+    "lines": 32,
+    "bytes": 1154,
+    "sha256": "b52b37ae8744d177f9a4aa529bae0637d4bc40d9e73d0083cdc7b44a5f731b2c",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/resources/ai-introduction/manifest.json",
+    "lines": 67,
+    "bytes": 6582,
+    "sha256": "2b55d6426812dc15382acb8a6035054e35fe93e2d01fcd75d5639b4c8ebe6d02",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/resources/ai-introduction.html",
+    "lines": 105,
+    "bytes": 16476,
+    "sha256": "943c672803ccb1dd36bad5f9d2554519a3ca15ddf4cd0b7b1fb0a0d6ee9cd72e",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/resources/bubble-sort.html",
+    "lines": 105,
+    "bytes": 28492,
+    "sha256": "831cf49920027f4b1c59bb2a917b2d874ad9c4ff5dd13ce0691555952dbbd957",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/training-lessons/credits.json",
+    "lines": 6,
+    "bytes": 221,
+    "sha256": "34c1e52fba4bbba9827dc3423ed2426150eb1aad6e5e74ebf2df740f1de8cc94",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/training-works/form.html",
+    "lines": 9,
+    "bytes": 2160,
+    "sha256": "b5ba09cf6601e5cfe879d2b3642b40e2669e43a14d20a1c9bf614bae2ab4fb38",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/training-works/museum.html",
+    "lines": 9,
+    "bytes": 2237,
+    "sha256": "d6ac4786cf3ad4f9474c2705f50ac5a16fdbf00e1fe23e9585688783005820a8",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/training-works/search.html",
+    "lines": 9,
+    "bytes": 2195,
+    "sha256": "56c0884f7bf008044ac89228e380977a168cf124d491e773e4b9bbc0d9999feb",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/training-works/translate.html",
+    "lines": 9,
+    "bytes": 2194,
+    "sha256": "bd227a2414dca699851baa9a905e795c49a9f175db194fa2894062c65a3e9a4c",
+    "scope": "asset"
+  },
+  {
+    "path": "assets/生成冒泡排序互动课件.html",
+    "lines": 93,
+    "bytes": 27542,
+    "sha256": "5c775452cab2ac921c8e0fbd96ce4a31afd7312ca9978443c5609c24a7e12f0b",
+    "scope": "asset"
+  },
+  {
+    "path": "css/account.css",
+    "lines": 8,
+    "bytes": 8122,
+    "sha256": "164924c9f47c3eeac7b9ed95587addb49715d4e9cd779f984facd4f984c9bfbc",
+    "scope": "source"
+  },
+  {
+    "path": "css/admin-interaction-standard.css",
+    "lines": 573,
+    "bytes": 81610,
+    "sha256": "dc10d16337ec8121327d2569aaa4d75cf27187ff39d26f8716c613c17a84f565",
+    "scope": "source"
+  },
+  {
+    "path": "css/ai-composer.css",
+    "lines": 117,
+    "bytes": 15836,
+    "sha256": "82c38ca0b2b333f4bc2c4433557ede10d59f3b0455232674e2689c6382545b79",
+    "scope": "source"
+  },
+  {
+    "path": "css/ai-practice-editor.css",
+    "lines": 438,
+    "bytes": 65568,
+    "sha256": "26599798906365a0cff5c6aac0cad9f1f34fdee3aee369a10778bdb1c31f29b9",
+    "scope": "source"
+  },
+  {
+    "path": "css/ai-practice.css",
+    "lines": 434,
+    "bytes": 53647,
+    "sha256": "eb237bf73f8b10586c6d7b331730ba9fb1d5c7742006124b770ac05c9d2bcf07",
+    "scope": "source"
+  },
+  {
+    "path": "css/assessment-authoring.css",
+    "lines": 46,
+    "bytes": 21448,
+    "sha256": "3dac02468ca7e5f14b4b47d236b6e0043e7869b7fca90dd60863974ca33ad98d",
+    "scope": "source"
+  },
+  {
+    "path": "css/centers/administration.css",
+    "lines": 1307,
+    "bytes": 114772,
+    "sha256": "204e7f745314fb078af4804b924ff73a974dfc822651c157f5d9d8a42114fd58",
+    "scope": "source"
+  },
+  {
+    "path": "css/centers/cockpit.css",
+    "lines": 115,
+    "bytes": 11334,
+    "sha256": "cf672868b92fb9efe90458cd0ad0dda09ee51d1a5aedea40369f048ae5b38517",
+    "scope": "source"
+  },
+  {
+    "path": "css/centers/course-evaluation.css",
+    "lines": 96,
+    "bytes": 15901,
+    "sha256": "d3efae0ab2ee71ab20b7bad4a222f9566e9d31cff6137a8eddb73f72dfd4c1ad",
+    "scope": "source"
+  },
+  {
+    "path": "css/centers/employment.css",
+    "lines": 2170,
+    "bytes": 188825,
+    "sha256": "c9c86833f63c8d18bf46602ddca6336b70c09a2ac665c16630c0f1aae4d36663",
+    "scope": "source"
+  },
+  {
+    "path": "css/centers/growth-guidance.css",
+    "lines": 58,
+    "bytes": 11236,
+    "sha256": "afec83a194093d30be0c455bc82880851b49018ce4d52fccf06f9491b135c65e",
+    "scope": "source"
+  },
+  {
+    "path": "css/centers/theme.css",
+    "lines": 89,
+    "bytes": 13622,
+    "sha256": "b35226ff2c295658cfc51f4d1355987f732d975a302ec6860a9e90e97d9854df",
+    "scope": "source"
+  },
+  {
+    "path": "css/course-analytics.css",
+    "lines": 184,
+    "bytes": 21385,
+    "sha256": "418df0db18fcb50e857dd5afa3610a97217af64d48b991a23385cac893e6e30c",
+    "scope": "source"
+  },
+  {
+    "path": "css/course-hub.css",
+    "lines": 24,
+    "bytes": 8939,
+    "sha256": "30577ce20ffd70ec63e0153636aeb8246e604b31fb3df89661b6fa65dcf4ac90",
+    "scope": "source"
+  },
+  {
+    "path": "css/course-workflow.css",
+    "lines": 163,
+    "bytes": 21433,
+    "sha256": "8f983d1b5185e3aa79c958f95c065cf2c6d0a529de80520364dfb099d4deee37",
+    "scope": "source"
+  },
+  {
+    "path": "css/design-system.css",
+    "lines": 437,
+    "bytes": 42772,
+    "sha256": "27ad9ac3ba6c3762360d48e88d053e1173bdb701b2c6ce352e9048fd094f6e9b",
+    "scope": "source"
+  },
+  {
+    "path": "css/evaluation-center.css",
+    "lines": 377,
+    "bytes": 34085,
+    "sha256": "96cebae171101b503bd2c3ee15189e1858d458dfb0fea7837f860e9ebe5bc890",
+    "scope": "source"
+  },
+  {
+    "path": "css/evaluation-context.css",
+    "lines": 102,
+    "bytes": 9045,
+    "sha256": "07948d3e024f6bb27e8b869f692619c3eba697ad9bd759733cd5d56450f81e82",
+    "scope": "source"
+  },
+  {
+    "path": "css/evaluation-growth-portrait.css",
+    "lines": 92,
+    "bytes": 7451,
+    "sha256": "816a97f1513454a8c3ef5a52bbb5784474175e9ab016eebbd1d82167b029187b",
+    "scope": "source"
+  },
+  {
+    "path": "css/evaluation-school.css",
+    "lines": 717,
+    "bytes": 81420,
+    "sha256": "c91ee15f74b846463ec646d08f8f4db0c9f7963806986f06d01d3a03e69628f0",
+    "scope": "source"
+  },
+  {
+    "path": "css/exam-delivery.css",
+    "lines": 92,
+    "bytes": 12649,
+    "sha256": "5316be23ffb523b837d8c96f05d8fbf5733a00b3037a7f220d2202b8b0c22bdd",
+    "scope": "source"
+  },
+  {
+    "path": "css/forum-center.css",
+    "lines": 99,
+    "bytes": 25269,
+    "sha256": "f6ce2006abb3b7899d29d2046fd72c7ba429e3c00a0e47c5b2f5f010fc121458",
+    "scope": "source"
+  },
+  {
+    "path": "css/growth-planning-report.css",
+    "lines": 3,
+    "bytes": 5401,
+    "sha256": "5a5cd5523ef3d46a93d6f37d1e5fc19a481c83b6896eab8d73204786cc989a4e",
+    "scope": "source"
+  },
+  {
+    "path": "css/growth-planning.css",
+    "lines": 70,
+    "bytes": 25527,
+    "sha256": "c68f89aff64069f781fd43afd33ee6dfe57d2ffa6b767ef495902cebcba0747d",
+    "scope": "source"
+  },
+  {
+    "path": "css/integrated-centers.css",
+    "lines": 9,
+    "bytes": 2409,
+    "sha256": "8379dd456fed1a328992d3288baa8a9b354ac8e1e56df76e5e12ac2a778c1cc3",
+    "scope": "source"
+  },
+  {
+    "path": "css/interactive-editor.css",
+    "lines": 2,
+    "bytes": 995,
+    "sha256": "c93bc4b5658907c61170c397667b1d2a8a76a990c8988d288268523cdc8b32bb",
+    "scope": "source"
+  },
+  {
+    "path": "css/lesson-quizzes.css",
+    "lines": 105,
+    "bytes": 26994,
+    "sha256": "9b0052f1e3636c5bc4f0e2da115ecba97d3f8dfe569767d094fc488d059fea4c",
+    "scope": "source"
+  },
+  {
+    "path": "css/lesson-workspace.css",
+    "lines": 76,
+    "bytes": 16154,
+    "sha256": "c23b8cadd49f923e98cd048855ab72bbb529295da64ea63c38fa75760845c87c",
+    "scope": "source"
+  },
+  {
+    "path": "css/login.css",
+    "lines": 46,
+    "bytes": 4617,
+    "sha256": "49c8bc45f5d646d576579bfee8e1777171f8df7f50b359a8ff989ab3da5f0297",
+    "scope": "source"
+  },
+  {
+    "path": "css/management.css",
+    "lines": 14,
+    "bytes": 11720,
+    "sha256": "ca14e986b4eef6b91791b06b67f72571f0e3dd5c8267234bbe477f1ef5ed1bcb",
+    "scope": "source"
+  },
+  {
+    "path": "css/ppt-editor.css",
+    "lines": 45,
+    "bytes": 10705,
+    "sha256": "7260ecdc1ae6eecdd3adec07c67713ca3c3862d11a86532c46e492451ba7e6d3",
+    "scope": "source"
+  },
+  {
+    "path": "css/products.css",
+    "lines": 119,
+    "bytes": 23813,
+    "sha256": "2efd89b212729e551d9247cde723d8431562259a6a397ca1ec1a598f70bb4a86",
+    "scope": "source"
+  },
+  {
+    "path": "css/programs.css",
+    "lines": 236,
+    "bytes": 46703,
+    "sha256": "c6e09d07b5483f98e237dbccbfeab5f1c21d2d814a637f7a9d3d9fb9fa96ab3a",
+    "scope": "source"
+  },
+  {
+    "path": "css/research-center.css",
+    "lines": 2089,
+    "bytes": 196981,
+    "sha256": "df0c87b11a5e86267c7141f0d2eb52237a98f97ab90cabf80bb5aff51bac91d2",
+    "scope": "source"
+  },
+  {
+    "path": "css/school-assessment.css",
+    "lines": 10,
+    "bytes": 4040,
+    "sha256": "3a2cc541ceb403c0fdf75231d6d9ee058af95c9f60d6f2da58d3ee2b204ff35d",
+    "scope": "source"
+  },
+  {
+    "path": "css/skill-management.css",
+    "lines": 86,
+    "bytes": 10345,
+    "sha256": "431e7437f701940c95c05f81108029e7505956fd61ace5971791f340da829dcc",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-capability-graph.css",
+    "lines": 52,
+    "bytes": 4376,
+    "sha256": "fce3f2862e656a1c265c76a28fba2c5a224c9d39fbf6fac71433cd2c16808afd",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-certificate-center.css",
+    "lines": 64,
+    "bytes": 22689,
+    "sha256": "a2ee74e77c8fc9c6ba5d509015272fc22ab5326cfdf950d7d36b54f610919a5f",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-certificate-detail.css",
+    "lines": 39,
+    "bytes": 4916,
+    "sha256": "e442c0a432235da4bd254dfb301cbc2cd6dd32d553a63c5e7a248ae65a276913",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-certificate-six.css",
+    "lines": 18,
+    "bytes": 1951,
+    "sha256": "854e4a1d29e1e4017fb182f3d71bcfbc268e4838933db8eb3c8962e473346df4",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-certificate-workspace.css",
+    "lines": 224,
+    "bytes": 20516,
+    "sha256": "16b72233ed3575c5c0581693ce42996e567dc2a0703baac844ecdbe17575930e",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-certificate.css",
+    "lines": 125,
+    "bytes": 10824,
+    "sha256": "ea49ef0fab6dd5186caaa47f7bff3812ebad3cc541f710e527443f6a38c1fbf2",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-competition-workspace.css",
+    "lines": 29,
+    "bytes": 14211,
+    "sha256": "dd7aa1f2df908d7804f9ef6a56fa4f09eadc4f24bba2f089518f5b9c864cde54",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-competition.css",
+    "lines": 44,
+    "bytes": 4032,
+    "sha256": "beb3f710dceb3f1a083642e32ec5af66672a4538591d8fabd974b462c0658c70",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-course-plaza.css",
+    "lines": 2,
+    "bytes": 4139,
+    "sha256": "04bf768002c0212896f68d9700386450da69d1e8cc46783769b6c5c56d6b079f",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-detail-tabs.css",
+    "lines": 77,
+    "bytes": 9217,
+    "sha256": "389cf16369b32aa99462cfb2c6a3354785b756066ea8f6dc68901902ac8bfc95",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-education.css",
+    "lines": 129,
+    "bytes": 44493,
+    "sha256": "0619836153d8da87384d6cdbf29a2cfbfc1d8a1a92df65e4ffdae512c0c70228",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-exam-page.css",
+    "lines": 18,
+    "bytes": 1850,
+    "sha256": "cebb096c56116858ca350b4a8a5143fc05d67eab01ddbde3a34d6e7b440b5610",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-growth-guide.css",
+    "lines": 635,
+    "bytes": 97615,
+    "sha256": "0b6fda3a26e934ec3b0915d45277ae3cd266567c05103f4ba51423ad3fc6ad4b",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-home.css",
+    "lines": 766,
+    "bytes": 137853,
+    "sha256": "27d56151f5853992e0636e6a7b48ea05d06863f86192432c3681e062095681f7",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-interaction-standard.css",
+    "lines": 170,
+    "bytes": 22329,
+    "sha256": "dec457cab1638f0e5d468313633a758ac36c96bd679093d8bf23cb66a5847170",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-job-dashboard.css",
+    "lines": 256,
+    "bytes": 39669,
+    "sha256": "21ea163583f6a931b0a29e852b2189d7123cb0b7f7703ba45d65328d7472e7fa",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-job-preferences.css",
+    "lines": 15,
+    "bytes": 1547,
+    "sha256": "d9ee4656b5064c6a6f9a056889fd87ddceec579e0f947745b03cc0e1da9fa3de",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-job-search.css",
+    "lines": 202,
+    "bytes": 63894,
+    "sha256": "81679c93cb6333383e846e5f7a124e98bc8177b099de7943edc847450e152efc",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-page-layout.css",
+    "lines": 313,
+    "bytes": 25094,
+    "sha256": "c19ea19c317304ab7dd765e8777428c97cd265f3f04a40dee16c7018a47ae208",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training-arrangements.css",
+    "lines": 58,
+    "bytes": 5647,
+    "sha256": "5e64e2d5937bd3768e2ee9d60eabdb93b17b09fce425a1b2b85108ff6898350a",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training-classroom.css",
+    "lines": 14,
+    "bytes": 6674,
+    "sha256": "cdb52088befa400cb674129dd7db7c5ed671a46bd348cf132e9aa220ff6ab033",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training-course.css",
+    "lines": 63,
+    "bytes": 16235,
+    "sha256": "f67feeedf208ef2d1212a6ca2a76298643b0a4fe3ebbfd0d1ca188c0f4c4191c",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training-dashboard.css",
+    "lines": 184,
+    "bytes": 26084,
+    "sha256": "cfaef628f6a42768b266a4021af3eec5535d65979b818f4d182e24b96fffc5f6",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training-detail.css",
+    "lines": 222,
+    "bytes": 20621,
+    "sha256": "54644593fe5f70b5c331a73c2443c508d65d43096ec125ea51126be78627cb2b",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training-home.css",
+    "lines": 89,
+    "bytes": 17633,
+    "sha256": "6c848be24d596b2e465d14ee285b733307379bd7ad6531de5986cff4f75a6729",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training-internships.css",
+    "lines": 38,
+    "bytes": 5052,
+    "sha256": "4a7b507bf8f354c32ec6da943a9a2a2e7b3857cb309a8b3c0a4670327c7a8171",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training-mine.css",
+    "lines": 50,
+    "bytes": 4678,
+    "sha256": "ca312e4e5a2d61f8e0d04e0ed20119f31cf09e6b2f7d30b0c4417ec28215ce80",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training-offline.css",
+    "lines": 3,
+    "bytes": 7296,
+    "sha256": "df9a66f45db1090ed4c0308c31765cca155c9edffe71f5654b028ea5cd4d3a77",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training-results.css",
+    "lines": 40,
+    "bytes": 3886,
+    "sha256": "f0909196d0eab6811affd2acb2f13264ea55b001533b994f2ac2aacda1366a84",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training-work.css",
+    "lines": 214,
+    "bytes": 22570,
+    "sha256": "9d098db8f7e14b54a2e1ca6b5c19956c7727ef21727a6ff159bfbb1686879b2e",
+    "scope": "source"
+  },
+  {
+    "path": "css/student-training.css",
+    "lines": 94,
+    "bytes": 9142,
+    "sha256": "f5da5dac3a12a59bbb5c991380b4d10efadeff9c284030497c2ca56526cb4014",
+    "scope": "source"
+  },
+  {
+    "path": "css/student.css",
+    "lines": 133,
+    "bytes": 37127,
+    "sha256": "a88ec0d06d19b2150d26512b7146d253874d2b537a23e56067224e2fdd9334de",
+    "scope": "source"
+  },
+  {
+    "path": "css/study-opportunities.css",
+    "lines": 2,
+    "bytes": 9900,
+    "sha256": "ce099fe7dfc0f15fb98998a7ee75436bbf52259324ada945e6c5a52de5a576b0",
+    "scope": "source"
+  },
+  {
+    "path": "css/styles.css",
+    "lines": 456,
+    "bytes": 67933,
+    "sha256": "7bbc4156a8c3aa261fc44c61282d847f60e9b4153e180d0d1f18d60b3259e75e",
+    "scope": "source"
+  },
+  {
+    "path": "css/teacher-home.css",
+    "lines": 112,
+    "bytes": 14720,
+    "sha256": "482ea3b67f0e2e26255ce922dff2d1b5ac171009913e4af98a883932ccffaf11",
+    "scope": "source"
+  },
+  {
+    "path": "css/teacher-interaction-standard.css",
+    "lines": 716,
+    "bytes": 85267,
+    "sha256": "978be84fcda1199a87ddf15adba31aa270f69fe2a50e71d78afdc4b6702126e2",
+    "scope": "source"
+  },
+  {
+    "path": "css/teacher-training.css",
+    "lines": 138,
+    "bytes": 47798,
+    "sha256": "cf58e59e1cb4919c1bf11fc9b4acc1544508e6ebe3127dbe40d2ac50b5f91a06",
+    "scope": "source"
+  },
+  {
+    "path": "css/ui-tokens.css",
+    "lines": 100,
+    "bytes": 8524,
+    "sha256": "5123ce43b4b767712ee6c45c5590449a2b50efdf8110644639f8c25fef289df0",
+    "scope": "source"
+  },
+  {
+    "path": "css/video-studio.css",
+    "lines": 250,
+    "bytes": 24729,
+    "sha256": "b61c0fd52e273a7a1097d460244fe2cd08854d7549e8f36a944ede42abca5265",
+    "scope": "source"
+  },
+  {
+    "path": "design/project-design/2026-10-15-certificate-center.md",
+    "lines": 77,
+    "bytes": 9163,
+    "sha256": "826585f094f4c319bc07744b9467c2c87950ca25e7f6b270a69e6f81c6e4b19f",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-15-cet6-detail.md",
+    "lines": 45,
+    "bytes": 4558,
+    "sha256": "89d69096d20c912867fb72f46321a9d834f4965ee436b25016540cf8a46022d9",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-15-student-education.md",
+    "lines": 164,
+    "bytes": 22761,
+    "sha256": "2ddebef8eae64b3ba20d3cb10b55887d96e849151694e9598f07b1e89a19bc98",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-15-training-classroom.md",
+    "lines": 115,
+    "bytes": 19389,
+    "sha256": "7b9c27850d93627821907b69fd40ef407908c0483682bb49b455e5976bbc3786",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-15-training-exam-reminder.md",
+    "lines": 9,
+    "bytes": 992,
+    "sha256": "dc1ca97118d6f991f93390fffdf9df796976fd42a0fc49c0385a7860fabad629",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-17-forum-center.md",
+    "lines": 126,
+    "bytes": 13376,
+    "sha256": "1d889fb7f61e112c3b0a85c697000f78137f1f7e084020864e85c2054ad3bd00",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-17-growth-planning.md",
+    "lines": 92,
+    "bytes": 10741,
+    "sha256": "f1bde8b75c957fdcc9b4cee106f58f8fb32d225037f724c92ce9cf51cd19491d",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-18-course-plaza.md",
+    "lines": 78,
+    "bytes": 8938,
+    "sha256": "9ff9b30f2d2c7941f855b727153b330241a27b3d11ff3d3118466aeb0169a8b3",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-18-growth-analysis-report.md",
+    "lines": 29,
+    "bytes": 3314,
+    "sha256": "452be9f8b4620e2044820594d26c6539c5ebfef66a7a31f448a1cf61c0e6a1ec",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-18-study-opportunities.md",
+    "lines": 25,
+    "bytes": 3250,
+    "sha256": "bd710ebd80a35b95b4c6ca9ec31e7ee44dc2264b2c732f2f874dfe51fba7d9c2",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-19-ai-practice.md",
+    "lines": 472,
+    "bytes": 95060,
+    "sha256": "499959e79856cdf992dc8288cb22b900d4bf7f2d0f2905c3e30eed831d4e341c",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-19-browser-detail-workspaces.md",
+    "lines": 64,
+    "bytes": 9794,
+    "sha256": "86d5e1b37c095c73f5629996379fbf6c745d00c24cf60596a5b5b8799b9c0377",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-19-course-evaluation-ai-mainline.md",
+    "lines": 79,
+    "bytes": 11712,
+    "sha256": "aded9dfd9457881caa9d56fbd4b5f85221fb80c796b31ef3d6b960ff2f57fb48",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-19-data-cockpit.md",
+    "lines": 41,
+    "bytes": 4555,
+    "sha256": "a15f8e721c1a4afbda4f7d15c92ffdde8abcffe36d7ce9a5dee86495cc8c1f14",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-19-growth-guidance-ai-mainline.md",
+    "lines": 309,
+    "bytes": 33819,
+    "sha256": "417ea2623f42d1f9661d0746756c1ecd6e1456779dca4faa74910b9bcfe750ac",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-19-job-search-ai-mainline.md",
+    "lines": 531,
+    "bytes": 74968,
+    "sha256": "d4c7a5c03b8d4f2553feef438a1e6eda21c99db42fba2e6c9d65f8389f7c0fa6",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-19-platform-onboarding-course.md",
+    "lines": 40,
+    "bytes": 4713,
+    "sha256": "b27b74a31f1bd590b8852dc0befaf91970df0ed3b60b447150983d428a55c853",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/2026-10-21-practice-center-reference.md",
+    "lines": 774,
+    "bytes": 57095,
+    "sha256": "4a786f1ee1ba8086b3faaeae595d42c2fb4b138ae835d6941f19c81ea26c6b90",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/assessment-paper-flow.md",
+    "lines": 57,
+    "bytes": 19398,
+    "sha256": "de450c545d01793bf53b0ae4ac61d3de7584a8eb6951769012c7e2f3b2ccd93d",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/business-centers.md",
+    "lines": 93,
+    "bytes": 12153,
+    "sha256": "ad495b6b82e694381909a99e0ddceb511adbc29d759449530bdec08e3f03f429",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/evaluation-center.md",
+    "lines": 265,
+    "bytes": 61454,
+    "sha256": "f0a544d9e6afc23a3f3fce5470fef54f431fbcafdacb37e7c8d019fa9e98145c",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/evaluation-school.md",
+    "lines": 53,
+    "bytes": 9736,
+    "sha256": "97f4901b355904569bc84a8d1d2282a54063cc145b2ae41b50005507c68ac101",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/student-learning-resume.md",
+    "lines": 45,
+    "bytes": 7774,
+    "sha256": "2ffacb12f14e79f24caddc1b836cd406b3cd8bcbdb40bc2c550d040536e07f47",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/teaching-draft-flow.md",
+    "lines": 437,
+    "bytes": 40641,
+    "sha256": "975df17ba10dba3c47bf0d907db10d2332b099ef131a8dfdc11c618eb890ceb5",
+    "scope": "design"
+  },
+  {
+    "path": "design/project-design/vercel-deployment.md",
+    "lines": 28,
+    "bytes": 1468,
+    "sha256": "3fa8a166e32ef8d0a226567f39643a4fe7e9e98e1c973e3c15baee7ed5d53f88",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/2026-10-15-training-home-course-center.md",
+    "lines": 163,
+    "bytes": 18818,
+    "sha256": "d8b535ba1c9baa0efa1f97c1e12adf0c9a9fe218e76da8aa984082f22a740265",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/2026-10-16-student-unified-home.md",
+    "lines": 876,
+    "bytes": 134057,
+    "sha256": "7f22712521ef7396e132a0923c0caf0b36189eb18a42b6c87db6cd8f22bdd4c1",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/2026-10-16-three-role-visual-system.md",
+    "lines": 923,
+    "bytes": 147429,
+    "sha256": "53218038d3f19c9f053c92349440164279f2ae50a40413057586fc4ff174868c",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/2026-10-16-ui-ux-pro-max.md",
+    "lines": 29,
+    "bytes": 3521,
+    "sha256": "313ad1fefbb70d4b9b0b165f0799d7aedaa74ada7e0e389110ae9d1096ea2ad9",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/2026-10-22-three-role-interaction-audit.md",
+    "lines": 216,
+    "bytes": 22543,
+    "sha256": "28e8425365284a64a4f285a912948bef286df6ea78fd796fbbaef12e23f8d5c0",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/2026-10-23-interaction-standard-review.md",
+    "lines": 56,
+    "bytes": 6132,
+    "sha256": "1eed60cde16d424c61a8d030b4c1ffb9547e8422424a1420d84e169642dc5b22",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/admin-interface-standard.md",
+    "lines": 396,
+    "bytes": 75798,
+    "sha256": "dc2fc938624bd5505417dfd75723870cc3896e63964d77c0fcd527d50b28c110",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/button-size-review.md",
+    "lines": 163,
+    "bytes": 8229,
+    "sha256": "83a1d047234cde8ec785b31e558f8297ad3ef765f08f31ef450f640f0314b472",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/danger-state-fixes.md",
+    "lines": 103,
+    "bytes": 8059,
+    "sha256": "fbb16699ec676c165fba02b4307318917a4bdaa083eeb4dd9aea03d255bcbf9f",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/student-interface-standard.md",
+    "lines": 3764,
+    "bytes": 322092,
+    "sha256": "5ff8140c50061885fa5ec5d4b1bff02210133bcec2cb6683b6fd0d544086959b",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/teacher-interface-standard.md",
+    "lines": 383,
+    "bytes": 70856,
+    "sha256": "1f8b08f6b8bf7e1b412cdbbd18109e1b462f6fec172a1ec54c75eb0e742fea4c",
+    "scope": "design"
+  },
+  {
+    "path": "design/ui-design/three-role-interaction-checklist.md",
+    "lines": 743,
+    "bytes": 134346,
+    "sha256": "6ab4501f7515f809a83552d0e9171efdcb7c2017f346ab7afc758d6316331643",
+    "scope": "design"
+  },
+  {
+    "path": "index.html",
+    "lines": 728,
+    "bytes": 66580,
+    "sha256": "16860c0d41139fcb83e3358ed7ed0b16579b7361c6623faf7a65460de258d680",
+    "scope": "source"
+  },
+  {
+    "path": "js/account.js",
+    "lines": 237,
+    "bytes": 19399,
+    "sha256": "3c0237b2fba4d1f7045f4bfca810bad6bbd15ed2ec907fef2cd7a47d37575567",
+    "scope": "source"
+  },
+  {
+    "path": "js/admin-cockpit.js",
+    "lines": 38,
+    "bytes": 3007,
+    "sha256": "667098d5c91e91c40261e6993c5209a29b7b8bc742ebc61e317436fc2436d446",
+    "scope": "source"
+  },
+  {
+    "path": "js/ai-composer-ui.js",
+    "lines": 143,
+    "bytes": 10724,
+    "sha256": "aae1dd3e54e829145a60a8d8f0d57cd0b9dda980517dc3bb841119ce6b594d18",
+    "scope": "source"
+  },
+  {
+    "path": "js/ai-practice-components.js",
+    "lines": 137,
+    "bytes": 55705,
+    "sha256": "1f6fc6017462d6bff4fc27df21ae8922fc359e1ee6a0e337e99f7d05cbc97000",
+    "scope": "source"
+  },
+  {
+    "path": "js/ai-practice-configuration.js",
+    "lines": 143,
+    "bytes": 30149,
+    "sha256": "71d8ea2ecd473a68fe1ce01ab77149a78de411e120dc6c2ffed2aaa877c8cb58",
+    "scope": "source"
+  },
+  {
+    "path": "js/ai-practice-course.js",
+    "lines": 616,
+    "bytes": 74268,
+    "sha256": "d5cc781cf22e8e731f066d200f3a0192f86d94d1d5eb5353878e0f29469a68f5",
+    "scope": "source"
+  },
+  {
+    "path": "js/ai-practice-editor.js",
+    "lines": 1272,
+    "bytes": 214537,
+    "sha256": "294833eb05514e3fb2796a82994fe16b989d288ab1e868ccd355447661c93675",
+    "scope": "source"
+  },
+  {
+    "path": "js/ai-practice-files.js",
+    "lines": 53,
+    "bytes": 20552,
+    "sha256": "fd88450c449c3384246762b25e453d1ec24ea2338e6dd9e5f9bac5ec52335864",
+    "scope": "source"
+  },
+  {
+    "path": "js/ai-practice.js",
+    "lines": 621,
+    "bytes": 84449,
+    "sha256": "e3b5ec3e9401116a4d84e409fb32d575534f574e9276c8173eb5a3ef16c1bf93",
+    "scope": "source"
+  },
+  {
+    "path": "js/ai-process-timing.js",
+    "lines": 5,
+    "bytes": 235,
+    "sha256": "94dd886d86646e8f7eb428c8f4c369f82e09a760e28015d485ef4554fff615dc",
+    "scope": "source"
+  },
+  {
+    "path": "js/ai-process-ui.js",
+    "lines": 28,
+    "bytes": 2046,
+    "sha256": "25ac251bec72fa1dab7376bdf355da1733c293bd4f8e515667a8fd3b9c225478",
+    "scope": "source"
+  },
+  {
+    "path": "js/app.js",
+    "lines": 1922,
+    "bytes": 133977,
+    "sha256": "51515a071659a5b8d0ee39da2632aac2e9249fcf6b60d99192477f4b00ddf7bf",
+    "scope": "source"
+  },
+  {
+    "path": "js/assessment-authoring-data.js",
+    "lines": 251,
+    "bytes": 25946,
+    "sha256": "50120dd1012c0796d4e2518826f428c2e886cc736c2b6c0ee18dc804e030b6e0",
+    "scope": "source"
+  },
+  {
+    "path": "js/assessment-authoring.js",
+    "lines": 422,
+    "bytes": 58921,
+    "sha256": "707bfda9e8104c22627ec5767bd3a76fbf59e8e8b65a895bd6213673235e8a52",
+    "scope": "source"
+  },
+  {
+    "path": "js/assessment-bank.js",
+    "lines": 180,
+    "bytes": 20841,
+    "sha256": "7ed1b88f3a50e88a827db6afe4b1aca6f6af39a8b902ce9eb273029f2d6f3f6d",
+    "scope": "source"
+  },
+  {
+    "path": "js/assessment-diagnostics.js",
+    "lines": 301,
+    "bytes": 33096,
+    "sha256": "96dea89993a9b94181e483b207fe19ccdbd655dd6f6ceb90d2c40874e17dc507",
+    "scope": "source"
+  },
+  {
+    "path": "js/assessment-paper-flow.js",
+    "lines": 557,
+    "bytes": 54649,
+    "sha256": "e2cdac82c743ea27923668ab047970358446d93f203fd8607a5f8e5cec635168",
+    "scope": "source"
+  },
+  {
+    "path": "js/career-assessment.js",
+    "lines": 127,
+    "bytes": 14023,
+    "sha256": "cc18c021b3f0d1998ffc0fb2bbb3156fb5e92fe25e9c169779524c0f3715044c",
+    "scope": "source"
+  },
+  {
+    "path": "js/career-mvp.js",
+    "lines": 87,
+    "bytes": 10993,
+    "sha256": "edf741c758494d16a7cee2d004ca5b1f4c76a3edcfbba4506e65f07cbe4f8142",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/app.js",
+    "lines": 266,
+    "bytes": 15543,
+    "sha256": "53181c57ac8adb5f2225385ef9015e474a84a86caa8a693e940e8c1e59198ab2",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/cockpit-data.js",
+    "lines": 18,
+    "bytes": 1258,
+    "sha256": "b433f1c0ca4ac43468e5fca0394e3293ae13d8606ddf65f29d5b4516fcd7a8d9",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/data.js",
+    "lines": 269,
+    "bytes": 26869,
+    "sha256": "ac4ac50c0d1625ca8e561610e66e33f59d9fd89b2360ba9b52afd435116b0fa0",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/docedit.js",
+    "lines": 204,
+    "bytes": 9876,
+    "sha256": "5e99ebb0511cd3afd5788adaace1c1b7153a5e583c50626526576bcaf3fbb6ba",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/interaction-standard.js",
+    "lines": 503,
+    "bytes": 65464,
+    "sha256": "475f4585e665710ef4d88b929190330903bf68782741052a08efaa3e63635c9c",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/router.js",
+    "lines": 70,
+    "bytes": 3345,
+    "sha256": "1bcd6b933db364af222a8b151111b0aafd82368ad5b27e9af7260c993d123731",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/views/aibuild.js",
+    "lines": 2455,
+    "bytes": 215485,
+    "sha256": "bb60e548661f65ae79f4aa937a13174841633011ed028489f73ee1e075beaa24",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/views/cockpit.js",
+    "lines": 93,
+    "bytes": 16431,
+    "sha256": "ed2dde43e6242aaa55776abd44ef147c53fbefee0b373cd51d10296defdc2607",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/views/course-evaluation.js",
+    "lines": 419,
+    "bytes": 43972,
+    "sha256": "bca702ffdef9cf2ec96126a1168589e5e1c32dc04b67a70c6760add20a2b7aa8",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/views/enrollment.js",
+    "lines": 1923,
+    "bytes": 198107,
+    "sha256": "6c21c2bcb31b7528dcbb60f7c0f50d62f066111965da3be22517ff37e87a7d49",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/views/growth-guidance.js",
+    "lines": 222,
+    "bytes": 34207,
+    "sha256": "0d54a226d3d9d092df3fb54bb0c3359731cc4f24b1ce4bffb8c959272ca0afbe",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/views/sch_device.js",
+    "lines": 594,
+    "bytes": 55939,
+    "sha256": "03651ee9f6f627cddc66f8de544a32990e268b3dd5f25968f03a8180f1bbbd3d",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/views/sch_oa.js",
+    "lines": 431,
+    "bytes": 36443,
+    "sha256": "deeb734e72d426fda1efdae6b2da81d159a5266cbc6314a1befacc994bbb6783",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/views/skills.js",
+    "lines": 18,
+    "bytes": 1466,
+    "sha256": "5e3d8aa0745df5c206416eb7f0571829609c1f1ef6e2ab4cf273e745155296d2",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/views/teaching.js",
+    "lines": 1232,
+    "bytes": 132629,
+    "sha256": "98eedc1d63fbb1a3503205e618f8992abb8f4c7dcd5b97c9eea4c7d771475aeb",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/views/training.js",
+    "lines": 2274,
+    "bytes": 192305,
+    "sha256": "38d2218f136ddf5f890ca096cd7d8a1eac60137f37fb5ae90e9e20c9d993a000",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/administration/views/workspace.js",
+    "lines": 1076,
+    "bytes": 92109,
+    "sha256": "b54118abf6f3e6408bf8b2843db7d669beffacc9eb16d774426e738dcbdc7458",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/bridge.js",
+    "lines": 81,
+    "bytes": 8607,
+    "sha256": "98a34d19afb167b4b18ae871fec66565b0ddff8294c759c270961aa95bd5aead",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/documents.js",
+    "lines": 11,
+    "bytes": 1265,
+    "sha256": "4fde6a382f5c03d60708b3f0aa09740e54d158a769e45c72be6d352170754bf2",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/employment/app.js",
+    "lines": 262,
+    "bytes": 15225,
+    "sha256": "cd41ef68441c526a9fc81c44241f53028b378f208f74e07e4a7fe3d13162b857",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/employment/data.js",
+    "lines": 229,
+    "bytes": 22253,
+    "sha256": "3176e76fdf9bc9720df51714ffbaa23d2e32ba258350cc8248135107d675ac68",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/employment/docedit.js",
+    "lines": 204,
+    "bytes": 9876,
+    "sha256": "5e99ebb0511cd3afd5788adaace1c1b7153a5e583c50626526576bcaf3fbb6ba",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/employment/router.js",
+    "lines": 64,
+    "bytes": 2520,
+    "sha256": "8673f289ca7cfeac8cce0c8e9a1e9a98cccc68879e00696b85a88f53a2768ea0",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/employment/views/home.js",
+    "lines": 216,
+    "bytes": 11843,
+    "sha256": "7a030cde8394b44a29524e43d04f1f763f6fa1a76a9c0a077cb8b798bf0153f5",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/employment/views/jobs.js",
+    "lines": 3064,
+    "bytes": 219795,
+    "sha256": "97709baee1240631e663d13e2ba6306e58ed7595ca0ce0f84dd552577a77030e",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/employment/views/skills.js",
+    "lines": 116,
+    "bytes": 6728,
+    "sha256": "c09b2b7dc0a3b082252f83407e3fa536194188f532e588750122c0047cef6f40",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/employment/views/workspace.js",
+    "lines": 816,
+    "bytes": 68016,
+    "sha256": "f29c2c9f32fd265bcf1545b84fd433bcbed52cfbca2e0430bd581dc31920b5c3",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/growth-career.js",
+    "lines": 147,
+    "bytes": 18917,
+    "sha256": "b9e74c379e341ccf11bce0c09dfbeb4e8c4b7eaa18dab1f1ade55a077d78ac3b",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/home-summary.js",
+    "lines": 30,
+    "bytes": 3239,
+    "sha256": "c7643462103ae1022c38b6f6f20564f675f718f30e72179c4b2753625963a1aa",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/session.js",
+    "lines": 15,
+    "bytes": 1844,
+    "sha256": "151fb0a0325bacb34eb5f918018dfa4a1b96b944cd3529763680fcd73475c7ef",
+    "scope": "source"
+  },
+  {
+    "path": "js/centers/transport.js",
+    "lines": 11,
+    "bytes": 657,
+    "sha256": "7bee1b3dfe17b83f11f4e2d41dc1e6e61b1046c0da5a848a1f98c33470b9e24b",
+    "scope": "source"
+  },
+  {
+    "path": "js/classroom-narration.js",
+    "lines": 137,
+    "bytes": 8117,
+    "sha256": "fc86d7425b9c65aecf9a97b8e98b47ccb5386c82764511b01bd2ae2eb69661ef",
+    "scope": "source"
+  },
+  {
+    "path": "js/conversation-scroll.js",
+    "lines": 50,
+    "bytes": 2666,
+    "sha256": "72173696c54d213ec667993950c77e4cc18a883e4ae0e4797e8e9e0535eb9619",
+    "scope": "source"
+  },
+  {
+    "path": "js/course-analytics-evidence.js",
+    "lines": 171,
+    "bytes": 18983,
+    "sha256": "6ef9c06680795821c5b9164572e692b9c3764167fa409a1ff7a4f84d1ed99a31",
+    "scope": "source"
+  },
+  {
+    "path": "js/course-analytics.js",
+    "lines": 477,
+    "bytes": 48139,
+    "sha256": "bc35c18374145f8362ae1dd6656e69817b17989d3ceb23750a6f95a621dbb310",
+    "scope": "source"
+  },
+  {
+    "path": "js/course-enrollment.js",
+    "lines": 136,
+    "bytes": 10973,
+    "sha256": "865e5bdf3284c7e2e43d49fdf53ad5ee641fd9e9bfeea709abb06e85b1111a27",
+    "scope": "source"
+  },
+  {
+    "path": "js/course-evaluation-bundle.js",
+    "lines": 315,
+    "bytes": 35774,
+    "sha256": "95c13577c5c47c8399e0d244bd06cbb2638380472a54648ea4aa71b2268f74e1",
+    "scope": "source"
+  },
+  {
+    "path": "js/course-hub.js",
+    "lines": 572,
+    "bytes": 55721,
+    "sha256": "7307727a36024008f3c14b159ba6277fa1dfbf96e5cc76d73a30b401fe4d9fd0",
+    "scope": "source"
+  },
+  {
+    "path": "js/course-learning-overview.js",
+    "lines": 81,
+    "bytes": 6611,
+    "sha256": "76e31ee84ecb30c427031c76a44bb95ab0af943c4f979c21bb65a01588c7f5e4",
+    "scope": "source"
+  },
+  {
+    "path": "js/course-preview.js",
+    "lines": 274,
+    "bytes": 26943,
+    "sha256": "cbfcb5d1dcabd4cf5fc1d432899620f09e6b7f86bb6896a5376c96c21bf7d958",
+    "scope": "source"
+  },
+  {
+    "path": "js/course-quizzes.js",
+    "lines": 214,
+    "bytes": 21837,
+    "sha256": "bcc53b31ece5a46cc64de5c5f278c10ea11e593a56d43905d91a3ec4e6571481",
+    "scope": "source"
+  },
+  {
+    "path": "js/course-workflow.js",
+    "lines": 584,
+    "bytes": 50485,
+    "sha256": "3bb8ae641778570a8a6b02e4636ac30661915b73314a472d63abb66907a30540",
+    "scope": "source"
+  },
+  {
+    "path": "js/demo-entry.js",
+    "lines": 69,
+    "bytes": 3779,
+    "sha256": "94db507b0aca2539ca06bbac5a9ee91ef6234f7f2c5a6e1efec6f5ad1bcdd6ec",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-administration.js",
+    "lines": 187,
+    "bytes": 28583,
+    "sha256": "660eb9073d26635868e4382dcae4289bb3c2920ded306cae91df147bc5830c45",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-authoring.js",
+    "lines": 99,
+    "bytes": 13163,
+    "sha256": "8b84b97efe19d5321add7ec96e1c14201d3e758f32e9a6fabe80e511233a3d77",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-business.js",
+    "lines": 446,
+    "bytes": 44196,
+    "sha256": "75b83d3939ba06b75c9b509645c566c4e4f0a4338e27d1d0d4e5003a08738027",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-center.js",
+    "lines": 210,
+    "bytes": 24706,
+    "sha256": "99af547bbfe3313ff6d0d0a2a82b4d750f8dc55544bde09d8a089e9b0e20dc22",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-context-fixtures.js",
+    "lines": 216,
+    "bytes": 25503,
+    "sha256": "96cb7bb51085c46de3fb7a8d22fd40bda1aae669eb6724e0dd9b6461c2f552cf",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-context-model.js",
+    "lines": 126,
+    "bytes": 17821,
+    "sha256": "dcc2842606610d08f97d3bb2a27ddbe7d7409d39e22a8bd2cae5ef2fd885be98",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-context-views.js",
+    "lines": 49,
+    "bytes": 11574,
+    "sha256": "22435a367f8b4b2e48a84c0bb5036bd2e39d651ef11fc9de8390750c87b5e40a",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-data.js",
+    "lines": 336,
+    "bytes": 31030,
+    "sha256": "63fcc893b15431f38d9308117ae9f213c9f3a2db907fe6b278d19b898d37c621",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-fixtures.js",
+    "lines": 65,
+    "bytes": 9172,
+    "sha256": "d89cb2f71d9a58936b7700c65408117b8677e7871eff32b745a5c55a6790a49c",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-growth-portrait.js",
+    "lines": 125,
+    "bytes": 20626,
+    "sha256": "99e12e1d2737d143bc9ba555069d81bd07ce58a50ea8329626f5ba76c6b79f82",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-growth.js",
+    "lines": 82,
+    "bytes": 13817,
+    "sha256": "a8218f247880073237b2e3e9d8a30a69614c59571c0af5d47f90caa1376afc43",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-quality-diagnosis.js",
+    "lines": 143,
+    "bytes": 16374,
+    "sha256": "3d2b81faa4aaf7b9532bd626dad2ac8d8553e57c9e3e6fee088a115267b68901",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-reports.js",
+    "lines": 64,
+    "bytes": 13152,
+    "sha256": "b9abf1911cbe145df5313ab14174ad255cee54f3828dcb544a0c4162065e06ad",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-school-dashboard.js",
+    "lines": 312,
+    "bytes": 60718,
+    "sha256": "cf72066068666667efa532d6187e33900670f449e5a2799b4e09b2dd75a037ff",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-school-data.js",
+    "lines": 65,
+    "bytes": 6880,
+    "sha256": "b4be0b83db0ea6ea152534ee4acf017b2babd7d074d14f2a93f8f25fd83ecb2a",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-school-model.js",
+    "lines": 103,
+    "bytes": 12324,
+    "sha256": "4c9828e4df581c49f84f5f9748a3f980eecf7326ee8a04b0a060a2c08b72dbe1",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-school-portrait.js",
+    "lines": 292,
+    "bytes": 49003,
+    "sha256": "2e6f48807e97f2c9a46d91065f9a670369d53638d518f51ab8139e3dd0bc428b",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-school-view.js",
+    "lines": 188,
+    "bytes": 26209,
+    "sha256": "7d99fdbec6b88b8489fdf4ce6d42ec959813d4e612b8043727e31e7eb892bd49",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-school-workspace.js",
+    "lines": 528,
+    "bytes": 68215,
+    "sha256": "1e7107026111d51b37fd80bbae3863e422e59e133c4d43fc94904702532ff69a",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-student-profile.js",
+    "lines": 200,
+    "bytes": 26964,
+    "sha256": "b56e5133e515bc9d14639d9a13d740b84d79646117cbe5ec0df0024c2e113692",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-teaching-portrait.js",
+    "lines": 71,
+    "bytes": 16368,
+    "sha256": "3df67c99212613016b62a2e1f3f0dfbb2f8f026c94563fcfdf2dc4ef1ed287e4",
+    "scope": "source"
+  },
+  {
+    "path": "js/evaluation-views.js",
+    "lines": 65,
+    "bytes": 12872,
+    "sha256": "e59490f1f58dc5d86aa029d19f9776972aad54220d002166de84b37000102f79",
+    "scope": "source"
+  },
+  {
+    "path": "js/evidence.js",
+    "lines": 20,
+    "bytes": 3580,
+    "sha256": "2660aa119ed8fcdbc39d0a8a55a67756f27a3c2c5452ff1011b97799ae2db9e6",
+    "scope": "source"
+  },
+  {
+    "path": "js/exam-delivery.js",
+    "lines": 444,
+    "bytes": 46389,
+    "sha256": "0567ac16b73abdc225dd788c768a828e7d3a42d6964de72b22f01f87727dbd87",
+    "scope": "source"
+  },
+  {
+    "path": "js/forum-center.js",
+    "lines": 385,
+    "bytes": 88726,
+    "sha256": "c62e6ce797f6b4a0b2619a970b7a28af4e05ba0067072268a227a2b111eb871f",
+    "scope": "source"
+  },
+  {
+    "path": "js/growth-planning-report.js",
+    "lines": 64,
+    "bytes": 10893,
+    "sha256": "67035b6bb4cc3d5084902a1f7b4f27e67bdd6bc471e859f190a19eeb3ca218a1",
+    "scope": "source"
+  },
+  {
+    "path": "js/growth-planning.js",
+    "lines": 230,
+    "bytes": 58331,
+    "sha256": "a40f73667e208781434257454a1bb5bd418c16f26c62619250452380d148e4ab",
+    "scope": "source"
+  },
+  {
+    "path": "js/integrated-centers-data.js",
+    "lines": 328,
+    "bytes": 8822,
+    "sha256": "7cff8c747f94f8664f991070e8e75a1c7ebc7a975631a9c1c5ef1c37ad595206",
+    "scope": "source"
+  },
+  {
+    "path": "js/integrated-centers.js",
+    "lines": 186,
+    "bytes": 21394,
+    "sha256": "8c5c771a9fc2aa20459acf4ccadfa83c4a8242e074df588132b5ceb2245351cb",
+    "scope": "source"
+  },
+  {
+    "path": "js/interactive-editor.js",
+    "lines": 113,
+    "bytes": 13682,
+    "sha256": "90d8424c1937dfc55aef75ba995b7fc9f47fc6b3c74fc40a6bed6b2553f4aaa5",
+    "scope": "source"
+  },
+  {
+    "path": "js/learning-evaluation.js",
+    "lines": 157,
+    "bytes": 16593,
+    "sha256": "22c1bf8863de40db2d1e38f4c6ced844b5458fb019533a86ca05994456f4ef02",
+    "scope": "source"
+  },
+  {
+    "path": "js/learning-feedback.js",
+    "lines": 91,
+    "bytes": 8444,
+    "sha256": "971240eef1e962e5eb3f022c4c98d43bc7faabb84ff3d5574af11f7ee1dc1681",
+    "scope": "source"
+  },
+  {
+    "path": "js/learning-guide.js",
+    "lines": 211,
+    "bytes": 16834,
+    "sha256": "7e636f7216b82d571927198e0e42641580fa9d2893be12d14158bdf9d0757769",
+    "scope": "source"
+  },
+  {
+    "path": "js/lesson-application.js",
+    "lines": 215,
+    "bytes": 17521,
+    "sha256": "7fdbaf6be2bcb621e3b72b7942e7800fb8b95c53ed16859136c1213a985a704c",
+    "scope": "source"
+  },
+  {
+    "path": "js/lesson-draft.js",
+    "lines": 166,
+    "bytes": 14553,
+    "sha256": "c1d547c6479e55bdb3ba5b251b0572d8d2d0c3d51caf5705149c025517de4154",
+    "scope": "source"
+  },
+  {
+    "path": "js/lesson-library.js",
+    "lines": 82,
+    "bytes": 6858,
+    "sha256": "fc14f1e0e9948a8e678b4b47c7ffc87310c6631a7d88e5a5b012b6ed5d24d097",
+    "scope": "source"
+  },
+  {
+    "path": "js/lesson-quizzes.js",
+    "lines": 963,
+    "bytes": 110821,
+    "sha256": "eaa331e992a51009f49a0ae66fb4a0fb830f4abf3c3cc109adecbecd3a8839b3",
+    "scope": "source"
+  },
+  {
+    "path": "js/lesson-workspace.js",
+    "lines": 268,
+    "bytes": 29836,
+    "sha256": "69b94ea6a1999901df68f1a830cda5b5ad21333c89241179386f3234de6b3fbb",
+    "scope": "source"
+  },
+  {
+    "path": "js/login.js",
+    "lines": 189,
+    "bytes": 8266,
+    "sha256": "5f680dcdde9c2b3ec740cf43a0460493953c3b4d8332aeeaf8d182a61dc8d7d8",
+    "scope": "source"
+  },
+  {
+    "path": "js/management-data.js",
+    "lines": 1524,
+    "bytes": 47394,
+    "sha256": "6564a9a6bf1ad9177541ec6cb129edf9d72fd8becef083943991842e6258aa43",
+    "scope": "source"
+  },
+  {
+    "path": "js/management.js",
+    "lines": 447,
+    "bytes": 52062,
+    "sha256": "1a7c9e2bc2b615b0679592722073f7c33a81e73649486ebc597afa186f3009c1",
+    "scope": "source"
+  },
+  {
+    "path": "js/navigation-breadcrumbs.js",
+    "lines": 112,
+    "bytes": 9935,
+    "sha256": "141c2ba6524b756b1dbedd85bf8f6e3c541b0cf7634b4669f32758f1bafa9f45",
+    "scope": "source"
+  },
+  {
+    "path": "js/outline-evidence.js",
+    "lines": 110,
+    "bytes": 11111,
+    "sha256": "a143b1135d9c0be4d73c3a3461e0b41c3a830eb17852f4e92c150e24f65f3616",
+    "scope": "source"
+  },
+  {
+    "path": "js/platform-onboarding-course.js",
+    "lines": 178,
+    "bytes": 34477,
+    "sha256": "6113db8af36dafcc1a55222c7e482eafed64626fa55b01dd4e8774f50763e818",
+    "scope": "source"
+  },
+  {
+    "path": "js/ppt-editor.js",
+    "lines": 340,
+    "bytes": 30280,
+    "sha256": "8a7bf5503c36e746e522726f16b76ee5df81970adab444dfc6132f5eb07959ff",
+    "scope": "source"
+  },
+  {
+    "path": "js/production.js",
+    "lines": 233,
+    "bytes": 21807,
+    "sha256": "958bd6274e432c17453589dcdc917786762b2453cb3e9c970fdfe61ce736c989",
+    "scope": "source"
+  },
+  {
+    "path": "js/products.js",
+    "lines": 716,
+    "bytes": 56134,
+    "sha256": "a3f1491b1fd64d2a8bb46bc436905bf7c48b07d7c666ad5750f0cceb2306a52f",
+    "scope": "source"
+  },
+  {
+    "path": "js/program-center-editor.js",
+    "lines": 233,
+    "bytes": 24626,
+    "sha256": "ca800619fa8d217fc693beb3844ecf9937a8e53dd6ff71fd8a772603de105fae",
+    "scope": "source"
+  },
+  {
+    "path": "js/program-conversation.js",
+    "lines": 315,
+    "bytes": 36585,
+    "sha256": "5e6232856233c5509ded72b02cf7a42178bc8e018fe0a756d03807523b391597",
+    "scope": "source"
+  },
+  {
+    "path": "js/program-design.js",
+    "lines": 307,
+    "bytes": 37141,
+    "sha256": "455742cbfd87fa5b7e2941d94525050eacdb70d22f8da41e6de801a51387b77d",
+    "scope": "source"
+  },
+  {
+    "path": "js/programs.js",
+    "lines": 893,
+    "bytes": 74495,
+    "sha256": "21d8869fb1afe4fe7ee2bbdb4319ecb1eb7d2b18785b411019921da3bcac9168",
+    "scope": "source"
+  },
+  {
+    "path": "js/research-center.js",
+    "lines": 10009,
+    "bytes": 667254,
+    "sha256": "edac251bf603d57d5f31c9321bf0220973c6bd5b919cfd38a192b7a1c6de0a83",
+    "scope": "source"
+  },
+  {
+    "path": "js/resource-export.js",
+    "lines": 113,
+    "bytes": 7144,
+    "sha256": "6eeee240f35f3c74bf9953b4fa2661b940ad7a7aa4b5499169b611239c129cd4",
+    "scope": "source"
+  },
+  {
+    "path": "js/school-assessment.js",
+    "lines": 188,
+    "bytes": 22559,
+    "sha256": "ab9791661c7bdd57ec2459a866aff4e5993a402e2bf818b80701c662e1244477",
+    "scope": "source"
+  },
+  {
+    "path": "js/skill-management-ui.js",
+    "lines": 180,
+    "bytes": 17776,
+    "sha256": "bfa87d8cb9b4fe7ca249702e7bda133dc998bfd589afc5ab385c7a41ece31a50",
+    "scope": "source"
+  },
+  {
+    "path": "js/source-courseware.js",
+    "lines": 106,
+    "bytes": 7370,
+    "sha256": "e7259d0d3979df9c2f6903772aa2a557a9dfb6bc33ccc5e3c976fdc98dfd9195",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-capability-graph.js",
+    "lines": 80,
+    "bytes": 13373,
+    "sha256": "8ee5f5c59296f6336fa9b3efa601a80011d319a5b58aa390dc14e8ba4c779b7d",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-certificate-center.js",
+    "lines": 292,
+    "bytes": 35016,
+    "sha256": "610a8e3ab1f748b07df8e7c31c7bdc96bd1a7d1a1e31805d147b07cea6f27343",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-certificate-daily-plan.js",
+    "lines": 162,
+    "bytes": 19334,
+    "sha256": "84333dba17b2b40d800c0f24bbe3c059cb2f0b91cc4ce8453d3012441477ec30",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-certificate-detail.js",
+    "lines": 48,
+    "bytes": 18122,
+    "sha256": "51ca6417a6bc7bcc5b41cf64bafcfa9ad9dbd9ab44f3468eccc5917778f6f164",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-certificate-examples.js",
+    "lines": 19,
+    "bytes": 3920,
+    "sha256": "a0aeac7db8e1dc8e815b7268989e40552b6e324833f19617179f679f8d3b5065",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-certificate-planning.js",
+    "lines": 208,
+    "bytes": 36129,
+    "sha256": "e81635580d2f982b6bdb954ab27274db9330c7830baf50d965c101cc4fabe816",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-certificate-prep.js",
+    "lines": 238,
+    "bytes": 36454,
+    "sha256": "541d092d86228ee33c2eda96a8be32ae28b3eedf4a9ca9100313c61358887ae5",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-certificate-six.js",
+    "lines": 137,
+    "bytes": 37955,
+    "sha256": "38aa6183789356934066193ae9553b22c42a5cdf26ef623b1457a544240f4dd5",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-certificate-workspace.js",
+    "lines": 146,
+    "bytes": 27778,
+    "sha256": "7918905c13d74022f50441c9256831b5617142f79f9d9b629b72fd25b92109bf",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-certificate.js",
+    "lines": 250,
+    "bytes": 35617,
+    "sha256": "ab9a33da0804b93dea4be1190b66c93ab54beb2afb980d8ade4eea8b8b7b435d",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-competition-detail.js",
+    "lines": 142,
+    "bytes": 31297,
+    "sha256": "0bbd6ec84c7ebe5e8bb60889a9f0c7e10ee27b4ff8d0b278004bf778ef250c40",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-competition-workspace.js",
+    "lines": 166,
+    "bytes": 46708,
+    "sha256": "ac2cc7883b08195de400c4d7c8fcb28dec87b6715bf726b8086a172bb0b15ac4",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-competition.js",
+    "lines": 177,
+    "bytes": 36464,
+    "sha256": "ac8536f01e78e3855d44f0f7a7f7b4054ad05fc8ea16c6dd84a76de397eadfff",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-conversation.js",
+    "lines": 259,
+    "bytes": 22096,
+    "sha256": "7f5dc07ad7040f88517da47df21e1171c1363570517d74917088b40bb42e74d3",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-course-plaza.js",
+    "lines": 61,
+    "bytes": 9050,
+    "sha256": "639f05f3b91e830dce5d9557ca14885c8404b973c05167d47187b270c0fadd75",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-detail-bootstrap.js",
+    "lines": 3,
+    "bytes": 345,
+    "sha256": "bb14054a6a35aa7a0d6d1287685d331c18b6eecac498b794e4b426674fedfcd7",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-detail-tabs.js",
+    "lines": 213,
+    "bytes": 32773,
+    "sha256": "26a4c2c0416e9b05e0b271549b35cd2d425568a09067af11622252f487cecaa3",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-education-model.js",
+    "lines": 229,
+    "bytes": 26417,
+    "sha256": "07083c99a5c4739f97baca6e52b4d95246624056afb89d5bf678799ecbbd38a8",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-education-workspace.js",
+    "lines": 803,
+    "bytes": 124815,
+    "sha256": "b66563176d07062fa9c99d4a73d422ce69db591c8d028162c62db4205266d999",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-education.js",
+    "lines": 180,
+    "bytes": 37147,
+    "sha256": "02234612872e116118ccf88b85a6c548f62c200fdf8221fa4ed10344eb908d47",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-exam-page.js",
+    "lines": 102,
+    "bytes": 11283,
+    "sha256": "2e889069e179833b30fe24cc0967613526b05863b9d9efbcf15a7a39043f8af5",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-growth-guide.js",
+    "lines": 1271,
+    "bytes": 176421,
+    "sha256": "e15667448a4f8cfa8343a09cb95b10aca4fa59a529cb00b02fe8424546fb89ef",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-home.js",
+    "lines": 1571,
+    "bytes": 214467,
+    "sha256": "7dbbeb9c8d1157b520eee1ca7dce6f3a5896d958c67f97b0d53e8a9b430c4880",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-interaction-standard.js",
+    "lines": 826,
+    "bytes": 72174,
+    "sha256": "511ee8f8214deba6cb77520604de78615c9d7fb50dc42d35ba732ebaa557876c",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-interview-prep.js",
+    "lines": 105,
+    "bytes": 26208,
+    "sha256": "983da7c73db9b391091c519bf709936e45b68ba0068a2fbf3482b58665c1a18c",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-interview-sync.js",
+    "lines": 81,
+    "bytes": 14230,
+    "sha256": "f98ba4012df831e59ac6045d57c126dcc3f4769033336d5286f4ebea91b24823",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-job-catalog.js",
+    "lines": 105,
+    "bytes": 36584,
+    "sha256": "2881c847c540e2473781538e54e3f38e0193411d9d9368822f8d6fcfd12e14ef",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-job-dashboard.js",
+    "lines": 373,
+    "bytes": 65015,
+    "sha256": "4c1ef70d4419fe8f913ae7c04c4a80532fe027cecdfdd016b95e7648ba624e21",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-job-delivery.js",
+    "lines": 110,
+    "bytes": 19816,
+    "sha256": "95770dd8829e3897cdf033b70c62441831583176e550ba607c776008f6b21af7",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-job-preferences.js",
+    "lines": 57,
+    "bytes": 5922,
+    "sha256": "dfa9b663736d6d97dc5aee9165c1bc9bad67398dedfa5f9b3d3152397095d8fe",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-job-search.js",
+    "lines": 527,
+    "bytes": 81524,
+    "sha256": "aeb617c7ad33694221b1223c066d9cd10cb3e518270c1e1c732f9a3c20013024",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-job-workspace.js",
+    "lines": 246,
+    "bytes": 41365,
+    "sha256": "4ee4746310d014912f5be25c7a29a7aea14ca3c3dc8db1084ed8ff173135db2a",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-learning-examples.js",
+    "lines": 53,
+    "bytes": 3745,
+    "sha256": "bd50e2dcd7d72ac87f06abfb3377bb30ef87b89d342d0a6731cd89e24886848f",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-opportunity-details.js",
+    "lines": 159,
+    "bytes": 18738,
+    "sha256": "5352f080c30cf6ffa4e9e619300dfa483e691e78de98eed8fca87d572dc154f2",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-resume-authoring.js",
+    "lines": 175,
+    "bytes": 30414,
+    "sha256": "ad69510e7a373499854c481a29784ccdbc4ab496eec218d774e067d01d785d12",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-resume-canvas.js",
+    "lines": 137,
+    "bytes": 22881,
+    "sha256": "25bdb555371d186cebe4b07bfa4b1c70f0d0f11fea42c5829eeb7045962ee163",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-arrangements.js",
+    "lines": 113,
+    "bytes": 17447,
+    "sha256": "394b077676336ca1bf5cb3f974aee5c2e3a610bdd3e6f41d0080adea1226ab6a",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-classroom.js",
+    "lines": 113,
+    "bytes": 32516,
+    "sha256": "92df54492885057967e2153e5bee977dfc4e02a76661e3901d030644e9816d06",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-course.js",
+    "lines": 94,
+    "bytes": 24815,
+    "sha256": "90abd98c91f2e476957275b1a5e7e902336cd5af9e4c0b1ca45afa49b8fdc98b",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-dashboard.js",
+    "lines": 239,
+    "bytes": 31675,
+    "sha256": "01691f2aedff370f353cb99d21f1fe5d2d0319acf5c4265053b088e9911edeaf",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-detail.js",
+    "lines": 265,
+    "bytes": 39104,
+    "sha256": "cdd0ba0c7dfa454b424a749b2e6e2fd8b9d213d0b08c769fb2df913d592f6c77",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-exams.js",
+    "lines": 55,
+    "bytes": 5809,
+    "sha256": "37e6b5050bc355a7eece235f9b5ea6acfd0aaf3cfcd5968f8abfed6b232b26be",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-home.js",
+    "lines": 113,
+    "bytes": 27085,
+    "sha256": "4e00ab9ef5da469766f7dd3bb185b20d16fe03520129aececdd3529c64670cab",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-internships.js",
+    "lines": 45,
+    "bytes": 6646,
+    "sha256": "ba38dc96d1776d3d3f183645bc1919ea18e3daaa7613c418c02c84b6aca32b39",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-mine.js",
+    "lines": 101,
+    "bytes": 14696,
+    "sha256": "472f1277eddff25a4bcd9150012945b1d7db33394c197c986cd6dba28c1d2987",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-offline.js",
+    "lines": 126,
+    "bytes": 31647,
+    "sha256": "ba150ca2cd3cc4ae9547902880fc05da119e4d1ee262989a58a28a64c479a3e6",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-results.js",
+    "lines": 93,
+    "bytes": 14502,
+    "sha256": "cf4aa3f3134d9e56fa8f88d33f3d8239ba40fea7a0a9c7bf5ac1dec7a80125a6",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-today-examples.js",
+    "lines": 38,
+    "bytes": 4659,
+    "sha256": "319fc1d58306e8ec1d6ad5ac5cddf9be577ef22ab5e2783d90444bf132f8098c",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training-work.js",
+    "lines": 436,
+    "bytes": 71446,
+    "sha256": "ec1f4962760acdcbeaa530e922ac609dd829a89a44dab36deb722e6413a91f5d",
+    "scope": "source"
+  },
+  {
+    "path": "js/student-training.js",
+    "lines": 123,
+    "bytes": 28428,
+    "sha256": "d4e16837f3629a9ba704a2ea721aaea205b7dd35e7f0937affd7c479ee493848",
+    "scope": "source"
+  },
+  {
+    "path": "js/student.js",
+    "lines": 1214,
+    "bytes": 106069,
+    "sha256": "5a8aafaee2104846eede4dccb40a82d98c15fb2fbc305e7df642f8c5b74ab60e",
+    "scope": "source"
+  },
+  {
+    "path": "js/study-opportunities.js",
+    "lines": 71,
+    "bytes": 29284,
+    "sha256": "f4f595a0a4af81ae7bf36b3b453203c6625d6a31caa2ffbdf4758db113c86c93",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-assessment-standard.js",
+    "lines": 219,
+    "bytes": 20713,
+    "sha256": "60caceb38cb5216e0af90ec1620712216031d0842528ffc95c379ca9821d9d35",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-authoring.js",
+    "lines": 328,
+    "bytes": 29406,
+    "sha256": "08505f3f2d17c2a0fa3aebf1ce5f45b749dacc4110635f9a3ba7b1056aedf7f5",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-combined-course-model.js",
+    "lines": 106,
+    "bytes": 18934,
+    "sha256": "ce6d1cb0213615e29e803924209a6570995193304d178988418d3c1b40311f6d",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-combined-course.js",
+    "lines": 146,
+    "bytes": 19830,
+    "sha256": "d934a195acab7d61103b8ff0f99e657b95fa2634afb52a60ba77ce909e83b662",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-course-assistant.js",
+    "lines": 165,
+    "bytes": 15177,
+    "sha256": "ac81ef3a593e9178eed6083fdd8826426e860ac5481579e5b70c6fff919fd08d",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-course-center.js",
+    "lines": 62,
+    "bytes": 7583,
+    "sha256": "248ac2d3d4ae38e9fdb1fbfc17aed9a7338cb4fdda173fa479fd2565035278e8",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-course-intake.js",
+    "lines": 32,
+    "bytes": 2052,
+    "sha256": "34a8b2c7b4ec04b612f93b1c5a9f914012438914e349f7384b31cca4b3836597",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-course-tabs.js",
+    "lines": 142,
+    "bytes": 12097,
+    "sha256": "32c124841a5f3f59558f15485494afb17d9fb8e133f331053be3fb4324595325",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-digital-standard.js",
+    "lines": 162,
+    "bytes": 20444,
+    "sha256": "9f97dbb69fd3bf5212f750e43627f921b7a818c0ce13aace2334e82092644e15",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-evaluation-standard.js",
+    "lines": 149,
+    "bytes": 12618,
+    "sha256": "ee84d6b200ec6e0a1277d33ab7fa1b3c378d67fdb2f755f6a4244ae133863628",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-home.js",
+    "lines": 454,
+    "bytes": 43847,
+    "sha256": "c72912eb418ed994f7ca18a85ab4ab6dbef7a405a5e8ec16354f39de49d4e8c4",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-interaction-standard.js",
+    "lines": 119,
+    "bytes": 9554,
+    "sha256": "492e42107bbed68dbd168c72012f83506b848555fc00670cce4ee09bc5a075b2",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-main-conversation.js",
+    "lines": 218,
+    "bytes": 21276,
+    "sha256": "8a9c1c1e0c16cb50485e12a6be740fa98210344868838cbb40ced1848e077914",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-training-analytics.js",
+    "lines": 81,
+    "bytes": 11514,
+    "sha256": "7635e481a103d9511034508498c60bd9c653eb6ab2c4e0035c66ecbceeee6eb0",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-training-arrangement.js",
+    "lines": 45,
+    "bytes": 6597,
+    "sha256": "d9a8f01de77ed64f9c6920530616c00bc298f7294fd49adfe7edc642fb695e69",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-training-assessment.js",
+    "lines": 101,
+    "bytes": 15180,
+    "sha256": "2fbbdea8d76e980e6810902b659e7a2aa6449bdf696e3bc3b2a0c552beea4b6a",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-training-binding.js",
+    "lines": 107,
+    "bytes": 10095,
+    "sha256": "7e5792a4a21c1dade625291abdccaa910802363a936e51c04381f9ce154f1ba2",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-training-class-preparation.js",
+    "lines": 175,
+    "bytes": 18445,
+    "sha256": "18ef10de83ccd884b4d46a3a6a7185de3c043716a1cb9f0eb11a15cd7acbc645",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-training-examples.js",
+    "lines": 65,
+    "bytes": 8129,
+    "sha256": "f58f4cb4e9e4e8432258e1cb78d8e2f75336be7d828e9d6b03e6473f81813615",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-training-management.js",
+    "lines": 73,
+    "bytes": 10823,
+    "sha256": "b3d7536a4c1dc658beb04923b6be57470b389f92acb9ecb3ca94742cc06f83d3",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-training-materials.js",
+    "lines": 313,
+    "bytes": 38425,
+    "sha256": "210ccd4c82587c74ac527d95a4f8f0acc78daea44f0af3c83bd7af6ef00f7c3d",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-training-social-example.js",
+    "lines": 66,
+    "bytes": 12416,
+    "sha256": "3375e35e1d4c26c273890363c20eab61ddc7c8037223fa8853e2381db6085988",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-training-standard.js",
+    "lines": 73,
+    "bytes": 4654,
+    "sha256": "749b91b0c9f0d29e7b36f7dcae23126ee1134024b8c00c3d6bc1f40dc6cca21d",
+    "scope": "source"
+  },
+  {
+    "path": "js/teacher-training.js",
+    "lines": 358,
+    "bytes": 88104,
+    "sha256": "d8e9039ae7ecc24f06f87ca18f43f1a8f9404626ea6193e6b944afe4216b38c2",
+    "scope": "source"
+  },
+  {
+    "path": "js/ui-icons.js",
+    "lines": 40,
+    "bytes": 2938,
+    "sha256": "c5f8abc49f65fd8e217b5c3e214dd32e68b7ddb4d6ca5740f8289d7b53acd6c1",
+    "scope": "source"
+  },
+  {
+    "path": "js/video-studio.js",
+    "lines": 379,
+    "bytes": 50244,
+    "sha256": "585af93981d2cd23bd5a1433e10da2030643a0fab2a70ed924043e0e6a2d9429",
+    "scope": "source"
+  }
+]

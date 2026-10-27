@@ -1,0 +1,58 @@
+{
+  "version": "2.0.0",
+  "date": "2026-10-27",
+  "preview": "examples/teacher-input.html",
+  "checks": [
+    {
+      "name": "添加与技能入口统一",
+      "status": "passed",
+      "evidence": "实际测量两者均30px高、66px宽；短文字+16px图标；输入编辑区无内部直角焦点。"
+    },
+    {
+      "name": "教学关联独立多选且不自动发送",
+      "status": "passed",
+      "evidence": "产业+政策选中时最近提交仍为尚未发送，结果区域为空；Space键可切换。"
+    },
+    {
+      "name": "发送参数包含Agent、技能与资源",
+      "status": "passed",
+      "evidence": "实际输入区发送事件保留course-ai、builtin-prepare及industry/policy对应demo-agent-id；simulated=true。"
+    },
+    {
+      "name": "生成中锁定及所选Agent步骤",
+      "status": "passed",
+      "evidence": "选择就业/技术发送，四个切换按钮均disabled；过程显示就业Agent/技术Agent本地模拟，未选方向不显示。"
+    },
+    {
+      "name": "停止、原轮重试和完成",
+      "status": "passed",
+      "evidence": "停止后将草稿改为产业；重试仍提交原轮就业/技术，用户消息保持1条；恢复完成，工作区插槽仍空。"
+    },
+    {
+      "name": "会话Agent选择隔离",
+      "status": "passed",
+      "evidence": "新建会话选择为空，返回原会话恢复草稿产业；未串用原轮重试快照。"
+    },
+    {
+      "name": "资源与技能独立性",
+      "status": "passed",
+      "evidence": "移除技能后产业/政策和资源不变；重新选择技能、+菜单进入资源类型、Esc退出均可用。"
+    },
+    {
+      "name": "按场景隐藏教学关联",
+      "status": "passed",
+      "evidence": "三端配置示例中，student/admin显式agentOptions:[]，输入及会话均无关联按钮；不代表实际权限规则。"
+    },
+    {
+      "name": "桌面与窄窗口布局",
+      "status": "passed",
+      "evidence": "[{\"pageOverflow\":false,\"toolbars\":[{\"height\":48,\"leftOverflow\":false,\"outside\":false,\"overlap\":false},{\"height\":48,\"leftOverflow\":false,\"outside\":false,\"overlap\":false}],\"width\":1024},{\"pageOverflow\":false,\"toolbars\":[{\"height\":48,\"leftOverflow\":false,\"outside\":false,\"overlap\":false},{\"height\":116,\"leftOverflow\":false,\"outside\":false,\"overlap\":false}],\"width\":768}]"
+    },
+    {
+      "name": "真实Agent服务调用",
+      "status": "not-run",
+      "evidence": "仅在本地模拟与发送事件中携带Agent标识；未提供/接入真实业务服务。"
+    }
+  ],
+  "screenshot": "data/teacher-input-preview.png"
+}

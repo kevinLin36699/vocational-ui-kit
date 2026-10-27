@@ -1,0 +1,89 @@
+{
+  "version": "1.1.0",
+  "date": "2026-10-26",
+  "scope": "组件库独立示例，共享输入及本地会话；未改原平台",
+  "checks": [
+    {
+      "name": "课程替换清理旧单元并保留正文模板",
+      "status": "passed",
+      "evidence": "选择大学英语听力基础后课程ID为course-english，原unit-ai-basic移除，保留模板和原教学要求并提示重新选择单元。"
+    },
+    {
+      "name": "/搜索与Enter不误发送",
+      "status": "passed",
+      "evidence": "输入请参考 /校园，禁用未绑定单元，Enter选择校园智能服务案例，正文形成资源片段，接收区未出现发送结果。"
+    },
+    {
+      "name": "正文中间插入保留前后内容",
+      "status": "passed",
+      "evidence": "结构化value为前文 【校园智能服务案例】后文，segments保留前后两个文本段。"
+    },
+    {
+      "name": "无结果与Escape恢复",
+      "status": "passed",
+      "evidence": "更换资料搜索不存在名称显示无匹配资源；Escape后原片段及前后文字保持。"
+    },
+    {
+      "name": "资源失效阻止发送",
+      "status": "passed",
+      "evidence": "使已选资料失效后点击发送，显示失效或课程不匹配错误，未清空草稿。"
+    },
+    {
+      "name": "禁用输入",
+      "status": "passed",
+      "evidence": "禁用后contenteditable=false且发送按钮禁用，恢复后可继续编辑。"
+    },
+    {
+      "name": "会话引用草稿隔离与发送停止",
+      "status": "passed",
+      "evidence": "新会话为空；返回原会话恢复请为《人工智能导论》片段，发送清空输入，停止后出现原轮重试。"
+    },
+    {
+      "name": "结构化提交并清空当前引用",
+      "status": "passed",
+      "evidence": "选择人才培养方案后本地接收事件显示resource-plan；发送后value为空、segments与resources均为空。"
+    },
+    {
+      "name": "原轮重试保留下一条草稿",
+      "status": "passed",
+      "evidence": "带课程引用发送、停止、填写下一条独立草稿再重试；完成后新草稿保留，用户消息仍只有1条。"
+    },
+    {
+      "name": "键盘移除课程连带清理单元",
+      "status": "passed",
+      "evidence": "聚焦课程片段按Backspace，课程与旧单元ID均移除，模板及教学要求保留。"
+    },
+    {
+      "name": "URL斜杠不唤起",
+      "status": "passed",
+      "evidence": "输入https://school.example/resources后可引用资源listbox数量为0。"
+    },
+    {
+      "name": "1024桌面视口与浮层边界",
+      "status": "passed",
+      "evidence": "页面scrollWidth=1024；候选层left94.6/right474.6/top16.5/bottom316.5，位于视口内。"
+    },
+    {
+      "name": "候选键盘导航",
+      "status": "passed",
+      "evidence": "输入/英语后ArrowDown、Enter选中course-reading（大学英语阅读与词汇）。"
+    },
+    {
+      "name": "失效资源可见标识与发送复核",
+      "status": "passed",
+      "evidence": "更新资源目录后片段data-invalid=true；发送显示失效错误并保留草稿。"
+    },
+    {
+      "name": "展示站入口与引用按钮",
+      "status": "passed",
+      "evidence": "AI输入组件页提供正文资源完整示例链接；点击引用资源可唤起候选，Escape关闭。"
+    }
+  ],
+  "notChecked": [
+    "真实资源检索与权限服务",
+    "真实模板生成和模型",
+    "实际中文输入法人工候选与跨浏览器撤销分组",
+    "完整无障碍认证",
+    "移动端"
+  ]
+}
