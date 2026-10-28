@@ -1,0 +1,56 @@
+{
+  "version": "2.7.1",
+  "checks": [
+    {
+      "name": "All six families and all caller configurations render without mutation",
+      "status": "passed"
+    },
+    {
+      "name": "Nested IDs are stable, unique, safe and reject duplicate branches",
+      "status": "passed"
+    },
+    {
+      "name": "Audience records must refer to actual class nodes and scope modes are explicit",
+      "status": "passed"
+    },
+    {
+      "name": "Curriculum aggregates leaf hours and rejects duplicate parent allocation",
+      "status": "passed"
+    },
+    {
+      "name": "Curriculum totals, mode, positive hours and fractional steps are business constraints",
+      "status": "passed"
+    },
+    {
+      "name": "Task dependency cycles, unsupported states and invalid dates are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Five question types preserve false and detect incomplete fill or invalid options",
+      "status": "passed"
+    },
+    {
+      "name": "Student configuration does not serialize unreleased reference answers or grading feedback",
+      "status": "passed"
+    },
+    {
+      "name": "Weighted and point rubrics distinguish zero, unscored and excluded dimensions",
+      "status": "passed"
+    },
+    {
+      "name": "Rubric totals, level values and incoming values cannot silently pass invalid configuration",
+      "status": "passed"
+    },
+    {
+      "name": "Submission history validates unique versions and consistent rubric maximum",
+      "status": "passed"
+    },
+    {
+      "name": "All domain labels, bodies and authored text are escaped",
+      "status": "passed"
+    }
+  ],
+  "passed": 12,
+  "failed": 0,
+  "scope": "Pure domain rules, configuration validation and renderer boundaries; DOM behavior in browser.json"
+}

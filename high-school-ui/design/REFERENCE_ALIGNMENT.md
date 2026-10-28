@@ -1,6 +1,6 @@
 # 参考一致性审计 v2.0.0 · 2026-10-27
 
-本次范围由单个输入入口修正扩展为整库统一。60项组件、14种组合与122个变量按 DESIGN.md 的公共规则实施，覆盖排版、密度、尺寸、形状、层级、焦点、状态、浮层和AI交互。逐项依据见COMPONENT_ALIGNMENT.md和data/component-alignment.json；验证见data/reference-system-validation.json。
+本次范围由单个输入入口修正扩展为整库统一。118项组件、15种组合与122个变量按 DESIGN.md 的公共规则实施，覆盖排版、密度、尺寸、形状、层级、焦点、状态、浮层和AI交互。逐项依据见COMPONENT_ALIGNMENT.md和data/component-alignment.json；验证见data/reference-system-validation.json。
 
 ## 线上实际可见范围
 指定链接再次显示“还没有可用智能体”。只读DOM核验：272px侧栏、56px头部、28px衬线标题、15px正文和56px消息输入。前次只读观察了我的文件弹窗的名称筛选、版本、更新时间、选择和添加到提问结构。未发送、上传、下载、删除或发布业务数据，不保存凭据、真实会话或文件列表。

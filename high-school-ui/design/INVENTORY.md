@@ -11,7 +11,7 @@
 - 普通过程、生成内容、输入及头像规则已有当前正文，早期页面仍需逐项对齐。
 - 现有组件 API 依附全局控制器；本次独立实现可复用外观和交互，正式替换时必须保留事件及权限。
 
-## 60 类组件
+## 118 类组件
 | 标识 | 名称 | 分类 | 规则 | 本地来源示例 |
 | --- | --- | --- | --- | --- |
 | voc-button | 按钮 | 基础 | CMP01/02/06 | css/account.css:3 |
@@ -74,10 +74,68 @@
 | voc-result | 生成内容摘要 | AI交互 | AIC07 | css/admin-interaction-standard.css:564 |
 | voc-workspace | 生成内容工作区 | AI交互 | AIC08/12 | css/account.css:1 |
 | voc-chat | AI 协作组合 | AI交互 | AI/CHAT/AIC | css/ai-composer.css:65 |
+| voc-time-picker | 时间选择 | 录入 | EDU/QUALITY-2.1 | js/teacher-training-arrangement.js:5 |
+| voc-tree-select | 树选择 | 录入 | EDU/QUALITY-2.1 | js/centers/administration/views/teaching.js:14 |
+| voc-academic-term | 学年学期选择 | 高职教业务 | EDU/QUALITY-2.1 | js/centers/administration/views/teaching.js:14 |
+| voc-collapse | 折叠面板 | 展示 | EDU/QUALITY-2.1 | js/teacher-training-materials.js:159 |
+| voc-rate | 五级评价 | 录入 | EDU/QUALITY-2.1 | js/centers/administration/views/course-evaluation.js:160 |
+| voc-calendar | 事件日历 | 展示 | EDU/QUALITY-2.1 | js/student-training-dashboard.js:96 |
+| voc-notification | 通知提醒 | 反馈浮层 | EDU/QUALITY-2.1 | 建议扩展 |
+| voc-image-preview | 图片预览 | 展示 | EDU/QUALITY-2.1 | js/teacher-training-materials.js:44 |
+| voc-feedback-result | 操作结果反馈 | 反馈浮层 | EDU/QUALITY-2.1 | js/course-hub.js:168 |
+| voc-batch-import | 名单导入校验 | 高职教业务 | EDU/QUALITY-2.1 | js/course-hub.js:146 |
+| voc-date-picker | 单日期选择 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-date-range | 日期范围选择 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-time-range | 时间范围选择 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-datetime-picker | 日期时间选择 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-datetime-range | 日期时间范围 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-year-picker | 年份选择 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-year-range | 年份范围 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-month-picker | 月份选择 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-month-range | 月份范围 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-quarter-picker | 季度选择 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-week-picker | 周选择 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-multi-date | 多日期选择 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-password | 密码输入 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-input-group | 组合输入 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-slider | 滑动输入条 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-autocomplete | 自动补全 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-transfer | 穿梭选择 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-list | 数据列表 | 展示 | FAMILY/2.2 | 建议扩展 |
+| voc-anchor | 锚点导航 | 导航布局 | FAMILY/2.2 | 建议扩展 |
+| voc-loading | 加载指示 | 反馈浮层 | FAMILY/2.2 | 建议扩展 |
+| voc-color-picker | 颜色选择 | 录入 | FAMILY/2.2 | 建议扩展 |
+| voc-richtext | 基础富文本编辑 | 录入 | FORM/2.3 | 建议扩展 |
+| voc-navigation-menu | 业务导航菜单 | 导航布局 | FAMILY/2.2 | 建议扩展 |
+| voc-carousel | 图文轮播 | 展示 | FAMILY/2.2 | 建议扩展 |
+| voc-splitter | 可调整分栏 | 导航布局 | FAMILY/2.2 | 建议扩展 |
+| voc-backtop | 局部返回顶部 | 导航布局 | FAMILY/2.2 | 建议扩展 |
+| voc-teaching-audience | 教学对象选择 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-curriculum-plan | 教学目录与学时 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-teaching-task | 教学任务 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-question-sheet | 题目与作答 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-submission-review | 提交与批阅 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-scoring-rubric | 评分量规 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-class-roster | 班级名册 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-teaching-assignment | 任教关系 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-practice-workflow | 实训步骤与验收 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-learning-progress | 学习进度与续学 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-resource-version | 资源版本与引用 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-evaluation-survey | 评价问卷 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-grade-detail | 成绩明细 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-career-goal | 成长目标 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-growth-plan | 成长计划 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-job-opportunity | 岗位目录 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-application-tracker | 投递进度 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-assessment-collection | 评估指标采集 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-evidence-material | 佐证材料 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-asset-loan | 设备借还 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-repair-ticket | 报修工单 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
+| voc-admissions-lead | 招生线索 | 高职教业务 | FAMILY/2.2 | 建议扩展 |
 
 每类完整来源片段、适用状态及 API 见 data/components.json，展示站可查看对应来源。
 
 ## 覆盖与未覆盖
-已建立上述60类的可运行原型实现与14类组合模板。该结论不表示每个旧页面已迁移，或每个状态都已浏览器验收。验收另见 VALIDATION.md。
+已建立上述118类的可运行原型实现与15类组合模板。该结论不表示每个旧页面已迁移，或每个状态都已浏览器验收。验收另见 VALIDATION.md。
 
 词法映射中的未判断类名全部列为 review-required；画布/考试/媒体候选列为 specialized-preserve，不把它们勉强塞入基础组件。复合动态模板、业务权限和真实异步数据的逐页覆盖仍待后续整改。

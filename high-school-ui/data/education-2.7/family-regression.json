@@ -1,0 +1,1342 @@
+{
+  "version": "2.7.0",
+  "date": "2026-10-28T07:59:55.312Z",
+  "scope": "All non-table/form catalog entries: default + declared applicable states + 320px. Configured family variants and dedicated behavior assertions; no production services/full-browser/WCAG certification.",
+  "coverage": {
+    "button": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "icon": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "link": {
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "tag": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "badge": {
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "avatar": {
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "separator": {
+      "states": [
+        "default"
+      ],
+      "defaultMounted": true
+    },
+    "input": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "textarea": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "number": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "select": {
+      "states": [
+        "default",
+        "disabled",
+        "empty",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "checkbox": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "radio": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "switch": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "date": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "multiselect": {
+      "states": [
+        "default",
+        "empty",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "cascade": {
+      "states": [
+        "default",
+        "empty",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "upload": {
+      "states": [
+        "default",
+        "empty",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "search": {
+      "states": [
+        "default",
+        "empty"
+      ],
+      "defaultMounted": true
+    },
+    "pagination": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "card": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "description": {
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "tree": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "steps": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "progress": {
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "timeline": {
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "stat": {
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "chart": {
+      "states": [
+        "default",
+        "empty"
+      ],
+      "defaultMounted": true
+    },
+    "empty": {
+      "states": [
+        "default",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "skeleton": {
+      "states": [
+        "default"
+      ],
+      "defaultMounted": true
+    },
+    "shell": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "breadcrumb": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "tabs": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "segmented": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "menu": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "popover": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "tooltip": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "dialog": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "confirm": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "drawer": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "alert": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "toast": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "course-card": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "person-picker": {
+      "states": [
+        "default",
+        "empty",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "approval": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "resource": {
+      "states": [
+        "default"
+      ],
+      "defaultMounted": true
+    },
+    "task-guide": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "agent": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "conversation": {
+      "states": [
+        "default",
+        "empty"
+      ],
+      "defaultMounted": true
+    },
+    "composer": {
+      "states": [
+        "default",
+        "empty",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "message": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "prose": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "process": {
+      "states": [
+        "default",
+        "failed"
+      ],
+      "defaultMounted": true
+    },
+    "citation": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "result": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "workspace": {
+      "states": [
+        "default",
+        "empty",
+        "loading"
+      ],
+      "defaultMounted": true
+    },
+    "chat": {
+      "states": [
+        "default",
+        "failed"
+      ],
+      "defaultMounted": true
+    },
+    "time-picker": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "tree-select": {
+      "states": [
+        "default",
+        "disabled",
+        "empty",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "academic-term": {
+      "states": [
+        "default",
+        "disabled",
+        "empty",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "collapse": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "rate": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "calendar": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "notification": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "image-preview": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "feedback-result": {
+      "states": [
+        "default",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "batch-import": {
+      "states": [
+        "default",
+        "failed"
+      ],
+      "defaultMounted": true
+    },
+    "date-picker": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "date-range": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "time-range": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "datetime-picker": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "datetime-range": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "year-picker": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "year-range": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "month-picker": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "month-range": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "quarter-picker": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "week-picker": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "multi-date": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "password": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "input-group": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "slider": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "autocomplete": {
+      "states": [
+        "default",
+        "empty",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "transfer": {
+      "states": [
+        "default",
+        "empty",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "list": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "anchor": {
+      "states": [
+        "default"
+      ],
+      "defaultMounted": true
+    },
+    "loading": {
+      "states": [
+        "default"
+      ],
+      "defaultMounted": true
+    },
+    "color-picker": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "richtext": {
+      "states": [
+        "default",
+        "disabled",
+        "readonly"
+      ],
+      "defaultMounted": true
+    },
+    "navigation-menu": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "carousel": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "splitter": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "backtop": {
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "defaultMounted": true
+    },
+    "teaching-audience": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "curriculum-plan": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "teaching-task": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "question-sheet": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "submission-review": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "scoring-rubric": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "class-roster": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "teaching-assignment": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "practice-workflow": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "learning-progress": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "resource-version": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "evaluation-survey": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "grade-detail": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "career-goal": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "growth-plan": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "job-opportunity": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "application-tracker": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "assessment-collection": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "evidence-material": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "asset-loan": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "repair-ticket": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    },
+    "admissions-lead": {
+      "states": [
+        "default",
+        "failed",
+        "loading",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "defaultMounted": true
+    }
+  },
+  "checks": [
+    {
+      "name": "All non-table/form catalog entries mount with unique IDs and declared applicable states",
+      "status": "passed"
+    },
+    {
+      "name": "All configured family variants mount without mutating caller data",
+      "status": "passed"
+    },
+    {
+      "name": "Every non-table/form default and configured variant fits a 320px host",
+      "status": "passed"
+    },
+    {
+      "name": "Button async work locks duplicate clicks, surfaces failure, and supports retry",
+      "status": "passed"
+    },
+    {
+      "name": "Button cancellation and unmount ignore late responses",
+      "status": "passed"
+    },
+    {
+      "name": "Links reject executable/protocol-relative schemes and expose external destinations",
+      "status": "passed"
+    },
+    {
+      "name": "Checkable/removable tags retain disabled tags and return real IDs",
+      "status": "passed"
+    },
+    {
+      "name": "Badges retain zero, cap counts and expose dot meaning",
+      "status": "passed"
+    },
+    {
+      "name": "Avatar image failure falls back to initials and group overflow opens all names",
+      "status": "passed"
+    },
+    {
+      "name": "Descriptions retain zero/false/null and divider exposes orientation",
+      "status": "passed"
+    },
+    {
+      "name": "Cards collapse without losing content and configured actions return IDs",
+      "status": "passed"
+    },
+    {
+      "name": "Statistics format precision and preserve unknown values",
+      "status": "passed"
+    },
+    {
+      "name": "Progress supports bounded values, segments, unknown duration and live updates",
+      "status": "passed"
+    },
+    {
+      "name": "Tabs skip disabled items, preserve panels, close dirty tabs only after confirmation",
+      "status": "passed"
+    },
+    {
+      "name": "Tabs add requests do not fabricate items; caller can replace the tab configuration",
+      "status": "passed"
+    },
+    {
+      "name": "Navigation expands independently of selection and inherits disabled ancestors",
+      "status": "passed"
+    },
+    {
+      "name": "Navigation keyboard skips disabled entries and breadcrumb sibling menus return IDs",
+      "status": "passed"
+    },
+    {
+      "name": "Collapse accordion permits one section, retains disabled items, and supports keyboard",
+      "status": "passed"
+    },
+    {
+      "name": "List search, sorting, load-more and disabled item actions use actual configured records",
+      "status": "passed"
+    },
+    {
+      "name": "Remote list append keeps rows on failure, retries from same cursor and ignores stale results",
+      "status": "passed"
+    },
+    {
+      "name": "Calendar month/week/day/agenda share events; disabled dates and keyboard obey restrictions",
+      "status": "passed"
+    },
+    {
+      "name": "Calendar navigation handles month/year boundaries and readonly selection",
+      "status": "passed"
+    },
+    {
+      "name": "Notification filters, toggle, mark-all and dismissal respect disabled records",
+      "status": "passed"
+    },
+    {
+      "name": "Gallery supports next/previous, bounded zoom, rotate/reset, error retry and Escape",
+      "status": "passed"
+    },
+    {
+      "name": "Menus support checkbox/radio/submenu/back and disabled items without executing dangerous actions",
+      "status": "passed"
+    },
+    {
+      "name": "Popover closes on outside focus, Escape, and explicit close with focus return",
+      "status": "passed"
+    },
+    {
+      "name": "Dialog async confirm stays open on failure, prevents duplicate and closes after success",
+      "status": "passed"
+    },
+    {
+      "name": "Dialog cancel aborts pending handler; backdrop and Escape can be explicitly locked",
+      "status": "passed"
+    },
+    {
+      "name": "Drawer placements are configurable and every close returns focus to trigger",
+      "status": "passed"
+    },
+    {
+      "name": "Confirm cancellation never invokes business handler",
+      "status": "passed"
+    },
+    {
+      "name": "Alert closes and result pages emit configured next actions only",
+      "status": "passed"
+    },
+    {
+      "name": "Toast supports manual dismissal and unmount cleans pending timers",
+      "status": "passed"
+    },
+    {
+      "name": "Skeleton supports static structure and overlay loading prevents underlying interaction",
+      "status": "passed"
+    },
+    {
+      "name": "Carousel respects boundaries, loops, indicators, keyboard and explicit pause",
+      "status": "passed"
+    },
+    {
+      "name": "Splitter keyboard clamps limits and pointer dragging updates proportional state",
+      "status": "passed"
+    },
+    {
+      "name": "Backtop appears at threshold and returns only its own scroll container to top",
+      "status": "passed"
+    },
+    {
+      "name": "Shared loading/error/forbidden states hide data, retry through loader and recover",
+      "status": "passed"
+    },
+    {
+      "name": "Readonly select, tree-select and people controls cannot open or remove selected items",
+      "status": "passed"
+    },
+    {
+      "name": "Disabled selected people and disabled tree ancestors remain protected",
+      "status": "passed"
+    },
+    {
+      "name": "Standalone input and search do not commit Chinese composition before completion",
+      "status": "passed"
+    },
+    {
+      "name": "AI chat stop cancels streaming, preserves question and locks conversation switching while running",
+      "status": "passed"
+    },
+    {
+      "name": "Workspace slots keep content identity and status per generated result",
+      "status": "passed"
+    },
+    {
+      "name": "Process running state locks expansion and state buttons preserve disclosure content",
+      "status": "passed"
+    },
+    {
+      "name": "Pagination supports full/simple modes, capacity changes, bounds, total replacement and disabled state",
+      "status": "passed"
+    },
+    {
+      "name": "Tooltip is focus/hover accessible, Escape closes, and placements remain inside viewport",
+      "status": "passed"
+    },
+    {
+      "name": "Configurable shell retains the active section while folding and protects disabled routes",
+      "status": "passed"
+    },
+    {
+      "name": "Course cards use supplied metadata and only update local favorite state",
+      "status": "passed"
+    },
+    {
+      "name": "Agent and task preparation return supplied IDs/text without starting AI work",
+      "status": "passed"
+    },
+    {
+      "name": "Messages render actual Markdown and feedback toggles mutually exclusively with reason capture",
+      "status": "passed"
+    },
+    {
+      "name": "Citations display supplied verification status and results return their actual object IDs",
+      "status": "passed"
+    },
+    {
+      "name": "Approval requires a rejection reason and only advances after confirmed business response",
+      "status": "passed"
+    },
+    {
+      "name": "Custom public processing stages escape content and running state cannot collapse",
+      "status": "passed"
+    },
+    {
+      "name": "Remounting and destroying interactive layers remove popups and generated dialogs",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "passed": 53,
+  "failed": 0,
+  "observedBrowserErrors": 0
+}

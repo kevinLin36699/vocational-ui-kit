@@ -1,0 +1,57 @@
+{
+  "version": "2.7.1",
+  "timezone": "Pacific/Honolulu",
+  "scope": "Pure calendar/CSV logic, API boundaries and renderer contracts; not DOM or browser behavior",
+  "checks": [
+    {
+      "name": "Leap years and calendar date validity",
+      "status": "passed"
+    },
+    {
+      "name": "Date arithmetic crosses leap day and year without timestamp conversion",
+      "status": "passed"
+    },
+    {
+      "name": "Week, month and trailing range presets are exact inclusive calendar dates",
+      "status": "passed"
+    },
+    {
+      "name": "CSV BOM, quoted comma, escaped quote and embedded newline",
+      "status": "passed"
+    },
+    {
+      "name": "TSV pasted from spreadsheet preserves leading zero IDs",
+      "status": "passed"
+    },
+    {
+      "name": "Roster rejects missing fields, duplicate and previously imported IDs",
+      "status": "passed"
+    },
+    {
+      "name": "Roster input limits and malformed quotes reject explicitly",
+      "status": "passed"
+    },
+    {
+      "name": "Custom table records and columns render without course-only dependencies",
+      "status": "passed"
+    },
+    {
+      "name": "Table duplicate IDs and missing column keys reject",
+      "status": "passed"
+    },
+    {
+      "name": "User-configured text is escaped in date, resource, organization and table",
+      "status": "passed"
+    },
+    {
+      "name": "Workspace remains an empty business slot without default publishing or editor",
+      "status": "passed"
+    },
+    {
+      "name": "All current catalog components and page patterns render",
+      "status": "passed"
+    }
+  ],
+  "passed": 12,
+  "failed": 0
+}

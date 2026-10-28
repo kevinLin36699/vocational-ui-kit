@@ -1,0 +1,167 @@
+{
+  "version": "2.7.0",
+  "date": "2026-10-28T08:09:34.083Z",
+  "scope": "Six vocational domain component families and all 22 configured variants; structural states, 320px and dedicated behavior assertions. No real backend or full browser certification.",
+  "checks": [
+    {
+      "name": "All six empty components and 22 configurable variants mount without caller mutation",
+      "status": "passed"
+    },
+    {
+      "name": "Every scenario and readonly/disabled/loading/failed/forbidden/empty state fits 320px",
+      "status": "passed"
+    },
+    {
+      "name": "Audience mixed selection deduplicates class members and protects disabled people",
+      "status": "passed"
+    },
+    {
+      "name": "Audience directory refresh preserves confirmed snapshot and flags stale IDs",
+      "status": "passed"
+    },
+    {
+      "name": "Audience single mode and organization scope constrain actual selection",
+      "status": "passed"
+    },
+    {
+      "name": "Audience failure and reset retain draft until explicit discard confirmation",
+      "status": "passed"
+    },
+    {
+      "name": "Curriculum totals aggregate only leaves and enforce course mode, hours and step",
+      "status": "passed"
+    },
+    {
+      "name": "Curriculum editing preserves order, supports moves and objective associations",
+      "status": "passed"
+    },
+    {
+      "name": "Curriculum add/delete protects assigned parent hours, depth and locked descendants",
+      "status": "passed"
+    },
+    {
+      "name": "Curriculum author drafts reset both structure and input values after confirmation",
+      "status": "passed"
+    },
+    {
+      "name": "Tasks display overdue separately and cannot bypass prerequisites or required checklist",
+      "status": "passed"
+    },
+    {
+      "name": "Tasks teacher publication waits for acknowledgement and failure keeps the draft",
+      "status": "passed"
+    },
+    {
+      "name": "Tasks filters and views use the current records; no automatic completion",
+      "status": "passed"
+    },
+    {
+      "name": "Question sheet supports five answer shapes including boolean false and empty fill detection",
+      "status": "passed"
+    },
+    {
+      "name": "Question sheet draft failure retains answers and blocks duplicate submit",
+      "status": "passed"
+    },
+    {
+      "name": "Question sheet single navigation, marking and partial submission require explicit confirmation",
+      "status": "passed"
+    },
+    {
+      "name": "Student DOM config excludes unreleased reference answers and teacher-only feedback",
+      "status": "passed"
+    },
+    {
+      "name": "Question deadline locks new answers without inventing an automatic submission",
+      "status": "passed"
+    },
+    {
+      "name": "Question author changes question type/structure, and total-score validation is real",
+      "status": "passed"
+    },
+    {
+      "name": "Submission requires evidence and validates real File type/count/size, preserving references",
+      "status": "passed"
+    },
+    {
+      "name": "Submission creates immutable versions only after confirmation; rejected submit preserves draft",
+      "status": "passed"
+    },
+    {
+      "name": "Submission withdrawal keeps history and returned versions can be resubmitted",
+      "status": "passed"
+    },
+    {
+      "name": "Teacher return requires a reason and past submission versions cannot be graded",
+      "status": "passed"
+    },
+    {
+      "name": "Teacher rubric integration calculates final score and commits only the current confirmed version",
+      "status": "passed"
+    },
+    {
+      "name": "Submission zero scores remain zero, unpublished scores stay unavailable, and no attempt means no grade",
+      "status": "passed"
+    },
+    {
+      "name": "Rubric weighting distinguishes unscored, zero and not-applicable and rejects invalid numbers",
+      "status": "passed"
+    },
+    {
+      "name": "Rubric points method renormalizes explicitly excluded dimensions",
+      "status": "passed"
+    },
+    {
+      "name": "Rubric author validates weight totals and preserves independent confirmation baseline",
+      "status": "passed"
+    },
+    {
+      "name": "All six readonly/disabled components prevent business mutations",
+      "status": "passed"
+    },
+    {
+      "name": "Event-mode acknowledgement matches request ID; cancellation and late callbacks cannot overwrite drafts",
+      "status": "passed"
+    },
+    {
+      "name": "Loader failure preserves drafts, retry works, and stale loads cannot replace current data",
+      "status": "passed"
+    },
+    {
+      "name": "Forbidden states remove rendered business content and destroy closes dialogs and cancels operations",
+      "status": "passed"
+    },
+    {
+      "name": "Chinese composition preserves the last committed answer until input is complete",
+      "status": "passed"
+    },
+    {
+      "name": "Task prerequisites block start and clearing stale audience references can recover",
+      "status": "passed"
+    },
+    {
+      "name": "Question author can add a real boolean question using ordinary answer controls",
+      "status": "passed"
+    },
+    {
+      "name": "Rubric author can add and remove ordinary level rows with score validation",
+      "status": "passed"
+    },
+    {
+      "name": "Runtime readonly transitions cancel open editors before they can mutate data",
+      "status": "passed"
+    },
+    {
+      "name": "Teacher final score follows the confirmed rubric when override is not allowed",
+      "status": "passed"
+    },
+    {
+      "name": "Composition cannot submit a stale question draft before its final value is committed",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "passed": 39,
+  "failed": 0,
+  "observedBrowserErrors": 0
+}

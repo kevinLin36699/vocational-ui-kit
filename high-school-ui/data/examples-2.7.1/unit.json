@@ -1,0 +1,40 @@
+{
+  "version": "2.7.1",
+  "scope": "Documentation data coverage, fixture independence, privacy and dependency boundaries; browser operation tested separately.",
+  "checks": [
+    {
+      "name": "Every one of 22 business families has a populated default example and an operation guide",
+      "status": "passed"
+    },
+    {
+      "name": "All 86 named scenarios normalize and render without mutating source fixtures",
+      "status": "passed"
+    },
+    {
+      "name": "Returned examples are independent copies, including nested records and role configuration",
+      "status": "passed"
+    },
+    {
+      "name": "Student example configurations strip unreleased answers and unrelated personal business records",
+      "status": "passed"
+    },
+    {
+      "name": "Visible data summaries preserve meaningful zero, false, drafts and actual record counts",
+      "status": "passed"
+    },
+    {
+      "name": "Gallery offers 22 populated business examples and the detail registry retains every scenario",
+      "status": "passed"
+    },
+    {
+      "name": "Demo fixtures remain outside the public runtime and empty authored components stay empty",
+      "status": "passed"
+    },
+    {
+      "name": "All documentation entry points load data before their consumer and share demo styles",
+      "status": "passed"
+    }
+  ],
+  "passed": 8,
+  "failed": 0
+}

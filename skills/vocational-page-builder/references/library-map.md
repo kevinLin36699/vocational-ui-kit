@@ -8,7 +8,9 @@ resolve_library.py 输出：实际根目录、library 元数据、版本策略�
 
 | 场景 | 解析参数 | 继续读取 |
 | --- | --- | --- |
-| 筛选、表格、表单 | --component table --component form --pattern list | 当前组件 parameters、source 及 api；自定义数据必须用局部适配 |
+| 筛选、表格、表单 | --component table --component form --pattern list | 当前组件 parameters、controls 契约、table_form 及 api；按实例方法绑定加载/提交 |
+| 三批业务组件 | --component career-goal（换成实际 key） | education / education_next / education_platform、controls 契约及对应 examples |
+| 业务示例与变体 | 所需组件 | business_examples；示例数据与正式 runtime 分开 |
 | AI 会话与创作 | --component chat --component composer --pattern chat | ai、相关实现和 limitations |
 | 业务内嵌助手 | --pattern assistant --component chat | ai、patterns、源角色助手显隐规则 |
 | 现有页面整改 | 所需组件和模式 | migration 文档；只检索相关旧选择器，不全量读取大 JSON |
@@ -24,7 +26,7 @@ baseline_hashes 只用于发现变化和溯源，不是组件库副本；发生�
 
 ## 成熟度
 
-当前库为 interactive-html-prototype。复杂配方包含固定演示字段和数据；组件 render/mount 成功不证明已经满足新业务需求。没有生产框架包、后端权限、真实模型/文档解析、永久版本或正式考试引擎。
+当前库为 interactive-html-prototype。表格、表单及业务组件支持当前契约中的配置与实例操作；部分页面配方仍含固定演示字段和数据；组件 render/mount 成功不证明已经满足新业务需求。没有生产框架包、后端权限、真实模型/文档解析、永久版本或正式考试引擎。
 
 ## 公共视觉统一后的读取
 组件索引中的alignment字段给出当前组件的参考条款与组合类别。需要核对参考或处理样式差异时按需读取reference_alignment和component_alignment；颜色、尺寸、Tabs、消息与生成空插槽以当前绑定版本为准，不恢复历史样式。

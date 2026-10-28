@@ -1,0 +1,107 @@
+{
+  "id": "employment",
+  "title": "自定义实习岗位与投递联动",
+  "description": "替换全部岗位、简历和当前人ID后，创建、保存并登记投递；检查跨组件追加和版本快照。",
+  "cards": [
+    {
+      "id": "jobs",
+      "label": "第三批 · 岗位目录",
+      "key": "job-opportunity",
+      "props": {
+        "now": "2026-10-28T09:00:00+08:00",
+        "role": "student",
+        "actorId": "review-learner",
+        "jobs": [
+          {
+            "id": "field-service-trainee",
+            "title": "现场技术服务实习生",
+            "company": "联查示例企业",
+            "kind": "internship",
+            "status": "open",
+            "location": "示例园区",
+            "headcount": 2,
+            "salaryMin": 2000,
+            "salaryMax": 3000,
+            "salaryUnit": "元/月",
+            "description": "配合完成日常巡检与维护记录。",
+            "requirements": [
+              "了解安全操作规范",
+              "能够记录和描述设备异常"
+            ],
+            "closesAt": "2026-11-30T18:00:00+08:00",
+            "revision": 7,
+            "history": []
+          }
+        ],
+        "resumes": [
+          {
+            "id": "portfolio-r3",
+            "label": "自定义技术实践简历",
+            "ownerId": "review-learner",
+            "version": 3,
+            "status": "available",
+            "referenceId": "demo-resume-ref"
+          }
+        ],
+        "favorites": [],
+        "studentId": "review-learner",
+        "intents": [],
+        "applications": []
+      }
+    },
+    {
+      "id": "applications",
+      "label": "第三批 · 投递进度",
+      "key": "application-tracker",
+      "props": {
+        "now": "2026-10-28T09:00:00+08:00",
+        "role": "student",
+        "actorId": "review-learner",
+        "jobs": [
+          {
+            "id": "field-service-trainee",
+            "title": "现场技术服务实习生",
+            "company": "联查示例企业",
+            "kind": "internship",
+            "status": "open",
+            "location": "示例园区",
+            "headcount": 2,
+            "salaryMin": 2000,
+            "salaryMax": 3000,
+            "salaryUnit": "元/月",
+            "description": "配合完成日常巡检与维护记录。",
+            "requirements": [
+              "了解安全操作规范",
+              "能够记录和描述设备异常"
+            ],
+            "closesAt": "2026-11-30T18:00:00+08:00",
+            "revision": 7,
+            "history": []
+          }
+        ],
+        "resumes": [
+          {
+            "id": "portfolio-r3",
+            "label": "自定义技术实践简历",
+            "ownerId": "review-learner",
+            "version": 3,
+            "status": "available",
+            "referenceId": "demo-resume-ref"
+          }
+        ],
+        "applications": [],
+        "studentId": "review-learner",
+        "favorites": [],
+        "intents": []
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "custom-job-application",
+      "kind": "jobs-to-applications",
+      "source": "jobs",
+      "target": "applications"
+    }
+  ]
+}

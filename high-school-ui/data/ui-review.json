@@ -1,0 +1,2989 @@
+{
+  "version": "2.7.1",
+  "baselineComponents": 60,
+  "baselinePatterns": 14,
+  "components": [
+    {
+      "id": "voc-button",
+      "name": "按钮",
+      "baseline": "2.0.0",
+      "issue": "无空格超长文案撑宽，缺少可收缩文本容器",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#button"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "基础 / 按钮",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；为超长按钮文案增加独立省略层及完整title。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-icon",
+      "name": "图标与图标按钮",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#icon"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "基础 / 图标与图标按钮",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-link",
+      "name": "链接",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#link"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "基础 / 链接",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-tag",
+      "name": "标签与可移除项",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#tag"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "基础 / 标签与可移除项",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-badge",
+      "name": "状态徽标",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#badge"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "基础 / 状态徽标",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-avatar",
+      "name": "头像",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#avatar"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "基础 / 头像",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-separator",
+      "name": "分割线",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#separator"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "基础 / 分割线",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-input",
+      "name": "文本输入",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#input"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 文本输入",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-textarea",
+      "name": "多行输入",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#textarea"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 多行输入",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-number",
+      "name": "数字与单位",
+      "baseline": "2.0.0",
+      "issue": "单位游离在输入框外，缺少统一范围反馈",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "layout-and-sampled-interaction-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#number",
+        "第3页直接跳第5、第10页；末页下一页禁用；改20条/页回第1页且总页5，上一页禁用。"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [
+          "数字分页与边界"
+        ],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 数字与单位",
+      "resolution": "数字与单位置于同一外框，范围校验后发出变更事件。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-select",
+      "name": "下拉选择",
+      "baseline": "2.0.0",
+      "issue": "固定候选与选中长文本处理不足",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#select"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 下拉选择",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-checkbox",
+      "name": "复选框",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#checkbox"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 复选框",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-radio",
+      "name": "单选组",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#radio"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 单选组",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-switch",
+      "name": "开关",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#switch"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 开关",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-date",
+      "name": "日期与范围",
+      "baseline": "2.0.0",
+      "issue": "2.0为双原生日期框；2.1单框后仍存在日期值留白过大、图标层次欠清晰",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "layout-and-sampled-interaction-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#date",
+        "日期以YYYY/MM/DD紧凑显示；同日闰日提交公开date-change事件仍为[2024-02-29,2024-02-29]；聚焦可清空，所有端点恢复空白。"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [
+          "日期紧凑回显与值格式"
+        ],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 日期与范围",
+      "resolution": "统一外框的单日期/日期范围，日历面板、快捷范围、输入校验与键盘操作；日期值不作时区转换。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-multiselect",
+      "name": "多选标签",
+      "baseline": "2.0.0",
+      "issue": "框内只回显已选N项，标签脱离控件；溢出与已选管理欠缺",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "layout-and-sampled-interaction-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#multiselect",
+        "默认显示2个标签及+2；+N打开已选管理并移除工业机器人技术；框内移除软件技术，再从候选选回，最终3项同步。",
+        "320px长选项5项正常收纳并可查看全部；禁用态的触发与移除按钮都禁用；树多选m0/m1选择m2后3项，框内移除m0后2项。",
+        "+N中移除后Esc关闭，焦点回到当前多选触发按钮。"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [
+          "多选框内回显与收纳管理",
+          "多选窄容器与禁用，树多选同步",
+          "多选收纳关闭焦点恢复"
+        ],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 多选标签",
+      "resolution": "框内标签回显、按宽度省略、+N管理已选；保留搜索、键盘和移除。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-cascade",
+      "name": "院系专业级联",
+      "baseline": "2.0.0",
+      "issue": "两个分离下拉，层级关系与搜索体验不足",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#cascade"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 院系专业级联",
+      "resolution": "单框树层级选择院系与专业，父级仅组织目录，专业ID作为选择值。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-upload",
+      "name": "文件上传",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#upload"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 文件上传",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-form",
+      "name": "分区表单与校验",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#form"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 分区表单与校验",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-search",
+      "name": "搜索",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#search"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 搜索",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-table",
+      "name": "数据表格",
+      "baseline": "2.0.0",
+      "issue": "固定示例数据；窄容器筛选栏溢出，缺少列配置",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "layout-and-sampled-interaction-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#table",
+        "管理列表每页5项，直接第2页显示C006至C010；选择后切第3页清空本页选择，分页与数据同步。树多选重新展开仍只选m1/m2。"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [
+          "表格共用新分页"
+        ],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 数据表格",
+      "resolution": "可配置数据与列、筛选排序、列显隐、本页选择、分页、CSV及可选本地增改删。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/data-table.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-pagination",
+      "name": "分页",
+      "baseline": "2.0.0",
+      "issue": "总数、每页条数、页数拆散，缺少直达页码与清晰分组",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "layout-and-sampled-interaction-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#pagination",
+        "第3页直接跳第5、第10页；末页下一页禁用；改20条/页回第1页且总页5，上一页禁用。",
+        "管理列表每页5项，直接第2页显示C006至C010；选择后切第3页清空本页选择，分页与数据同步。树多选重新展开仍只选m1/m2。"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [
+          "数字分页与边界",
+          "表格共用新分页"
+        ],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 分页",
+      "resolution": "总数在左，每页条数与数字分页在右聚合；支持直接选页、跨页及边界禁用。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-card",
+      "name": "内容卡片",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#card"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 内容卡片",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-description",
+      "name": "描述列表",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#description"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 描述列表",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-tree",
+      "name": "树与目录",
+      "baseline": "2.0.0",
+      "issue": "缺少整行悬停反馈与稳定的选中层级",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "layout-and-sampled-interaction-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#tree",
+        "父箭头展开后指针停留在未选行，:hover=true且有整行反馈；文件图标与名称均可选整行，选中后aria-selected同步；箭头只改变展开。"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [
+          "树节点真实悬停与选中"
+        ],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 树与目录",
+      "resolution": "带层级引导、整行悬停和明确选中状态的课程目录；展开与选择分别操作。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-steps",
+      "name": "步骤条",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#steps"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 步骤条",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-progress",
+      "name": "进度",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#progress"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 进度",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-timeline",
+      "name": "时间线与审批记录",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#timeline"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 时间线与审批记录",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-stat",
+      "name": "指标卡",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#stat"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 指标卡",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-chart",
+      "name": "统计图与明细",
+      "baseline": "2.0.0",
+      "issue": "图形缺少清晰刻度，原生明细未排版且有重复展开指示",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "layout-and-sampled-interaction-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#chart",
+        "明细改为学院/课程数量/占比的三列表格；关闭选修后数量0/6/5、总数11；恢复6/6/5、总数17；明细保持展开且只有一个收放指示。"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [
+          "图表明细与筛选一致"
+        ],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 统计图与明细",
+      "resolution": "带刻度的课程数量图表，筛选与表格明细共享数据，支持明细收放。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-empty",
+      "name": "空状态",
+      "baseline": "2.0.0",
+      "issue": "单一空状态不能区分首次引导与恢复",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#empty"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 空状态",
+      "resolution": "区分首次空白、无匹配与读取失败，提供适用引导和恢复动作。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-skeleton",
+      "name": "骨架与加载",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#skeleton"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 骨架与加载",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-shell",
+      "name": "应用外壳与导航",
+      "baseline": "2.0.0",
+      "issue": "320px局部容器仍保留完整侧栏，挤压主体",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#shell"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "导航布局 / 应用外壳与导航",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；窄容器收起侧栏并保留可达图标。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-breadcrumb",
+      "name": "面包屑",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#breadcrumb"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "导航布局 / 面包屑",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-tabs",
+      "name": "内容标签页",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#tabs"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "导航布局 / 内容标签页",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-segmented",
+      "name": "分段控件",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#segmented"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "导航布局 / 分段控件",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-toolbar",
+      "name": "筛选与操作栏",
+      "baseline": "2.0.0",
+      "issue": "窄容器字段最小宽度导致筛选栏溢出",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "layout-and-sampled-interaction-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#toolbar",
+        "管理列表每页5项，直接第2页显示C006至C010；选择后切第3页清空本页选择，分页与数据同步。树多选重新展开仍只选m1/m2。"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [
+          "表格共用新分页"
+        ],
+        "allStatesVerified": false
+      },
+      "scenario": "导航布局 / 筛选与操作栏",
+      "resolution": "组合搜索、业务筛选、列显隐和列表操作；按可用宽度换行。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/data-table.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-menu",
+      "name": "更多菜单",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#menu"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "反馈浮层 / 更多菜单",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-popover",
+      "name": "选择浮层",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#popover"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "反馈浮层 / 选择浮层",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-tooltip",
+      "name": "悬停与焦点提示",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#tooltip"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "反馈浮层 / 悬停与焦点提示",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-dialog",
+      "name": "弹窗",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#dialog"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "反馈浮层 / 弹窗",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-confirm",
+      "name": "危险操作确认",
+      "baseline": "2.0.0",
+      "issue": "仅模态示例，缺少轻量就地确认",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#confirm"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "反馈浮层 / 危险操作确认",
+      "resolution": "删除使用危险色，模态与轻量气泡确认均先说明对象和后果。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-drawer",
+      "name": "抽屉",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#drawer"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "反馈浮层 / 抽屉",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-alert",
+      "name": "就地反馈与错误",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#alert"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "反馈浮层 / 就地反馈与错误",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-toast",
+      "name": "轻提示",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#toast"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "反馈浮层 / 轻提示",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-course-card",
+      "name": "课程卡片",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#course-card"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "高职教业务 / 课程卡片",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-person-picker",
+      "name": "人员选择",
+      "baseline": "2.0.0",
+      "issue": "缺少完整搜索多选及已选结果复核",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#person-picker"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "高职教业务 / 人员选择",
+      "resolution": "搜索、多选、已选结果复核与取消保护；确认后才应用至草稿。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-approval",
+      "name": "审核与分发",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#approval"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "高职教业务 / 审核与分发",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-resource",
+      "name": "资源与版本",
+      "baseline": "2.0.0",
+      "issue": "单个固定资源，未覆盖目录视图和长文件名",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#resource"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "高职教业务 / 资源与版本",
+      "resolution": "可配置资源目录，列表/卡片切换、关键词搜索、详情与本地文本下载。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-task-guide",
+      "name": "AI 任务引导",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#task-guide"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "AI交互 / AI 任务引导",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-agent",
+      "name": "智能体入口",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#agent"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "AI交互 / 智能体入口",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-conversation",
+      "name": "会话列表",
+      "baseline": "2.0.0",
+      "issue": "与AI组合共用窄容器挤压问题",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#conversation"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "AI交互 / 会话列表",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-composer",
+      "name": "AI 输入区",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#composer"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "AI交互 / AI 输入区",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-message",
+      "name": "用户与 AI 消息",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#message"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "AI交互 / 用户与 AI 消息",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-prose",
+      "name": "Markdown 与代码",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#prose"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "AI交互 / Markdown 与代码",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-process",
+      "name": "处理过程",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#process"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "AI交互 / 处理过程",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-citation",
+      "name": "引用与来源",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#citation"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "AI交互 / 引用与来源",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-result",
+      "name": "生成内容摘要",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#result"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "AI交互 / 生成内容摘要",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-workspace",
+      "name": "生成内容工作区",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#workspace"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "AI交互 / 生成内容工作区",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-chat",
+      "name": "AI 协作组合",
+      "baseline": "2.0.0",
+      "issue": "窄容器会话栏未收起，挤压标题和输入工具栏",
+      "treatment": "rebuild",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#chat"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "AI交互 / AI 协作组合",
+      "resolution": "统一弱阴影、无衬线控件、可收缩布局和长文本规则；保留原组件标识与适用交互。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/voc-ui.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-time-picker",
+      "name": "时间选择",
+      "baseline": null,
+      "issue": "场景缺口，依据原平台业务补齐",
+      "treatment": "add",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#time-picker"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 时间选择",
+      "resolution": "排课时间单框与小时/分钟面板，支持手动输入和范围校验。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-tree-select",
+      "name": "树选择",
+      "baseline": null,
+      "issue": "场景缺口，依据原平台业务补齐",
+      "treatment": "add",
+      "implementation": "implemented",
+      "validation": "layout-and-sampled-interaction-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#tree-select",
+        "320px长选项5项正常收纳并可查看全部；禁用态的触发与移除按钮都禁用；树多选m0/m1选择m2后3项，框内移除m0后2项。"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [
+          "多选窄容器与禁用，树多选同步"
+        ],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 树选择",
+      "resolution": "院系、专业、班级分层搜索选择，支持多选和已选项移除。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-academic-term",
+      "name": "学年学期选择",
+      "baseline": null,
+      "issue": "场景缺口，依据原平台业务补齐",
+      "treatment": "add",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#academic-term"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "高职教业务 / 学年学期选择",
+      "resolution": "用稳定学期ID选择学年学期，目录由当前业务提供。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-collapse",
+      "name": "折叠面板",
+      "baseline": null,
+      "issue": "场景缺口，依据原平台业务补齐",
+      "treatment": "add",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#collapse"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 折叠面板",
+      "resolution": "按章节组织教学说明，独立展开或手风琴模式；内容只作文本处理。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-rate",
+      "name": "五级评价",
+      "baseline": null,
+      "issue": "场景缺口，依据原平台业务补齐",
+      "treatment": "add",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#rate"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "录入 / 五级评价",
+      "resolution": "有明确文字含义的分级评价，支持键盘选择和只读展示。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-calendar",
+      "name": "事件日历",
+      "baseline": null,
+      "issue": "场景缺口，依据原平台业务补齐",
+      "treatment": "add",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#calendar"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 事件日历",
+      "resolution": "按月查看教学日程与截止提醒，选择日期查看事件，不执行排课。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-notification",
+      "name": "通知提醒",
+      "baseline": null,
+      "issue": "场景缺口，依据原平台业务补齐",
+      "treatment": "add",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#notification"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "反馈浮层 / 通知提醒",
+      "resolution": "通知摘要、未读状态、全部已读及详情；仅更新本地示例。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-image-preview",
+      "name": "图片预览",
+      "baseline": null,
+      "issue": "场景缺口，依据原平台业务补齐",
+      "treatment": "add",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#image-preview"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "展示 / 图片预览",
+      "resolution": "缩略图、大图缩放与旋转，支持失败提示和模态键盘关闭。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-feedback-result",
+      "name": "操作结果反馈",
+      "baseline": null,
+      "issue": "场景缺口，依据原平台业务补齐",
+      "treatment": "add",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#feedback-result"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "反馈浮层 / 操作结果反馈",
+      "resolution": "区分成功、失败、无权限和未找到；后续业务动作通过事件处理。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/controls.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-batch-import",
+      "name": "名单导入校验",
+      "baseline": null,
+      "issue": "场景缺口，依据原平台业务补齐",
+      "treatment": "add",
+      "implementation": "implemented",
+      "validation": "default-layout-checked",
+      "evidence": [
+        "data/quality-browser-validation.json#batch-import"
+      ],
+      "coverage": {
+        "defaultViewports": [
+          1440,
+          1280,
+          1024,
+          768
+        ],
+        "localWidths": [
+          318,
+          478
+        ],
+        "interactionChecks": [],
+        "allStatesVerified": false
+      },
+      "scenario": "高职教业务 / 名单导入校验",
+      "resolution": "CSV/TSV或粘贴名单，预览校验、错误定位、错误导出和显式确认。",
+      "implementationFiles": [
+        "css/refinements.css",
+        "js/batch-import.js"
+      ],
+      "remaining": "完整状态矩阵、多浏览器和真实业务服务未逐项验收；不把默认布局检查当作这些项目通过。"
+    },
+    {
+      "id": "voc-date-picker",
+      "name": "单日期选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-date-range",
+      "name": "日期范围选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-time-range",
+      "name": "时间范围选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-datetime-picker",
+      "name": "日期时间选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-datetime-range",
+      "name": "日期时间范围",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-year-picker",
+      "name": "年份选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-year-range",
+      "name": "年份范围",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-month-picker",
+      "name": "月份选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-month-range",
+      "name": "月份范围",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-quarter-picker",
+      "name": "季度选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-week-picker",
+      "name": "周选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-multi-date",
+      "name": "多日期选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-password",
+      "name": "密码输入",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-input-group",
+      "name": "组合输入",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-slider",
+      "name": "滑动输入条",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-autocomplete",
+      "name": "自动补全",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-transfer",
+      "name": "穿梭选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-list",
+      "name": "数据列表",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-anchor",
+      "name": "锚点导航",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-loading",
+      "name": "加载指示",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-color-picker",
+      "name": "颜色选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-richtext",
+      "name": "基础富文本编辑",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-navigation-menu",
+      "name": "业务导航菜单",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-carousel",
+      "name": "图文轮播",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-splitter",
+      "name": "可调整分栏",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-backtop",
+      "name": "局部返回顶部",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-teaching-audience",
+      "name": "教学对象选择",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-curriculum-plan",
+      "name": "教学目录与学时",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-teaching-task",
+      "name": "教学任务",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-question-sheet",
+      "name": "题目与作答",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-submission-review",
+      "name": "提交与批阅",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-scoring-rubric",
+      "name": "评分量规",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-class-roster",
+      "name": "班级名册",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-teaching-assignment",
+      "name": "任教关系",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-practice-workflow",
+      "name": "实训步骤与验收",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-learning-progress",
+      "name": "学习进度与续学",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-resource-version",
+      "name": "资源版本与引用",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-evaluation-survey",
+      "name": "评价问卷",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-grade-detail",
+      "name": "成绩明细",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-career-goal",
+      "name": "成长目标",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-growth-plan",
+      "name": "成长计划",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-job-opportunity",
+      "name": "岗位目录",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-application-tracker",
+      "name": "投递进度",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-assessment-collection",
+      "name": "评估指标采集",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-evidence-material",
+      "name": "佐证材料",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-asset-loan",
+      "name": "设备借还",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-repair-ticket",
+      "name": "报修工单",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    },
+    {
+      "id": "voc-admissions-lead",
+      "name": "招生线索",
+      "baseline": "2.0.0",
+      "issue": "未发现独立结构缺陷；纳入统一视觉、长文本和容器回归",
+      "treatment": "refine-and-verify",
+      "implementation": "implemented",
+      "validation": "pending",
+      "evidence": []
+    }
+  ],
+  "patternValidation": "default-layout-checked",
+  "patterns": [
+    {
+      "id": "home",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "list",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "detail",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "edit",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "selection",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "analytics",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "history",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "chat",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "assistant",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "workspace",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "learning",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "approval",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "files",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "import",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    },
+    {
+      "id": "settings",
+      "viewports": [
+        1440,
+        1280,
+        1024,
+        768
+      ],
+      "status": "default-layout-checked"
+    }
+  ],
+  "notInScope": [
+    "原业务工程改造",
+    "生产接口",
+    "GitHub推送",
+    "发布Skill覆盖"
+  ]
+}

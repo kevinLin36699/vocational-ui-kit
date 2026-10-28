@@ -10,7 +10,9 @@ scaffold_page.py 的 --pattern 指定真实页面模式，--output 为新的独�
 
 ## 数据与 API
 
-以 resolve_library.py 返回的 parameters 和真实源码为准。table 没有 rows/columns 参数、chat 没有任意 messages/真实流式接口。业务不同于演示时，复用 input/select/button/dialog 等基础能力和 v-* 结构，建立页面局部控制器；记录新增适配字段和事件，不能虚构公共 API。
+以 resolve_library.py 返回的 parameters、contracts.controls 和真实源码为准。table 使用 rows/columns/rowKey，form 使用 fields/values；加载、写入、校验和提交函数由 VocDataTable / VocForm 的实例方法绑定，不写入 JSON 配置。业务组件按各自参数提供目录、记录和当前身份，正式动作须明确回执。chat 没有任意 messages/真实流式接口；缺少能力时再建立局部适配，不能虚构公共 API。
+
+脚手架只复制 manifest.styles/runtime/patternsRuntime，不加载 showcaseRuntime/showcaseStyles 中的虚构业务数据。需要演示数据时参考 examples 和 business_examples 规范，为本任务明确构造配置；正式页面接入实际数据源。跨组件关系显式配置并在卸载时断开，配置替换、取消、失败和过期回执按公共契约处理。
 
 render 返回 HTML，挂载复杂组件后 hydrate；替换/卸载前 destroy。用户文本和文件名转义；extra 等受信任属性逃生参数不能接受用户输入。自定义数据应有稳定 ID，选择、排序、分页、导出使用同一有效集合。
 

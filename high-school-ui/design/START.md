@@ -1,4 +1,4 @@
-# 高职教 UI 组件库 v2.0.0
+# 高职教 UI 组件库 v2.7.1
 
 本次交付是参考AI-base设计、以HTML/CSS/JS独立实现的原型组件库，不是参考平台同一套源码组件；本次已按文档统一整库公共规范，并逐项记录适配依据；线上逐状态一致性仍受可用智能体限制。对齐、扩展和差异见REFERENCE_ALIGNMENT.md。
 
@@ -15,12 +15,19 @@
 ```html
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/refinements.css">
+<link rel="stylesheet" href="css/extended-controls.css">
 <div id="target"></div>
 <script src="js/icons.js"></script>
 <script src="js/resource-composer.js"></script>
 <script src="js/skill-picker.js"></script>
 <script src="js/content-workspace.js"></script>
 <script src="js/voc-ui.js"></script>
+<script src="js/controls.js"></script>
+<script src="js/data-table.js"></script>
+<script src="js/batch-import.js"></script>
+<script src="js/temporal.js"></script>
+<script src="js/extended-controls.js"></script>
 <script>
   VocUI.mount(document.querySelector('#target'), 'table');
 </script>
@@ -36,10 +43,13 @@
 - data/migration-map.json / csv：完整词法候选及未判定项。
 - js/catalog.js、tokens.js、docs.js：上述数据的离线展示副本，由脚本生成。
 - design/：规范、研究证据、迁移、API、页面生成和验收说明。
-- examples/：14 类独立组合模板，复用同一套实现。
+- examples/：15 类独立组合模板，复用同一套实现。
 - scripts/：本次可复现的索引、变量、文档和静态验证工具。
 
 ## 更新
 主题值在 scripts/build_tokens.py 维护，然后执行它生成 JSON/CSS/JS；不要只改 CSS 副本。组件分类与来源指示在 scripts/build_catalog.py 维护。日常顺序：build_tokens.py → build_docs.py → verify.py → build_report.py → build_docs.py。build_catalog.py是显式重新扫描工具，会更新来源快照；不要用它清除已记录的原平台变化。组件描述与对齐规则以当前data/components.json、data/component-alignment.json为准，重新扫描后需合并这些已审核元数据。
 
 当前工作区绝对路径仅用于来源定位；运行组件库本身使用相对资源。迁移到其他工作区时应配置或修改扫描脚本的 SOURCE，而不是硬改业务页面。
+
+## 2.1维护入口
+先维护组件源码和控件规范，再运行build_tokens.py、build_current.py、build_docs.py，最后进行定向验证。不得为更新数量而重新扫描并覆盖历史来源证据。新控件见CONTROLS.md。

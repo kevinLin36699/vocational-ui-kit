@@ -1,0 +1,39 @@
+{
+  "version": "2.7.1",
+  "primaryCount": 5,
+  "componentLinks": 118,
+  "uniqueComponentLinks": 118,
+  "directPreviewLinksInSidebar": 0,
+  "exampleEntries": [
+    {
+      "href": "examples/completeness.html",
+      "title": "基础控件与变体"
+    },
+    {
+      "href": "examples/table-form.html",
+      "title": "表格与表单"
+    },
+    {
+      "href": "examples/families.html",
+      "title": "通用组件交互"
+    },
+    {
+      "href": "examples/education.html",
+      "title": "教学设计与考核"
+    },
+    {
+      "href": "examples/education-next.html",
+      "title": "教学过程与评价"
+    },
+    {
+      "href": "examples/education-platform.html",
+      "title": "成长就业与学校运营"
+    },
+    {
+      "href": "examples/education-integration.html",
+      "title": "业务联动"
+    }
+  ],
+  "keyboardAccordionVerified": true,
+  "documentationNavigationAndBackVerified": true
+}

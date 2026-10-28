@@ -1,0 +1,336 @@
+{
+  "version": "2.7.0",
+  "scope": "Executed existing pure-rule suites against the current full runtime; third-batch rules are separate.",
+  "suites": [
+    {
+      "report": "quality-unit-validation.json",
+      "version": "2.7.0",
+      "passed": 12,
+      "failed": 0,
+      "checks": [
+        {
+          "name": "Leap years and calendar date validity",
+          "status": "passed"
+        },
+        {
+          "name": "Date arithmetic crosses leap day and year without timestamp conversion",
+          "status": "passed"
+        },
+        {
+          "name": "Week, month and trailing range presets are exact inclusive calendar dates",
+          "status": "passed"
+        },
+        {
+          "name": "CSV BOM, quoted comma, escaped quote and embedded newline",
+          "status": "passed"
+        },
+        {
+          "name": "TSV pasted from spreadsheet preserves leading zero IDs",
+          "status": "passed"
+        },
+        {
+          "name": "Roster rejects missing fields, duplicate and previously imported IDs",
+          "status": "passed"
+        },
+        {
+          "name": "Roster input limits and malformed quotes reject explicitly",
+          "status": "passed"
+        },
+        {
+          "name": "Custom table records and columns render without course-only dependencies",
+          "status": "passed"
+        },
+        {
+          "name": "Table duplicate IDs and missing column keys reject",
+          "status": "passed"
+        },
+        {
+          "name": "User-configured text is escaped in date, resource, organization and table",
+          "status": "passed"
+        },
+        {
+          "name": "Workspace remains an empty business slot without default publishing or editor",
+          "status": "passed"
+        },
+        {
+          "name": "All current catalog components and page patterns render",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "report": "completeness-2.2/unit.json",
+      "version": "2.7.0",
+      "passed": 10,
+      "failed": 0,
+      "checks": [
+        {
+          "name": "ISO week-year boundary and 53-week validation",
+          "status": "passed"
+        },
+        {
+          "name": "Period validity and leap-year datetime validation",
+          "status": "passed"
+        },
+        {
+          "name": "Periods cover whole month, quarter and ISO week",
+          "status": "passed"
+        },
+        {
+          "name": "Forbidden dates invalidate entire range and calendar periods",
+          "status": "passed"
+        },
+        {
+          "name": "Reversed, partial and out-of-bounds values do not become committed state",
+          "status": "passed"
+        },
+        {
+          "name": "Multi-date deduplicates, sorts and excludes forbidden values",
+          "status": "passed"
+        },
+        {
+          "name": "Local datetimes retain wall-clock values without timezone conversion",
+          "status": "passed"
+        },
+        {
+          "name": "Scalar zero is retained in input, statistics and badges",
+          "status": "passed"
+        },
+        {
+          "name": "New renderers escape labels, values, descriptions and content",
+          "status": "passed"
+        },
+        {
+          "name": "Unsafe image and navigation schemes are rejected",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "report": "common-2.3/unit.json",
+      "version": "2.7.0",
+      "passed": 11,
+      "failed": 0,
+      "checks": [
+        {
+          "name": "Schema rejects invalid names, duplicates, unknown types and invalid sections",
+          "status": "passed"
+        },
+        {
+          "name": "Empty schema stays empty and caller-owned configuration is not mutated",
+          "status": "passed"
+        },
+        {
+          "name": "Defaults retain zero, false, empty arrays and repeater values",
+          "status": "passed"
+        },
+        {
+          "name": "Conditional visibility and dependent options respect actual data",
+          "status": "passed"
+        },
+        {
+          "name": "Synchronous rules preserve numeric zero and enforce range, step and required",
+          "status": "passed"
+        },
+        {
+          "name": "Email, URL, regex and cross-field dates fail meaningfully",
+          "status": "passed"
+        },
+        {
+          "name": "Richtext validation counts plain text and recognizes empty markup",
+          "status": "passed"
+        },
+        {
+          "name": "Table validates nested identity and rejects incompatible variable-height virtual modes",
+          "status": "passed"
+        },
+        {
+          "name": "Nested headers flatten only leaves, and sort handles nulls and numeric text",
+          "status": "passed"
+        },
+        {
+          "name": "Table config never mutates the caller rows or columns",
+          "status": "passed"
+        },
+        {
+          "name": "Public renderers escape schema/table labels and editable richtext source",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "report": "families-2.4/unit.json",
+      "version": "2.7.0",
+      "passed": 6,
+      "failed": 0,
+      "checks": [
+        {
+          "name": "Calendar rejects impossible Gregorian dates without throwing for invalid months",
+          "status": "passed"
+        },
+        {
+          "name": "Nested identities reject duplicates across separate branches",
+          "status": "passed"
+        },
+        {
+          "name": "Family renderers escape caller text and content instead of running HTML",
+          "status": "passed"
+        },
+        {
+          "name": "Executable, protocol-relative and HTML image addresses are denied",
+          "status": "passed"
+        },
+        {
+          "name": "Configurable AI/business renderers retain supplied objects without fixed-course substitution",
+          "status": "passed"
+        },
+        {
+          "name": "Family rendering does not mutate nested input records or initial tab state",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "report": "education-2.5/unit.json",
+      "version": "2.7.0",
+      "passed": 12,
+      "failed": 0,
+      "checks": [
+        {
+          "name": "All six families and all caller configurations render without mutation",
+          "status": "passed"
+        },
+        {
+          "name": "Nested IDs are stable, unique, safe and reject duplicate branches",
+          "status": "passed"
+        },
+        {
+          "name": "Audience records must refer to actual class nodes and scope modes are explicit",
+          "status": "passed"
+        },
+        {
+          "name": "Curriculum aggregates leaf hours and rejects duplicate parent allocation",
+          "status": "passed"
+        },
+        {
+          "name": "Curriculum totals, mode, positive hours and fractional steps are business constraints",
+          "status": "passed"
+        },
+        {
+          "name": "Task dependency cycles, unsupported states and invalid dates are rejected",
+          "status": "passed"
+        },
+        {
+          "name": "Five question types preserve false and detect incomplete fill or invalid options",
+          "status": "passed"
+        },
+        {
+          "name": "Student configuration does not serialize unreleased reference answers or grading feedback",
+          "status": "passed"
+        },
+        {
+          "name": "Weighted and point rubrics distinguish zero, unscored and excluded dimensions",
+          "status": "passed"
+        },
+        {
+          "name": "Rubric totals, level values and incoming values cannot silently pass invalid configuration",
+          "status": "passed"
+        },
+        {
+          "name": "Submission history validates unique versions and consistent rubric maximum",
+          "status": "passed"
+        },
+        {
+          "name": "All domain labels, bodies and authored text are escaped",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "report": "education-2.6/unit.json",
+      "version": "2.7.0",
+      "passed": 19,
+      "failed": 0,
+      "checks": [
+        {
+          "name": "All seven empty components and 28 independent configurations render without mutating caller data",
+          "status": "passed"
+        },
+        {
+          "name": "Duplicate person numbers and duplicate IDs are rejected",
+          "status": "passed"
+        },
+        {
+          "name": "Student grade configuration excludes others and all unannounced grade history",
+          "status": "passed"
+        },
+        {
+          "name": "Published zero values are preserved for the current student",
+          "status": "passed"
+        },
+        {
+          "name": "Assignments reject duplicate active teaching relationship and primary conflict",
+          "status": "passed"
+        },
+        {
+          "name": "Assignment terms, inactive teachers, and class scope are checked before saving",
+          "status": "passed"
+        },
+        {
+          "name": "Practice dependency cycles and unknown material references are rejected",
+          "status": "passed"
+        },
+        {
+          "name": "Learning dependency cycles, duplicate resources, invalid record positions are rejected",
+          "status": "passed"
+        },
+        {
+          "name": "Resource version numbers are immutable unique positive integers and links are safe",
+          "status": "passed"
+        },
+        {
+          "name": "Student resource configuration removes drafts, unavailable and expired contents",
+          "status": "passed"
+        },
+        {
+          "name": "Text version comparisons reflect actual changed and added lines",
+          "status": "passed"
+        },
+        {
+          "name": "Survey answer validation preserves false and zero ratings and enforces required responses",
+          "status": "passed"
+        },
+        {
+          "name": "Survey maximum choices and unknown choice IDs are rejected",
+          "status": "passed"
+        },
+        {
+          "name": "Survey raw responses are stripped for students and aggregate values survive repeated sanitization",
+          "status": "passed"
+        },
+        {
+          "name": "Unreleased survey aggregates remain unavailable and empty means remain null",
+          "status": "passed"
+        },
+        {
+          "name": "Grades distinguish null, zero, absence, and explicitly exempt values",
+          "status": "passed"
+        },
+        {
+          "name": "Point grades renormalize allowed exemptions and reject invalid total weights",
+          "status": "passed"
+        },
+        {
+          "name": "Unsupported roles, invalid time windows and unsafe identifiers fail explicitly",
+          "status": "passed"
+        },
+        {
+          "name": "All authored labels and bodies are escaped before insertion into HTML",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "passed": 70,
+  "failed": 0
+}

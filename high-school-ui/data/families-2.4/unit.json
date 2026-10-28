@@ -1,0 +1,32 @@
+{
+  "version": "2.7.1",
+  "checks": [
+    {
+      "name": "Calendar rejects impossible Gregorian dates without throwing for invalid months",
+      "status": "passed"
+    },
+    {
+      "name": "Nested identities reject duplicates across separate branches",
+      "status": "passed"
+    },
+    {
+      "name": "Family renderers escape caller text and content instead of running HTML",
+      "status": "passed"
+    },
+    {
+      "name": "Executable, protocol-relative and HTML image addresses are denied",
+      "status": "passed"
+    },
+    {
+      "name": "Configurable AI/business renderers retain supplied objects without fixed-course substitution",
+      "status": "passed"
+    },
+    {
+      "name": "Family rendering does not mutate nested input records or initial tab state",
+      "status": "passed"
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "scope": "Pure date/identity/security and configuration boundaries; DOM behavior in family-browser.json"
+}

@@ -112,13 +112,15 @@ def load_library(library_root=None, version=None):
     documents['generation_standard'] = str(index_paths['generationStandard'])
     # Resolve current conditional standards from the library manifest, not copied skill rules.
     for key, field in {'resource_composer': 'resourceComposerStandard', 'skill_selection': 'skillSelectionStandard',
-                       'teaching_agents': 'teachingAgentStandard', 'generated_content': 'generatedContentStandard'}.items():
+                       'teaching_agents': 'teachingAgentStandard', 'generated_content': 'generatedContentStandard',
+                       'controls': 'controlStandard', 'education_platform': 'educationPlatformStandard',
+                       'business_examples': 'businessExamplesStandard'}.items():
         if meta.get(field):
             documents[key] = str(safe_path(root, meta[field]))
     contracts = {key: str(safe_path(root, meta[field])) for key, field in {
         'resource_composer': 'resourceComposerContract', 'skill_selection': 'skillSelectionContract',
         'teaching_agents': 'teachingAgentContract', 'workspace': 'workspaceContract',
-        'message_feedback': 'messageFeedbackContract'}.items() if meta.get(field)}
+        'message_feedback': 'messageFeedbackContract', 'controls': 'controlContract'}.items() if meta.get(field)}
     examples = {key: str(safe_path(root, path)) for key, path in binding.get('examples', {}).items()}
     tracked = [binding['manifest'], *[str(p.relative_to(root)) for p in index_paths.values()], *assets,
                *[str(Path(p).relative_to(root)) for p in documents.values()]]

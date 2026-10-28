@@ -4,12 +4,13 @@
 from pathlib import Path
 import json, re, hashlib
 R=Path(__file__).resolve().parents[1]
+CURRENT=json.loads((R/'data/library.json').read_text())['version']
 C=json.loads((R/'data/components.json').read_text());A=json.loads((R/'data/source-audit.json').read_text())
 D={}
 def add(k,title,text):D[k]={'title':title,'content':text.strip()+'\n'}
 
 add('START','开始使用',r'''
-# 高职教 UI 组件库 v2.0.0
+# 高职教 UI 组件库 v2.1.0
 
 本次交付是参考AI-base设计、以HTML/CSS/JS独立实现的原型组件库，不是参考平台同一套源码组件；本次已按文档统一整库公共规范，并逐项记录适配依据；线上逐状态一致性仍受可用智能体限制。对齐、扩展和差异见REFERENCE_ALIGNMENT.md。
 
@@ -57,7 +58,7 @@ add('START','开始使用',r'''
 ''')
 
 add('STANDARD','蓝白设计规范',r'''
-# 设计标准与主题 v2.0.0
+# 设计标准与主题 v2.1.0
 
 ## 依据与主题
 结构、密度、尺寸、排版和交互以参考 DESIGN.md 为准。蓝白主体、局部蓝紫 AI 强调是用户明确覆盖；纸纹、暖色赭石不引入高职教主题。保留文档的衬线标题层级和无衬线 UI，以本机字体回退实现，不加载远程字体。
@@ -143,7 +144,7 @@ add('RESEARCH','参考研究与证据',r'''
 ''')
 
 add('DECISIONS','三方差异与决策',r'''
-# AI-base → 高职教 → 统一标准 v2.0.0
+# AI-base → 高职教 → 统一标准 v2.1.0
 
 | 项目 | 参考 | 高职教旧实现 | 最终规则 |
 | --- | --- | --- | --- |
@@ -230,7 +231,7 @@ data/migration-map.json / csv 登记全部 {A['classCount']} 条词法类名记�
 ''')
 
 add('API','API 与参数支持',r'''
-# API v2.0.0
+# API v2.1.0
 
 ## 公共入口
 ```javascript
@@ -288,7 +289,7 @@ document.querySelector('#target').addEventListener('voc:submit', event => {
 - 组件为轻 DOM / 全局 v-* 命名空间，基础 reset 会影响宿主。正式嵌入旧平台前应隔离或限定作用域，不能直接全局覆盖。
 - 不含真正后端权限、网络重连、流式API、文档解析、跨页同步或永久版本库。
 
-## 正文资源输入扩展（v2.0.0）
+## 正文资源输入扩展（v2.1.0）
 composer 新增 resources、segments，chat 新增 resources；不新增 rows/messages 等业务接口。运行资产增加 js/resource-composer.js，按 manifest 顺序加载。voc:resource-change 和 ai-send 中的 segments/resources、恢复与校验 API 见 [INLINE_RESOURCES.md](INLINE_RESOURCES.md)。可见消息输入改为 .v-resource-editor，隐藏 textarea[data-ai-input] 仅为旧值适配，不应供用户聚焦。
 
 ## 新增配置与事件
@@ -296,7 +297,7 @@ composer 与 chat 支持 resourceTypes、skills、selectedSkill；资源两级�
 ''')
 
 add('AI','AI 交互与状态',r'''
-# AI 交互与状态 v2.0.0
+# AI 交互与状态 v2.1.0
 
 ## 输入与状态
 阅读列46rem，Composer白色18px圆角、15px/1.7正文、112→128px焦点高度；＋上传/我的文件/引用资源，独立技能入口。引用资源按类型→对象，目录由调用方按端提供，资源ID/版本/归属须服务端再次校验。技能标签在所有正文之前、可X移除，不直接执行真实技能。
@@ -326,7 +327,7 @@ add('AI','AI 交互与状态',r'''
 完整资源、技能和空插槽规则按需读取INLINE_RESOURCES.md、SKILLS.md、GENERATED_CONTENT.md。线上当前无可用智能体，发送/停止/生成等未在线操作，不将本地模拟标成线上通过。
 ''')
 
-pattern_rows=[('home','平台首页','教师示例','agent / composer / card'),('list','管理列表','管理示例','toolbar / table / form'),('detail','普通详情','当前课程','breadcrumb / tabs / description / chat'),('edit','编辑表单','教师课程草稿','form'),('selection','选择关联','当前草稿','cascade / multiselect / person-picker'),('analytics','统计分析','17门示例课程','stat / chart'),('history','协作记录','当前页面会话','conversation'),('chat','AI主协作','虚构教师任务','chat'),('assistant','内嵌助手','当前课程','description / chat'),('workspace','长文工作区','教学大纲草稿','workspace'),('learning','学习作答','虚构学生作业','radio / alert / composer'),('approval','审核分发','本地演示对象','approval'),('files','资源文件','本次文件选择','upload / resource'),('settings','个人配置','虚构教师','input / switch / avatar')]
+pattern_rows=[('home','平台首页','教师示例','agent / composer / card'),('list','管理列表','管理示例','toolbar / table / form'),('detail','普通详情','当前课程','breadcrumb / tabs / description / chat'),('edit','编辑表单','教师课程草稿','form'),('selection','选择关联','当前草稿','cascade / multiselect / person-picker'),('analytics','统计分析','17门示例课程','stat / chart'),('history','协作记录','当前页面会话','conversation'),('chat','AI主协作','虚构教师任务','chat'),('assistant','内嵌助手','当前课程','description / chat'),('workspace','长文工作区','教学大纲草稿','workspace'),('learning','学习作答','虚构学生作业','radio / alert / composer'),('approval','审核分发','本地演示对象','approval'),('files','资源文件','本次文件选择','upload / resource'),('settings','个人配置','虚构教师','input / switch / avatar'),('import','名单导入','本地学生名单','batch-import / table / feedback-result')]
 add('PATTERNS','页面契约与模板',r'''
 # 页面组合契约
 
@@ -446,7 +447,7 @@ else:text='# 验证结果\n\n实现正在验证，当前不宣称浏览器验收
 add('VALIDATION','验收与验证结果',text)
 
 add('INLINE_RESOURCES','正文内资源选择',r'''
-# 正文内资源选择 · v2.0.0
+# 正文内资源选择 · v2.1.0
 
 ## 流程与来源
 按用户最新修订，新插入资源必须先选类型，再选对象。`/` 与“引用资源”均进入类型层，不混排全部对象。现有 `js/programs.js` 的课程／单元内联槽位提供结构参考，通用类型层、专业、课时及端配置是用户本次明确要求的扩展。原平台控制器未改。
@@ -485,7 +486,7 @@ manifest runtime 顺序含 icons.js、resource-composer.js、skill-picker.js、v
 ''')
 
 add('SKILLS','技能选择与回答反馈',r'''
-# 技能选择与回答反馈 · v2.0.0
+# 技能选择与回答反馈 · v2.1.0
 
 ## 技能面板
 按用户截图，“添加技能”打开搜索面板，提供内置技能／我的技能两个页签及当前目录数量；支持说明、已选状态、无结果／空列表、禁用原因、键盘和关闭。按钮显示短文字“技能”（无障碍名称“添加技能”），选择不重命名按钮、不自动发送或覆盖正文。
@@ -506,33 +507,110 @@ add('SKILLS','技能选择与回答反馈',r'''
 `voc:feedback` 冒泡 detail `{messageId,value:'up'|'down'|null,simulated:true}`；真实反馈服务由业务接入。独立 message 示例使用本地生成标识，会话使用当前消息 ID；没有跨刷新持久化或评价统计。
 ''')
 
-add('GENERATED_CONTENT','生成内容容器与插槽',"# 生成内容容器与业务插槽 v2.0.0\n\n## 当前边界\n用户2026-10-27明确收敛：通用组件库仅提供生成内容区域的外壳和预留插槽，不负责每一种业务内容。默认是空白占位，不再内置教学大纲、PPT、图谱、试题、简历等类型目录、编辑器、版本或业务动作。\n\n公共层负责：标题、收起／重新展开、可选工具栏、内部滚动、空／加载／就绪／错误状态，以及可选操作栏的外观和事件。\n\n业务层负责：具体预览与编辑器、业务字段、生成数据、校验、权限、版本、保存、审核、发布及资源关联。已有业务内容优先复用项目原有模块，组件库不要求重新实现，也不要求把所有内容转成某种统一数据结构。\n\n## 默认用法\n```js\nVocUI.mount(document.querySelector('#target'), 'workspace');\n// 默认仅显示内容展示区，无保存、分发、发布等业务操作。\n```\n\nprops：title（默认生成内容）、subtitle（可选）、state（empty/loading/ready/error）、statusText（可选状态文字）、actions（可选操作元数据，默认空）。显示ready时，业务方应已提供内容；组件不假称已生成、保存或审核。\n\n## 接入业务内容\n```js\nconst wrapper = document.querySelector('#target');\nVocUI.mount(wrapper, 'workspace', {title:'生成内容'});\nconst panel = wrapper.querySelector('[data-content-workspace]');\nconst editor = document.createElement('div');\n// 在editor上挂载业务项目现有的预览或编辑器。\nVocContentWorkspace.setContent(panel, editor);\n// 也可先取得插槽再挂载框架组件，随后声明就绪：\nconst slot = VocContentWorkspace.getSlot(panel);\nVocContentWorkspace.setState(panel, 'ready');\n```\n\nsetContent 接受DOM节点或纯文本；字符串始终作为文本，不执行HTML。框架页面在getSlot返回的节点上挂载已有组件并管理其卸载。组件库不检查或改写业务内容，不接管其内部状态。\n\n## 可选工具和动作\n`setToolbar(panel, node)` 挂载业务工具栏，传null隐藏。`setActions(panel, [{id,label,variant?,disabled?}])` 配置操作按钮，空数组隐藏整个操作栏。组件不自动添加保存／分发按钮。\n\n点击触发 `voc:workspace-action`，detail为 `{actionId,contentId}`。业务监听事件后完成自己的实际流程。错误状态的retry只是请求事件，业务处理后调用setState，组件不伪造重试成功。\n\n## 收放与会话\n收放只改变容器可见性，不重新渲染或销毁插槽中的业务DOM，输入和事件监听保持。内部滚动区域独立。\n\nAI会话展示一个通用工作区入口。自动打开或点击回答入口时发出 `voc:workspace-open`，detail含messageId，业务方据此关联该轮实际成果。`activate(panel, messageId)`按内容标识切换独立插槽节点，避免旧回答内容显示在新回答中；组件只缓存DOM和滚动位置，不设计业务数据、版本或保存规则。\n\nAPI还包括getState(panel)，返回 `{contentId,state,statusText}`。VocUI.destroy负责释放容器自身监听；业务订阅、框架实例、播放器、外部资源等仍需业务方按原架构卸载。所有示例仅在当前页面。\n\n## 后续页面生成规范\n1. 需要右侧生成区时，先复用workspace外壳，再挂载当前业务的内容模块。\n2. 不要求组件库穷举业务问题，不恢复默认全类型目录，不把某个示例编辑器升级为所有页面强制标准。\n3. 不因复用容器而改变原业务流程、权限、数据或版本逻辑。\n4. 验证插槽可挂载、收放不丢状态、加载错误反馈、滚动及实际业务关键流程。\n\n## 历史方案\nv1.4.0多类型示例已移入assets/archive/generated-content-1.4.0，仅作历史追溯，不再加载进当前运行时、索引或页面生成默认规范。历史验证记录保留其原版本，不能用于宣称当前版本已通过那些业务测试。\n")
-D['GENERATION']['content']+='\n## 生成内容区域边界（v2.0.0）\n生成区仅复用容器和插槽，具体内容、预览编辑器、数据和业务流程由当前页面负责；参见design/GENERATED_CONTENT.md。不得默认加载全类型业务目录，也不要求所有业务采用内置编辑结构。\n'
+add('GENERATED_CONTENT','生成内容容器与插槽',"# 生成内容容器与业务插槽 v2.1.0\n\n## 当前边界\n用户2026-10-27明确收敛：通用组件库仅提供生成内容区域的外壳和预留插槽，不负责每一种业务内容。默认是空白占位，不再内置教学大纲、PPT、图谱、试题、简历等类型目录、编辑器、版本或业务动作。\n\n公共层负责：标题、收起／重新展开、可选工具栏、内部滚动、空／加载／就绪／错误状态，以及可选操作栏的外观和事件。\n\n业务层负责：具体预览与编辑器、业务字段、生成数据、校验、权限、版本、保存、审核、发布及资源关联。已有业务内容优先复用项目原有模块，组件库不要求重新实现，也不要求把所有内容转成某种统一数据结构。\n\n## 默认用法\n```js\nVocUI.mount(document.querySelector('#target'), 'workspace');\n// 默认仅显示内容展示区，无保存、分发、发布等业务操作。\n```\n\nprops：title（默认生成内容）、subtitle（可选）、state（empty/loading/ready/error）、statusText（可选状态文字）、actions（可选操作元数据，默认空）。显示ready时，业务方应已提供内容；组件不假称已生成、保存或审核。\n\n## 接入业务内容\n```js\nconst wrapper = document.querySelector('#target');\nVocUI.mount(wrapper, 'workspace', {title:'生成内容'});\nconst panel = wrapper.querySelector('[data-content-workspace]');\nconst editor = document.createElement('div');\n// 在editor上挂载业务项目现有的预览或编辑器。\nVocContentWorkspace.setContent(panel, editor);\n// 也可先取得插槽再挂载框架组件，随后声明就绪：\nconst slot = VocContentWorkspace.getSlot(panel);\nVocContentWorkspace.setState(panel, 'ready');\n```\n\nsetContent 接受DOM节点或纯文本；字符串始终作为文本，不执行HTML。框架页面在getSlot返回的节点上挂载已有组件并管理其卸载。组件库不检查或改写业务内容，不接管其内部状态。\n\n## 可选工具和动作\n`setToolbar(panel, node)` 挂载业务工具栏，传null隐藏。`setActions(panel, [{id,label,variant?,disabled?}])` 配置操作按钮，空数组隐藏整个操作栏。组件不自动添加保存／分发按钮。\n\n点击触发 `voc:workspace-action`，detail为 `{actionId,contentId}`。业务监听事件后完成自己的实际流程。错误状态的retry只是请求事件，业务处理后调用setState，组件不伪造重试成功。\n\n## 收放与会话\n收放只改变容器可见性，不重新渲染或销毁插槽中的业务DOM，输入和事件监听保持。内部滚动区域独立。\n\nAI会话展示一个通用工作区入口。自动打开或点击回答入口时发出 `voc:workspace-open`，detail含messageId，业务方据此关联该轮实际成果。`activate(panel, messageId)`按内容标识切换独立插槽节点，避免旧回答内容显示在新回答中；组件只缓存DOM和滚动位置，不设计业务数据、版本或保存规则。\n\nAPI还包括getState(panel)，返回 `{contentId,state,statusText}`。VocUI.destroy负责释放容器自身监听；业务订阅、框架实例、播放器、外部资源等仍需业务方按原架构卸载。所有示例仅在当前页面。\n\n## 后续页面生成规范\n1. 需要右侧生成区时，先复用workspace外壳，再挂载当前业务的内容模块。\n2. 不要求组件库穷举业务问题，不恢复默认全类型目录，不把某个示例编辑器升级为所有页面强制标准。\n3. 不因复用容器而改变原业务流程、权限、数据或版本逻辑。\n4. 验证插槽可挂载、收放不丢状态、加载错误反馈、滚动及实际业务关键流程。\n\n## 历史方案\nv1.4.0多类型示例已移入assets/archive/generated-content-1.4.0，仅作历史追溯，不再加载进当前运行时、索引或页面生成默认规范。历史验证记录保留其原版本，不能用于宣称当前版本已通过那些业务测试。\n")
+D['GENERATION']['content']+='\n## 生成内容区域边界（v2.1.0）\n生成区仅复用容器和插槽，具体内容、预览编辑器、数据和业务流程由当前页面负责；参见design/GENERATED_CONTENT.md。不得默认加载全类型业务目录，也不要求所有业务采用内置编辑结构。\n'
 D['API']['content']+='\n## 生成内容容器\nworkspace的title/subtitle/state/statusText/actions仅配置外壳；通过VocContentWorkspace.getSlot或setContent接入业务模块。可选动作使用voc:workspace-action；聊天入口使用voc:workspace-open。详见design/GENERATED_CONTENT.md与data/workspace-contract.json。\n'
 
 alignment=json.loads((R/'data/reference-alignment.json').read_text())
 add('REFERENCE_ALIGNMENT','参考一致性审计',alignment['documentation'])
 items=json.loads((R/'data/component-alignment.json').read_text())['components']
-add('COMPONENT_ALIGNMENT','60项组件对照','# 逐组件对照 v2.0.0\n\n60项均已映射到参考条款或公共控件组合；implemented表示已实施，不等于线上逐状态复刻。线上实测范围见参考一致性审计。\n\n| 标识 | 组件 | 依据 | 统一后的实现 |\n| --- | --- | --- | --- |\n'+'\n'.join('| '+x['id']+' | '+x['name']+' | '+x['reference']+' | '+x['implementation']+' |' for x in items)+'\n')
-D['GENERATION']['content']+='\n## v2.0.0参考统一要求\n先读取data/library.json与data/component-alignment.json，按指定版本使用公共组件、变量和模板。常规按钮36/30px、10px圆角；卡片14px圆角/16px内边距；弹窗20px；Tabs分段；对话15px开放正文与头像元信息。不得恢复旧尺寸、下划线Tabs或无元信息回答。资源类型→对象、技能前置标签、局部蓝紫、危险删除和空生成插槽保持。文档未定义的业务能力通过公共组件组合，局部扩展要注明，不静默改标准。参考线上核验与文档实施分开，见REFERENCE_ALIGNMENT.md。\n'
-D['SKILLS']['content']+='\n## v2.0.0反馈细节\n点踩先打开原因Popover（单选原因可不选、说明选填最多500字），确认后更新本地评价；取消保留旧值。点赞/点踩互斥且重复点击撤销。技能来源采用同一分段底轨和白色滑块；标签28px胶囊、移除22px按钮，保持正文之前。\n'
-D['API']['content']+='\n## v2.0.0公共适配\n组件render/mount及既有参数保持；Tabs视觉改为分段，不改变tab/tabpanel语义。反馈voc:feedback增加reason/comment字段，点踩确认后才更新；编辑提问保留本轮附件、资源与技能；重新生成只替换点击的回答。select(label,options,value,props)的options可携带disabled/reason，禁用理由可见。\n'
+add('COMPONENT_ALIGNMENT','60项组件对照','# 逐组件对照 v2.1.0\n\n60项均已映射到参考条款或公共控件组合；implemented表示已实施，不等于线上逐状态复刻。线上实测范围见参考一致性审计。\n\n| 标识 | 组件 | 依据 | 统一后的实现 |\n| --- | --- | --- | --- |\n'+'\n'.join('| '+x['id']+' | '+x['name']+' | '+x['reference']+' | '+x['implementation']+' |' for x in items)+'\n')
+D['GENERATION']['content']+='\n## v2.1.0参考统一要求\n先读取data/library.json与data/component-alignment.json，按指定版本使用公共组件、变量和模板。常规按钮36/30px、10px圆角；卡片14px圆角/16px内边距；弹窗20px；Tabs分段；对话15px开放正文与头像元信息。不得恢复旧尺寸、下划线Tabs或无元信息回答。资源类型→对象、技能前置标签、局部蓝紫、危险删除和空生成插槽保持。文档未定义的业务能力通过公共组件组合，局部扩展要注明，不静默改标准。参考线上核验与文档实施分开，见REFERENCE_ALIGNMENT.md。\n'
+D['SKILLS']['content']+='\n## v2.1.0反馈细节\n点踩先打开原因Popover（单选原因可不选、说明选填最多500字），确认后更新本地评价；取消保留旧值。点赞/点踩互斥且重复点击撤销。技能来源采用同一分段底轨和白色滑块；标签28px胶囊、移除22px按钮，保持正文之前。\n'
+D['API']['content']+='\n## v2.1.0公共适配\n组件render/mount及既有参数保持；Tabs视觉改为分段，不改变tab/tabpanel语义。反馈voc:feedback增加reason/comment字段，点踩确认后才更新；编辑提问保留本轮附件、资源与技能；重新生成只替换点击的回答。select(label,options,value,props)的options可携带disabled/reason，禁用理由可见。\n'
 D['API']['content']+='\n## AI添加内容与文件引用\ncomposer/chat 的 files 为当前可见我的文件目录；＋菜单提供上传、我的文件及高职教引用扩展。附件ID与版本通过ai-send的attachments传递；不代表已上传或解析。线上受阻范围、文件字段和交互依据见REFERENCE_ALIGNMENT.md。\n'
 
 add('TEACHING_AGENTS','教师输入与关联Agent',(R/'design/TEACHING_AGENTS.md').read_text())
 D['API']['content']+='\n## 教学关联Agent预览\ncomposer/chat/conversation支持agentOptions与selectedAgents；[]隐藏整组，参数/事件/快照见TEACHING_AGENTS.md。发送事件增加agents；本地示例未连接真实服务。\n'
 D['GENERATION']['content']+='\n## 教师输入的教学关联\n教师场景按需读取TEACHING_AGENTS.md及data/teaching-agents.json。资源正文片段、技能前置标签、关联Agent多选分开；底栏入口统一资源/技能短文字。Agent目录与后台绑定由业务提供，学生/其他场景明确传agentOptions:[]隐藏。生成中锁定本轮，重试沿用原轮快照；不得把示例AgentID当真实服务。生成内容仍为空插槽。\n'
 D['AI']['content']+='\n## 教学关联Agent\n按需使用可多选的教学关联，目录由当前业务提供。选择只改草稿，发送时携带agents；生成中锁定、按会话隔离、按原轮重试。详见TEACHING_AGENTS.md。\n'
-for k,v in D.items():(R/'design'/f'{k}.md').write_text(v['content'])
+# The catalog is authoritative; source research remains historical evidence.
+count=len(C); pattern_count=len(pattern_rows)
+for document_key,document in D.items():
+    if document_key=='VALIDATION':continue
+    document['title']=document['title'].replace('60项',str(count)+'项')
+    document['content']=document['content'].replace('60 类',str(count)+' 类').replace('60类',str(count)+'类').replace('60项',str(count)+'项').replace('14 类',str(pattern_count)+' 类').replace('14类',str(pattern_count)+'类').replace('14种',str(pattern_count)+'种').replace('14 类',str(pattern_count)+' 类').replace('5项分页','10项默认分页，可切换5/10/20/50')
+D['START']['content']=D['START']['content'].replace('<script src="js/voc-ui.js"></script>','<script src="js/voc-ui.js"></script>\n<script src="js/controls.js"></script>\n<script src="js/data-table.js"></script>\n<script src="js/batch-import.js"></script>').replace('<link rel="stylesheet" href="css/components.css">','<link rel="stylesheet" href="css/components.css">\n<link rel="stylesheet" href="css/refinements.css">')
+D['START']['content']+='\n## 2.1维护入口\n先维护组件源码和控件规范，再运行build_tokens.py、build_current.py、build_docs.py，最后进行定向验证。不得为更新数量而重新扫描并覆盖历史来源证据。新控件见CONTROLS.md。\n'
+add('CONTROLS','可配置控件与业务组合',(R/'design/CONTROLS.md').read_text())
+add('UPGRADE_2_1','2.1品质整改',(R/'design/UPGRADE_2_1.md').read_text())
+if (R/'design/QUALITY_REVIEW.md').exists():add('QUALITY_REVIEW','逐项整改与验收',(R/'design/QUALITY_REVIEW.md').read_text())
+D['API']['content']='# API v2.1.0\n\n## 公共入口\nVocUI.render(key,props)返回转义后的组件HTML；VocUI.mount(host,key,props)先destroy再挂载；手动插入render结果后必须hydrate。VocUI.destroy(host)清理实例和浮层。所有依赖以data/library.json为准。\n\n## 当前参数矩阵\n以下由实际组件索引生成；没有参数的组件仍是配方或通过实际操作使用，不能假定任意props都有效。\n\n| 组件 | 支持参数 |\n| --- | --- |\n'+'\n'.join('| '+c['key']+' | '+('；'.join(k+'：'+v for k,v in c['api']['parameters'].items()) or '当前为固定配方，无任意业务参数')+' |' for c in C)+'\n\n## 事件与状态\n组件只产生文档明确的相关事件，不代表每个组件都支持全部公共事件。新增控件使用voc:change；名单导入使用voc:submit。表格及选择的具体字段、生命周期见CONTROLS.md和data/control-contracts.json。\n\nAI消息/资源/技能/Agent与工作区沿用其契约，按需读取AI.md、INLINE_RESOURCES.md、SKILLS.md、TEACHING_AGENTS.md和GENERATED_CONTENT.md。chat不支持任意messages或真实模型服务参数；table已支持rows和columns，不再适用旧版固定课程表格限制。\n\n配置文本会转义。input.extra仅供内部可信属性，不接收用户输入；不接受任意HTML字符串作为渲染器。HTML原型的全局reset不应直接覆盖原业务工程，框架接入需建立适配和作用域隔离。\n'
+D['API']['content']+='\n## 2.2控件家族\n新增组件与升级控件见COMPLETENESS.md。VocUI.getValue(host)可读取本轮日期时间及通用交互控件的已确认值；旧配方仍遵循各自事件契约。日期时间为本地墙上时间，不自动转为UTC。\n'
+D['START']['content']=D['START']['content'].replace('<script src="js/batch-import.js"></script>','<script src="js/batch-import.js"></script>\n<script src="js/temporal.js"></script>\n<script src="js/extended-controls.js"></script>').replace('<link rel="stylesheet" href="css/refinements.css">','<link rel="stylesheet" href="css/refinements.css">\n<link rel="stylesheet" href="css/extended-controls.css">')
+D['GENERATION']['content']+='\n## 2.2常用变体\n读取COMPLETENESS.md和当前API。按场景选择日期、时间、日期时间、年月周季、多个日期及范围的独立入口；不要把月份切换当月份选择器。checkbox/radio/switch/tree/tabs/steps/chart等可传入真实数据配置。form/chat等仍保留业务配方，不假定任意字段或生产服务。\n'
+D['STANDARD']['content']+='\n## 2.1清爽化\n保留品牌、页面级衬线标题和蓝白/少量蓝紫。普通按钮无阴影，卡片以细边框组织层次，浮层保留弱阴影。表格默认10项分页、可选5/10/20/50；数据列文字可省略并通过title/焦点提示查看。所有断点以实际组件容器宽度适配，不用整页overflow:hidden掩盖问题。日期范围使用单外框和统一日历。\n'
+D['GENERATION']['content']+='\n## 2.1控件选择\n先读CONTROLS.md和data/control-contracts.json。日期范围使用date默认range模式，单日期显式mode:single；不要回退为两个独立原生日期输入。表格传真实rows/columns/filters和稳定rowKey；自定义rows不继承课程字段。时间、树选择、学期、人员、图片、日历和名单导入按场景使用。资源目录可列表/卡片切换。普通按钮弱阴影，长文本和局部容器须测试；AI已确认逻辑与生成空容器不变。\n'
+D['DECISIONS']['content']+='\n## 2.1替代决定\n日期范围从双原生输入升级为单外框日历；表格和选择从固定示例升级为数据配置。以上替代旧版相应取舍，参考资料与来源审计仍保留原记录。\n'
+D['LIMITATIONS']['content']='# 成熟度与边界 v2.1.0\n\n当前为可配置HTML/CSS/JS交互组件与演示模板，数量以data/library.json和索引为准；未连接真实业务、权限和模型。支持范围和参数见API.md、CONTROLS.md。\n\n尚未交付：原平台逐页迁移；生产React/Vue包；真实上传、解析、审批、发布与持久化；复杂考试/PPT/视频编辑器；完整CommonMark和语法高亮；虚拟滚动；完整自动排课和冲突引擎；复杂父子勾选权限策略；全部移动端交互、旧浏览器和WCAG认证。五级评价不是完整评分量表引擎，图片预览不等于Office/PDF解析。\n\n日期、组织、学期、名单和人员规则由页面提供，客户端校验不替代服务端授权。历史扫描和验证仅用于各自版本的追溯，不把统计当迁移完成。新版本覆盖见data/ui-review.json及quality验证记录。\n'
+
+if (R/'design/EDUCATION.md').exists():add('EDUCATION','高职教第一批业务组件',(R/'design/EDUCATION.md').read_text())
+if (R/'design/FAMILIES.md').exists():add('FAMILIES','其他常用组件完整性',(R/'design/FAMILIES.md').read_text())
+if (R/'design/TABLE_FORM.md').exists():add('TABLE_FORM','通用表格与表单',(R/'design/TABLE_FORM.md').read_text())
+if (R/'design/COMPLETENESS.md').exists():add('COMPLETENESS','组件完整性与变体',(R/'design/COMPLETENESS.md').read_text())
+if (R/'design/INTERACTION_DETAILS.md').exists():add('INTERACTION_DETAILS','交互细节修正',(R/'design/INTERACTION_DETAILS.md').read_text())
+D['GENERATION']['content']+='\n## 高职教业务组件\n第一批六类见EDUCATION.md；第二批七类见EDUCATION_NEXT.md（班级名册、任教关系、实训、学习进度、资源版本、评价问卷、成绩明细）。按data/library.json加载完整运行时和样式，使用真实支持的参数；正式操作接入明确回执，勿用实验室控制器替代业务服务。\n'
+D['GENERATION']['content']+='\n## 第三批与跨批关联\n第三批九类（目标、计划、岗位、投递、指标、佐证、借还、报修、招生线索）见EDUCATION_PLATFORM.md。跨组件采用显式VocBusinessBridge及稳定记录ID，不自动查找全局示例。目录变更保留草稿和历史快照，正式动作等待匹配回执。不得自动发布任务、交卷、公布成绩或恢复设备。七条可替换配置的链路见examples/education-integration.html。\n'
+if (R/'design/BUSINESS_EXAMPLES.md').exists():add('BUSINESS_EXAMPLES','业务示例数据与展示入口',(R/'design/BUSINESS_EXAMPLES.md').read_text())
+if (R/'design/EDUCATION_PLATFORM.md').exists():add('EDUCATION_PLATFORM','第三批业务与三批联动',(R/'design/EDUCATION_PLATFORM.md').read_text())
+if (R/'design/EDUCATION_NEXT.md').exists():add('EDUCATION_NEXT','高职教第二批业务组件',(R/'design/EDUCATION_NEXT.md').read_text())
+for k,v in D.items():
+    if k not in ['VALIDATION','QUALITY_REVIEW','UPGRADE_2_1','INTERACTION_DETAILS']:v['content']=v['content'].replace('v2.1.0','v'+CURRENT)
+    (R/'design'/f'{k}.md').write_text(v['content'])
 (R/'js/docs.js').write_text('window.VocDocs='+json.dumps(D,ensure_ascii=False)+';\n')
-(R/'data/page-patterns.json').write_text(json.dumps([dict(id=i,name=n,context=c,components=cs.split(' / '),version='2.0.0',contract={'identity':'虚构示例角色；真实权限待适配','data':'本地虚构示例','retention':'本次页面内存，刷新重置','source':'js/patterns.js','maturity':'HTML 交互原型'}) for i,n,c,cs in pattern_rows],ensure_ascii=False,indent=2)+'\n')
+(R/'data/page-patterns.json').write_text(json.dumps([dict(id=i,name=n,context=c,components=cs.split(' / '),version=CURRENT,contract={'identity':'虚构示例角色；真实权限待适配','data':'本地虚构示例','retention':'本次页面内存，刷新重置','source':'js/patterns.js','maturity':'HTML 交互原型'}) for i,n,c,cs in pattern_rows],ensure_ascii=False,indent=2)+'\n')
 
 for ident,name,_,_ in pattern_rows:
     filename='management' if ident=='list' else 'ai-workspace' if ident=='chat' else ident
     html=f'''<!doctype html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{name} · 高职教 UI 示例</title><link rel="stylesheet" href="../css/tokens.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/showcase.css"></head><body><header class="site-header" style="position:relative"><a href="../index.html#/patterns" style="text-decoration:none;font-size:13px">← 返回组件库</a><span class="v-caption">高职教 UI 2.0.0 · 虚构数据 · 仅本地演示</span></header><main style="max-width:var(--v-page-max);margin:0 auto;padding:32px clamp(24px,2vw,40px) 48px"><div id="page"></div></main><script src="../js/icons.js"></script><script src="../js/resource-composer.js"></script><script src="../js/skill-picker.js"></script><script src="../js/content-workspace.js"></script><script src="../js/voc-ui.js"></script><script src="../js/patterns.js"></script><script>VocPatterns.mount(document.querySelector('#page'),'{ident}');</script></body></html>'''
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{name} · 高职教 UI 示例</title><link rel="stylesheet" href="../css/tokens.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/showcase.css"></head><body><header class="site-header" style="position:relative"><a href="../index.html#/patterns" style="text-decoration:none;font-size:13px">← 返回组件库</a><span class="v-caption">高职教 UI {CURRENT} · 虚构数据 · 仅本地演示</span></header><main style="max-width:var(--v-page-max);margin:0 auto;padding:32px clamp(24px,2vw,40px) 48px"><div id="page"></div></main><script src="../js/icons.js"></script><script src="../js/resource-composer.js"></script><script src="../js/skill-picker.js"></script><script src="../js/content-workspace.js"></script><script src="../js/voc-ui.js"></script><script src="../js/patterns.js"></script><script>VocPatterns.mount(document.querySelector('#page'),'{ident}');</script></body></html>'''
     (R/'examples'/f'{filename}.html').write_text(html)
 for entry in [R/'index.html',*list((R/'examples').glob('*.html'))]:
+    text=entry.read_text(); prefix='../' if entry.parent.name=='examples' else ''
+    if 'css/extended-controls.css' not in text:
+        text=text.replace('</head>','<link rel="stylesheet" href="'+prefix+'css/extended-controls.css"></head>')
+    if 'css/refinements.css' not in text:
+        text=text.replace('</head>','<link rel="stylesheet" href="'+prefix+'css/refinements.css"></head>')
+    if 'js/voc-ui.js' in text and 'js/controls.js' not in text:
+        text=re.sub(r'(<script src="[^"<>]*js/voc-ui\.js[^"<>]*"></script>)',lambda m:m[0]+''.join('<script src="'+prefix+'js/'+name+'.js"></script>' for name in ['controls','data-table','batch-import']),text)
+    if 'js/extended-controls.js' not in text and 'js/voc-ui.js' in text:
+        text=re.sub(r'(<script src="[^"<>]*js/batch-import\.js[^"<>]*"></script>)',lambda m:m[0]+''.join('<script src="'+prefix+'js/'+name+'.js"></script>' for name in ['temporal','extended-controls']),text)
+    if 'css/common-data.css' not in text:
+        text=text.replace('</head>','<link rel="stylesheet" href="'+prefix+'css/common-data.css"></head>')
+    if 'js/schema-form.js' not in text and 'js/extended-controls.js' in text:
+        text=re.sub(r'(<script src="[^"<>]*js/extended-controls\.js[^"<>]*"></script>)',lambda m:m[0]+''.join('<script src="'+prefix+'js/'+name+'.js"></script>' for name in ['schema-form','advanced-table','common-extras']),text)
+    if 'js/common-extras.js' not in text and 'js/advanced-table.js' in text:
+        text=re.sub(r'(<script src="[^"<>]*js/advanced-table\.js[^"<>]*"></script>)',lambda m:m[0]+'<script src="'+prefix+'js/common-extras.js"></script>',text)
+    if 'css/family-controls.css' not in text:
+        text=text.replace('</head>','<link rel="stylesheet" href="'+prefix+'css/family-controls.css"></head>')
+    if 'js/family-controls.js' not in text and 'js/common-extras.js' in text:
+        text=re.sub(r'(<script src="[^"<>]*js/common-extras\.js[^"<>]*"></script>)',lambda m:m[0]+'<script src="'+prefix+'js/family-controls.js"></script>',text)
+    if 'css/education-controls.css' not in text:
+        text=text.replace('</head>','<link rel="stylesheet" href="'+prefix+'css/education-controls.css"></head>')
+    if 'js/education-controls.js' not in text and 'js/family-controls.js' in text:
+        text=re.sub(r'(<script src="[^"<>]*js/family-controls\.js[^"<>]*"></script>)',lambda m:m[0]+'<script src="'+prefix+'js/education-controls.js"></script>',text)
+    if 'css/education-next.css' not in text:
+        text=text.replace('</head>','<link rel="stylesheet" href="'+prefix+'css/education-next.css"></head>')
+    if 'js/education-next.js' not in text and 'js/education-controls.js' in text:
+        text=re.sub(r'(<script src="[^"<>]*js/education-controls\.js[^"<>]*"></script>)',lambda m:m[0]+'<script src="'+prefix+'js/education-next.js"></script>',text)
+    if 'css/education-platform.css' not in text:
+        text=text.replace('</head>','<link rel="stylesheet" href="'+prefix+'css/education-platform.css"></head>')
+    if 'js/education-platform.js' not in text and 'js/education-next.js' in text:
+        text=re.sub(r'(<script src="[^"<>]*js/education-next\.js[^"<>]*"></script>)',lambda m:m[0]+'<script src="'+prefix+'js/education-platform.js"></script><script src="'+prefix+'js/education-bridge.js"></script>',text)
+    demo_files=['education-scenarios','education-next-scenarios','education-platform-scenarios','business-examples']
+    if entry.name in ['index.html','families.html','completeness.html','completeness-checks.html','business-example-checks.html']:
+        consumer=re.search(r'<script src="[^"<>]*js/(?:component-variants|family-lab|showcase|business-example-checks)\.js[^"<>]*"></script>',text)
+        if consumer:
+            additions=''.join('<script src="'+prefix+'js/'+name+'.js"></script>' for name in demo_files if 'js/'+name+'.js' not in text)
+            text=text[:consumer.start()]+additions+text[consumer.start():]
+    if entry.name in ['education.html','education-next.html','education-platform.html'] and 'js/business-examples.js' not in text:
+        text=re.sub(r'(<script src="[^"<>]*js/education(?:-next|-platform)?-lab\.js[^"<>]*"></script>)',lambda m:'<script src="'+prefix+'js/business-examples.js"></script>'+m[0],text)
+    if entry.name in ['index.html','families.html','completeness.html','education.html','education-next.html','education-platform.html','business-example-checks.html'] and 'css/business-examples.css' not in text:
+        text=text.replace('</head>','<link rel="stylesheet" href="'+prefix+'css/business-examples.css"></head>')
+    text=re.sub(r'(class="version-mark">)[^<]+',lambda m:m[1]+CURRENT,text)
+    text=text.replace('2.0.0',CURRENT).replace('2.1.0',CURRENT).replace('2.1.1',CURRENT).replace('2.2.0',CURRENT).replace('2.3.0',CURRENT).replace('2.4.0',CURRENT).replace('2.5.0',CURRENT).replace('2.6.0',CURRENT).replace('2.7.0',CURRENT).replace('class="version-mark">2.0','class="version-mark">2.1')
+    entry.write_text(text)
+
     def fingerprint(m):
         attr,ref=m[1],m[2].split('?')[0]
         f=entry.parent/ref

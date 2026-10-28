@@ -1,0 +1,48 @@
+{
+  "version": "2.7.1",
+  "scope": "Pure ISO week/period/format/normalization and renderer boundary checks; browser behavior is a separate report",
+  "checks": [
+    {
+      "name": "ISO week-year boundary and 53-week validation",
+      "status": "passed"
+    },
+    {
+      "name": "Period validity and leap-year datetime validation",
+      "status": "passed"
+    },
+    {
+      "name": "Periods cover whole month, quarter and ISO week",
+      "status": "passed"
+    },
+    {
+      "name": "Forbidden dates invalidate entire range and calendar periods",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed, partial and out-of-bounds values do not become committed state",
+      "status": "passed"
+    },
+    {
+      "name": "Multi-date deduplicates, sorts and excludes forbidden values",
+      "status": "passed"
+    },
+    {
+      "name": "Local datetimes retain wall-clock values without timezone conversion",
+      "status": "passed"
+    },
+    {
+      "name": "Scalar zero is retained in input, statistics and badges",
+      "status": "passed"
+    },
+    {
+      "name": "New renderers escape labels, values, descriptions and content",
+      "status": "passed"
+    },
+    {
+      "name": "Unsafe image and navigation schemes are rejected",
+      "status": "passed"
+    }
+  ],
+  "passed": 10,
+  "failed": 0
+}

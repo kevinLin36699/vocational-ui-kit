@@ -1,0 +1,363 @@
+Browser tab: 19, Title: "第二批高职教业务浏览器检查", URL: "http://127.0.0.1:8789/examples/education-next-checks.html".
+1 AXWebArea 第二批高职教业务浏览器检查, URL: 127.0.0.1:8789/examples/education-next-checks.html
+	2 container
+		3 heading 第二批高职教业务浏览器检查, Value: 1
+			4 text 第二批高职教业务浏览器检查
+		7 text 49 项通过，0 项失败；浏览器错误 0 项。
+		8 content list check-results
+			9 container
+				10 AXListMarker 1. 
+				11 text PASSED · All seven empty families and 28 configurations mount without changing caller data
+			12 container
+				13 AXListMarker 2. 
+				14 text PASSED · All 28 scenarios and seven content states fit 320px containers
+			15 container
+				16 AXListMarker 3. 
+				17 text PASSED · Roster transfer needs a destination and reason and commits only after acknowledgement
+			18 container
+				19 AXListMarker 4. 
+				20 text PASSED · Roster rejected edit retains modal fields and retry does not create duplicate people
+			21 container
+				22 AXListMarker 5. 
+				23 text PASSED · Roster number uniqueness, locked people and search filtering are actual constraints
+			24 container
+				25 AXListMarker 6. 
+				26 text PASSED · Directory refresh preserves roster history and flags missing associations
+			27 container
+				28 AXListMarker 7. 
+				29 text PASSED · Assignments edit multiple class IDs without embedding terms inside course objects
+			30 container
+				31 AXListMarker 8. 
+				32 text PASSED · Primary teacher conflicts and stale directory references block activation
+			33 container
+				34 AXListMarker 9. 
+				35 text PASSED · Assignment activation and ending require acknowledgement and an end reason
+			36 container
+				37 AXListMarker 10. 
+				38 text PASSED · Practice prerequisites and mandatory safety acceptance block later steps
+			39 container
+				40 AXListMarker 11. 
+				41 text PASSED · Practice material checks, required checklist and actual files gate submission
+			42 container
+				43 AXListMarker 12. 
+				44 text PASSED · Practice rejects file type and size and keeps the existing draft
+			45 container
+				46 AXListMarker 13. 
+				47 text PASSED · Teacher practice return requires a reason and never overwrites submission snapshots
+			48 container
+				49 AXListMarker 14. 
+				50 text PASSED · Teacher acceptance and returned learner continuation are distinct transitions
+			51 container
+				52 AXListMarker 15. 
+				53 text PASSED · Practice author can add real check steps using a normal form
+			54 container
+				55 AXListMarker 16. 
+				56 text PASSED · Learning resume emits a locator without fabricating a visit or completion
+			57 container
+				58 AXListMarker 17. 
+				59 text PASSED · Recorded progress needs acknowledgement and completion is an explicit second action
+			60 container
+				61 AXListMarker 18. 
+				62 text PASSED · Learning prerequisite, threshold, numeric bounds and teacher permissions apply
+			63 container
+				64 AXListMarker 19. 
+				65 text PASSED · Manual completion and reset preserve a history and require separate confirmation
+			66 container
+				67 AXListMarker 20. 
+				68 text PASSED · Resource versions compare actual text and citations preserve the original snapshot
+			69 container
+				70 AXListMarker 21. 
+				71 text PASSED · Unavailable resources block new references while existing snapshots stay readable
+			72 container
+				73 AXListMarker 22. 
+				74 text PASSED · Teacher creates and publishes a new immutable resource version from actual input
+			75 container
+				76 AXListMarker 23. 
+				77 text PASSED · Student DOM does not contain resource drafts, expired text or unsafe links
+			78 container
+				79 AXListMarker 24. 
+				80 text PASSED · Survey false values, maximum choices, required questions and anonymous payload are real
+			81 container
+				82 AXListMarker 25. 
+				83 text PASSED · Survey draft failure keeps answers and revision requires explicit business acknowledgement
+			84 container
+				85 AXListMarker 26. 
+				86 text PASSED · Survey time window locks expired answers and never auto-submits
+			87 container
+				88 AXListMarker 27. 
+				89 text PASSED · Survey author edits types, options and ordering with ordinary form controls
+			90 container
+				91 AXListMarker 28. 
+				92 text PASSED · Survey results calculate real aggregates and remove raw responses from student DOM
+			93 container
+				94 AXListMarker 29. 
+				95 text PASSED · Grades preserve zero and ungraded values and recompute the current edited result
+			96 container
+				97 AXListMarker 30. 
+				98 text PASSED · Grade drafts retain edits on failure and publishing rejects incomplete selected rows
+			99 container
+				100 AXListMarker 31. 
+				101 text PASSED · Grade bulk publication uses actual computed values and withdrawal needs a reason
+			102 container
+				103 AXListMarker 32. 
+				104 text PASSED · Grade absence is not automatically zero and exemptions renormalize only when allowed
+			105 container
+				106 AXListMarker 33. 
+				107 text PASSED · Student grade pages expose only own published values, never hidden drafts or other students
+			108 container
+				109 AXListMarker 34. 
+				110 text PASSED · Grade rule author adds real columns and blocks restructuring existing scores
+			111 container
+				112 AXListMarker 35. 
+				113 text PASSED · All seven readonly and disabled components preserve business values under attempted operations
+			114 container
+				115 AXListMarker 36. 
+				116 text PASSED · Event-mode requests reject stale IDs, cancellation preserves drafts and duplicate submit is blocked
+			117 container
+				118 AXListMarker 37. 
+				119 text PASSED · Promise handlers receive abort signals and rejected promises preserve drafts
+			120 container
+				121 AXListMarker 38. 
+				122 text PASSED · Loader failures preserve drafts, retry accepts fresh props and stale loads cannot overwrite
+			123 container
+				124 AXListMarker 39. 
+				125 text PASSED · Runtime readonly and forbidden transitions cancel open editors and remove rendered content
+			126 container
+				127 AXListMarker 40. 
+				128 text PASSED · Reset restores last acknowledged values including authored rule structure
+			129 container
+				130 AXListMarker 41. 
+				131 text PASSED · Chinese composition cannot submit a stale answer or interrupt its current input
+			132 container
+				133 AXListMarker 42. 
+				134 text PASSED · Destroy aborts pending work, releases local file references, and closes owned dialogs
+			135 container
+				136 AXListMarker 43. 
+				137 text PASSED · Dirty author dialogs preserve input on cancel and require explicit discard
+			138 container
+				139 AXListMarker 44. 
+				140 text PASSED · Live deadlines lock answers without an automatic submission and restart after data replacement
+			141 container
+				142 AXListMarker 45. 
+				143 text PASSED · Pending editor close requires a deliberate discard and invalidates late acknowledgements
+			144 container
+				145 AXListMarker 46. 
+				146 text PASSED · Locked practice steps and completed learning resources reject edits
+			147 container
+				148 AXListMarker 47. 
+				149 text PASSED · Replacing business data clears stale grade selections and class filters
+			150 container
+				151 AXListMarker 48. 
+				152 text PASSED · Both business laboratories expose real event-mode acknowledgement and actual payload logs
+			153 container
+				154 AXListMarker 49. 
+				155 text PASSED · Modal business operations expose an accessible manual acknowledgement inside the dialog
+		6 button (expanded) 完整报告, Secondary Actions: Collapse
+		156 text {
+  "version": "2.6.0",
+  "date": "2026-10-28T06:38:01.759Z",
+  "scope": "Seven configurable vocational domain families and 28 scenarios; real DOM interactions, 320px content states, explicit acknowledgement and privacy boundaries. No real backend or full browser certification.",
+  "checks": [
+    {
+      "name": "All seven empty families and 28 configurations mount without changing caller data",
+      "status": "passed"
+    },
+    {
+      "name": "All 28 scenarios and seven content states fit 320px containers",
+      "status": "passed"
+    },
+    {
+      "name": "Roster transfer needs a destination and reason and commits only after acknowledgement",
+      "status": "passed"
+    },
+    {
+      "name": "Roster rejected edit retains modal fields and retry does not create duplicate people",
+      "status": "passed"
+    },
+    {
+      "name": "Roster number uniqueness, locked people and search filtering are actual constraints",
+      "status": "passed"
+    },
+    {
+      "name": "Directory refresh preserves roster history and flags missing associations",
+      "status": "passed"
+    },
+    {
+      "name": "Assignments edit multiple class IDs without embedding terms inside course objects",
+      "status": "passed"
+    },
+    {
+      "name": "Primary teacher conflicts and stale directory references block activation",
+      "status": "passed"
+    },
+    {
+      "name": "Assignment activation and ending require acknowledgement and an end reason",
+      "status": "passed"
+    },
+    {
+      "name": "Practice prerequisites and mandatory safety acceptance block later steps",
+      "status": "passed"
+    },
+    {
+      "name": "Practice material checks, required checklist and actual files gate submission",
+      "status": "passed"
+    },
+    {
+      "name": "Practice rejects file type and size and keeps the existing draft",
+      "status": "passed"
+    },
+    {
+      "name": "Teacher practice return requires a reason and never overwrites submission snapshots",
+      "status": "passed"
+    },
+    {
+      "name": "Teacher acceptance and returned learner continuation are distinct transitions",
+      "status": "passed"
+    },
+    {
+      "name": "Practice author can add real check steps using a normal form",
+      "status": "passed"
+    },
+    {
+      "name": "Learning resume emits a locator without fabricating a visit or completion",
+      "status": "passed"
+    },
+    {
+      "name": "Recorded progress needs acknowledgement and completion is an explicit second action",
+      "status": "passed"
+    },
+    {
+      "name": "Learning prerequisite, threshold, numeric bounds and teacher permissions apply",
+      "status": "passed"
+    },
+    {
+      "name": "Manual completion and reset preserve a history and require separate confirmation",
+      "status": "passed"
+    },
+    {
+      "name": "Resource versions compare actual text and citations preserve the original snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "Unavailable resources block new references while existing snapshots stay readable",
+      "status": "passed"
+    },
+    {
+      "name": "Teacher creates and publishes a new immutable resource version from actual input",
+      "status": "passed"
+    },
+    {
+      "name": "Student DOM does not contain resource drafts, expired text or unsafe links",
+      "status": "passed"
+    },
+    {
+      "name": "Survey false values, maximum choices, required questions and anonymous payload are real",
+      "status": "passed"
+    },
+    {
+      "name": "Survey draft failure keeps answers and revision requires explicit business acknowledgement",
+      "status": "passed"
+    },
+    {
+      "name": "Survey time window locks expired answers and never auto-submits",
+      "status": "passed"
+    },
+    {
+      "name": "Survey author edits types, options and ordering with ordinary form controls",
+      "status": "passed"
+    },
+    {
+      "name": "Survey results calculate real aggregates and remove raw responses from student DOM",
+      "status": "passed"
+    },
+    {
+      "name": "Grades preserve zero and ungraded values and recompute the current edited result",
+      "status": "passed"
+    },
+    {
+      "name": "Grade drafts retain edits on failure and publishing rejects incomplete selected rows",
+      "status": "passed"
+    },
+    {
+      "name": "Grade bulk publication uses actual computed values and withdrawal needs a reason",
+      "status": "passed"
+    },
+    {
+      "name": "Grade absence is not automatically zero and exemptions renormalize only when allowed",
+      "status": "passed"
+    },
+    {
+      "name": "Student grade pages expose only own published values, never hidden drafts or other students",
+      "status": "passed"
+    },
+    {
+      "name": "Grade rule author adds real columns and blocks restructuring existing scores",
+      "status": "passed"
+    },
+    {
+      "name": "All seven readonly and disabled components preserve business values under attempted operations",
+      "status": "passed"
+    },
+    {
+      "name": "Event-mode requests reject stale IDs, cancellation preserves drafts and duplicate submit is blocked",
+      "status": "passed"
+    },
+    {
+      "name": "Promise handlers receive abort signals and rejected promises preserve drafts",
+      "status": "passed"
+    },
+    {
+      "name": "Loader failures preserve drafts, retry accepts fresh props and stale loads cannot overwrite",
+      "status": "passed"
+    },
+    {
+      "name": "Runtime readonly and forbidden transitions cancel open editors and remove rendered content",
+      "status": "passed"
+    },
+    {
+      "name": "Reset restores last acknowledged values including authored rule structure",
+      "status": "passed"
+    },
+    {
+      "name": "Chinese composition cannot submit a stale answer or interrupt its current input",
+      "status": "passed"
+    },
+    {
+      "name": "Destroy aborts pending work, releases local file references, and closes owned dialogs",
+      "status": "passed"
+    },
+    {
+      "name": "Dirty author dialogs preserve input on cancel and require explicit discard",
+      "status": "passed"
+    },
+    {
+      "name": "Live deadlines lock answers without an automatic submission and restart after data replacement",
+      "status": "passed"
+    },
+    {
+      "name": "Pending editor close requires a deliberate discard and invalidates late acknowledgements",
+      "status": "passed"
+    },
+    {
+      "name": "Locked practice steps and completed learning resources reject edits",
+      "status": "passed"
+    },
+    {
+      "name": "Replacing business data clears stale grade selections and class filters",
+      "status": "passed"
+    },
+    {
+      "name": "Both business laboratories expose real event-mode acknowledgement and actual payload logs",
+      "status": "passed"
+    },
+    {
+      "name": "Modal business operations expose an accessible manual acknowledgement inside the dialog",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "passed": 49,
+  "failed": 0
+}
+
+The focused UI element is 6 button (expanded) 完整报告, Secondary Actions: Collapse

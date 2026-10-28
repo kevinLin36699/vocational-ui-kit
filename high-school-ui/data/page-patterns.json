@@ -8,7 +8,7 @@
       "composer",
       "card"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -26,7 +26,7 @@
       "table",
       "form"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -45,7 +45,7 @@
       "description",
       "chat"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -61,7 +61,7 @@
     "components": [
       "form"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -79,7 +79,7 @@
       "multiselect",
       "person-picker"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -96,7 +96,7 @@
       "stat",
       "chart"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -112,7 +112,7 @@
     "components": [
       "conversation"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -128,7 +128,7 @@
     "components": [
       "chat"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -145,7 +145,7 @@
       "description",
       "chat"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -161,7 +161,7 @@
     "components": [
       "workspace"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -179,7 +179,7 @@
       "alert",
       "composer"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -195,7 +195,7 @@
     "components": [
       "approval"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -212,7 +212,7 @@
       "upload",
       "resource"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",
@@ -230,7 +230,25 @@
       "switch",
       "avatar"
     ],
-    "version": "2.0.0",
+    "version": "2.7.1",
+    "contract": {
+      "identity": "虚构示例角色；真实权限待适配",
+      "data": "本地虚构示例",
+      "retention": "本次页面内存，刷新重置",
+      "source": "js/patterns.js",
+      "maturity": "HTML 交互原型"
+    }
+  },
+  {
+    "id": "import",
+    "name": "名单导入",
+    "context": "本地学生名单",
+    "components": [
+      "batch-import",
+      "table",
+      "feedback-result"
+    ],
+    "version": "2.7.1",
     "contract": {
       "identity": "虚构示例角色；真实权限待适配",
       "data": "本地虚构示例",

@@ -1,0 +1,169 @@
+Browser tab: 16, Title: "全家族组件浏览器检查", URL: "http://127.0.0.1:8789/examples/family-checks.html".
+0 AXWebArea 全家族组件浏览器检查, URL: 127.0.0.1:8789/examples/family-checks.html
+	1 container
+		2 heading 全家族组件浏览器检查, Value: 1
+			3 text 全家族组件浏览器检查
+		6 text 53 项通过，0 项失败；浏览器错误 0 项。
+		7 content list check-results
+			8 container
+				9 AXListMarker 1. 
+				10 text PASSED · All non-table/form catalog entries mount with unique IDs and declared applicable states
+			11 container
+				12 AXListMarker 2. 
+				13 text PASSED · All configured family variants mount without mutating caller data
+			14 container
+				15 AXListMarker 3. 
+				16 text PASSED · Every non-table/form default and configured variant fits a 320px host
+			17 container
+				18 AXListMarker 4. 
+				19 text PASSED · Button async work locks duplicate clicks, surfaces failure, and supports retry
+			20 container
+				21 AXListMarker 5. 
+				22 text PASSED · Button cancellation and unmount ignore late responses
+			23 container
+				24 AXListMarker 6. 
+				25 text PASSED · Links reject executable/protocol-relative schemes and expose external destinations
+			26 container
+				27 AXListMarker 7. 
+				28 text PASSED · Checkable/removable tags retain disabled tags and return real IDs
+			29 container
+				30 AXListMarker 8. 
+				31 text PASSED · Badges retain zero, cap counts and expose dot meaning
+			32 container
+				33 AXListMarker 9. 
+				34 text PASSED · Avatar image failure falls back to initials and group overflow opens all names
+			35 container
+				36 AXListMarker 10. 
+				37 text PASSED · Descriptions retain zero/false/null and divider exposes orientation
+			38 container
+				39 AXListMarker 11. 
+				40 text PASSED · Cards collapse without losing content and configured actions return IDs
+			41 container
+				42 AXListMarker 12. 
+				43 text PASSED · Statistics format precision and preserve unknown values
+			44 container
+				45 AXListMarker 13. 
+				46 text PASSED · Progress supports bounded values, segments, unknown duration and live updates
+			47 container
+				48 AXListMarker 14. 
+				49 text PASSED · Tabs skip disabled items, preserve panels, close dirty tabs only after confirmation
+			50 container
+				51 AXListMarker 15. 
+				52 text PASSED · Tabs add requests do not fabricate items; caller can replace the tab configuration
+			53 container
+				54 AXListMarker 16. 
+				55 text PASSED · Navigation expands independently of selection and inherits disabled ancestors
+			56 container
+				57 AXListMarker 17. 
+				58 text PASSED · Navigation keyboard skips disabled entries and breadcrumb sibling menus return IDs
+			59 container
+				60 AXListMarker 18. 
+				61 text PASSED · Collapse accordion permits one section, retains disabled items, and supports keyboard
+			62 container
+				63 AXListMarker 19. 
+				64 text PASSED · List search, sorting, load-more and disabled item actions use actual configured records
+			65 container
+				66 AXListMarker 20. 
+				67 text PASSED · Remote list append keeps rows on failure, retries from same cursor and ignores stale results
+			68 container
+				69 AXListMarker 21. 
+				70 text PASSED · Calendar month/week/day/agenda share events; disabled dates and keyboard obey restrictions
+			71 container
+				72 AXListMarker 22. 
+				73 text PASSED · Calendar navigation handles month/year boundaries and readonly selection
+			74 container
+				75 AXListMarker 23. 
+				76 text PASSED · Notification filters, toggle, mark-all and dismissal respect disabled records
+			77 container
+				78 AXListMarker 24. 
+				79 text PASSED · Gallery supports next/previous, bounded zoom, rotate/reset, error retry and Escape
+			80 container
+				81 AXListMarker 25. 
+				82 text PASSED · Menus support checkbox/radio/submenu/back and disabled items without executing dangerous actions
+			83 container
+				84 AXListMarker 26. 
+				85 text PASSED · Popover closes on outside focus, Escape, and explicit close with focus return
+			86 container
+				87 AXListMarker 27. 
+				88 text PASSED · Dialog async confirm stays open on failure, prevents duplicate and closes after success
+			89 container
+				90 AXListMarker 28. 
+				91 text PASSED · Dialog cancel aborts pending handler; backdrop and Escape can be explicitly locked
+			92 container
+				93 AXListMarker 29. 
+				94 text PASSED · Drawer placements are configurable and every close returns focus to trigger
+			95 container
+				96 AXListMarker 30. 
+				97 text PASSED · Confirm cancellation never invokes business handler
+			98 container
+				99 AXListMarker 31. 
+				100 text PASSED · Alert closes and result pages emit configured next actions only
+			101 container
+				102 AXListMarker 32. 
+				103 text PASSED · Toast supports manual dismissal and unmount cleans pending timers
+			104 container
+				105 AXListMarker 33. 
+				106 text PASSED · Skeleton supports static structure and overlay loading prevents underlying interaction
+			107 container
+				108 AXListMarker 34. 
+				109 text PASSED · Carousel respects boundaries, loops, indicators, keyboard and explicit pause
+			110 container
+				111 AXListMarker 35. 
+				112 text PASSED · Splitter keyboard clamps limits and pointer dragging updates proportional state
+			113 container
+				114 AXListMarker 36. 
+				115 text PASSED · Backtop appears at threshold and returns only its own scroll container to top
+			116 container
+				117 AXListMarker 37. 
+				118 text PASSED · Shared loading/error/forbidden states hide data, retry through loader and recover
+			119 container
+				120 AXListMarker 38. 
+				121 text PASSED · Readonly select, tree-select and people controls cannot open or remove selected items
+			122 container
+				123 AXListMarker 39. 
+				124 text PASSED · Disabled selected people and disabled tree ancestors remain protected
+			125 container
+				126 AXListMarker 40. 
+				127 text PASSED · Standalone input and search do not commit Chinese composition before completion
+			128 container
+				129 AXListMarker 41. 
+				130 text PASSED · AI chat stop cancels streaming, preserves question and locks conversation switching while running
+			131 container
+				132 AXListMarker 42. 
+				133 text PASSED · Workspace slots keep content identity and status per generated result
+			134 container
+				135 AXListMarker 43. 
+				136 text PASSED · Process running state locks expansion and state buttons preserve disclosure content
+			137 container
+				138 AXListMarker 44. 
+				139 text PASSED · Pagination supports full/simple modes, capacity changes, bounds, total replacement and disabled state
+			140 container
+				141 AXListMarker 45. 
+				142 text PASSED · Tooltip is focus/hover accessible, Escape closes, and placements remain inside viewport
+			143 container
+				144 AXListMarker 46. 
+				145 text PASSED · Configurable shell retains the active section while folding and protects disabled routes
+			146 container
+				147 AXListMarker 47. 
+				148 text PASSED · Course cards use supplied metadata and only update local favorite state
+			149 container
+				150 AXListMarker 48. 
+				151 text PASSED · Agent and task preparation return supplied IDs/text without starting AI work
+			152 container
+				153 AXListMarker 49. 
+				154 text PASSED · Messages render actual Markdown and feedback toggles mutually exclusively with reason capture
+			155 container
+				156 AXListMarker 50. 
+				157 text PASSED · Citations display supplied verification status and results return their actual object IDs
+			158 container
+				159 AXListMarker 51. 
+				160 text PASSED · Approval requires a rejection reason and only advances after confirmed business response
+			161 container
+				162 AXListMarker 52. 
+				163 text PASSED · Custom public processing stages escape content and running state cannot collapse
+			164 container
+				165 AXListMarker 53. 
+				166 text PASSED · Remounting and destroying interactive layers remove popups and generated dialogs
+		5 button (expanded) 完整报告, Secondary Actions: Collapse
+
+The focused UI element is 0 AXWebArea 全家族组件浏览器检查, URL: 127.0.0.1:8789/examples/family-checks.html

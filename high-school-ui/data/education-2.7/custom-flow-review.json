@@ -1,0 +1,18 @@
+{
+  "version": "2.7.0",
+  "scope": "Native browser operation on a replaced whole-flow configuration, separate from automated DOM checks.",
+  "configuration": "data/education-2.7/custom-flow.json",
+  "observations": [
+    "整链路编辑器拒绝无效JSON并保留原配置",
+    "通过JSON编辑器替换岗位ID、操作人、岗位修订7与简历版本3",
+    "使用普通创建投递表单填写说明并确认本地回执",
+    "投递进度追加唯一草稿并显示自定义简历v3",
+    "下一次回执失败，确认弹窗保留且可重试",
+    "重试成功，进度显示已登记投递/修订1，说明与版本快照保留"
+  ],
+  "screenshots": [
+    "data/education-2.7/custom-failure.png",
+    "data/education-2.7/integration-custom.png"
+  ],
+  "realExternalSubmission": false
+}

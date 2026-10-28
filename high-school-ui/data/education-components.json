@@ -1,0 +1,316 @@
+{
+  "version": "2.7.1",
+  "components": [
+    {
+      "key": "teaching-audience",
+      "name": "教学对象选择",
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "description": "classes/students/mixed，单选或多选、组织范围、搜索、复核和确认名单快照。",
+      "parameters": {
+        "nodes": "{id,label,kind?,disabled?,children?}[]；班级节点kind=class",
+        "students": "{id,name,number?,classId,disabled?}[]",
+        "mode": "classes/students/mixed",
+        "multiple": "默认true",
+        "value": "{classIds:[],studentIds:[]}",
+        "scopeIds": "允许的组织子树ID",
+        "directoryVersion": "本次组织目录版本",
+        "allowEmpty": "允许确认空名单",
+        "snapshot": "既有已确认名单快照",
+        "title": "组件标题",
+        "description": "说明",
+        "role": "student/teacher；与业务授权配合",
+        "context": "业务对象上下文，仅作为请求载荷",
+        "readonly": "只读",
+        "disabled": "禁用编辑",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "now": "可选ISO当前时间，用于业务时钟或确定性预览"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "本次明确授权的业务组件扩展，依据现有教学、出卷、提交批阅与评价流程",
+      "validation": "数据规则、22组类型配置、适用状态与320px、定向业务交互；具体通过范围见对应报告"
+    },
+    {
+      "key": "curriculum-plan",
+      "name": "教学目录与学时",
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "description": "理论/实训/理实结合课程，三层单元、增删排序移动、学时校验与教学目标关联。",
+      "parameters": {
+        "mode": "theory/practice/blended",
+        "nodes": "{id,title,theoryHours?,practiceHours?,objectiveIds?,locked?,children?}[]",
+        "objectives": "{id,label}[]",
+        "totalHours": "可选的目标总学时",
+        "step": "学时步长，默认1",
+        "title": "组件标题",
+        "description": "说明",
+        "role": "student/teacher；与业务授权配合",
+        "context": "业务对象上下文，仅作为请求载荷",
+        "readonly": "只读",
+        "disabled": "禁用编辑",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "now": "可选ISO当前时间，用于业务时钟或确定性预览"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "本次明确授权的业务组件扩展，依据现有教学、出卷、提交批阅与评价流程",
+      "validation": "数据规则、22组类型配置、适用状态与320px、定向业务交互；具体通过范围见对应报告"
+    },
+    {
+      "key": "teaching-task",
+      "name": "教学任务",
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "description": "可配置任务类型、卡片/列表、前置任务与检查项，明确草稿、发布、开始、完成、结束及逾期。",
+      "parameters": {
+        "tasks": "{id,title,type,status?,description?,requirements?,dueAt?,prerequisiteIds?,checklist?,audienceSnapshot?,locked?}[]",
+        "types": "{id,label}[]，默认理论/实训/项目/作业",
+        "view": "cards/list",
+        "allowLate": "是否允许截止后开始或完成任务，默认false",
+        "title": "组件标题",
+        "description": "说明",
+        "role": "student/teacher；与业务授权配合",
+        "context": "业务对象上下文，仅作为请求载荷",
+        "readonly": "只读",
+        "disabled": "禁用编辑",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "now": "可选ISO当前时间，用于业务时钟或确定性预览"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "本次明确授权的业务组件扩展，依据现有教学、出卷、提交批阅与评价流程",
+      "validation": "数据规则、22组类型配置、适用状态与320px、定向业务交互；具体通过范围见对应报告"
+    },
+    {
+      "key": "question-sheet",
+      "name": "题目与作答",
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "description": "单选、多选、判断、填空、简答；答题卡、标记、草稿、提交锁定、公布答案和教师试卷结构编辑。",
+      "parameters": {
+        "questions": "{id,type,title,score,options?,blanks?,answer?,analysis?,maxLength?}[]",
+        "mode": "answer/review/author；author需role=teacher",
+        "layout": "all/single",
+        "value": "{题目ID:答案}；判断题为boolean",
+        "marked": "疑问题号ID数组",
+        "totalScore": "作者保存时核对总分",
+        "released": "业务已授权公布参考答案",
+        "submitted": "已有正式提交，作答锁定",
+        "allowIncomplete": "允许确认后提交未答完整试卷",
+        "endsAt": "作答截止ISO时间",
+        "title": "组件标题",
+        "description": "说明",
+        "role": "student/teacher；与业务授权配合",
+        "context": "业务对象上下文，仅作为请求载荷",
+        "readonly": "只读",
+        "disabled": "禁用编辑",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "now": "可选ISO当前时间，用于业务时钟或确定性预览"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "本次明确授权的业务组件扩展，依据现有教学、出卷、提交批阅与评价流程",
+      "validation": "数据规则、22组类型配置、适用状态与320px、定向业务交互；具体通过范围见对应报告"
+    },
+    {
+      "key": "submission-review",
+      "name": "提交与批阅",
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "description": "学生成果说明与真实本地附件、版本快照、撤回重交，教师退回与评分确认，历史版本只读。",
+      "parameters": {
+        "assignmentId": "业务任务ID",
+        "value": "{text}初始草稿",
+        "draftFiles": "既有附件引用数组",
+        "attempts": "{id,version,status,text,files,submittedAt?,grade?,feedback?,released?,rubricValues?}[]",
+        "maxScore": "满分，默认100",
+        "dueAt": "提交截止ISO时间",
+        "allowLate": "允许截止后提交",
+        "allowResubmit": "已评分后允许新提交，默认false",
+        "allowWithdraw": "截止前允许撤回待批阅提交，默认true",
+        "accept": "扩展名或MIME列表",
+        "maxFiles": "默认5个",
+        "maxFileSize": "默认10MB",
+        "requireText": "文字必填",
+        "requireFile": "附件必填",
+        "rubric": "可选的scoring-rubric配置，满分须一致",
+        "allowScoreOverride": "量规之外允许教师调整最终分",
+        "releaseFeedback": "教师确认时默认公布反馈",
+        "title": "组件标题",
+        "description": "说明",
+        "role": "student/teacher；与业务授权配合",
+        "context": "业务对象上下文，仅作为请求载荷",
+        "readonly": "只读",
+        "disabled": "禁用编辑",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "now": "可选ISO当前时间，用于业务时钟或确定性预览"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "本次明确授权的业务组件扩展，依据现有教学、出卷、提交批阅与评价流程",
+      "validation": "数据规则、22组类型配置、适用状态与320px、定向业务交互；具体通过范围见对应报告"
+    },
+    {
+      "key": "scoring-rubric",
+      "name": "评分量规",
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "description": "等级/数值评分，权重与分项计分、作者维度编辑、范围校验、不适用排除和未评分保留。",
+      "parameters": {
+        "criteria": "{id,title,description?,type?,weight?,max?,levels?,allowNA?}[]",
+        "method": "weighted/points",
+        "mode": "author/score/readonly",
+        "totalScore": "默认100",
+        "value": "{维度ID:number|null|\"na\"}",
+        "embedded": "嵌入批阅时隐藏独立确认栏",
+        "title": "组件标题",
+        "description": "说明",
+        "role": "student/teacher；与业务授权配合",
+        "context": "业务对象上下文，仅作为请求载荷",
+        "readonly": "只读",
+        "disabled": "禁用编辑",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "now": "可选ISO当前时间，用于业务时钟或确定性预览"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "本次明确授权的业务组件扩展，依据现有教学、出卷、提交批阅与评价流程",
+      "validation": "数据规则、22组类型配置、适用状态与320px、定向业务交互；具体通过范围见对应报告"
+    }
+  ],
+  "componentCount": 6,
+  "scenarioCount": 22,
+  "validation": {
+    "browser": {
+      "version": "2.5.0",
+      "passed": 39,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "report": "data/education-2.5/browser.json"
+    },
+    "catalogRegression": {
+      "version": "2.5.0",
+      "passed": 36,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "report": "data/education-2.5/catalog-regression.json"
+    },
+    "commonRegression": {
+      "version": "2.5.0",
+      "passed": 53,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "report": "data/education-2.5/common-regression.json"
+    },
+    "familyRegression": {
+      "version": "2.5.0",
+      "passed": 53,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "report": "data/education-2.5/family-regression.json"
+    },
+    "unit": {
+      "version": "2.7.0",
+      "passed": 12,
+      "failed": 0,
+      "report": "data/education-2.5/unit.json"
+    },
+    "static": {
+      "version": "2.5.0",
+      "passed": 63,
+      "failed": 1,
+      "report": "data/education-2.5/static.json"
+    }
+  },
+  "boundaries": [
+    "HTML交互原型，不接入真实权限、上传、数据库、成绩公布或模型服务",
+    "目录最多三层；支持本平台五类常用试题",
+    "取消只使本地等待失效，后端的取消、回滚、幂等和并发检查由业务实现",
+    "不提供自动判分、自动排课、跨设备草稿同步或全浏览器认证"
+  ]
+}

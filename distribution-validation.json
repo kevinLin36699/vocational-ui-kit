@@ -1,0 +1,61 @@
+{
+  "library_version": "2.7.1",
+  "skill_version": "1.2.0",
+  "checks": [
+    {
+      "name": "Relocated checkout resolves from an unrelated working directory",
+      "status": "passed"
+    },
+    {
+      "name": "Current version and all component families resolve",
+      "status": "passed"
+    },
+    {
+      "name": "All declared documents, contracts and examples exist",
+      "status": "passed"
+    },
+    {
+      "name": "Business and configurable-control standards are discoverable",
+      "status": "passed"
+    },
+    {
+      "name": "Requested version mismatch is refused",
+      "status": "passed"
+    },
+    {
+      "name": "Explicit, environment and project-relative overrides resolve",
+      "status": "passed"
+    },
+    {
+      "name": "Scaffold works without original business source",
+      "status": "passed"
+    },
+    {
+      "name": "All current runtime assets are copied without showcase fixtures",
+      "status": "passed"
+    },
+    {
+      "name": "Scaffold references, syntax and provenance hashes pass",
+      "status": "passed"
+    },
+    {
+      "name": "Installer binds to the downloaded checkout",
+      "status": "passed"
+    },
+    {
+      "name": "Installer refuses accidental replacement",
+      "status": "passed"
+    },
+    {
+      "name": "Explicit binding replacement preserves a recoverable backup",
+      "status": "passed"
+    },
+    {
+      "name": "Installed skill resolves its actual bound library",
+      "status": "passed"
+    }
+  ],
+  "passed": 13,
+  "failed": 0,
+  "scope": "Package portability, binding, installer and static scaffold; no browser or production-service assertion."
+}

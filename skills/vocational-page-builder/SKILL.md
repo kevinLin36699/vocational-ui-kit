@@ -2,7 +2,7 @@
 name: vocational-page-builder
 description: 根据业务需求、PRD、截图或现有代码，遵循已绑定的高职教 UI 组件库新建页面、整改页面或局部修改页面，并验证视觉、状态与业务交互。适用于高职教蓝白平台及其 AI 协作页面；不用于重建设计系统、修改组件库标准或未被请求的全平台整改。
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # 高职教平台页面生成与整改
@@ -17,7 +17,7 @@ metadata:
 python3 "$SKILL_ROOT/scripts/resolve_library.py"
 ```
 
-发布包中的相对绑定路径以技能目录为基准；安装脚本会将其解析成当前组件库的绝对路径。绑定路径只维护在 [references/library-binding.json](references/library-binding.json)，不从聊天记忆推定路径。显式 `--library-root`、环境变量 `VOCATIONAL_UI_LIBRARY_ROOT`、当前项目 `.vocational-page-builder.json` 中的 `library_root` 可覆盖默认；指定版本用 `--version`。解析器报告实际路径、版本、文档和源文件哈希，兼容版本更新提示重新读取变化文件；主版本不兼容或指定版本不符时不静默降级。
+绑定路径只维护在 [references/library-binding.json](references/library-binding.json)，不从聊天记忆推定路径。显式 `--library-root`、环境变量 `VOCATIONAL_UI_LIBRARY_ROOT`、当前项目 `.vocational-page-builder.json` 中的 `library_root` 可覆盖默认；指定版本用 `--version`。解析器报告实际路径、版本、文档和源文件哈希，兼容版本更新提示重新读取变化文件；主版本不兼容或指定版本不符时不静默降级。
 
 每次先读取解析结果中的 **generation_standard、standard、api、limitations**，再按任务查组件与模板：
 
@@ -25,7 +25,7 @@ python3 "$SKILL_ROOT/scripts/resolve_library.py"
 python3 "$SKILL_ROOT/scripts/resolve_library.py" --component table --component form --pattern list
 ```
 
-只加载所选组件的规范、参数和源码，不默认读取整份迁移索引或全部业务代码。查阅导航见 [references/library-map.md](references/library-map.md)。绑定失败时先完成不依赖标准的分析，指出所缺材料；不能自造组件 API、替换成另一套通用后台或宣称已完成页面。
+只加载所选组件的规范、参数和源码，不默认读取整份迁移索引或全部业务代码。业务演示从解析结果的 `examples` 按需打开；示例数据仅在明确演示任务中使用，不自动复制进真实业务页。查阅导航见 [references/library-map.md](references/library-map.md)。绑定失败时先完成不依赖标准的分析，指出所缺材料；不能自造组件 API、替换成另一套通用后台或宣称已完成页面。
 
 ## 需求与冲突判断
 
@@ -38,7 +38,7 @@ python3 "$SKILL_ROOT/scripts/resolve_library.py" --component table --component f
 
 1. 确定新建、整改或局部修改，选择页面模式。复杂页面简记 CON01～05：身份与入口、结构与滚动、数据与状态、动作与留存、例外与证据。将需求映射到真实组件标识。
 2. 检查目标技术栈。HTML 项目复用现有 HTML/CSS/JS；框架项目保留架构并建立适配。仅在用户要求单文件时内联打包，不为套用本技能引入新框架。
-3. 复用组件源码、模板和设计变量。参数只用索引及当前 API 真正支持的字段。当前基线的 `table/chat/workspace` 等配方含固定演示数据，**不存在任意 `rows/columns/messages/onSave` 等通用配置接口**；自定义业务应组合底层组件或建立局部适配，不能换个标题就称完成需求。
+3. 复用组件源码、模板和设计变量。参数只用索引及当前 API 真正支持的字段。当前 `table` 支持 `rows/columns/rowKey`，`form` 支持 `fields/values`；先读解析结果的 `controls`、`table_form` 和所选组件参数，再绑定 `VocDataTable` / `VocForm` 实例方法。三批高职教业务组件使用各自的目录、记录、身份和明确回执；需要联动时按 `education_platform` 建立显式桥接。`chat` 仍不支持任意 `messages` 或真实流式接口，`workspace` 默认只提供空插槽；不要把任意 `onSave` 等回调当成通用参数。
 4. 补齐请求范围内的可执行交互、校验、状态反馈与恢复。用户要求实际开发时接入真实架构和服务，不用演示数据替代。演示任务明确数据与模拟边界，不把本地保存称为真实入库。
 5. 修改已有页面优先局部改动，保留对象 ID、事件、权限、播放器与编辑器状态。不能直接全局引入库的 reset 覆盖原平台或生成作品主题。
 

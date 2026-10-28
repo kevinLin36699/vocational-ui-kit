@@ -1,0 +1,118 @@
+Browser tab: 14, Title: "组件完整性浏览器检查", URL: "http://127.0.0.1:8789/examples/completeness-checks.html".
+0 AXWebArea 组件完整性浏览器检查, URL: 127.0.0.1:8789/examples/completeness-checks.html
+	1 container
+		2 heading 组件完整性浏览器检查, Value: 1
+			3 text 组件完整性浏览器检查
+		6 text 36 项通过，0 项失败；浏览器错误 0 项。
+		7 content list check-results
+			8 container
+				9 AXListMarker 1. 
+				10 text PASSED · All 102 catalog entries hydrate without exceptions and have unique instance IDs
+			11 container
+				12 AXListMarker 2. 
+				13 text PASSED · All 83 documented variant configurations hydrate without exceptions
+			14 container
+				15 AXListMarker 3. 
+				16 text PASSED · Single date: draft, cancel, confirmed event and hidden form value
+			17 container
+				18 AXListMarker 4. 
+				19 text PASSED · Calendar arrows navigate by day, Escape dismisses and returns focus
+			20 container
+				21 AXListMarker 5. 
+				22 text PASSED · Date range requires two endpoints and preserves order and draft cancellation
+			23 container
+				24 AXListMarker 6. 
+				25 text PASSED · Disabled days cannot be picked; invalid input leaves last committed value
+			26 container
+				27 AXListMarker 7. 
+				28 text PASSED · Range across a forbidden date is rejected at confirmation
+			29 container
+				30 AXListMarker 8. 
+				31 text PASSED · Time columns commit hours/minutes/seconds and support clear
+			32 container
+				33 AXListMarker 9. 
+				34 text PASSED · Time range rejects inverted values, keeps legal manual minutes
+			35 container
+				36 AXListMarker 10. 
+				37 text PASSED · Date-time range independently commits start/end dates and clock values
+			38 container
+				39 AXListMarker 11. 
+				40 text PASSED · Month/year/quarter panels return the correct period format
+			41 container
+				42 AXListMarker 12. 
+				43 text PASSED · Month range manual end edit accepts friendly formatted start display
+			44 container
+				45 AXListMarker 13. 
+				46 text PASSED · ISO week around New Year keeps its ISO year, not calendar year
+			47 container
+				48 AXListMarker 14. 
+				49 text PASSED · Multi-date has in-field tags, overflow management and cancel protection
+			50 container
+				51 AXListMarker 15. 
+				52 text PASSED · Disabled and readonly temporal fields cannot open or clear
+			53 container
+				54 AXListMarker 16. 
+				55 text PASSED · Unmount removes temporal popups and their document listeners
+			56 container
+				57 AXListMarker 17. 
+				58 text PASSED · Checkbox all/partial state preserves disabled checked items
+			59 container
+				60 AXListMarker 18. 
+				61 text PASSED · Radio options are configurable and switch submits booleans
+			62 container
+				63 AXListMarker 19. 
+				64 text PASSED · Password show/hide and clear preserve the input and events
+			65 container
+				66 AXListMarker 20. 
+				67 text PASSED · Textarea count follows edited content
+			68 container
+				69 AXListMarker 21. 
+				70 text PASSED · Dual slider prevents endpoints crossing and returns a numeric pair
+			71 container
+				72 AXListMarker 22. 
+				73 text PASSED · Autocomplete keyboard selection closes suggestions and emits ID
+			74 container
+				75 AXListMarker 23. 
+				76 text PASSED · Transfer requires explicit movement and protects disabled options
+			77 container
+				78 AXListMarker 24. 
+				79 text PASSED · Tree expands, searches and maintains parent mixed/all checks
+			80 container
+				81 AXListMarker 25. 
+				82 text PASSED · Tabs skip disabled items on keyboard navigation and show their own panel
+			83 container
+				84 AXListMarker 26. 
+				85 text PASSED · Steps notify an index and move the current marker
+			86 container
+				87 AXListMarker 27. 
+				88 text PASSED · Menu disabled actions do not fire; selected action returns its ID
+			89 container
+				90 AXListMarker 28. 
+				91 text PASSED · Dialog confirms through an action; cancel leaves value unchanged
+			92 container
+				93 AXListMarker 29. 
+				94 text PASSED · Upload validates format/count/size, deduplicates and removes local files
+			95 container
+				96 AXListMarker 30. 
+				97 text PASSED · Charts retain actual configured values in accessible details, including empty data
+			98 container
+				99 AXListMarker 31. 
+				100 text PASSED · All documented examples fit a 320px host without page-level overflow
+			101 container
+				102 AXListMarker 32. 
+				103 text PASSED · All 102 catalog defaults fit a 320px host without page-level overflow
+			104 container
+				105 AXListMarker 33. 
+				106 text PASSED · Temporal popup stays within its native modal top layer
+			107 container
+				108 AXListMarker 34. 
+				109 text PASSED · Tree keyboard arrows traverse, expand and return to parent
+			110 container
+				111 AXListMarker 35. 
+				112 text PASSED · Disabled temporal values are excluded from native form submission
+			113 container
+				114 AXListMarker 36. 
+				115 text PASSED · Range presets respect restrictions and require explicit confirmation
+		5 button (expanded) 完整 JSON 报告, Secondary Actions: Collapse
+
+The focused UI element is 0 AXWebArea 组件完整性浏览器检查, URL: 127.0.0.1:8789/examples/completeness-checks.html

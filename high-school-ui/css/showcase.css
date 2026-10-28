@@ -905,3 +905,40 @@
 
 .brand-symbol { width:32px;height:32px;border-radius:10px;font-size:20px }
 .overview-hero { border-radius:var(--v-radius-stage) }
+/* One sidebar scroll area; all navigation groups can be collapsed by the user. */
+.nav-main { display:grid; gap:3px }
+.nav-main .nav-primary { min-height:36px }
+.nav-section-label { font-size:11px; color:var(--v-muted-foreground); padding:0 10px; margin:22px 0 8px }
+.nav-component-groups>.nav-group { margin-top:2px }
+.nav-component-group>summary { min-height:34px; padding:7px 10px; font-size:12px; color:var(--v-secondary) }
+.nav-component-group>summary::after,.nav-domain-group>summary::after { transition:transform var(--v-duration-fast); transform-origin:center }
+.nav-component-group[open]>summary::after,.nav-domain-group[open]>summary::after { transform:rotate(180deg) }
+.nav-component-group>summary>svg { flex-shrink:0 }
+.nav-component-group>div>.nav-item-link { padding-left:30px }
+.nav-domain-group { margin:3px 0 3px 16px }
+.nav-domain-group>summary { list-style:none; display:flex; align-items:center; gap:8px; padding:7px 10px; border-radius:8px; font-size:12px; color:var(--v-secondary); cursor:pointer; min-height:32px }
+.nav-domain-group>summary::-webkit-details-marker { display:none }
+.nav-domain-group>summary::after { content:'⌄'; margin-left:auto; color:var(--v-muted-foreground) }
+.nav-domain-group>summary:hover { background:var(--v-background); color:var(--v-brand) }
+.nav-domain-group .nav-item-link { padding-left:18px; min-height:32px }
+.nav-reference-row { display:flex; align-items:center; gap:3px }
+.nav-reference-row>.nav-primary { flex:1; min-width:0 }
+.nav-expand-toggle { display:grid; place-items:center; width:28px; height:28px; flex-shrink:0; padding:0; border:0; border-radius:7px; background:transparent; color:var(--v-muted-foreground); cursor:pointer }
+.nav-expand-toggle:hover { color:var(--v-brand); background:var(--v-muted) }
+.nav-expand-toggle svg { transition:transform var(--v-duration-fast) }
+.nav-expand-toggle[aria-expanded=true] svg { transform:rotate(180deg) }
+.nav-reference-links { margin:5px 0 10px 16px; border-left:1px solid var(--v-border) }
+.nav-reference-links[hidden] { display:none }
+.nav-reference-links .nav-item-link { padding-left:18px }
+.nav-component-groups .nav-item-link[aria-current=page],.nav-reference-links .nav-item-link[aria-current=page] { color:var(--v-brand); background:var(--v-brand-soft); box-shadow:none }
+.nav-primary:focus-visible,.nav-item-link:focus-visible,.nav-group>summary:focus-visible,.nav-domain-group>summary:focus-visible,.nav-expand-toggle:focus-visible { outline:2px solid var(--v-ring); outline-offset:2px }
+.example-hub-section { margin-top:28px }
+.example-hub-section .section-heading { margin-bottom:16px }
+.example-hub-section .section-heading p { margin-top:7px }
+.example-hub-section .entry-card p { min-height:0 }
+@media(max-width:650px) {
+ .nav-section-label,.nav-reference-links,.nav-expand-toggle { display:none }
+ .nav-main .nav-primary { min-height:40px; justify-content:center }
+ .nav-main .nav-primary .nav-name { display:none }
+ .example-hub-section { margin-top:20px }
+}

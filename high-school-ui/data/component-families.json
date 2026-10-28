@@ -1,0 +1,2579 @@
+{
+  "version": "2.7.1",
+  "scope": "All catalog entries except table/form/toolbar",
+  "reviewedCount": 115,
+  "upgradedCount": 46,
+  "hardenedCount": 14,
+  "components": [
+    {
+      "key": "button",
+      "name": "按钮",
+      "category": "基础",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "primary",
+        "soft",
+        "outline",
+        "ghost",
+        "destructive",
+        "sm/default/lg"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "icon",
+      "name": "图标与图标按钮",
+      "category": "基础",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "link",
+      "name": "链接",
+      "category": "基础",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "tag",
+      "name": "标签与可移除项",
+      "category": "基础",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "semantic",
+        "checkable",
+        "closable"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "badge",
+      "name": "状态徽标",
+      "category": "基础",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "status",
+        "count",
+        "dot"
+      ],
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "avatar",
+      "name": "头像",
+      "category": "基础",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "image/text",
+        "circle/square",
+        "group"
+      ],
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "separator",
+      "name": "分割线",
+      "category": "基础",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "input",
+      "name": "文本输入",
+      "category": "录入",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "default",
+        "hover",
+        "focus",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "textarea",
+      "name": "多行输入",
+      "category": "录入",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "default",
+        "focus",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "number",
+      "name": "数字与单位",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "focus",
+        "invalid",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "select",
+      "name": "下拉选择",
+      "category": "录入",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "default",
+        "open",
+        "selected",
+        "disabled",
+        "empty",
+        "readonly"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "checkbox",
+      "name": "复选框",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "partial"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "radio",
+      "name": "单选组",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "switch",
+      "name": "开关",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "date",
+      "name": "日期与范围",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "focus",
+        "selected",
+        "partial",
+        "invalid",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "multiselect",
+      "name": "多选标签",
+      "category": "录入",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "empty",
+        "selected",
+        "open",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "cascade",
+      "name": "院系专业级联",
+      "category": "录入",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "empty",
+        "selected",
+        "dependent",
+        "invalid",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "upload",
+      "name": "文件上传",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "empty",
+        "selected",
+        "invalid",
+        "removed",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "search",
+      "name": "搜索",
+      "category": "录入",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "default",
+        "composing",
+        "searching",
+        "empty"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "pagination",
+      "name": "分页",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "full",
+        "simple"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "card",
+      "name": "内容卡片",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "description",
+      "name": "描述列表",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "1/2/3 columns",
+        "bordered",
+        "copyable"
+      ],
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "tree",
+      "name": "树与目录",
+      "category": "展示",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "collapsed",
+        "expanded",
+        "selected",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "steps",
+      "name": "步骤条",
+      "category": "展示",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "pending",
+        "active",
+        "completed",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "progress",
+      "name": "进度",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "line",
+        "circle",
+        "dashboard",
+        "steps",
+        "indeterminate"
+      ],
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "timeline",
+      "name": "时间线与审批记录",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "vertical",
+        "horizontal",
+        "alternate",
+        "pending"
+      ],
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "stat",
+      "name": "指标卡",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "chart",
+      "name": "统计图与明细",
+      "category": "展示",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "bar",
+        "line",
+        "donut",
+        "empty"
+      ],
+      "implementationFiles": [
+        "js/common-extras.js",
+        "js/extended-controls.js",
+        "css/common-data.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "empty",
+      "name": "空状态",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "empty",
+        "no-match",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "skeleton",
+      "name": "骨架与加载",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "shell",
+      "name": "应用外壳与导航",
+      "category": "导航布局",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "breadcrumb",
+      "name": "面包屑",
+      "category": "导航布局",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "tabs",
+      "name": "内容标签页",
+      "category": "导航布局",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "line",
+        "card",
+        "vertical",
+        "closable",
+        "dynamic"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "segmented",
+      "name": "分段控件",
+      "category": "导航布局",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "menu",
+      "name": "更多菜单",
+      "category": "反馈浮层",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "action",
+        "checkbox",
+        "radio",
+        "separator",
+        "submenu"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "popover",
+      "name": "选择浮层",
+      "category": "反馈浮层",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "tooltip",
+      "name": "悬停与焦点提示",
+      "category": "反馈浮层",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "dialog",
+      "name": "弹窗",
+      "category": "反馈浮层",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "confirm",
+      "name": "危险操作确认",
+      "category": "反馈浮层",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "drawer",
+      "name": "抽屉",
+      "category": "反馈浮层",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "alert",
+      "name": "就地反馈与错误",
+      "category": "反馈浮层",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "toast",
+      "name": "轻提示",
+      "category": "反馈浮层",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "course-card",
+      "name": "课程卡片",
+      "category": "高职教业务",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "required/elective labels",
+        "cover/placeholder",
+        "local favorite"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "person-picker",
+      "name": "人员选择",
+      "category": "高职教业务",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "empty",
+        "selected",
+        "searched",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "approval",
+      "name": "审核与分发",
+      "category": "高职教业务",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "draft",
+        "review",
+        "approved",
+        "rejected",
+        "distributed"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "resource",
+      "name": "资源与版本",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "versioned",
+        "downloaded"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "task-guide",
+      "name": "AI 任务引导",
+      "category": "AI交互",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "agent",
+      "name": "智能体入口",
+      "category": "AI交互",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "conversation",
+      "name": "会话列表",
+      "category": "AI交互",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "empty",
+        "selected",
+        "renamed",
+        "pinned"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "composer",
+      "name": "AI 输入区",
+      "category": "AI交互",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "empty",
+        "draft",
+        "attached",
+        "running",
+        "disabled",
+        "resource-open",
+        "resource-no-match",
+        "resource-selected",
+        "resource-unavailable",
+        "agents-selected",
+        "agents-locked"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "message",
+      "name": "用户与 AI 消息",
+      "category": "AI交互",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "user",
+        "assistant",
+        "completed/streaming/failed/stopped"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "prose",
+      "name": "Markdown 与代码",
+      "category": "AI交互",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "process",
+      "name": "处理过程",
+      "category": "AI交互",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "waiting",
+        "running",
+        "completed",
+        "stopped",
+        "failed"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "citation",
+      "name": "引用与来源",
+      "category": "AI交互",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "result",
+      "name": "生成内容摘要",
+      "category": "AI交互",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "workspace",
+      "name": "生成内容工作区",
+      "category": "AI交互",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "empty",
+        "loading",
+        "ready",
+        "error",
+        "collapsed"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "chat",
+      "name": "AI 协作组合",
+      "category": "AI交互",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "idle",
+        "running",
+        "stopped",
+        "failed",
+        "completed"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "time-picker",
+      "name": "时间选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "focus",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "tree-select",
+      "name": "树选择",
+      "category": "录入",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "empty",
+        "no-match",
+        "readonly"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "academic-term",
+      "name": "学年学期选择",
+      "category": "高职教业务",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "empty",
+        "readonly"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "collapse",
+      "name": "折叠面板",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "rate",
+      "name": "五级评价",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "calendar",
+      "name": "事件日历",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "month",
+        "week",
+        "day",
+        "agenda"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "notification",
+      "name": "通知提醒",
+      "category": "反馈浮层",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "image-preview",
+      "name": "图片预览",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "single",
+        "gallery"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "feedback-result",
+      "name": "操作结果反馈",
+      "category": "反馈浮层",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "success",
+        "error",
+        "forbidden",
+        "notfound",
+        "warning",
+        "info"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "batch-import",
+      "name": "名单导入校验",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "draft",
+        "invalid",
+        "valid",
+        "confirmed",
+        "failed"
+      ],
+      "implementationFiles": [],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "date-picker",
+      "name": "单日期选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "date-range",
+      "name": "日期范围选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "time-range",
+      "name": "时间范围选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "datetime-picker",
+      "name": "日期时间选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "datetime-range",
+      "name": "日期时间范围",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "year-picker",
+      "name": "年份选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "year-range",
+      "name": "年份范围",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "month-picker",
+      "name": "月份选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "month-range",
+      "name": "月份范围",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "quarter-picker",
+      "name": "季度选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "week-picker",
+      "name": "周选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "multi-date",
+      "name": "多日期选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/temporal.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "password",
+      "name": "密码输入",
+      "category": "录入",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "input-group",
+      "name": "组合输入",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "slider",
+      "name": "滑动输入条",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "autocomplete",
+      "name": "自动补全",
+      "category": "录入",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "empty",
+        "no-match",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "transfer",
+      "name": "穿梭选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "empty",
+        "no-match",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "list",
+      "name": "数据列表",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "list",
+        "grid",
+        "search/sort",
+        "incremental",
+        "remote append"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "anchor",
+      "name": "锚点导航",
+      "category": "导航布局",
+      "treatment": "interaction-hardening",
+      "types": [],
+      "states": [
+        "default"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "loading",
+      "name": "加载指示",
+      "category": "反馈浮层",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "color-picker",
+      "name": "颜色选择",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "selected",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/extended-controls.js",
+        "css/extended-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "richtext",
+      "name": "基础富文本编辑",
+      "category": "录入",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "focus",
+        "invalid",
+        "disabled",
+        "readonly"
+      ],
+      "implementationFiles": [
+        "js/common-extras.js",
+        "css/common-data.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "navigation-menu",
+      "name": "业务导航菜单",
+      "category": "导航布局",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "horizontal",
+        "vertical",
+        "nested",
+        "collapsed"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "carousel",
+      "name": "图文轮播",
+      "category": "展示",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "text/image",
+        "bounded/loop",
+        "manual/automatic"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "splitter",
+      "name": "可调整分栏",
+      "category": "导航布局",
+      "treatment": "parameterized-family-upgrade",
+      "types": [
+        "horizontal",
+        "vertical"
+      ],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "backtop",
+      "name": "局部返回顶部",
+      "category": "导航布局",
+      "treatment": "parameterized-family-upgrade",
+      "types": [],
+      "states": [
+        "default",
+        "disabled",
+        "loading",
+        "empty",
+        "failed",
+        "forbidden"
+      ],
+      "implementationFiles": [
+        "js/family-controls.js",
+        "css/family-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "teaching-audience",
+      "name": "教学对象选择",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "curriculum-plan",
+      "name": "教学目录与学时",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "teaching-task",
+      "name": "教学任务",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "question-sheet",
+      "name": "题目与作答",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "submission-review",
+      "name": "提交与批阅",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "scoring-rubric",
+      "name": "评分量规",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-controls.js",
+        "css/education-controls.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "class-roster",
+      "name": "班级名册",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "teaching-assignment",
+      "name": "任教关系",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "practice-workflow",
+      "name": "实训步骤与验收",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "learning-progress",
+      "name": "学习进度与续学",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "resource-version",
+      "name": "资源版本与引用",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "evaluation-survey",
+      "name": "评价问卷",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "grade-detail",
+      "name": "成绩明细",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "career-goal",
+      "name": "成长目标",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-platform.js",
+        "js/education-next.js",
+        "css/education-platform.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "growth-plan",
+      "name": "成长计划",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-platform.js",
+        "js/education-next.js",
+        "css/education-platform.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "job-opportunity",
+      "name": "岗位目录",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-platform.js",
+        "js/education-next.js",
+        "css/education-platform.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "application-tracker",
+      "name": "投递进度",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-platform.js",
+        "js/education-next.js",
+        "css/education-platform.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "assessment-collection",
+      "name": "评估指标采集",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-platform.js",
+        "js/education-next.js",
+        "css/education-platform.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "evidence-material",
+      "name": "佐证材料",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-platform.js",
+        "js/education-next.js",
+        "css/education-platform.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "asset-loan",
+      "name": "设备借还",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-platform.js",
+        "js/education-next.js",
+        "css/education-platform.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "repair-ticket",
+      "name": "报修工单",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-platform.js",
+        "js/education-next.js",
+        "css/education-platform.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    },
+    {
+      "key": "admissions-lead",
+      "name": "招生线索",
+      "category": "高职教业务",
+      "treatment": "review-and-retain",
+      "types": [],
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "implementationFiles": [
+        "js/education-platform.js",
+        "js/education-next.js",
+        "css/education-platform.css"
+      ],
+      "verification": "本轮目录默认与常用状态挂载、320px检查；定向交互以浏览器报告具体断言为准",
+      "remaining": "服务端权限、数据持久化、生产网络或完整浏览器认证未接入"
+    }
+  ],
+  "validation": {
+    "families": {
+      "version": "2.4.0",
+      "passed": 53,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "path": "data/families-2.4/family-browser.json"
+    },
+    "catalogRegression": {
+      "version": "2.4.0",
+      "passed": 36,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "path": "data/families-2.4/catalog-regression.json"
+    },
+    "tableFormRegression": {
+      "version": "2.4.0",
+      "passed": 53,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "path": "data/families-2.4/table-form-regression.json"
+    },
+    "unit": {
+      "version": "2.7.0",
+      "passed": 6,
+      "failed": 0,
+      "observedBrowserErrors": null,
+      "path": "data/families-2.4/unit.json"
+    }
+  },
+  "remaining": [
+    "日历为本地事件查看，不提供自动排课、拖拽改期、时区转换或冲突服务",
+    "图片以预览为主，不提供裁剪/批注/媒体编辑；轮播不含视频播放器",
+    "HTML原型组件，没有React/Vue框架包和可视化页面搭建器",
+    "交互权限仅为客户端约束，真实上传、消息投递、审批、分发、Agent/模型执行需业务回执",
+    "全浏览器、触摸设备、屏幕阅读器与全量视觉状态验收尚未覆盖"
+  ]
+}

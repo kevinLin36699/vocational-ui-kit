@@ -1,0 +1,235 @@
+Browser tab: 35, Title: "成长目标 · 高职教 UI", URL: "http://127.0.0.1:8789/index.html#/component/career-goal".
+1 AXWebArea 成长目标 · 高职教 UI, URL: 127.0.0.1:8789/index.html#/component/career-goal
+	2 link Description: 跳到内容, Value: 127.0.0.1:8789/index.html#main
+	3 container 组件库导航
+		4 link Description: 高职教 · UI 统一设计，连接教学 2.7.1, Value: 127.0.0.1:8789/index.html#/overview
+		5 container site-nav
+			6 link Description: 组件库概览, Value: 127.0.0.1:8789/index.html#/overview
+			7 link Description: 设计基础, Value: 127.0.0.1:8789/index.html#/foundations
+			8 link Description: 全部组件, Value: 127.0.0.1:8789/index.html#/components
+			9 link Description: 页面模式, Value: 127.0.0.1:8789/index.html#/patterns
+			10 link Description: 高职教业务 · 第三批, Value: 127.0.0.1:8789/examples/education-platform.html
+			11 link Description: 三批业务联动, Value: 127.0.0.1:8789/examples/education-integration.html
+			12 link Description: 高职教业务 · 第二批, Value: 127.0.0.1:8789/examples/education-next.html
+			13 link Description: 高职教业务实验室, Value: 127.0.0.1:8789/examples/education.html
+			14 link Description: 全家族交互实验室, Value: 127.0.0.1:8789/examples/families.html
+			15 link Description: 表格与表单实验室, Value: 127.0.0.1:8789/examples/table-form.html
+			16 link Description: 组件家族与变体, Value: 127.0.0.1:8789/examples/completeness.html
+			17 container
+				18 button (expanded) 基础 7 ⌄, Secondary Actions: Collapse
+					19 text 基础
+					20 text 7
+					21 text ⌄
+				22 link Description: 按钮, Value: 127.0.0.1:8789/index.html#/component/button
+				23 link Description: 图标与图标按钮, Value: 127.0.0.1:8789/index.html#/component/icon
+				24 link Description: 链接, Value: 127.0.0.1:8789/index.html#/component/link
+				25 link Description: 标签与可移除项, Value: 127.0.0.1:8789/index.html#/component/tag
+				26 link Description: 状态徽标, Value: 127.0.0.1:8789/index.html#/component/badge
+				27 link Description: 头像, Value: 127.0.0.1:8789/index.html#/component/avatar
+				28 link Description: 分割线, Value: 127.0.0.1:8789/index.html#/component/separator
+			29 button (collapsed) 录入 35 ⌄, Secondary Actions: Expand
+				30 text 录入
+				31 text 35
+				32 text ⌄
+			33 button (collapsed) 展示 17 ⌄, Secondary Actions: Expand
+				34 text 展示
+				35 text 17
+				36 text ⌄
+			37 button (collapsed) 导航布局 9 ⌄, Secondary Actions: Expand
+				38 text 导航布局
+				39 text 9
+				40 text ⌄
+			41 button (collapsed) 反馈浮层 11 ⌄, Secondary Actions: Expand
+				42 text 反馈浮层
+				43 text 11
+				44 text ⌄
+			45 container
+				46 button (expanded) 高职教业务 28 ⌄, Secondary Actions: Collapse
+					47 text 高职教业务
+					48 text 28
+					49 text ⌄
+				50 link Description: 课程卡片, Value: 127.0.0.1:8789/index.html#/component/course-card
+				51 link Description: 人员选择, Value: 127.0.0.1:8789/index.html#/component/person-picker
+				52 link Description: 审核与分发, Value: 127.0.0.1:8789/index.html#/component/approval
+				53 link Description: 资源与版本, Value: 127.0.0.1:8789/index.html#/component/resource
+				54 link Description: 学年学期选择, Value: 127.0.0.1:8789/index.html#/component/academic-term
+				55 link Description: 名单导入校验, Value: 127.0.0.1:8789/index.html#/component/batch-import
+				56 link Description: 教学对象选择, Value: 127.0.0.1:8789/index.html#/component/teaching-audience
+				57 link Description: 教学目录与学时, Value: 127.0.0.1:8789/index.html#/component/curriculum-plan
+				58 link Description: 教学任务, Value: 127.0.0.1:8789/index.html#/component/teaching-task
+				59 link Description: 题目与作答, Value: 127.0.0.1:8789/index.html#/component/question-sheet
+				60 link Description: 提交与批阅, Value: 127.0.0.1:8789/index.html#/component/submission-review
+				61 link Description: 评分量规, Value: 127.0.0.1:8789/index.html#/component/scoring-rubric
+				62 link Description: 班级名册, Value: 127.0.0.1:8789/index.html#/component/class-roster
+				63 link Description: 任教关系, Value: 127.0.0.1:8789/index.html#/component/teaching-assignment
+				64 link Description: 实训步骤与验收, Value: 127.0.0.1:8789/index.html#/component/practice-workflow
+				65 link Description: 学习进度与续学, Value: 127.0.0.1:8789/index.html#/component/learning-progress
+				66 link Description: 资源版本与引用, Value: 127.0.0.1:8789/index.html#/component/resource-version
+				67 link Description: 评价问卷, Value: 127.0.0.1:8789/index.html#/component/evaluation-survey
+				68 link Description: 成绩明细, Value: 127.0.0.1:8789/index.html#/component/grade-detail
+				69 link Description: 成长目标, Value: 127.0.0.1:8789/index.html#/component/career-goal
+				70 link Description: 成长计划, Value: 127.0.0.1:8789/index.html#/component/growth-plan
+				71 link Description: 岗位目录, Value: 127.0.0.1:8789/index.html#/component/job-opportunity
+				72 link Description: 投递进度, Value: 127.0.0.1:8789/index.html#/component/application-tracker
+				73 link Description: 评估指标采集, Value: 127.0.0.1:8789/index.html#/component/assessment-collection
+				74 link Description: 佐证材料, Value: 127.0.0.1:8789/index.html#/component/evidence-material
+				75 link Description: 设备借还, Value: 127.0.0.1:8789/index.html#/component/asset-loan
+				76 link Description: 报修工单, Value: 127.0.0.1:8789/index.html#/component/repair-ticket
+				77 link Description: 招生线索, Value: 127.0.0.1:8789/index.html#/component/admissions-lead
+			78 container
+				79 button (expanded) AI交互 11 ⌄, Secondary Actions: Collapse
+					80 text AI交互
+					81 text 11
+					82 text ⌄
+				83 link Description: AI 任务引导, Value: 127.0.0.1:8789/index.html#/component/task-guide
+				84 link Description: 智能体入口, Value: 127.0.0.1:8789/index.html#/component/agent
+				85 link Description: 会话列表, Value: 127.0.0.1:8789/index.html#/component/conversation
+				86 link Description: AI 输入区, Value: 127.0.0.1:8789/index.html#/component/composer
+				87 link Description: 用户与 AI 消息, Value: 127.0.0.1:8789/index.html#/component/message
+				88 link Description: Markdown 与代码, Value: 127.0.0.1:8789/index.html#/component/prose
+				89 link Description: 处理过程, Value: 127.0.0.1:8789/index.html#/component/process
+				90 link Description: 引用与来源, Value: 127.0.0.1:8789/index.html#/component/citation
+				91 link Description: 生成内容摘要, Value: 127.0.0.1:8789/index.html#/component/result
+				92 link Description: 生成内容工作区, Value: 127.0.0.1:8789/index.html#/component/workspace
+				93 link Description: AI 协作组合, Value: 127.0.0.1:8789/index.html#/component/chat
+			94 link Description: 来源与整改映射, Value: 127.0.0.1:8789/index.html#/migration
+			95 link Description: 规范与接入, Value: 127.0.0.1:8789/index.html#/docs/START
+		96 container
+			97 text 蓝白主题 · v2.7.1
+			98 link Description: 接入指南, Value: 127.0.0.1:8789/design/START.md
+	99 container
+		100 text 设计系统
+		101 text 成长目标
+		102 search text field (settable) Description: 搜索组件、模式与规范, ID: global-search
+		103 text /
+		104 button 使用规范, ID: open-spec
+	105 container app
+		106 text 高职教业务 / voc-career-goal
+		107 heading 成长目标career-goal, Value: 1
+			108 text 成长目标 career-goal
+		109 text 就业/证书/竞赛/升学及自定义类型，主备目标切换、目标编辑归档、恢复与历史留痕。
+		110 text v2.7.1 HTML 原型组件
+		111 text FAMILY/2.2
+		112 link Description: 返回分类, Value: 127.0.0.1:8789/index.html#/components/%E9%AB%98%E8%81%8C%E6%95%99%E4%B8%9A%E5%8A%A1
+		113 container
+			114 text 统一依据：本轮明确授权的成长就业、办学评估、学校运营业务扩展，沿用蓝白公共标准 · 
+			115 link Description: 逐组件对照, Value: 127.0.0.1:8789/index.html#/docs/COMPONENT_ALIGNMENT
+		116 link Description: 打开第三批业务配置与操作 →, Value: 127.0.0.1:8789/examples/education-platform.html#career-goal
+		220 container
+			221 tab group 组件文档
+				222 tab (selectable, settable, boolean) 交互示例, Value: 0
+				223 tab (selectable, settable, boolean) 示例数据, Value: 0
+				224 tab (selected, settable, boolean) 使用代码, Value: 1
+				225 tab (selectable, settable, boolean) API, Value: 0
+				226 tab (selectable, settable, boolean) 状态, Value: 0
+				227 tab (selectable, settable, boolean) 来源, Value: 0
+			228 button 重置当前示例
+			229 container code
+				230 text 业务示例
+				231 pop up button (collapsed, settable) 业务示例, Value: 四类目标与主备管理, ID: story-business-case, Secondary Actions: Expand
+					232 menu
+						233 (selected) 四类目标与主备管理
+						234 从空数据创建个人目标
+						235 指导教师只读查看
+						236 自定义目标类型目录
+				237 text 4 组可替换配置 · 虚构数据
+				238 text 按 data/library.json 的 styles/runtime 顺序加载，再挂载组件。下面包含当前示例的数据；示例脚本仅用于文档展示。
+				239 text javascript
+				240 button 复制代码
+					241 text 复制代码
+				242 text const props = {
+  "now": "2026-10-28T09:00:00+08:00",
+  "role": "student",
+  "actorId": "learner-1",
+  "goals": [
+    {
+      "id": "goal1",
+      "title": "设备维护岗位准备",
+      "type": "employment",
+      "priority": "primary",
+      "status": "active",
+      "description": "以设备巡检与故障记录能力为准备方向。",
+      "revision": 1,
+      "history": []
+    },
+    {
+      "id": "goal2",
+      "title": "技能证书备考",
+      "type": "certificate",
+      "priority": "backup",
+      "status": "active",
+      "targetAt": "2027-05-01T09:00:00+08:00",
+      "revision": 0,
+      "history": []
+    },
+    {
+      "id": "goal3",
+      "title": "往期竞赛准备",
+      "type": "competition",
+      "priority": "backup",
+      "status": "archived",
+      "revision": 1,
+      "history": [
+        {
+          "at": "2026-10-01T09:00:00+08:00",
+          "action": "归档目标",
+          "reason": "往期计划结束"
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "id": "employment",
+      "label": "就业目标"
+    },
+    {
+      "id": "certificate",
+      "label": "证书目标"
+    },
+    {
+      "id": "competition",
+      "label": "竞赛目标"
+    },
+    {
+      "id": "study",
+      "label": "升学目标"
+    }
+  ],
+  "title": "成长目标",
+  "state": "default"
+};
+VocUI.mount(document.querySelector('#target'), 'career-goal', props);
+
+// 本地演示回执；正式页面请替换为真实业务处理器。
+VocEducationPlatform.setHandler(document.querySelector('#target'), async (request, {signal}) => {
+  if (signal.aborted) return {ok:false, message:'已取消'};
+  return {ok:true, message:'本地示例已确认，未写入真实业务'};
+});
+				243 button (expanded) 查看当前示例的实际 HTML, Secondary Actions: Collapse
+		196 link Description: 打开组件家族与变体总览 →, Value: 127.0.0.1:8789/examples/completeness.html
+		197 container
+			198 heading 使用约定, Value: 2
+				199 text 使用约定
+			200 content list
+				201 container
+					202 AXListMarker • 
+					203 text 就业/证书/竞赛/升学及自定义类型，主备目标切换、目标编辑归档、恢复与历史留痕。
+				204 container
+					205 AXListMarker • 
+					206 text 使用设计变量与已有变体；不要复制近似样式。
+				207 container
+					208 AXListMarker • 
+					209 text 角色权限、文件限制与草稿保存策略由业务控制器明确。
+				210 container
+					211 AXListMarker • 
+					212 text 长文本自然换行；代码和宽表格只在内部横向滚动。
+		213 container
+			214 heading 落地边界, Value: 2
+				215 text 落地边界
+			216 text 当前是可复用 HTML 原型实现。旧平台尚未批量迁移；专用编辑器、媒体和考试流程保留原实现。
+			217 link Description: API 与参数支持矩阵 , Value: 127.0.0.1:8789/index.html#/docs/API
+	218 container
+		219 text 高职教平台 UI 组件库 · v2.7.1 HTML 原型组件 · 演示数据为虚构 · 原始平台未修改
+
+The focused UI element is 1 AXWebArea 成长目标 · 高职教 UI, URL: 127.0.0.1:8789/index.html#/component/career-goal

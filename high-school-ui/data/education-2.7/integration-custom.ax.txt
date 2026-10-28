@@ -1,0 +1,114 @@
+Browser tab: 27, Title: "三批高职教业务联动", URL: "http://127.0.0.1:8789/examples/education-integration.html#employment".
+1 AXWebArea 三批高职教业务联动, URL: 127.0.0.1:8789/examples/education-integration.html#employment
+	2 container
+		3 link Description: ← 高职教 · UI, Value: 127.0.0.1:8789/index.html
+		4 text 2.7.0 · 三批业务联查
+		5 link Description: 配置、联动与验证范围, Value: 127.0.0.1:8789/index.html#/docs/EDUCATION_PLATFORM
+	6 container
+		7 heading 自定义实习岗位与投递联动, Value: 1, ID: flow-title
+			8 text 自定义实习岗位与投递联动
+		9 text 替换全部岗位、简历和当前人ID后，创建、保存并登记投递；检查跨组件追加和版本快照。
+		10 container Description: 业务联动场景, ID: flow-tabs
+			11 checkbox 名册、任教与教学任务, Value: 0
+			12 checkbox 目标、学习与成长计划, Value: 0
+			13 checkbox 岗位与投递快照, Value: 1
+			14 checkbox 资源、佐证与评估采集, Value: 0
+			15 checkbox 设备借还与报修, Value: 0
+			16 checkbox 教师试卷与学生作答, Value: 0
+			17 checkbox 批阅与成绩草稿, Value: 0
+		18 button 编辑整条链路配置, ID: flow-config
+		19 button 重新核对关联, ID: flow-sync
+		20 button 恢复本链路初始配置, ID: flow-reset
+		21 checkbox (settable, integer) Description: 本地模拟处理器（未接入真实业务）, Value: 1, ID: flow-mock
+		22 button 下一次回执失败, ID: flow-fail
+		23 container flow-grid
+			24 container
+				25 heading 第三批 · 岗位目录, Value: 2
+					26 text 第三批 · 岗位目录
+				27 container 岗位目录
+					28 container
+						29 text 高职教业务 · 第三批
+						30 heading 岗位目录, Value: 3
+							31 text 岗位目录
+						32 text 已确认
+					33 text 联动实验本地回执已确认，未写入真实业务。
+					34 search text field (settable) 搜索岗位目录
+					35 container
+						36 text 业务状态
+						37 pop up button (collapsed, settable) 业务状态, Value: 全部状态, Secondary Actions: Expand
+							38 menu
+								39 (selected) 全部状态
+								40 草稿
+								41 招聘中
+								42 已关闭
+					43 container
+						44 heading 现场技术服务实习生, Value: 4
+							45 text 现场技术服务实习生
+						46 text 联查示例企业 · 实习岗位 招聘中 示例园区 2000—3000 元/月 需求 2 人 配合完成日常巡检与维护记录。 要求：了解安全操作规范；能够记录和描述设备异常 截止：2026-11-30T18:00:00+08:00
+						47 button (expanded) 历史记录 · 0, Secondary Actions: Collapse
+						48 button 收藏岗位
+						49 button 创建投递记录
+					50 text 已确认创建 1 条投递草稿；不会向招聘单位自动发送。
+					51 container
+						52 text 正式变更在业务回执成功后生效。
+						53 button 恢复上次确认
+			54 container
+				55 heading 第三批 · 投递进度, Value: 2
+					56 text 第三批 · 投递进度
+				57 container 投递进度
+					58 container
+						59 text 高职教业务 · 第三批
+						60 heading 投递进度, Value: 3
+							61 text 投递进度
+						62 text 已确认
+					63 text 联动实验本地回执已确认，未写入真实业务。
+					64 search text field (settable) 搜索投递进度
+					65 container
+						66 text 业务状态
+						67 pop up button (collapsed, settable) 业务状态, Value: 全部状态, Secondary Actions: Expand
+							68 menu
+								69 (selected) 全部状态
+								70 投递草稿
+								71 已登记投递
+								72 筛选中
+								73 面试中
+								74 已收到意向
+								75 已登记接受意向
+								76 已登记未通过
+								77 已撤回
+					78 button 新增投递草稿
+					79 container 投递记录
+						80 button 现场技术服务实习生 · 联查示例企业
+					81 container
+						82 heading 现场技术服务实习生 · 联查示例企业, Value: 4
+							83 text 现场技术服务实习生 · 联查示例企业
+						84 text 已登记投递 · 修订 1 岗位快照：现场技术服务实习生 · 联查示例企业 简历快照：自定义技术实践简历 · v3 自定义配置联查：核对岗位第7版与简历第3版，保留版本快照。 已登记投递 筛选中 面试中 已收到意向 已登记接受意向
+						85 button (expanded) 个人跟进 · 0, Secondary Actions: Collapse
+						86 button (expanded) 历史记录 · 1, Secondary Actions: Collapse
+						87 button 撤回记录
+						88 button 添加跟进
+					89 container
+						90 text 正式变更在业务回执成功后生效。
+						91 button 恢复上次确认
+		92 heading 关联更新与待核对记录, Value: 2
+			93 text 关联更新与待核对记录
+		94 text [
+  {
+    "sequence": 1,
+    "id": "custom-job-application",
+    "kind": "jobs-to-applications",
+    "status": "synced",
+    "message": "关联已更新；业务草稿与历史快照按各组件规则保留",
+    "at": "2026-10-28T08:03:53.385Z"
+  },
+  {
+    "sequence": 2,
+    "id": "custom-job-application",
+    "kind": "jobs-to-applications",
+    "status": "synced",
+    "message": "关联已更新；业务草稿与历史快照按各组件规则保留",
+    "at": "2026-10-28T08:04:14.813Z"
+  }
+]
+
+The focused UI element is 1 AXWebArea 三批高职教业务联动, URL: 127.0.0.1:8789/examples/education-integration.html#employment

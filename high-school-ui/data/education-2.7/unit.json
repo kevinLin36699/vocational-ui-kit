@@ -1,0 +1,80 @@
+{
+  "version": "2.7.1",
+  "checks": [
+    {
+      "name": "Nine empty public components and all 36 configurations render without caller mutation",
+      "status": "passed"
+    },
+    {
+      "name": "Only one active primary goal is valid and custom goal types are real directory entries",
+      "status": "passed"
+    },
+    {
+      "name": "Plans validate current goals, task directories and nonempty task lists before activation",
+      "status": "passed"
+    },
+    {
+      "name": "Jobs retain unknown salaries, zero vacancies and closed/expired availability",
+      "status": "passed"
+    },
+    {
+      "name": "Student job configurations strip drafts and other-person application intents",
+      "status": "passed"
+    },
+    {
+      "name": "Application submissions pin exact resume owner/version and job revision",
+      "status": "passed"
+    },
+    {
+      "name": "Student applications exclude other applicants and preserve already-recorded snapshots",
+      "status": "passed"
+    },
+    {
+      "name": "Indicator zero and false are valid values while missing sources or evidence fail",
+      "status": "passed"
+    },
+    {
+      "name": "Closed collection periods, expired materials and wrong-period evidence block new submissions",
+      "status": "passed"
+    },
+    {
+      "name": "Indicator collectors are scoped by identity and students cannot receive school assessment records",
+      "status": "passed"
+    },
+    {
+      "name": "Evidence requires actual references or content and checks immutable source versions",
+      "status": "passed"
+    },
+    {
+      "name": "Inventory overlap uses peak concurrent occupancy rather than summing disjoint bookings",
+      "status": "passed"
+    },
+    {
+      "name": "Borrowed and return-pending equipment remains occupied until receipt, including overdue periods",
+      "status": "passed"
+    },
+    {
+      "name": "Loan capacity, repair blocks, integer quantities and retired assets cannot pass validation",
+      "status": "passed"
+    },
+    {
+      "name": "Borrower identity is filtered while anonymous occupancy remains sufficient for capacity checks",
+      "status": "passed"
+    },
+    {
+      "name": "Lead duplicates normalize contacts and stage skipping is explicit rather than automatic",
+      "status": "passed"
+    },
+    {
+      "name": "Admissions scope and student denial prevent unrelated contacts from appearing in serialized configurations",
+      "status": "passed"
+    },
+    {
+      "name": "Hostile text, unsafe links, invalid actors and unsupported states are rejected or escaped",
+      "status": "passed"
+    }
+  ],
+  "passed": 18,
+  "failed": 0,
+  "scope": "Third-batch pure business rules and configuration boundaries; browser behavior and cross-component integration checked separately"
+}

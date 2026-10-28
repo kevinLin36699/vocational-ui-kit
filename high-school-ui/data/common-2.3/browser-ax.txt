@@ -1,0 +1,169 @@
+Browser tab: 4, Title: "表格表单浏览器检查", URL: "http://127.0.0.1:8789/examples/common-checks.html".
+1 AXWebArea 表格表单浏览器检查, URL: 127.0.0.1:8789/examples/common-checks.html
+	2 container
+		3 heading 表格与表单浏览器检查, Value: 1
+			4 text 表格与表单浏览器检查
+		7 text 53 项通过，0 项失败；浏览器错误 0 项。
+		8 content list check-results
+			9 container
+				10 AXListMarker 1. 
+				11 text PASSED · All 12 table modes and 11 schema form configurations mount
+			12 container
+				13 AXListMarker 2. 
+				14 text PASSED · Local filtering, tri-state sort, page-size and jump use the same result set
+			15 container
+				16 AXListMarker 3. 
+				17 text PASSED · Across-page selection survives paging, respects disabled rows and supports all filtered
+			18 container
+				19 AXListMarker 4. 
+				20 text PASSED · Page selection clears on navigation and a single-selection table uses radio
+			21 container
+				22 AXListMarker 5. 
+				23 text PASSED · Tree rows search descendants with ancestor context and expand independently
+			24 container
+				25 AXListMarker 6. 
+				26 text PASSED · Grouped rows collapse without changing underlying records
+			27 container
+				28 AXListMarker 7. 
+				29 text PASSED · Nested headers and adjacent merged values have real spans; sums use filtered rows
+			30 container
+				31 AXListMarker 8. 
+				32 text PASSED · Explicit row/column spans skip covered cells
+			33 container
+				34 AXListMarker 9. 
+				35 text PASSED · Column visibility retains at least one and reordering updates the public state
+			36 container
+				37 AXListMarker 10. 
+				38 text PASSED · Fixed columns compute sticky offsets and keyboard resizing persists widths
+			39 container
+				40 AXListMarker 11. 
+				41 text PASSED · Row ordering supports keyboard and is disabled while sorting
+			42 container
+				43 AXListMarker 12. 
+				44 text PASSED · Inline edit validates before commit and Escape cancels draft
+			45 container
+				46 AXListMarker 13. 
+				47 text PASSED · Switching page protects an uncommitted cell draft
+			48 container
+				49 AXListMarker 14. 
+				50 text PASSED · Table edit dialog uses the shared schema validator and preserves zero
+			51 container
+				52 AXListMarker 15. 
+				53 text PASSED · Deletion requires confirmation, can cancel, and retains unrelated rows
+			54 container
+				55 AXListMarker 16. 
+				56 text PASSED · Virtual scrolling renders a bounded number of rows out of 10000 and changes window
+			57 container
+				58 AXListMarker 17. 
+				59 text PASSED · CSV respects visible columns and neutralizes spreadsheet formulas
+			60 container
+				61 AXListMarker 18. 
+				62 text PASSED · Remote queries carry request IDs; stale responses cannot replace newer results
+			63 container
+				64 AXListMarker 19. 
+				65 text PASSED · Remote failure preserves query and retries through the loader
+			66 container
+				67 AXListMarker 20. 
+				68 text PASSED · Readonly and forbidden states cannot mutate table data
+			69 container
+				70 AXListMarker 21. 
+				71 text PASSED · Arbitrary schema uses supplied fields and does not inherit course fields
+			72 container
+				73 AXListMarker 22. 
+				74 text PASSED · Sync rules include required, email, numeric range, regex and cross-field dates
+			75 container
+				76 AXListMarker 23. 
+				77 text PASSED · Dependent options clear stale selection, conditional fields are excluded from values
+			78 container
+				79 AXListMarker 24. 
+				80 text PASSED · Repeaters retain data while adding, reordering and removing; enforce minimum
+			81 container
+				82 AXListMarker 25. 
+				83 text PASSED · Steps validate the current section before navigation and retain previous values
+			84 container
+				85 AXListMarker 26. 
+				86 text PASSED · Error summary locates a field in another tab
+			87 container
+				88 AXListMarker 27. 
+				89 text PASSED · Async validator aborts stale values; earlier results cannot overwrite new input
+			90 container
+				91 AXListMarker 28. 
+				92 text PASSED · Async validator failure is visible, and cancel during validation does not submit
+			93 container
+				94 AXListMarker 29. 
+				95 text PASSED · Submitting is locked, prevents duplicate submits, and a failed handler retains all values
+			96 container
+				97 AXListMarker 30. 
+				98 text PASSED · Event-mode submit remains pending until its matching acknowledgement
+			99 container
+				100 AXListMarker 31. 
+				101 text PASSED · Reset uses a successful submission as baseline and protects unsaved UI changes
+			102 container
+				103 AXListMarker 32. 
+				104 text PASSED · Readonly/disabled/forbidden forms do not submit and disabled fields are excluded
+			105 container
+				106 AXListMarker 33. 
+				107 text PASSED · Unmount cancels submission callbacks and prevents late status changes
+			108 container
+				109 AXListMarker 34. 
+				110 text PASSED · All 23 configurations fit a 320px container without outer overflow
+			111 container
+				112 AXListMarker 35. 
+				113 text PASSED · Dependent numeric edits keep focus, caret and computed values during typing
+			114 container
+				115 AXListMarker 36. 
+				116 text PASSED · Generic numeric fields do not inherit course-hour units
+			117 container
+				118 AXListMarker 37. 
+				119 text PASSED · Remote edit stays pending until mutation acknowledgement and keeps server field errors
+			120 container
+				121 AXListMarker 38. 
+				122 text PASSED · All additional chart, permission-tree and richtext examples mount
+			123 container
+				124 AXListMarker 39. 
+				125 text PASSED · Chart zoom, drilldown and return use real child data
+			126 container
+				127 AXListMarker 40. 
+				128 text PASSED · Combo chart series visibility, brush and data table stay synchronized
+			129 container
+				130 AXListMarker 41. 
+				131 text PASSED · Permission trees support strict checks and disabled-ancestor inheritance
+			132 container
+				133 AXListMarker 42. 
+				134 text PASSED · Richtext sanitizes scripts, event attributes, embeds and unsafe links
+			135 container
+				136 AXListMarker 43. 
+				137 text PASSED · Richtext formatting works and schema rules count plain text rather than HTML tags
+			138 container
+				139 AXListMarker 44. 
+				140 text PASSED · Form loader ignores old acknowledgements, preserves draft on failure and retries
+			141 container
+				142 AXListMarker 45. 
+				143 text PASSED · Runtime readonly state hides form submit and disables table editing
+			144 container
+				145 AXListMarker 46. 
+				146 text PASSED · Repeated file fields preserve File references through row reordering
+			147 container
+				148 AXListMarker 47. 
+				149 text PASSED · Two fixed columns use measured offsets at wide container sizes
+			150 container
+				151 AXListMarker 48. 
+				152 text PASSED · Tree pagination pages root groups and keeps children with their parent
+			153 container
+				154 AXListMarker 49. 
+				155 text PASSED · Remote cell save waits for mutator success and reloads confirmed server values
+			156 container
+				157 AXListMarker 50. 
+				158 text PASSED · Additional interactive charts and richtext fit a 320px host
+			159 container
+				160 AXListMarker 51. 
+				161 text PASSED · Chinese composition does not commit intermediate values or trigger a submission
+			162 container
+				163 AXListMarker 52. 
+				164 text PASSED · Export selected includes cross-page selections outside the current filter
+			165 container
+				166 AXListMarker 53. 
+				167 text PASSED · Multiple bar series occupy separate positions without overlap
+		6 button (expanded) 完整报告, Secondary Actions: Collapse
+
+The focused UI element is 1 AXWebArea 表格表单浏览器检查, URL: 127.0.0.1:8789/examples/common-checks.html

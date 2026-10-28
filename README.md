@@ -2,7 +2,7 @@
 
 本目录提供一套可以本地运行的 UI 组件库和配套 `vocational-page-builder` Skill，用于新建高职教页面、整改旧页面和局部修改。Skill 消费组件库，不重新设计整套系统。
 
-组件库版本 **2.0.0**，Skill 版本 **1.1.0**。本次快照：**2026-10-27**。配色以蓝白为主，AI 入口少量使用蓝紫。
+组件库版本 **2.7.1**，Skill 版本 **1.2.0**。本次快照：**2026-10-28**。包含 **118 类组件、15 个页面模式、122 个设计变量**；三批业务组件共 **22 类、86 组配置**。配色以蓝白为主，AI 入口少量使用蓝紫。
 
 ## 目录
 
@@ -36,6 +36,11 @@ python3 -m http.server 8789 --bind 127.0.0.1 --directory high-school-ui
 然后打开：
 
 - 组件库：<http://127.0.0.1:8789/index.html>
+- 业务示例总览：<http://127.0.0.1:8789/index.html#/examples>
+- 表格与表单：<http://127.0.0.1:8789/examples/table-form.html>
+- 课程与教学、学习与考核：`examples/education.html`、`examples/education-next.html`
+- 成长就业、评估运营：<http://127.0.0.1:8789/examples/education-platform.html>
+- 三批联动：<http://127.0.0.1:8789/examples/education-integration.html>
 - 教师输入区：<http://127.0.0.1:8789/examples/teacher-input.html>
 - 详细处理记录：<http://127.0.0.1:8789/examples/process-record.html>
 - 管理组合：<http://127.0.0.1:8789/examples/management.html>
@@ -57,7 +62,15 @@ python3 scripts/install_skill.py
 python3 scripts/install_skill.py --replace
 ```
 
+已有独立维护的组件库时，可以加 `--library-root /absolute/high-school-ui` 绑定该目录；默认使用本仓库内的副本。
+
 旧技能会备份到 Codex 目录下的 `skill-backups/`。可用 `--codex-home /your/codex-home` 指定其他位置。脚本只安装技能，组件库继续引用当前 checkout，不会额外复制长期失配的标准。安装后在 Codex 新会话中通过 `$vocational-page-builder` 调用；若列表尚未刷新，重新打开会话或重启应用。
+
+## 当前配置与业务能力
+
+表格支持自定义 rows/columns/rowKey、筛选排序分页、选择、编辑和远程读写回执；表单支持 fields/values、条件联动、分步、重复项、校验和提交回执。三批业务组件支持目录与记录配置、业务操作、异常恢复及显式跨组件关联。正式服务、权限、上传和持久化由调用方接入，未确认的请求不会自动显示成功。
+
+详情页、家族预览与业务实验室提供可替换示例数据；空数据作为独立状态。示例专用 showcaseRuntime/showcaseStyles 不进入实际业务的默认 runtime。参数见 `high-school-ui/design/TABLE_FORM.md`、`EDUCATION.md`、`EDUCATION_NEXT.md`、`EDUCATION_PLATFORM.md`；展示数据规则见 `BUSINESS_EXAMPLES.md`。
 
 ## 当前生成规则
 
@@ -94,4 +107,4 @@ python3 skills/vocational-page-builder/scripts/resolve_library.py --component co
 
 历史资料位于 `high-school-ui/assets/archive/`，不属于当前生成默认规范。`data/validation.json` 等是各次历史验证证据，查看时核对版本与范围；需要原业务源码或原机路径的追溯检查在其他机器上不可直接复现，不能因此宣称原平台已验证。
 
-本次仓库打包的定向验证结果见 [validation.json](validation.json)。没有运行仓库全量构建、测试，也未连接生产服务。
+本次仓库打包的定向验证结果见 [validation.json](validation.json)。运行组件库静态校验和现有规则回归、Skill 路径解析及脚手架检查；没有连接生产服务。独立包的静态检查会明确跳过未随包分发的原业务源码追溯；不会改写原始扫描基线。

@@ -14,13 +14,14 @@ PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--codex-home', help='Default: CODEX_HOME or ~/.codex')
+    parser.add_argument('--library-root', type=Path, help='Bind to an existing local UI library instead of the bundled copy')
     parser.add_argument('--replace', action='store_true', help='Back up and replace an existing installation')
     args = parser.parse_args()
     home = Path(args.codex_home or os.getenv('CODEX_HOME') or Path.home() / '.codex').expanduser().resolve()
     source = PACKAGE_ROOT / 'skills/vocational-page-builder'
-    library = PACKAGE_ROOT / 'high-school-ui'
+    library = (args.library_root or PACKAGE_ROOT / 'high-school-ui').expanduser().resolve()
     if not (source / 'SKILL.md').is_file() or not (library / 'data/library.json').is_file():
-        parser.error('Keep the skill and high-school-ui together in the complete package.')
+        parser.error('Keep the skill and high-school-ui together, or provide a valid --library-root.')
     parent = home / 'skills'
     target = parent / source.name
     if target.exists() and not args.replace:

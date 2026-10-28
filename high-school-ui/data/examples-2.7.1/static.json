@@ -1,0 +1,397 @@
+{
+  "version": "2.7.1",
+  "checks": [
+    {
+      "name": "JS syntax advanced-table.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax batch-import.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax business-example-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax business-examples.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax catalog.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax common-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax common-extras.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax common-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax common-scenarios.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax completeness-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax component-variants.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax content-workspace.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax controls.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax data-table.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax docs.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-bridge.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-controls.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-integration-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-integration-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-integration-scenarios.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-next-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-next-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-next-scenarios.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-next.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-platform-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-platform-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-platform-scenarios.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-platform.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-scenarios.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax extended-controls.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax family-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax family-controls.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax family-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax family-scenarios.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax icons.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax patterns.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax resource-composer.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax schema-form.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax showcase.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax skill-picker.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax temporal.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax tokens.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax voc-ui.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "VM renderer execution",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "Catalog keys match runtime",
+      "status": "passed",
+      "evidence": "118 keys"
+    },
+    {
+      "name": "All variants render without exception",
+      "status": "passed",
+      "evidence": "462 render cases"
+    },
+    {
+      "name": "Page patterns match current index",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "Untrusted input and Markdown escaped",
+      "status": "passed",
+      "evidence": "HTML and script payload escaped"
+    },
+    {
+      "name": "Workspace is an empty extension slot",
+      "status": "passed",
+      "evidence": "No business editor, type catalog or default business action"
+    },
+    {
+      "name": "Workspace metadata escaped",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "Composer uses one add-content trigger",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "File catalog text escaped",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "Local HTML resources resolve",
+      "status": "passed",
+      "evidence": "[]"
+    },
+    {
+      "name": "No duplicate HTML attributes",
+      "status": "passed",
+      "evidence": "[]"
+    },
+    {
+      "name": "Renderer IDs unique within instances",
+      "status": "passed",
+      "evidence": "[]"
+    },
+    {
+      "name": "Explicit labels resolve to controls",
+      "status": "passed",
+      "evidence": "[]"
+    },
+    {
+      "name": "CSS variable references defined",
+      "status": "passed",
+      "evidence": "{'--vx-progress', '--token-color', '--vx-avatar-size'}"
+    },
+    {
+      "name": "Component CSS colors only use tokens",
+      "status": "passed",
+      "evidence": "[]"
+    },
+    {
+      "name": "Original scanned files unchanged",
+      "status": "failed",
+      "evidence": "['AGENTS.md', 'css/centers/administration.css', 'css/research-center.css', 'css/school-assessment.css', 'css/student-detail-tabs.css']"
+    },
+    {
+      "name": "Source evidence file/line exists",
+      "status": "passed",
+      "evidence": "[]"
+    },
+    {
+      "name": "Migration records not falsely completed",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "No external runtime resource dependency",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "Text contrast foreground/card",
+      "status": "passed",
+      "evidence": "12.61:1; text pair only, not full accessibility certification"
+    },
+    {
+      "name": "Text contrast secondary/card",
+      "status": "passed",
+      "evidence": "5.96:1; text pair only, not full accessibility certification"
+    },
+    {
+      "name": "Text contrast muted-foreground/background",
+      "status": "passed",
+      "evidence": "4.72:1; text pair only, not full accessibility certification"
+    },
+    {
+      "name": "Text contrast brand-foreground/brand",
+      "status": "passed",
+      "evidence": "6.27:1; text pair only, not full accessibility certification"
+    },
+    {
+      "name": "Text contrast danger/danger-soft",
+      "status": "passed",
+      "evidence": "5.56:1; text pair only, not full accessibility certification"
+    },
+    {
+      "name": "Text contrast success/success-soft",
+      "status": "passed",
+      "evidence": "5.16:1; text pair only, not full accessibility certification"
+    },
+    {
+      "name": "Text contrast warning/warning-soft",
+      "status": "passed",
+      "evidence": "5.28:1; text pair only, not full accessibility certification"
+    },
+    {
+      "name": "AI gradient white foreground contrast",
+      "status": "passed",
+      "evidence": "7 samples, minimum 5.90:1"
+    },
+    {
+      "name": "AI soft label contrast",
+      "status": "passed",
+      "evidence": "6.91:1"
+    },
+    {
+      "name": "AI focus border contrast against white",
+      "status": "passed",
+      "evidence": "3.93:1"
+    },
+    {
+      "name": "Manifest token count/version match",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "Every component has reviewed reference mapping",
+      "status": "passed",
+      "evidence": "118 records; document, shared primitives and scenario extensions distinguished"
+    },
+    {
+      "name": "Current component metadata matches library version",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "Reference geometry and typography token contract",
+      "status": "passed",
+      "evidence": "DESIGN.md sections 4,5,6,10,11; user theme overrides kept separate"
+    }
+  ],
+  "passed": 77,
+  "failed": 1
+}

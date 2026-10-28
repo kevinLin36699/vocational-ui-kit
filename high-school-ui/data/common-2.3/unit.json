@@ -1,0 +1,52 @@
+{
+  "version": "2.7.1",
+  "scope": "Pure schema/identity/validation boundaries; browser interactions are tested separately.",
+  "checks": [
+    {
+      "name": "Schema rejects invalid names, duplicates, unknown types and invalid sections",
+      "status": "passed"
+    },
+    {
+      "name": "Empty schema stays empty and caller-owned configuration is not mutated",
+      "status": "passed"
+    },
+    {
+      "name": "Defaults retain zero, false, empty arrays and repeater values",
+      "status": "passed"
+    },
+    {
+      "name": "Conditional visibility and dependent options respect actual data",
+      "status": "passed"
+    },
+    {
+      "name": "Synchronous rules preserve numeric zero and enforce range, step and required",
+      "status": "passed"
+    },
+    {
+      "name": "Email, URL, regex and cross-field dates fail meaningfully",
+      "status": "passed"
+    },
+    {
+      "name": "Richtext validation counts plain text and recognizes empty markup",
+      "status": "passed"
+    },
+    {
+      "name": "Table validates nested identity and rejects incompatible variable-height virtual modes",
+      "status": "passed"
+    },
+    {
+      "name": "Nested headers flatten only leaves, and sort handles nulls and numeric text",
+      "status": "passed"
+    },
+    {
+      "name": "Table config never mutates the caller rows or columns",
+      "status": "passed"
+    },
+    {
+      "name": "Public renderers escape schema/table labels and editable richtext source",
+      "status": "passed"
+    }
+  ],
+  "passed": 11,
+  "failed": 0
+}

@@ -1,0 +1,171 @@
+{
+  "version": "2.7.0",
+  "date": "2026-10-28T08:09:31.648Z",
+  "scope": "Three-batch integration: seven configurable whole-flow setups and typed cross-component links; actual DOM operations, snapshots, identity, drafts, failures, stale requests and composition. No production service or full browser certification.",
+  "checks": [
+    {
+      "name": "All seven multi-component flow configurations mount, validate declared link types and retain caller data",
+      "status": "passed"
+    },
+    {
+      "name": "Roster-to-audience excludes suspended members without treating locked records as ineligible students",
+      "status": "passed"
+    },
+    {
+      "name": "Confirmed audience, curriculum and assignment snapshots join one task without editing its course basis",
+      "status": "passed"
+    },
+    {
+      "name": "Publishing preserves all linked snapshots and later roster transfers cannot rewrite them",
+      "status": "passed"
+    },
+    {
+      "name": "Task publication rejects out-of-assignment audiences and ended teaching relations",
+      "status": "passed"
+    },
+    {
+      "name": "Unconfirmed or invalid curriculum edits do not propagate as an authoritative task snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "Goal archive updates plan references without deleting or silently changing the plan",
+      "status": "passed"
+    },
+    {
+      "name": "Teaching tasks and learning resources merge by stable IDs without dropping either directory",
+      "status": "passed"
+    },
+    {
+      "name": "Completing a teaching task unlocks explicit growth-task evidence entry but never completes the plan automatically",
+      "status": "passed"
+    },
+    {
+      "name": "Learning position and explicit completion remain different when linked to growth tasks",
+      "status": "passed"
+    },
+    {
+      "name": "Creating a job application appends one pinned draft, not a fabricated external submission",
+      "status": "passed"
+    },
+    {
+      "name": "Job creation failure does not append a downstream application or erase a modal draft",
+      "status": "passed"
+    },
+    {
+      "name": "Job closure or revision changes block new submission while preserving previously pinned application snapshots",
+      "status": "passed"
+    },
+    {
+      "name": "Source resource withdrawal invalidates new evidence submissions but preserves old citation snapshots",
+      "status": "passed"
+    },
+    {
+      "name": "Evidence approval makes actual approved versions available to a zero-valued indicator",
+      "status": "passed"
+    },
+    {
+      "name": "Withdrawing evidence blocks resubmission but never rewrites an indicator submission snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "Reference refresh preserves real File objects and draft text during source invalidation",
+      "status": "passed"
+    },
+    {
+      "name": "Equipment state propagates to repair references and active repairs block new inventory allocations",
+      "status": "passed"
+    },
+    {
+      "name": "Closing a repair removes its allocation block without silently restoring a maintained device",
+      "status": "passed"
+    },
+    {
+      "name": "Bidirectional operations links stabilize without infinite feedback or duplicate records",
+      "status": "passed"
+    },
+    {
+      "name": "Paper synchronization strips unreleased answers and refuses to overwrite student answer drafts automatically",
+      "status": "passed"
+    },
+    {
+      "name": "Submitted answer snapshots and readonly or forbidden answer panes cannot be replaced, even by forced synchronization",
+      "status": "passed"
+    },
+    {
+      "name": "A real rubric-confirmed review stages its computed score and source version into one grade draft",
+      "status": "passed"
+    },
+    {
+      "name": "Rejected grading does not leak an unconfirmed score to grade records",
+      "status": "passed"
+    },
+    {
+      "name": "Confirmed zero grades remain zero and conflicting grade drafts require explicit overwrite",
+      "status": "passed"
+    },
+    {
+      "name": "Published grades cannot be overwritten by later reviews and retain source snapshots",
+      "status": "passed"
+    },
+    {
+      "name": "Different grading maxima require an explicit configured scale instead of silent conversion",
+      "status": "passed"
+    },
+    {
+      "name": "Reference updates preserve an in-progress composition and validate the committed text afterward",
+      "status": "passed"
+    },
+    {
+      "name": "Cross-identity personal links and forbidden sources cannot transfer their data",
+      "status": "passed"
+    },
+    {
+      "name": "Directory updates and business data replacement invalidate stale consumer request IDs without committing them",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed link kinds, duplicate connection IDs and record imports cannot partially overwrite working data",
+      "status": "passed"
+    },
+    {
+      "name": "Disconnecting a bridge stops later source confirmations and leaves receivers untouched",
+      "status": "passed"
+    },
+    {
+      "name": "The real integration laboratory mounts all editable flows without browser exceptions",
+      "status": "passed"
+    },
+    {
+      "name": "Open confirmation dialogs revalidate changed source and evidence directories before acknowledging",
+      "status": "passed"
+    },
+    {
+      "name": "Checkout confirmation rechecks newly linked repair blocks before recording handover",
+      "status": "passed"
+    },
+    {
+      "name": "Task publish confirmation rechecks changed teaching relations before submitting",
+      "status": "passed"
+    },
+    {
+      "name": "Conflicting merged directories roll back contributions and allow the healthy source to synchronize again",
+      "status": "passed"
+    },
+    {
+      "name": "Individually selected students must also belong to the linked teaching assignment",
+      "status": "passed"
+    },
+    {
+      "name": "Growth completion preserves evidence input when a linked task changes during the dialog",
+      "status": "passed"
+    },
+    {
+      "name": "Indicator snapshots use references at confirmation and review rejects changed immutable evidence versions",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "passed": 40,
+  "failed": 0,
+  "observedBrowserErrors": 0
+}

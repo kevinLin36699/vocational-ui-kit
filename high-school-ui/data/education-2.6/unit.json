@@ -1,0 +1,84 @@
+{
+  "version": "2.7.1",
+  "checks": [
+    {
+      "name": "All seven empty components and 28 independent configurations render without mutating caller data",
+      "status": "passed"
+    },
+    {
+      "name": "Duplicate person numbers and duplicate IDs are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Student grade configuration excludes others and all unannounced grade history",
+      "status": "passed"
+    },
+    {
+      "name": "Published zero values are preserved for the current student",
+      "status": "passed"
+    },
+    {
+      "name": "Assignments reject duplicate active teaching relationship and primary conflict",
+      "status": "passed"
+    },
+    {
+      "name": "Assignment terms, inactive teachers, and class scope are checked before saving",
+      "status": "passed"
+    },
+    {
+      "name": "Practice dependency cycles and unknown material references are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Learning dependency cycles, duplicate resources, invalid record positions are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Resource version numbers are immutable unique positive integers and links are safe",
+      "status": "passed"
+    },
+    {
+      "name": "Student resource configuration removes drafts, unavailable and expired contents",
+      "status": "passed"
+    },
+    {
+      "name": "Text version comparisons reflect actual changed and added lines",
+      "status": "passed"
+    },
+    {
+      "name": "Survey answer validation preserves false and zero ratings and enforces required responses",
+      "status": "passed"
+    },
+    {
+      "name": "Survey maximum choices and unknown choice IDs are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Survey raw responses are stripped for students and aggregate values survive repeated sanitization",
+      "status": "passed"
+    },
+    {
+      "name": "Unreleased survey aggregates remain unavailable and empty means remain null",
+      "status": "passed"
+    },
+    {
+      "name": "Grades distinguish null, zero, absence, and explicitly exempt values",
+      "status": "passed"
+    },
+    {
+      "name": "Point grades renormalize allowed exemptions and reject invalid total weights",
+      "status": "passed"
+    },
+    {
+      "name": "Unsupported roles, invalid time windows and unsafe identifiers fail explicitly",
+      "status": "passed"
+    },
+    {
+      "name": "All authored labels and bodies are escaped before insertion into HTML",
+      "status": "passed"
+    }
+  ],
+  "passed": 19,
+  "failed": 0,
+  "scope": "Business rules, configuration validation, privacy boundaries and public renderer only; DOM interactions separately tested"
+}

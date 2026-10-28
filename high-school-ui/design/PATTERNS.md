@@ -26,9 +26,10 @@
 | approval | 审核分发 | 本地演示对象 | approval |
 | files | 资源文件 | 本次文件选择 | upload / resource |
 | settings | 个人配置 | 虚构教师 | input / switch / avatar |
+| import | 名单导入 | 本地学生名单 | batch-import / table / feedback-result |
 
 ## 代表性管理页面
-examples/management.html 使用 list 模式。17条虚构课程统一参与筛选、学时排序、5项分页、页内三态选择和导出。翻页/筛选清除选择并明确提示。创建/编辑需校验课程名、学时和日期；删除确认具体对象；CSV 可实际下载。
+examples/management.html 使用 list 模式。17条虚构课程统一参与筛选、学时排序、10项默认分页，可切换5/10/20/50、页内三态选择和导出。翻页/筛选清除选择并明确提示。创建/编辑需校验课程名、学时和日期；删除确认具体对象；CSV 可实际下载。
 
 ## 代表性 AI 页面
 examples/ai-workspace.html 使用 chat 模式。新建/搜索/重命名/置顶/删除会话、会话草稿隔离、模拟发送/停止/失败/重试、来源和结果工作区共用组件实现。没有真实模型或上传服务。

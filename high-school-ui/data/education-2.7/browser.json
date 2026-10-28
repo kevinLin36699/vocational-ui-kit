@@ -1,0 +1,191 @@
+{
+  "version": "2.7.0",
+  "date": "2026-10-28T08:09:34.616Z",
+  "scope": "Nine third-batch business families, all 36 configurations, 320px structural states and dedicated real DOM workflows; cross-batch links are tested separately.",
+  "checks": [
+    {
+      "name": "All nine empty public families and 36 independent configurations mount without caller mutation",
+      "status": "passed"
+    },
+    {
+      "name": "Every third-batch scenario and seven content states fit a 320px container",
+      "status": "passed"
+    },
+    {
+      "name": "Primary-goal switching is atomic, acknowledged and leaves linked plans unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "Goals are created from an empty directory through ordinary forms",
+      "status": "passed"
+    },
+    {
+      "name": "Goal archive requires a reason, preserves history and restores as a backup",
+      "status": "passed"
+    },
+    {
+      "name": "Plan task creation, ordering and activation use the configured goal and task directories",
+      "status": "passed"
+    },
+    {
+      "name": "Plan task completion requires evidence and never silently completes the plan",
+      "status": "passed"
+    },
+    {
+      "name": "Plan pause, reasoned schedule changes and stale goal references have distinct behavior",
+      "status": "passed"
+    },
+    {
+      "name": "Jobs show real salary and vacancy states and only create pinned application drafts",
+      "status": "passed"
+    },
+    {
+      "name": "Job collections are idempotent and rejected writes retain the current selection",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown salary, zero vacancies, expired jobs and private drafts are not conflated",
+      "status": "passed"
+    },
+    {
+      "name": "Job author creates, edits, publishes and closes a real record",
+      "status": "passed"
+    },
+    {
+      "name": "Application submission rejects changed resume versions and preserves the old draft snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "Application submission, stage recording and terminal states wait for explicit acknowledgement",
+      "status": "passed"
+    },
+    {
+      "name": "Offer acceptance is a personal recorded intention and other students stay absent from the DOM",
+      "status": "passed"
+    },
+    {
+      "name": "Indicator zero and boolean false survive explicit submission snapshots",
+      "status": "passed"
+    },
+    {
+      "name": "Indicator source, range, evidence and closed periods produce actionable errors",
+      "status": "passed"
+    },
+    {
+      "name": "Indicator designer assigns real owners and prevents mismatched responsibility units",
+      "status": "passed"
+    },
+    {
+      "name": "Indicator return preserves submitted versions and self-review is forbidden by default",
+      "status": "passed"
+    },
+    {
+      "name": "Evidence uses real File objects and rejected submission preserves editable evidence",
+      "status": "passed"
+    },
+    {
+      "name": "Evidence version submit snapshots, reviewer return, and next-version creation keep history",
+      "status": "passed"
+    },
+    {
+      "name": "Evidence approval and withdrawal have separate permissions and states",
+      "status": "passed"
+    },
+    {
+      "name": "Evidence ordinary creation supports link/data types and unsafe URLs cannot be submitted",
+      "status": "passed"
+    },
+    {
+      "name": "Evidence readonly mode still switches historical versions without mutating stored records",
+      "status": "passed"
+    },
+    {
+      "name": "Equipment, tools and training-room inventory can be created and edited from actual forms",
+      "status": "passed"
+    },
+    {
+      "name": "Loan requests enforce valid time windows and do not reserve stock before approval",
+      "status": "passed"
+    },
+    {
+      "name": "Loan approval checks repair blocks, capacity conflicts and premature checkout",
+      "status": "passed"
+    },
+    {
+      "name": "Returning damaged equipment remains occupied until inspection and then marks maintenance",
+      "status": "passed"
+    },
+    {
+      "name": "Active borrowed records protect capacity edits and retiring cannot orphan loans",
+      "status": "passed"
+    },
+    {
+      "name": "Borrower DOM excludes other people but retains anonymous occupancy for conflict checks",
+      "status": "passed"
+    },
+    {
+      "name": "Repair report creation, real attachments and assignment are independently acknowledged",
+      "status": "passed"
+    },
+    {
+      "name": "Repair assignment validates active technicians and starts only after acceptance",
+      "status": "passed"
+    },
+    {
+      "name": "Repair worker records zero minutes, waits for materials and submits results without closing",
+      "status": "passed"
+    },
+    {
+      "name": "Reporter acceptance and failed acceptance preserve repair histories and never auto-release inventory",
+      "status": "passed"
+    },
+    {
+      "name": "Admissions authorization blocks phone/message records while internal notes remain operable",
+      "status": "passed"
+    },
+    {
+      "name": "Admissions appointments require a future follow-up and stages cannot be skipped accidentally",
+      "status": "passed"
+    },
+    {
+      "name": "Admissions stage changes require evidence and enrolled records cannot silently regress",
+      "status": "passed"
+    },
+    {
+      "name": "Duplicate leads merge conservatively without erasing histories or restoring withdrawn contact authorization",
+      "status": "passed"
+    },
+    {
+      "name": "Admissions creation and assignment use configurable source/program/owner directories",
+      "status": "passed"
+    },
+    {
+      "name": "All nine readonly/disabled families prevent business mutation while retaining permitted browsing",
+      "status": "passed"
+    },
+    {
+      "name": "Cancellation, duplicate prevention and request IDs protect pending third-batch operations",
+      "status": "passed"
+    },
+    {
+      "name": "Directory updates cancel stale acknowledgements and preserve modal drafts for revalidation",
+      "status": "passed"
+    },
+    {
+      "name": "Loader failures preserve drafts and late loads cannot replace fresh configurations",
+      "status": "passed"
+    },
+    {
+      "name": "Chinese composition does not submit an old indicator narrative and reset restores acknowledged draft values",
+      "status": "passed"
+    },
+    {
+      "name": "Forbidden and destroyed components remove rendered private data and abort owned requests/dialogs",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "passed": 45,
+  "failed": 0,
+  "observedBrowserErrors": 0
+}

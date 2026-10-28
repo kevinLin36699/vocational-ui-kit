@@ -1,0 +1,3651 @@
+{
+  "version": "2.1.1",
+  "date": "2026-10-27",
+  "browser": "Codex in-app browser (Chromium)",
+  "scope": "用户截图所指五项的视觉与实际交互；公共改动的DOM布局回归另列，不能代替视觉验收。",
+  "checks": [
+    {
+      "name": "多选框内回显与收纳管理",
+      "status": "passed",
+      "evidence": "默认显示2个标签及+2；+N打开已选管理并移除工业机器人技术；框内移除软件技术，再从候选选回，最终3项同步。"
+    },
+    {
+      "name": "数字分页与边界",
+      "status": "passed",
+      "evidence": "第3页直接跳第5、第10页；末页下一页禁用；改20条/页回第1页且总页5，上一页禁用。"
+    },
+    {
+      "name": "树节点真实悬停与选中",
+      "status": "passed",
+      "evidence": "父箭头展开后指针停留在未选行，:hover=true且有整行反馈；文件图标与名称均可选整行，选中后aria-selected同步；箭头只改变展开。"
+    },
+    {
+      "name": "图表明细与筛选一致",
+      "status": "passed",
+      "evidence": "明细改为学院/课程数量/占比的三列表格；关闭选修后数量0/6/5、总数11；恢复6/6/5、总数17；明细保持展开且只有一个收放指示。"
+    },
+    {
+      "name": "日期紧凑回显与值格式",
+      "status": "passed",
+      "evidence": "日期以YYYY/MM/DD紧凑显示；同日闰日提交公开date-change事件仍为[2024-02-29,2024-02-29]；聚焦可清空，所有端点恢复空白。"
+    },
+    {
+      "name": "多选窄容器与禁用，树多选同步",
+      "status": "passed",
+      "evidence": "320px长选项5项正常收纳并可查看全部；禁用态的触发与移除按钮都禁用；树多选m0/m1选择m2后3项，框内移除m0后2项。"
+    },
+    {
+      "name": "表格共用新分页",
+      "status": "passed",
+      "evidence": "管理列表每页5项，直接第2页显示C006至C010；选择后切第3页清空本页选择，分页与数据同步。树多选重新展开仍只选m1/m2。"
+    },
+    {
+      "name": "多选收纳关闭焦点恢复",
+      "status": "passed",
+      "evidence": "+N中移除后Esc关闭，焦点回到当前多选触发按钮。"
+    },
+    {
+      "name": "选择器触发器收放",
+      "status": "passed",
+      "evidence": "箭头再次点击关闭已打开候选，避免只会反复打开。"
+    }
+  ],
+  "defaultLayouts": [
+    {
+      "key": "button",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "icon",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "link",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "tag",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "badge",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "avatar",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "separator",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "input",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "textarea",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "number",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "select",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "checkbox",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "radio",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "switch",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "date",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "multiselect",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "cascade",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "upload",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "form",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "search",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "table",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "pagination",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "card",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "description",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "tree",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "steps",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "progress",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "timeline",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "stat",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "chart",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "empty",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "skeleton",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "shell",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "breadcrumb",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "tabs",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "segmented",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "toolbar",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "menu",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "popover",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "tooltip",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "dialog",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "confirm",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "drawer",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "alert",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "toast",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "course-card",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "person-picker",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "approval",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "resource",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "task-guide",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "agent",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "conversation",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "composer",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "message",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "prose",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "process",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "citation",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "result",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "workspace",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "chat",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "time-picker",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "tree-select",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "academic-term",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "collapse",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "rate",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "calendar",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "notification",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "image-preview",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "feedback-result",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "batch-import",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "button",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "icon",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "link",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "tag",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "badge",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "avatar",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "separator",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "input",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "textarea",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "number",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "select",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "checkbox",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "radio",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "switch",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "date",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "multiselect",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "cascade",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "upload",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "form",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "search",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "table",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "pagination",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "card",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "description",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "tree",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "steps",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "progress",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "timeline",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "stat",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "chart",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "empty",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "skeleton",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "shell",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "breadcrumb",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "tabs",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "segmented",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "toolbar",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "menu",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "popover",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "tooltip",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "dialog",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "confirm",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "drawer",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "alert",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "toast",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "course-card",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "person-picker",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "approval",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "resource",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "task-guide",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "agent",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "conversation",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "composer",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "message",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "prose",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "process",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "citation",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "result",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "workspace",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "chat",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "time-picker",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "tree-select",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "academic-term",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "collapse",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "rate",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "calendar",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "notification",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "image-preview",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "feedback-result",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "batch-import",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "button",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "icon",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "link",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "tag",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "badge",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "avatar",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "separator",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "input",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "textarea",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "number",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "select",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "checkbox",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "radio",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "switch",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "date",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "multiselect",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "cascade",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "upload",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "form",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "search",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "table",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "pagination",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "card",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "description",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "tree",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "steps",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "progress",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "timeline",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "stat",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "chart",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "empty",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "skeleton",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "shell",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "breadcrumb",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "tabs",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "segmented",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "toolbar",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "menu",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "popover",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "tooltip",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "dialog",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "confirm",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "drawer",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "alert",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "toast",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "course-card",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "person-picker",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "approval",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "resource",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "task-guide",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "agent",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "conversation",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "composer",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "message",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "prose",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "process",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "citation",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "result",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "workspace",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "chat",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "time-picker",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "tree-select",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "academic-term",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "collapse",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "rate",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "calendar",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "notification",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "image-preview",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "feedback-result",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "batch-import",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "button",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "icon",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "link",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "tag",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "badge",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "avatar",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "separator",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "input",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "textarea",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "number",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "select",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "checkbox",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "radio",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "switch",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "date",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "multiselect",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "cascade",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "upload",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "form",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "search",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "table",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "pagination",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "card",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "description",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "tree",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "steps",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "progress",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "timeline",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "stat",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "chart",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "empty",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "skeleton",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "shell",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "breadcrumb",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "tabs",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "segmented",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "toolbar",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "menu",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "popover",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "tooltip",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "dialog",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "confirm",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "drawer",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "alert",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "toast",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "course-card",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "person-picker",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "approval",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "resource",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "task-guide",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "agent",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "conversation",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "composer",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "message",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "prose",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "process",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "citation",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "result",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "workspace",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "chat",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "time-picker",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "tree-select",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "academic-term",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "collapse",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "rate",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "calendar",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "notification",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "image-preview",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "feedback-result",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "batch-import",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    }
+  ],
+  "containerLayouts": [
+    {
+      "component": "button",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "icon",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "link",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "tag",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "badge",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "avatar",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "separator",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "input",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "textarea",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "number",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "select",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "checkbox",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "radio",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "switch",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "date",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "multiselect",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "cascade",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "upload",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "form",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "search",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "table",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "pagination",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "card",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "description",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "tree",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "steps",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "progress",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "timeline",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "stat",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "chart",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "empty",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "skeleton",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "shell",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "breadcrumb",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "tabs",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "segmented",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "toolbar",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "menu",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "popover",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "tooltip",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "dialog",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "confirm",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "drawer",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "alert",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "toast",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "course-card",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "person-picker",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "approval",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "resource",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "task-guide",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "agent",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "conversation",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "composer",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "message",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "prose",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "process",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "citation",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "result",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "workspace",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "chat",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "time-picker",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "tree-select",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "academic-term",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "collapse",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "rate",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "calendar",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "notification",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "image-preview",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "feedback-result",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "batch-import",
+      "container": 318,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "button",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "icon",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "link",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "tag",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "badge",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "avatar",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "separator",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "input",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "textarea",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "number",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "select",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "checkbox",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "radio",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "switch",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "date",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "multiselect",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "cascade",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "upload",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "form",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "search",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "table",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "pagination",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "card",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "description",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "tree",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "steps",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "progress",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "timeline",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "stat",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "chart",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "empty",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "skeleton",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "shell",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "breadcrumb",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "tabs",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "segmented",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "toolbar",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "menu",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "popover",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "tooltip",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "dialog",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "confirm",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "drawer",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "alert",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "toast",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "course-card",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "person-picker",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "approval",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "resource",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "task-guide",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "agent",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "conversation",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "composer",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "message",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "prose",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "process",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "citation",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "result",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "workspace",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "chat",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "time-picker",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "tree-select",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "academic-term",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "collapse",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "rate",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "calendar",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "notification",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "image-preview",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "feedback-result",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    },
+    {
+      "component": "batch-import",
+      "container": 478,
+      "pageOverflow": 0,
+      "candidates": []
+    }
+  ],
+  "patternLayouts": [
+    {
+      "key": "home",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "list",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "detail",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "edit",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "selection",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "analytics",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "history",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "chat",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "assistant",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "workspace",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "learning",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "approval",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "files",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "import",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "settings",
+      "viewport": 1440,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "key": "home",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "list",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "detail",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "edit",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "selection",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "analytics",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "history",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "chat",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "assistant",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "workspace",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "learning",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "approval",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "files",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "import",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "settings",
+      "viewport": 1280,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "key": "home",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "list",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "detail",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "edit",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "selection",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "analytics",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "history",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "chat",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "assistant",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "workspace",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "learning",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "approval",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "files",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "import",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "settings",
+      "viewport": 1024,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "key": "home",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "list",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "detail",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "edit",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "selection",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "analytics",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "history",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "chat",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "assistant",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "workspace",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "learning",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "approval",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "files",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "import",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    },
+    {
+      "key": "settings",
+      "viewport": 768,
+      "issues": [],
+      "missing": false,
+      "pageOverflow": 0,
+      "width": 768
+    }
+  ],
+  "previewLayouts": [
+    {
+      "candidates": [],
+      "pageOverflow": 0,
+      "width": 1440
+    },
+    {
+      "candidates": [],
+      "pageOverflow": 0,
+      "width": 1280
+    },
+    {
+      "candidates": [],
+      "pageOverflow": 0,
+      "width": 1024
+    },
+    {
+      "candidates": [],
+      "pageOverflow": 0,
+      "width": 768
+    }
+  ],
+  "screenshots": [
+    "data/review-2.1.1/overview-after.png",
+    "data/review-2.1.1/multiselect-gallery.png"
+  ],
+  "limitations": [
+    "本次重点为分页、树、图表、日期、多选，未逐状态视觉批准全库",
+    "其他业务深度交互保留2.1.0历史证据，不标为2.1.1新通过",
+    "未做完整跨浏览器、真实移动设备及WCAG认证",
+    "本地HTML组件，未连接真实接口、权限或模型"
+  ]
+}

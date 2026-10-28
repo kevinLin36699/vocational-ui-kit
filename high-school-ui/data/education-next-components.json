@@ -1,0 +1,369 @@
+{
+  "version": "2.7.1",
+  "componentCount": 7,
+  "scenarioCount": 28,
+  "components": [
+    {
+      "key": "class-roster",
+      "name": "班级名册",
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "description": "班级筛选、成员状态、搜索导出、转班与异动历史；目录更新保留既有记录。",
+      "parameters": {
+        "classes": "{id,label,active?,disabled?}[]",
+        "records": "{id,name,number,classId,status?,note?,locked?,history?}[]",
+        "classId": "初始班级ID",
+        "view": "list/cards",
+        "scopeClassIds": "允许管理的班级ID数组",
+        "studentId": "个人名册身份ID",
+        "directoryVersion": "目录版本",
+        "title": "标题",
+        "description": "说明",
+        "role": "student/teacher/admin",
+        "context": "请求业务上下文",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "readonly": "禁止变更，保留浏览",
+        "disabled": "禁止业务操作",
+        "now": "可选ISO业务时钟"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "前轮业务方向建议中的组织、实训、学习过程、资源版本与评价，依据本轮明确授权扩展；不冒称原代码已存在",
+      "verification": "具体类型、状态、规则和交互断言见data/education-2.6/",
+      "remaining": "真实服务、权限、上传、并发与持久化由业务适配"
+    },
+    {
+      "key": "teaching-assignment",
+      "name": "任教关系",
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "description": "主讲/助教、多班任教、学年学期关联，草稿编辑、冲突检查、启用与结束。",
+      "parameters": {
+        "teachers": "{id,label,active?,disabled?}[]",
+        "courses": "{id,label,active?,disabled?}[]",
+        "classes": "{id,label,active?,disabled?}[]",
+        "terms": "{id,label,active?,disabled?}[]",
+        "assignments": "{id,teacherId,courseId,classIds,termId,hours,duty?,status?,locked?}[]",
+        "scopeClassIds": "授权班级ID数组",
+        "directoryVersion": "目录版本",
+        "title": "标题",
+        "description": "说明",
+        "role": "student/teacher/admin",
+        "context": "请求业务上下文",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "readonly": "禁止变更，保留浏览",
+        "disabled": "禁止业务操作",
+        "now": "可选ISO业务时钟"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "前轮业务方向建议中的组织、实训、学习过程、资源版本与评价，依据本轮明确授权扩展；不冒称原代码已存在",
+      "verification": "具体类型、状态、规则和交互断言见data/education-2.6/",
+      "remaining": "真实服务、权限、上传、并发与持久化由业务适配"
+    },
+    {
+      "key": "practice-workflow",
+      "name": "实训步骤与验收",
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "description": "安全/操作/检查/验收步骤，材料核对、前置依赖、真实附件、提交验收与退回重做。",
+      "parameters": {
+        "steps": "{id,title,type?,description?,prerequisiteIds?,materialIds?,checks?,required?,requireEvidence?,requireFile?,locked?}[]",
+        "materials": "{id,label,quantity?,unit?,required?}[]",
+        "value": "{步骤ID:{status?,checks?,materialChecks?,evidence?,files?,history?}}",
+        "mode": "run/author；author需teacher/admin",
+        "sequential": "默认true，之前必需步骤验收后才能继续",
+        "dueAt": "ISO截止时间",
+        "allowLate": "允许逾期操作，默认false",
+        "maxFiles": "默认4个",
+        "maxFileSize": "默认10MB",
+        "accept": "扩展名或MIME列表",
+        "title": "标题",
+        "description": "说明",
+        "role": "student/teacher/admin",
+        "context": "请求业务上下文",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "readonly": "禁止变更，保留浏览",
+        "disabled": "禁止业务操作",
+        "now": "可选ISO业务时钟"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "前轮业务方向建议中的组织、实训、学习过程、资源版本与评价，依据本轮明确授权扩展；不冒称原代码已存在",
+      "verification": "具体类型、状态、规则和交互断言见data/education-2.6/",
+      "remaining": "真实服务、权限、上传、并发与持久化由业务适配"
+    },
+    {
+      "key": "learning-progress",
+      "name": "学习进度与续学",
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "description": "文档/视频/任务资源的进度记录、前置要求、定位续学、显式完成与重置。",
+      "parameters": {
+        "chapters": "{id,title,resources:{id,title,type?,total,prerequisiteIds?,locator?,disabled?,locked?}[]}[]",
+        "records": "{资源ID:{position,status,lastVisitedAt?,history?}}",
+        "completion": "threshold/manual",
+        "threshold": "1—100百分比，默认100",
+        "allowReset": "允许明确确认后重置，默认false",
+        "title": "标题",
+        "description": "说明",
+        "role": "student/teacher/admin",
+        "context": "请求业务上下文",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "readonly": "禁止变更，保留浏览",
+        "disabled": "禁止业务操作",
+        "now": "可选ISO业务时钟"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "前轮业务方向建议中的组织、实训、学习过程、资源版本与评价，依据本轮明确授权扩展；不冒称原代码已存在",
+      "verification": "具体类型、状态、规则和交互断言见data/education-2.6/",
+      "remaining": "真实服务、权限、上传、并发与持久化由业务适配"
+    },
+    {
+      "key": "resource-version",
+      "name": "资源版本与引用",
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "description": "文本/文档引用/链接资源，版本新增编辑发布、文本对照、停用、引用快照与过期提示。",
+      "parameters": {
+        "resources": "{id,title,type?,locked?,versions:{id,number,status?,content?,url?,note?,createdAt?,expiresAt?,reason?}[]}[]",
+        "citations": "{id,resourceId,versionId,versionNumber,title,content?,url?,referencedAt}[]",
+        "title": "标题",
+        "description": "说明",
+        "role": "student/teacher/admin",
+        "context": "请求业务上下文",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "readonly": "禁止变更，保留浏览",
+        "disabled": "禁止业务操作",
+        "now": "可选ISO业务时钟"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "前轮业务方向建议中的组织、实训、学习过程、资源版本与评价，依据本轮明确授权扩展；不冒称原代码已存在",
+      "verification": "具体类型、状态、规则和交互断言见data/education-2.6/",
+      "remaining": "真实服务、权限、上传、并发与持久化由业务适配"
+    },
+    {
+      "key": "evaluation-survey",
+      "name": "评价问卷",
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "description": "单选/多选/量表/是非/文本题，结构编辑、必答、草稿、提交修订、收集关闭与汇总公布。",
+      "parameters": {
+        "questions": "{id,title,type,required?,options?,maxChoices?,min?,max?,scaleLabels?,maxLength?}[]",
+        "mode": "respond/author/results",
+        "status": "draft/open/closed",
+        "answers": "{题目ID:值}；false与0为有效值",
+        "responses": "教师汇总使用{id,answers}[]；学生配置移除原始答卷",
+        "anonymous": "提交载荷不含respondentId；后台匿名策略另行配置",
+        "surveyId": "业务问卷身份ID",
+        "studentId": "业务作答身份ID",
+        "startsAt": "ISO开始收集时间",
+        "endsAt": "ISO截止收集时间",
+        "submitted": "本次答卷已提交",
+        "revision": "当前答卷版本",
+        "allowRevise": "开放期内允许修订",
+        "allowReopen": "允许教师重开已关闭问卷",
+        "released": "统计汇总已公布",
+        "aggregate": "业务已授权的汇总数据，或根据已授权responses计算",
+        "title": "标题",
+        "description": "说明",
+        "role": "student/teacher/admin",
+        "context": "请求业务上下文",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "readonly": "禁止变更，保留浏览",
+        "disabled": "禁止业务操作",
+        "now": "可选ISO业务时钟"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "前轮业务方向建议中的组织、实训、学习过程、资源版本与评价，依据本轮明确授权扩展；不冒称原代码已存在",
+      "verification": "具体类型、状态、规则和交互断言见data/education-2.6/",
+      "remaining": "真实服务、权限、上传、并发与持久化由业务适配"
+    },
+    {
+      "key": "grade-detail",
+      "name": "成绩明细",
+      "implementationFiles": [
+        "js/education-next.js",
+        "css/education-next.css"
+      ],
+      "description": "权重/分项合成、数值/未评/缺考/免修、分项反馈、草稿、批量公布撤回与个人成绩可见性。",
+      "parameters": {
+        "columns": "{id,label,max,weight?,allowExempt?}[]",
+        "rows": "{id,name,number?,classId?,scores,status?,feedback?,version?,history?,locked?}[]",
+        "method": "weighted/points",
+        "totalScore": "默认100",
+        "mode": "score/author/readonly",
+        "studentId": "学生仅可见自己，未公布分值移除",
+        "scopeClassIds": "授权班级范围",
+        "absentAsZero": "明确配置后缺考计0，默认待处理",
+        "title": "标题",
+        "description": "说明",
+        "role": "student/teacher/admin",
+        "context": "请求业务上下文",
+        "state": "default/dirty/invalid/submitting/success/failed/loading/load-error/empty/forbidden/readonly/disabled",
+        "readonly": "禁止变更，保留浏览",
+        "disabled": "禁止业务操作",
+        "now": "可选ISO业务时钟"
+      },
+      "states": [
+        "default",
+        "dirty",
+        "invalid",
+        "submitting",
+        "success",
+        "failed",
+        "loading",
+        "load-error",
+        "empty",
+        "forbidden",
+        "readonly",
+        "disabled"
+      ],
+      "source": "前轮业务方向建议中的组织、实训、学习过程、资源版本与评价，依据本轮明确授权扩展；不冒称原代码已存在",
+      "verification": "具体类型、状态、规则和交互断言见data/education-2.6/",
+      "remaining": "真实服务、权限、上传、并发与持久化由业务适配"
+    }
+  ],
+  "validation": {
+    "browser": {
+      "version": "2.6.0",
+      "passed": 49,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "report": "data/education-2.6/browser.json"
+    },
+    "firstBatchRegression": {
+      "version": "2.6.0",
+      "passed": 39,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "report": "data/education-2.6/first-batch-regression.json"
+    },
+    "catalogRegression": {
+      "version": "2.6.0",
+      "passed": 36,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "report": "data/education-2.6/catalog-regression.json"
+    },
+    "commonRegression": {
+      "version": "2.6.0",
+      "passed": 53,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "report": "data/education-2.6/common-regression.json"
+    },
+    "familyRegression": {
+      "version": "2.6.0",
+      "passed": 53,
+      "failed": 0,
+      "observedBrowserErrors": 0,
+      "report": "data/education-2.6/family-regression.json"
+    },
+    "unit": {
+      "version": "2.7.0",
+      "passed": 19,
+      "failed": 0,
+      "report": "data/education-2.6/unit.json"
+    },
+    "static": {
+      "version": "2.6.0",
+      "passed": 67,
+      "failed": 1,
+      "report": "data/education-2.6/static.json"
+    }
+  },
+  "remaining": [
+    "成长就业、办学评估与学校运营尚未包含在第二批",
+    "HTML交互组件，实际服务、权限和持久化需业务接入",
+    "资源差异为提供文本的逐行对照，不含PDF/Word二进制解析",
+    "未做全部浏览器、触摸设备和完整无障碍认证"
+  ]
+}

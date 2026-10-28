@@ -1,0 +1,153 @@
+{
+  "version": "2.4.0",
+  "source": "Visible browser assertions through accessibility snapshot",
+  "checks": [
+    {
+      "name": "All 96 catalog entries hydrate without exceptions and have unique instance IDs",
+      "status": "passed"
+    },
+    {
+      "name": "All 83 documented variant configurations hydrate without exceptions",
+      "status": "passed"
+    },
+    {
+      "name": "Single date: draft, cancel, confirmed event and hidden form value",
+      "status": "passed"
+    },
+    {
+      "name": "Calendar arrows navigate by day, Escape dismisses and returns focus",
+      "status": "passed"
+    },
+    {
+      "name": "Date range requires two endpoints and preserves order and draft cancellation",
+      "status": "passed"
+    },
+    {
+      "name": "Disabled days cannot be picked; invalid input leaves last committed value",
+      "status": "passed"
+    },
+    {
+      "name": "Range across a forbidden date is rejected at confirmation",
+      "status": "passed"
+    },
+    {
+      "name": "Time columns commit hours/minutes/seconds and support clear",
+      "status": "passed"
+    },
+    {
+      "name": "Time range rejects inverted values, keeps legal manual minutes",
+      "status": "passed"
+    },
+    {
+      "name": "Date-time range independently commits start/end dates and clock values",
+      "status": "passed"
+    },
+    {
+      "name": "Month/year/quarter panels return the correct period format",
+      "status": "passed"
+    },
+    {
+      "name": "Month range manual end edit accepts friendly formatted start display",
+      "status": "passed"
+    },
+    {
+      "name": "ISO week around New Year keeps its ISO year, not calendar year",
+      "status": "passed"
+    },
+    {
+      "name": "Multi-date has in-field tags, overflow management and cancel protection",
+      "status": "passed"
+    },
+    {
+      "name": "Disabled and readonly temporal fields cannot open or clear",
+      "status": "passed"
+    },
+    {
+      "name": "Unmount removes temporal popups and their document listeners",
+      "status": "passed"
+    },
+    {
+      "name": "Checkbox all/partial state preserves disabled checked items",
+      "status": "passed"
+    },
+    {
+      "name": "Radio options are configurable and switch submits booleans",
+      "status": "passed"
+    },
+    {
+      "name": "Password show/hide and clear preserve the input and events",
+      "status": "passed"
+    },
+    {
+      "name": "Textarea count follows edited content",
+      "status": "passed"
+    },
+    {
+      "name": "Dual slider prevents endpoints crossing and returns a numeric pair",
+      "status": "passed"
+    },
+    {
+      "name": "Autocomplete keyboard selection closes suggestions and emits ID",
+      "status": "passed"
+    },
+    {
+      "name": "Transfer requires explicit movement and protects disabled options",
+      "status": "passed"
+    },
+    {
+      "name": "Tree expands, searches and maintains parent mixed/all checks",
+      "status": "passed"
+    },
+    {
+      "name": "Tabs skip disabled items on keyboard navigation and show their own panel",
+      "status": "passed"
+    },
+    {
+      "name": "Steps notify an index and move the current marker",
+      "status": "passed"
+    },
+    {
+      "name": "Menu disabled actions do not fire; selected action returns its ID",
+      "status": "passed"
+    },
+    {
+      "name": "Dialog confirms through an action; cancel leaves value unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "Upload validates format/count/size, deduplicates and removes local files",
+      "status": "passed"
+    },
+    {
+      "name": "Charts retain actual configured values in accessible details, including empty data",
+      "status": "passed"
+    },
+    {
+      "name": "All documented examples fit a 320px host without page-level overflow",
+      "status": "passed"
+    },
+    {
+      "name": "All 96 catalog defaults fit a 320px host without page-level overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Temporal popup stays within its native modal top layer",
+      "status": "passed"
+    },
+    {
+      "name": "Tree keyboard arrows traverse, expand and return to parent",
+      "status": "passed"
+    },
+    {
+      "name": "Disabled temporal values are excluded from native form submission",
+      "status": "passed"
+    },
+    {
+      "name": "Range presets respect restrictions and require explicit confirmation",
+      "status": "passed"
+    }
+  ],
+  "passed": 36,
+  "failed": 0,
+  "observedBrowserErrors": 0
+}

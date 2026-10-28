@@ -1,0 +1,55 @@
+{
+  "version": "2.7.1",
+  "date": "2026-10-28T08:26:35.965Z",
+  "scope": "Actual documentation routes and controls: 22 defaults, 86 selectors, data/code, mock success/failure/cancellation, 22 family routes, 22 batch-lab routes, gallery groups and narrow layouts. Public domain workflows have separate reports.",
+  "checks": [
+    {
+      "name": "All 22 catalog detail routes start with visible business records, actual role context and guided examples",
+      "status": "passed"
+    },
+    {
+      "name": "All 86 named configurations can be selected in the actual detail page with matching data and role",
+      "status": "passed"
+    },
+    {
+      "name": "Example data and usage code show the selected full dataset, including custom records instead of empty props",
+      "status": "passed"
+    },
+    {
+      "name": "Catalog example operations receive local acknowledgements and reset restores the chosen fixture",
+      "status": "passed"
+    },
+    {
+      "name": "Student data and usage tabs omit unreleased answers and drafts belonging to other roles",
+      "status": "passed"
+    },
+    {
+      "name": "Changing a detail route cancels the old example request without modifying the new example",
+      "status": "passed"
+    },
+    {
+      "name": "Three gallery groups contain all 22 populated examples and attached business controllers",
+      "status": "passed"
+    },
+    {
+      "name": "All 22 family preview routes use populated examples, data summaries and configurable variants",
+      "status": "passed"
+    },
+    {
+      "name": "Family business operations preserve failed modal input and succeed on a second acknowledgement",
+      "status": "passed"
+    },
+    {
+      "name": "All 22 batch-lab routes explain their actual dataset and expose the loaded JSON",
+      "status": "passed"
+    },
+    {
+      "name": "Default, data and code detail layouts stay inside a 390px viewport",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "passed": 11,
+  "failed": 0,
+  "observedBrowserErrors": 0
+}

@@ -1,36 +1,46 @@
 {
-  "date": "2026-10-27",
-  "scope": "仅本次新增分发目录；没有修改或全量测试原仓库应用",
-  "skill_version": "1.1.0",
-  "library_version": "2.0.0",
+  "date": "2026-10-28",
+  "library_version": "2.7.1",
+  "skill_version": "1.2.0",
+  "scope": "GitHub distribution update; no original application changes or production service calls.",
   "checks": {
     "skill_creator_quick_validate": "passed",
-    "portable_repository_binding": "passed",
-    "installed_skill_binding": "passed",
-    "all_reference_paths": "passed",
-    "current_library_exact_copy": {
-      "status": "passed",
-      "files": 113
+    "installed_skill_binding_and_current_hashes": "passed",
+    "portable_package": "distribution-validation.json",
+    "public_runtime_styles_and_examples_match_local_source": "passed",
+    "static_integrity": {
+      "passed": 76,
+      "failed": 0,
+      "skipped": 2
     },
-    "python_syntax": "passed",
-    "installer_refuses_existing_without_replace": "passed",
-    "installer_replace_keeps_backup": "passed",
-    "requested_version_mismatch_refused": "passed",
-    "chat_scaffold_static_and_asset_provenance": {
-      "status": "passed",
-      "checks": 38
+    "unit_regression": {
+      "passed": 96,
+      "failed": 0,
+      "suites": [
+        "controls",
+        "temporal",
+        "common",
+        "families",
+        "education",
+        "education_next",
+        "education_platform",
+        "business_examples"
+      ]
     },
-    "credential_store_files_excluded": "passed"
+    "credential_store_files_and_high_confidence_secret_scan": "passed"
   },
-  "not_run": [
-    "仓库全量构建、lint、测试",
-    "本次打包副本的新增浏览器交互回归",
-    "真实模型、Agent和生产接口",
-    "其他操作系统上的实机安装"
+  "historical_browser_evidence": [
+    "high-school-ui/data/examples-2.7.1/",
+    "high-school-ui/data/navigation-2.7.1/collapse-fix/",
+    "high-school-ui/data/education-2.7/"
   ],
   "notes": [
-    "组件库运行源码与本地已演示版本逐文件一致。",
-    "组件库 data/ 下历史校验保留原版本与范围，源平台追溯检查依赖未随包分发的原始材料。",
-    "Skill 发布副本使用可迁移绑定；未改动当前机器已安装的 Skill。"
+    "Browser evidence is carried from local component work, not rerun for this packaging update.",
+    "Original business source is not distributed; its two historical provenance checks are explicitly skipped in the independent package. Local original-snapshot mismatch remains recorded without changing the baseline.",
+    "Installer backs up the previous Skill; local installed binding uses the maintained library and downloadable Skill uses a portable relative binding."
+  ],
+  "not_run": [
+    "Production interfaces, authorization and persistence",
+    "Real-device installation on other operating systems"
   ]
 }

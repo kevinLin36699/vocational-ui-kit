@@ -1,0 +1,923 @@
+{
+  "version": "2.7.1",
+  "componentCount": 22,
+  "scenarioCount": 86,
+  "components": [
+    {
+      "key": "teaching-audience",
+      "defaultExample": "edu-case-0",
+      "defaultDataSummary": [
+        {
+          "field": "nodes",
+          "label": "组织",
+          "count": 2
+        },
+        {
+          "field": "students",
+          "label": "学生",
+          "count": 5
+        }
+      ],
+      "operationGuide": "试选另一个班级或学生，复核名单后点击“确认教学对象”，查看已确认名单快照。",
+      "examples": [
+        {
+          "id": "edu-case-0",
+          "title": "混合选择与名单快照",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-1",
+          "title": "单选班级与组织范围",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-2",
+          "title": "学生单选与禁用项",
+          "batch": 1,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "curriculum-plan",
+      "defaultExample": "edu-case-3",
+      "defaultDataSummary": [
+        {
+          "field": "nodes",
+          "label": "教学单元",
+          "count": 2
+        },
+        {
+          "field": "objectives",
+          "label": "教学目标",
+          "count": 2
+        }
+      ],
+      "operationGuide": "调整末级单元的理论/实训学时，观察总学时校验，再核对并保存目录。",
+      "examples": [
+        {
+          "id": "edu-case-3",
+          "title": "理实结合与目标关联",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-4",
+          "title": "理论课与半学时",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-5",
+          "title": "实训课与锁定单元",
+          "batch": 1,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "teaching-task",
+      "defaultExample": "edu-case-6",
+      "defaultDataSummary": [
+        {
+          "field": "tasks",
+          "label": "教学任务",
+          "count": 3
+        }
+      ],
+      "operationGuide": "学生可完成检查项并登记任务完成；切换“教师草稿与发布”可编辑和发布草稿。",
+      "examples": [
+        {
+          "id": "edu-case-6",
+          "title": "学生任务与前置检查",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-7",
+          "title": "教师草稿与发布",
+          "batch": 1,
+          "role": "teacher"
+        },
+        {
+          "id": "edu-case-8",
+          "title": "列表与逾期状态",
+          "batch": 1,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "question-sheet",
+      "defaultExample": "edu-case-9",
+      "defaultDataSummary": [
+        {
+          "field": "questions",
+          "label": "题目",
+          "count": 5
+        }
+      ],
+      "operationGuide": "单选、多选、是非、填空和问答均有实际题干；填写后暂存或交卷，也可切换教师出题示例。",
+      "examples": [
+        {
+          "id": "edu-case-9",
+          "title": "五类题型与答题卡",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-10",
+          "title": "逐题作答与未答确认",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-11",
+          "title": "教师出题与结构编辑",
+          "batch": 1,
+          "role": "teacher"
+        },
+        {
+          "id": "edu-case-12",
+          "title": "公布后只读复核",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-13",
+          "title": "截止锁定与草稿保留",
+          "batch": 1,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "submission-review",
+      "defaultExample": "edu-case-14",
+      "defaultDataSummary": [
+        {
+          "field": "attempts",
+          "label": "历史提交",
+          "count": 0
+        },
+        {
+          "field": "value.text",
+          "label": "成果草稿",
+          "count": 1
+        }
+      ],
+      "operationGuide": "已有成果说明可直接修改、暂存和提交；切换教师示例可查看第二版成果并使用量规批阅。",
+      "examples": [
+        {
+          "id": "edu-case-14",
+          "title": "学生成果与本地附件",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-15",
+          "title": "退回后重交版本",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-16",
+          "title": "教师批阅与量规联动",
+          "batch": 1,
+          "role": "teacher"
+        },
+        {
+          "id": "edu-case-17",
+          "title": "历史评分与零分保留",
+          "batch": 1,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "scoring-rubric",
+      "defaultExample": "edu-case-18",
+      "defaultDataSummary": [
+        {
+          "field": "criteria",
+          "label": "评分维度",
+          "count": 2
+        }
+      ],
+      "operationGuide": "给成果完整性选等级，并填写过程说明分数；观察加权总分、未评分和零分的区别。",
+      "examples": [
+        {
+          "id": "edu-case-18",
+          "title": "等级与数值加权评分",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-19",
+          "title": "评分标准作者编辑",
+          "batch": 1,
+          "role": "teacher"
+        },
+        {
+          "id": "edu-case-20",
+          "title": "分项计分与不适用",
+          "batch": 1,
+          "role": "student"
+        },
+        {
+          "id": "edu-case-21",
+          "title": "只读评分复核",
+          "batch": 1,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "class-roster",
+      "defaultExample": "roster-list",
+      "defaultDataSummary": [
+        {
+          "field": "classes",
+          "label": "班级",
+          "count": 3
+        },
+        {
+          "field": "records",
+          "label": "成员",
+          "count": 3
+        }
+      ],
+      "operationGuide": "查看在读、休学和锁定成员，编辑成员资料或登记转班及原因，核对异动历史。",
+      "examples": [
+        {
+          "id": "roster-list",
+          "title": "按班名册与异动",
+          "batch": 2,
+          "role": "teacher"
+        },
+        {
+          "id": "roster-cards",
+          "title": "卡片与授权范围",
+          "batch": 2,
+          "role": "admin"
+        },
+        {
+          "id": "roster-self",
+          "title": "学生个人名册只读",
+          "batch": 2,
+          "role": "student"
+        },
+        {
+          "id": "roster-stale",
+          "title": "失效关联待核对",
+          "batch": 2,
+          "role": "teacher"
+        }
+      ]
+    },
+    {
+      "key": "teaching-assignment",
+      "defaultExample": "assign-manage",
+      "defaultDataSummary": [
+        {
+          "field": "assignments",
+          "label": "任教关系",
+          "count": 3
+        },
+        {
+          "field": "teachers",
+          "label": "教师",
+          "count": 3
+        }
+      ],
+      "operationGuide": "查看主讲、助教和已结束关系；可编辑草稿、启用任教或登记结束原因。",
+      "examples": [
+        {
+          "id": "assign-manage",
+          "title": "主讲、助教与多班任教",
+          "batch": 2,
+          "role": "teacher"
+        },
+        {
+          "id": "assign-conflict",
+          "title": "主讲冲突阻止启用",
+          "batch": 2,
+          "role": "admin"
+        },
+        {
+          "id": "assign-stale",
+          "title": "目录停用与失效关联",
+          "batch": 2,
+          "role": "teacher"
+        },
+        {
+          "id": "assign-view",
+          "title": "学生查看任课信息",
+          "batch": 2,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "practice-workflow",
+      "defaultExample": "practice-run",
+      "defaultDataSummary": [
+        {
+          "field": "steps",
+          "label": "实训步骤",
+          "count": 3
+        },
+        {
+          "field": "materials",
+          "label": "实训材料",
+          "count": 3
+        }
+      ],
+      "operationGuide": "安全步骤已有验收记录；继续检查设备步骤，填写证据、选择本地文件并提交验收。",
+      "examples": [
+        {
+          "id": "practice-run",
+          "title": "学生顺序实训与证据",
+          "batch": 2,
+          "role": "student"
+        },
+        {
+          "id": "practice-review",
+          "title": "教师验收与退回",
+          "batch": 2,
+          "role": "teacher"
+        },
+        {
+          "id": "practice-design",
+          "title": "安全、操作与验收步骤编辑",
+          "batch": 2,
+          "role": "teacher"
+        },
+        {
+          "id": "practice-returned",
+          "title": "退回补充与依赖控制",
+          "batch": 2,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "learning-progress",
+      "defaultExample": "learning-threshold",
+      "defaultDataSummary": [
+        {
+          "field": "chapters",
+          "label": "学习章节",
+          "count": 2
+        }
+      ],
+      "operationGuide": "选择视频或文档，记录实际位置，再按完成规则确认完成；续学定位不改变完成状态。",
+      "examples": [
+        {
+          "id": "learning-threshold",
+          "title": "文档、视频与任务续学",
+          "batch": 2,
+          "role": "student"
+        },
+        {
+          "id": "learning-manual",
+          "title": "记录与手动完成分开",
+          "batch": 2,
+          "role": "student"
+        },
+        {
+          "id": "learning-monitor",
+          "title": "教师学习过程只读",
+          "batch": 2,
+          "role": "teacher"
+        }
+      ]
+    },
+    {
+      "key": "resource-version",
+      "defaultExample": "version-student",
+      "defaultDataSummary": [
+        {
+          "field": "resources",
+          "label": "资源",
+          "count": 3
+        },
+        {
+          "field": "citations",
+          "label": "引用快照",
+          "count": 1
+        }
+      ],
+      "operationGuide": "查看资源不同版本并比较文本；教师可引用、撤回或发布，已有引用保留版本快照。",
+      "examples": [
+        {
+          "id": "version-student",
+          "title": "版本切换、对照与引用",
+          "batch": 2,
+          "role": "student"
+        },
+        {
+          "id": "version-author",
+          "title": "版本编辑、发布与停用",
+          "batch": 2,
+          "role": "teacher"
+        },
+        {
+          "id": "version-empty",
+          "title": "从空目录创建资源",
+          "batch": 2,
+          "role": "teacher"
+        }
+      ]
+    },
+    {
+      "key": "evaluation-survey",
+      "defaultExample": "survey-respond",
+      "defaultDataSummary": [
+        {
+          "field": "questions",
+          "label": "问卷问题",
+          "count": 5
+        },
+        {
+          "field": "responses",
+          "label": "答卷",
+          "count": 0
+        }
+      ],
+      "operationGuide": "填写真实的选择、评分、是非和开放问题；切换结果示例可查看已配置的汇总数据。",
+      "examples": [
+        {
+          "id": "survey-respond",
+          "title": "五类评价题与草稿提交",
+          "batch": 2,
+          "role": "student"
+        },
+        {
+          "id": "survey-author",
+          "title": "问卷结构、必答和量表配置",
+          "batch": 2,
+          "role": "teacher"
+        },
+        {
+          "id": "survey-results",
+          "title": "教师统计与公布汇总",
+          "batch": 2,
+          "role": "teacher"
+        },
+        {
+          "id": "survey-released",
+          "title": "学生已公布汇总",
+          "batch": 2,
+          "role": "student"
+        },
+        {
+          "id": "survey-closed",
+          "title": "已截止与答卷锁定",
+          "batch": 2,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "grade-detail",
+      "defaultExample": "grade-teacher",
+      "defaultDataSummary": [
+        {
+          "field": "rows",
+          "label": "学生成绩",
+          "count": 3
+        },
+        {
+          "field": "columns",
+          "label": "成绩项",
+          "count": 3
+        }
+      ],
+      "operationGuide": "编辑未公布学生的分项成绩，核对总评；零分、缺考、免修和未录入值分别展示。",
+      "examples": [
+        {
+          "id": "grade-teacher",
+          "title": "分项录入、缺考与成绩公布",
+          "batch": 2,
+          "role": "teacher"
+        },
+        {
+          "id": "grade-student",
+          "title": "学生已公布成绩",
+          "batch": 2,
+          "role": "student"
+        },
+        {
+          "id": "grade-withheld",
+          "title": "学生未公布分值隐藏",
+          "batch": 2,
+          "role": "student"
+        },
+        {
+          "id": "grade-points",
+          "title": "分项计分与免修规则",
+          "batch": 2,
+          "role": "teacher"
+        },
+        {
+          "id": "grade-rules",
+          "title": "成绩项与合成规则编辑",
+          "batch": 2,
+          "role": "teacher"
+        }
+      ]
+    },
+    {
+      "key": "career-goal",
+      "defaultExample": "goal-personal",
+      "defaultDataSummary": [
+        {
+          "field": "goals",
+          "label": "成长目标",
+          "count": 3
+        },
+        {
+          "field": "types",
+          "label": "目标类型",
+          "count": 4
+        }
+      ],
+      "operationGuide": "把“技能证书备考”设为主目标，观察旧主目标转为备选；也可编辑、归档和重新启用。",
+      "examples": [
+        {
+          "id": "goal-personal",
+          "title": "四类目标与主备管理",
+          "batch": 3,
+          "role": "student"
+        },
+        {
+          "id": "goal-empty",
+          "title": "从空数据创建个人目标",
+          "batch": 3,
+          "role": "student"
+        },
+        {
+          "id": "goal-advisor",
+          "title": "指导教师只读查看",
+          "batch": 3,
+          "role": "teacher"
+        },
+        {
+          "id": "goal-custom",
+          "title": "自定义目标类型目录",
+          "batch": 3,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "growth-plan",
+      "defaultExample": "plan-personal",
+      "defaultDataSummary": [
+        {
+          "field": "plans",
+          "label": "成长计划",
+          "count": 2
+        },
+        {
+          "field": "taskDirectory",
+          "label": "可关联任务",
+          "count": 2
+        }
+      ],
+      "operationGuide": "选择计划后增改草稿任务、调整顺序并启用；执行中的任务需要来源完成记录和完成依据。",
+      "examples": [
+        {
+          "id": "plan-personal",
+          "title": "草稿、任务关联与执行",
+          "batch": 3,
+          "role": "student"
+        },
+        {
+          "id": "plan-stale",
+          "title": "目标失效与暂停计划",
+          "batch": 3,
+          "role": "student"
+        },
+        {
+          "id": "plan-completed",
+          "title": "计划完成与历史只读",
+          "batch": 3,
+          "role": "student"
+        },
+        {
+          "id": "plan-empty",
+          "title": "新建计划与任务配置",
+          "batch": 3,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "job-opportunity",
+      "defaultExample": "job-student",
+      "defaultDataSummary": [
+        {
+          "field": "jobs",
+          "label": "岗位",
+          "count": 2
+        },
+        {
+          "field": "resumes",
+          "label": "简历版本",
+          "count": 2
+        }
+      ],
+      "operationGuide": "查看在招岗位和关闭岗位，收藏或创建投递草稿；切换管理示例可编辑、发布和关闭岗位。",
+      "examples": [
+        {
+          "id": "job-student",
+          "title": "实习、正式与学徒岗位",
+          "batch": 3,
+          "role": "student"
+        },
+        {
+          "id": "job-manage",
+          "title": "岗位编辑、发布与关闭",
+          "batch": 3,
+          "role": "admin"
+        },
+        {
+          "id": "job-expired",
+          "title": "截止、零名额与未知薪资",
+          "batch": 3,
+          "role": "student"
+        },
+        {
+          "id": "job-empty",
+          "title": "空岗位目录创建",
+          "batch": 3,
+          "role": "admin"
+        }
+      ]
+    },
+    {
+      "key": "application-tracker",
+      "defaultExample": "app-personal",
+      "defaultDataSummary": [
+        {
+          "field": "applications",
+          "label": "投递记录",
+          "count": 2
+        },
+        {
+          "field": "jobs",
+          "label": "岗位",
+          "count": 3
+        }
+      ],
+      "operationGuide": "投递草稿、面试记录已有岗位/简历快照；可编辑草稿、登记投递、添加跟进或撤回。",
+      "examples": [
+        {
+          "id": "app-personal",
+          "title": "投递快照与个人跟进",
+          "batch": 3,
+          "role": "student"
+        },
+        {
+          "id": "app-advisor",
+          "title": "指导端登记筛选面试进度",
+          "batch": 3,
+          "role": "teacher"
+        },
+        {
+          "id": "app-offer",
+          "title": "意向接受、撤回与终态",
+          "batch": 3,
+          "role": "student"
+        },
+        {
+          "id": "app-stale",
+          "title": "简历版本失效阻止提交",
+          "batch": 3,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "assessment-collection",
+      "defaultExample": "indicator-collect",
+      "defaultDataSummary": [
+        {
+          "field": "indicators",
+          "label": "采集指标",
+          "count": 2
+        },
+        {
+          "field": "evidence",
+          "label": "佐证版本",
+          "count": 2
+        }
+      ],
+      "operationGuide": "数值0和是非“否”都是实际填报值；补充说明、关联已审核佐证后暂存或提交。",
+      "examples": [
+        {
+          "id": "indicator-collect",
+          "title": "数值、是非与来源填报",
+          "batch": 3,
+          "role": "teacher"
+        },
+        {
+          "id": "indicator-review",
+          "title": "审核、退回与版本快照",
+          "batch": 3,
+          "role": "admin"
+        },
+        {
+          "id": "indicator-design",
+          "title": "指标类型与责任分配",
+          "batch": 3,
+          "role": "admin"
+        },
+        {
+          "id": "indicator-invalid",
+          "title": "周期关闭与佐证过期",
+          "batch": 3,
+          "role": "teacher"
+        }
+      ]
+    },
+    {
+      "key": "evidence-material",
+      "defaultExample": "evidence-collect",
+      "defaultDataSummary": [
+        {
+          "field": "materials",
+          "label": "佐证材料",
+          "count": 2
+        },
+        {
+          "field": "sources",
+          "label": "引用来源",
+          "count": 1
+        }
+      ],
+      "operationGuide": "查看已审核的统计材料与待补充照片；选择材料版本、填写来源或创建下一版本。",
+      "examples": [
+        {
+          "id": "evidence-collect",
+          "title": "数据、图片与来源引用",
+          "batch": 3,
+          "role": "teacher"
+        },
+        {
+          "id": "evidence-review",
+          "title": "佐证审核与退回",
+          "batch": 3,
+          "role": "admin"
+        },
+        {
+          "id": "evidence-versions",
+          "title": "已审核、退回与作废版本",
+          "batch": 3,
+          "role": "teacher"
+        },
+        {
+          "id": "evidence-empty",
+          "title": "空目录新增文档或链接佐证",
+          "batch": 3,
+          "role": "teacher"
+        }
+      ]
+    },
+    {
+      "key": "asset-loan",
+      "defaultExample": "loan-manage",
+      "defaultDataSummary": [
+        {
+          "field": "assets",
+          "label": "设备台账",
+          "count": 3
+        },
+        {
+          "field": "loans",
+          "label": "借用记录",
+          "count": 3
+        }
+      ],
+      "operationGuide": "查看已借出、待审批和已预约记录；登记审批、交付、归还与接收，观察容量及维护限制。",
+      "examples": [
+        {
+          "id": "loan-manage",
+          "title": "台账、容量与借还审批",
+          "batch": 3,
+          "role": "admin"
+        },
+        {
+          "id": "loan-student",
+          "title": "个人借用与归还申报",
+          "batch": 3,
+          "role": "student"
+        },
+        {
+          "id": "loan-conflict",
+          "title": "时段冲突与维修阻止借用",
+          "batch": 3,
+          "role": "admin"
+        },
+        {
+          "id": "loan-return",
+          "title": "归还接收与损坏转维护",
+          "batch": 3,
+          "role": "admin"
+        }
+      ]
+    },
+    {
+      "key": "repair-ticket",
+      "defaultExample": "repair-manage",
+      "defaultDataSummary": [
+        {
+          "field": "tickets",
+          "label": "报修工单",
+          "count": 3
+        },
+        {
+          "field": "technicians",
+          "label": "处理人员",
+          "count": 2
+        }
+      ],
+      "operationGuide": "选择新报修、处理中或待验收工单；可派单、记录处理过程和工时，再登记结果及验收。",
+      "examples": [
+        {
+          "id": "repair-manage",
+          "title": "受理、派单与工单全流程",
+          "batch": 3,
+          "role": "admin"
+        },
+        {
+          "id": "repair-worker",
+          "title": "维修人员处理与工时记录",
+          "batch": 3,
+          "role": "teacher"
+        },
+        {
+          "id": "repair-reporter",
+          "title": "报修人验收与再次退回",
+          "batch": 3,
+          "role": "student"
+        },
+        {
+          "id": "repair-empty",
+          "title": "空工单新建与本地附件",
+          "batch": 3,
+          "role": "student"
+        }
+      ]
+    },
+    {
+      "key": "admissions-lead",
+      "defaultExample": "lead-admin",
+      "defaultDataSummary": [
+        {
+          "field": "leads",
+          "label": "招生线索",
+          "count": 3
+        },
+        {
+          "field": "programs",
+          "label": "意向专业",
+          "count": 3
+        }
+      ],
+      "operationGuide": "查看重复线索、撤回授权和逾期预约；登记人工跟进、更新阶段、分配责任人或核对合并。",
+      "examples": [
+        {
+          "id": "lead-admin",
+          "title": "线索阶段、责任人与重复合并",
+          "batch": 3,
+          "role": "admin"
+        },
+        {
+          "id": "lead-owner",
+          "title": "咨询人员权限与联系授权",
+          "batch": 3,
+          "role": "teacher"
+        },
+        {
+          "id": "lead-empty",
+          "title": "自定义来源与新增线索",
+          "batch": 3,
+          "role": "admin"
+        },
+        {
+          "id": "lead-terminal",
+          "title": "已入学、流失与重启跟进",
+          "batch": 3,
+          "role": "admin"
+        }
+      ]
+    }
+  ],
+  "evidence": "data/examples-2.7.1/",
+  "standard": "design/BUSINESS_EXAMPLES.md"
+}

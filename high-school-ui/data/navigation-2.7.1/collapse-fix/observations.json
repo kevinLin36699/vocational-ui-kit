@@ -1,0 +1,26 @@
+{
+  "version": "2.7.1",
+  "referenceTextRepeatedClick": true,
+  "referenceKeyboardEnterAndSpace": true,
+  "docRouteKeepsManualCollapse": true,
+  "componentRouteKeepsManualCollapse": true,
+  "unifiedScroll": {
+    "before": {
+      "clientHeight": 599,
+      "groupsOverflow": "visible",
+      "groupsScrollTop": 0,
+      "mainPosition": "static",
+      "mainTop": 88,
+      "scrollHeight": 1676,
+      "scrollTop": 0,
+      "windowY": 19.5
+    },
+    "after": {
+      "groupsScrollTop": 0,
+      "mainTop": -632,
+      "scrollTop": 720,
+      "windowY": 19.5
+    }
+  },
+  "automaticSidebarScrollingRemoved": true
+}

@@ -1,7 +1,58 @@
 {
+  "version": "2.7.1",
   "checks": [
     {
+      "name": "JS syntax advanced-table.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax batch-import.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax business-example-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax business-examples.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
       "name": "JS syntax catalog.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax common-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax common-extras.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax common-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax common-scenarios.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax completeness-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax component-variants.js",
       "status": "passed",
       "evidence": ""
     },
@@ -11,7 +62,122 @@
       "evidence": ""
     },
     {
+      "name": "JS syntax controls.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax data-table.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
       "name": "JS syntax docs.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-bridge.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-controls.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-integration-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-integration-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-integration-scenarios.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-next-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-next-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-next-scenarios.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-next.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-platform-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-platform-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-platform-scenarios.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-platform.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax education-scenarios.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax extended-controls.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax family-checks.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax family-controls.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax family-lab.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax family-scenarios.js",
       "status": "passed",
       "evidence": ""
     },
@@ -31,12 +197,22 @@
       "evidence": ""
     },
     {
+      "name": "JS syntax schema-form.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
       "name": "JS syntax showcase.js",
       "status": "passed",
       "evidence": ""
     },
     {
       "name": "JS syntax skill-picker.js",
+      "status": "passed",
+      "evidence": ""
+    },
+    {
+      "name": "JS syntax temporal.js",
       "status": "passed",
       "evidence": ""
     },
@@ -56,17 +232,17 @@
       "evidence": ""
     },
     {
-      "name": "60 catalog keys match runtime",
+      "name": "Catalog keys match runtime",
       "status": "passed",
-      "evidence": "60 keys"
+      "evidence": "118 keys"
     },
     {
       "name": "All variants render without exception",
       "status": "passed",
-      "evidence": "420 render cases"
+      "evidence": "462 render cases"
     },
     {
-      "name": "14 page patterns render",
+      "name": "Page patterns match current index",
       "status": "passed",
       "evidence": ""
     },
@@ -118,7 +294,7 @@
     {
       "name": "CSS variable references defined",
       "status": "passed",
-      "evidence": "{'--token-color'}"
+      "evidence": "{'--token-color', '--vx-progress', '--vx-avatar-size'}"
     },
     {
       "name": "Component CSS colors only use tokens",
@@ -127,13 +303,13 @@
     },
     {
       "name": "Original scanned files unchanged",
-      "status": "failed",
-      "evidence": "['AGENTS.md', 'css/student-home.css', 'css/teacher-home.css', 'css/teacher-interaction-standard.css', 'design/ui-design/admin-interface-standard.md']"
+      "status": "skipped",
+      "evidence": "Original business source is not bundled; pass --source-root to verify historical provenance. No source baseline changed."
     },
     {
       "name": "Source evidence file/line exists",
-      "status": "passed",
-      "evidence": "[]"
+      "status": "skipped",
+      "evidence": "Original business source is not bundled; pass --source-root to verify historical provenance. No source baseline changed."
     },
     {
       "name": "Migration records not falsely completed",
@@ -203,7 +379,7 @@
     {
       "name": "Every component has reviewed reference mapping",
       "status": "passed",
-      "evidence": "60 records; document rule vs shared-primitives composition explicitly distinguished"
+      "evidence": "118 records; document, shared primitives and scenario extensions distinguished"
     },
     {
       "name": "Current component metadata matches library version",
@@ -216,6 +392,7 @@
       "evidence": "DESIGN.md sections 4,5,6,10,11; user theme overrides kept separate"
     }
   ],
-  "passed": 42,
-  "failed": 1
+  "passed": 76,
+  "failed": 0,
+  "skipped": 2
 }

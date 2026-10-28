@@ -396,7 +396,7 @@ pre {
 .v-table tr:hover td {
   background:var(--v-sidebar);
 }
-.v-table th:first-child,.v-table td:first-child {
+.v-table th:has(>input[type=checkbox]),.v-table td:has(>input[type=checkbox]) {
   width:44px;
   min-width:44px;
   padding-right:0;

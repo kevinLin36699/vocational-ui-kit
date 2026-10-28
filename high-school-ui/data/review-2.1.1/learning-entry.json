@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-27",
+  "action": "modify",
+  "file": "/Users/chenkelin/Documents/高职校/4-组件库/high-school-ui",
+  "changes": "依据五张用户截图修正分页、树hover/整行选择、图表明细、日期排版、多选框内回显；修复共用表格首列44px及重复展开指示。",
+  "user_preferences_learned": [
+    "功能和无溢出不代表设计质量完成",
+    "多选在控件内显示可移除标签，超出以+N收纳",
+    "分页总数与操作有清楚分组",
+    "树节点需要整行hover与明显选中状态",
+    "日期值紧凑，图表明细按表格对齐"
+  ],
+  "scope": "按用户要求仅记录在本地组件库，不改写已发布Skill包"
+}

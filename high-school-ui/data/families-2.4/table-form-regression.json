@@ -1,0 +1,221 @@
+{
+  "version": "2.4.0",
+  "source": "Visible browser assertions through accessibility snapshot",
+  "checks": [
+    {
+      "name": "All 12 table modes and 11 schema form configurations mount",
+      "status": "passed"
+    },
+    {
+      "name": "Local filtering, tri-state sort, page-size and jump use the same result set",
+      "status": "passed"
+    },
+    {
+      "name": "Across-page selection survives paging, respects disabled rows and supports all filtered",
+      "status": "passed"
+    },
+    {
+      "name": "Page selection clears on navigation and a single-selection table uses radio",
+      "status": "passed"
+    },
+    {
+      "name": "Tree rows search descendants with ancestor context and expand independently",
+      "status": "passed"
+    },
+    {
+      "name": "Grouped rows collapse without changing underlying records",
+      "status": "passed"
+    },
+    {
+      "name": "Nested headers and adjacent merged values have real spans; sums use filtered rows",
+      "status": "passed"
+    },
+    {
+      "name": "Explicit row/column spans skip covered cells",
+      "status": "passed"
+    },
+    {
+      "name": "Column visibility retains at least one and reordering updates the public state",
+      "status": "passed"
+    },
+    {
+      "name": "Fixed columns compute sticky offsets and keyboard resizing persists widths",
+      "status": "passed"
+    },
+    {
+      "name": "Row ordering supports keyboard and is disabled while sorting",
+      "status": "passed"
+    },
+    {
+      "name": "Inline edit validates before commit and Escape cancels draft",
+      "status": "passed"
+    },
+    {
+      "name": "Switching page protects an uncommitted cell draft",
+      "status": "passed"
+    },
+    {
+      "name": "Table edit dialog uses the shared schema validator and preserves zero",
+      "status": "passed"
+    },
+    {
+      "name": "Deletion requires confirmation, can cancel, and retains unrelated rows",
+      "status": "passed"
+    },
+    {
+      "name": "Virtual scrolling renders a bounded number of rows out of 10000 and changes window",
+      "status": "passed"
+    },
+    {
+      "name": "CSV respects visible columns and neutralizes spreadsheet formulas",
+      "status": "passed"
+    },
+    {
+      "name": "Remote queries carry request IDs; stale responses cannot replace newer results",
+      "status": "passed"
+    },
+    {
+      "name": "Remote failure preserves query and retries through the loader",
+      "status": "passed"
+    },
+    {
+      "name": "Readonly and forbidden states cannot mutate table data",
+      "status": "passed"
+    },
+    {
+      "name": "Arbitrary schema uses supplied fields and does not inherit course fields",
+      "status": "passed"
+    },
+    {
+      "name": "Sync rules include required, email, numeric range, regex and cross-field dates",
+      "status": "passed"
+    },
+    {
+      "name": "Dependent options clear stale selection, conditional fields are excluded from values",
+      "status": "passed"
+    },
+    {
+      "name": "Repeaters retain data while adding, reordering and removing; enforce minimum",
+      "status": "passed"
+    },
+    {
+      "name": "Steps validate the current section before navigation and retain previous values",
+      "status": "passed"
+    },
+    {
+      "name": "Error summary locates a field in another tab",
+      "status": "passed"
+    },
+    {
+      "name": "Async validator aborts stale values; earlier results cannot overwrite new input",
+      "status": "passed"
+    },
+    {
+      "name": "Async validator failure is visible, and cancel during validation does not submit",
+      "status": "passed"
+    },
+    {
+      "name": "Submitting is locked, prevents duplicate submits, and a failed handler retains all values",
+      "status": "passed"
+    },
+    {
+      "name": "Event-mode submit remains pending until its matching acknowledgement",
+      "status": "passed"
+    },
+    {
+      "name": "Reset uses a successful submission as baseline and protects unsaved UI changes",
+      "status": "passed"
+    },
+    {
+      "name": "Readonly/disabled/forbidden forms do not submit and disabled fields are excluded",
+      "status": "passed"
+    },
+    {
+      "name": "Unmount cancels submission callbacks and prevents late status changes",
+      "status": "passed"
+    },
+    {
+      "name": "All 23 configurations fit a 320px container without outer overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Dependent numeric edits keep focus, caret and computed values during typing",
+      "status": "passed"
+    },
+    {
+      "name": "Generic numeric fields do not inherit course-hour units",
+      "status": "passed"
+    },
+    {
+      "name": "Remote edit stays pending until mutation acknowledgement and keeps server field errors",
+      "status": "passed"
+    },
+    {
+      "name": "All additional chart, permission-tree and richtext examples mount",
+      "status": "passed"
+    },
+    {
+      "name": "Chart zoom, drilldown and return use real child data",
+      "status": "passed"
+    },
+    {
+      "name": "Combo chart series visibility, brush and data table stay synchronized",
+      "status": "passed"
+    },
+    {
+      "name": "Permission trees support strict checks and disabled-ancestor inheritance",
+      "status": "passed"
+    },
+    {
+      "name": "Richtext sanitizes scripts, event attributes, embeds and unsafe links",
+      "status": "passed"
+    },
+    {
+      "name": "Richtext formatting works and schema rules count plain text rather than HTML tags",
+      "status": "passed"
+    },
+    {
+      "name": "Form loader ignores old acknowledgements, preserves draft on failure and retries",
+      "status": "passed"
+    },
+    {
+      "name": "Runtime readonly state hides form submit and disables table editing",
+      "status": "passed"
+    },
+    {
+      "name": "Repeated file fields preserve File references through row reordering",
+      "status": "passed"
+    },
+    {
+      "name": "Two fixed columns use measured offsets at wide container sizes",
+      "status": "passed"
+    },
+    {
+      "name": "Tree pagination pages root groups and keeps children with their parent",
+      "status": "passed"
+    },
+    {
+      "name": "Remote cell save waits for mutator success and reloads confirmed server values",
+      "status": "passed"
+    },
+    {
+      "name": "Additional interactive charts and richtext fit a 320px host",
+      "status": "passed"
+    },
+    {
+      "name": "Chinese composition does not commit intermediate values or trigger a submission",
+      "status": "passed"
+    },
+    {
+      "name": "Export selected includes cross-page selections outside the current filter",
+      "status": "passed"
+    },
+    {
+      "name": "Multiple bar series occupy separate positions without overlap",
+      "status": "passed"
+    }
+  ],
+  "passed": 53,
+  "failed": 0,
+  "observedBrowserErrors": 0
+}

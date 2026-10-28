@@ -1,4 +1,4 @@
-/* Vocational UI 2.0.0 · generated from data/tokens.json by build_tokens.py */
+/* Vocational UI 2.5.0 · generated from data/tokens.json by build_tokens.py */
 :root {
   --v-blue-50: #eff6ff;
   --v-blue-100: #dbeafe;
@@ -50,7 +50,7 @@
   --v-font-section: 17px;
   --v-font-page: 28px;
   --v-font-display: 32px;
-  --v-leading-body: 1.428571;
+  --v-leading-body: 1.5;
   --v-leading-title: 1.285714;
   --v-space-1: 4px;
   --v-space-2: 8px;
@@ -85,8 +85,8 @@
   --v-duration-base: 200ms;
   --v-duration-slow: 320ms;
   --v-ease-out: cubic-bezier(.2,.8,.2,1);
-  --v-shadow-sm: 0 1px 2px rgb(24 59 106 / .07);
-  --v-shadow-pop: 0 10px 30px rgb(24 59 106 / .12),0 1px 3px rgb(24 59 106 / .08);
+  --v-shadow-sm: 0 1px 2px rgb(24 39 62 / .04);
+  --v-shadow-pop: 0 8px 28px rgb(24 39 62 / .10),0 2px 6px rgb(24 39 62 / .04);
   --v-shadow-dialog: var(--v-shadow-pop);
   --v-font-serif: "Songti SC","STSong","Noto Serif SC","Source Han Serif SC","Noto Serif CJK SC",serif;
   --v-sidebar-collapsed: 64px;

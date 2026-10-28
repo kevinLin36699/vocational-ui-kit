@@ -1,22 +1,42 @@
 {
   "name": "vocational-ui",
-  "version": "2.0.0",
+  "version": "2.7.1",
   "maturity": "interactive-html-prototype",
   "theme": "blue-white-light",
-  "components": 60,
-  "pagePatterns": 14,
+  "components": 118,
+  "pagePatterns": 15,
   "tokens": 122,
   "entry": "index.html",
   "styles": [
     "css/tokens.css",
-    "css/components.css"
+    "css/components.css",
+    "css/refinements.css",
+    "css/extended-controls.css",
+    "css/common-data.css",
+    "css/family-controls.css",
+    "css/education-controls.css",
+    "css/education-next.css",
+    "css/education-platform.css"
   ],
   "runtime": [
     "js/icons.js",
     "js/resource-composer.js",
     "js/skill-picker.js",
     "js/content-workspace.js",
-    "js/voc-ui.js"
+    "js/voc-ui.js",
+    "js/controls.js",
+    "js/data-table.js",
+    "js/batch-import.js",
+    "js/temporal.js",
+    "js/extended-controls.js",
+    "js/schema-form.js",
+    "js/advanced-table.js",
+    "js/common-extras.js",
+    "js/family-controls.js",
+    "js/education-controls.js",
+    "js/education-next.js",
+    "js/education-platform.js",
+    "js/education-bridge.js"
   ],
   "patternsRuntime": "js/patterns.js",
   "componentIndex": "data/components.json",
@@ -37,5 +57,26 @@
   "referenceAlignment": "data/reference-alignment.json",
   "referenceComponentIndex": "data/component-alignment.json",
   "teachingAgentStandard": "design/TEACHING_AGENTS.md",
-  "teachingAgentContract": "data/teaching-agents.json"
+  "teachingAgentContract": "data/teaching-agents.json",
+  "controlStandard": "design/CONTROLS.md",
+  "controlContract": "data/control-contracts.json",
+  "qualityReview": "data/ui-review.json",
+  "detailReview": "design/INTERACTION_DETAILS.md",
+  "completenessReview": "data/component-completeness.json",
+  "variantsExample": "examples/completeness.html",
+  "educationPlatformStandard": "design/EDUCATION_PLATFORM.md",
+  "educationPlatformReview": "data/education-platform-components.json",
+  "educationIntegrationExample": "examples/education-integration.html",
+  "showcaseRuntime": [
+    "js/education-scenarios.js",
+    "js/education-next-scenarios.js",
+    "js/education-platform-scenarios.js",
+    "js/business-examples.js",
+    "js/component-variants.js"
+  ],
+  "businessExamplesStandard": "design/BUSINESS_EXAMPLES.md",
+  "businessExamplesReview": "data/business-examples.json",
+  "showcaseStyles": [
+    "css/business-examples.css"
+  ]
 }
